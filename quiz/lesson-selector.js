@@ -353,9 +353,10 @@
 
   // 6. Quiz Page Enhancements (Top Bar & Action Buttons)
   function initQuizPageEnhancements(currentLessonData) {
-    // Check if quiz top bar exists
-    if (!document.querySelector('.quiz-top-bar')) {
-      const topBar = document.createElement('header');
+    // Check if quiz top bar exists for Start and Results screens
+    let topBar = document.querySelector('.quiz-top-bar');
+    if (!topBar) {
+      topBar = document.createElement('header');
       topBar.className = 'quiz-top-bar';
       topBar.innerHTML = `
         <div class="quiz-top-left">
@@ -380,17 +381,69 @@
       `;
       topBar.querySelector('#quizTopLessonBtn').addEventListener('click', toggleLessonModal);
       document.body.prepend(topBar);
+    }
 
-      // Adjust quiz-app padding if needed
-      const quizApp = document.getElementById('quizApp');
-      if (quizApp) {
-        quizApp.style.paddingTop = '60px';
+    // Enhance quiz-header with inline exit button and lesson switcher
+    const quizHeader = document.querySelector('.quiz-header');
+    if (quizHeader) {
+      const qHeaderLeft = quizHeader.querySelector('.header-left');
+      if (qHeaderLeft && !qHeaderLeft.querySelector('.quiz-header-back-btn')) {
+        const exitBtn = document.createElement('a');
+        exitBtn.href = resolveUrl(currentLessonData.deckFile);
+        exitBtn.className = 'quiz-header-back-btn';
+        exitBtn.title = 'Back to Lesson Slides';
+        exitBtn.innerHTML = `
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+          <span class="exit-label">Slides</span>
+        `;
+        qHeaderLeft.prepend(exitBtn);
       }
+
+      const qHeaderRight = quizHeader.querySelector('.header-right');
+      if (qHeaderRight && !qHeaderRight.querySelector('.quiz-header-picker')) {
+        const pickerBtn = document.createElement('button');
+        pickerBtn.className = `lesson-picker-btn quiz-header-picker ${currentLessonData.badgeClass}`;
+        pickerBtn.title = 'Switch Lesson (L)';
+        pickerBtn.innerHTML = `
+          <span class="lesson-picker-badge">L${currentLessonData.id}</span>
+          <svg class="lesson-picker-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        `;
+        pickerBtn.addEventListener('click', toggleLessonModal);
+        qHeaderRight.appendChild(pickerBtn);
+      }
+    }
+
+    // Toggle body class in-quiz-mode when starting or ending quiz
+    const startBtn = document.getElementById('startQuizBtn');
+    if (startBtn) {
+      startBtn.addEventListener('click', () => {
+        document.body.classList.add('in-quiz-mode');
+      });
+    }
+
+    const retryBtn = document.getElementById('retryBtn');
+    if (retryBtn) {
+      retryBtn.addEventListener('click', () => {
+        document.body.classList.add('in-quiz-mode');
+      });
+    }
+
+    // Watch for results screen
+    const observer = new MutationObserver(() => {
+      const resultsScreen = document.getElementById('resultsScreen');
+      if (resultsScreen && resultsScreen.classList.contains('active')) {
+        document.body.classList.remove('in-quiz-mode');
+      }
+    });
+    const quizApp = document.getElementById('quizApp');
+    if (quizApp) {
+      observer.observe(quizApp, { attributes: true, subtree: true, attributeFilter: ['class'] });
     }
 
     // Add "Switch Lesson" button to start-card if not already there
     const startCard = document.querySelector('.start-card');
-    const startBtn = document.getElementById('startQuizBtn');
     if (startCard && startBtn && !startCard.querySelector('.btn-switch-lesson')) {
       const switchBtn = document.createElement('button');
       switchBtn.type = 'button';
