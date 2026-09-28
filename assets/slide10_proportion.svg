@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg10" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0c121e"/>
+      <stop offset="50%" stop-color="#121a2b"/>
+      <stop offset="100%" stop-color="#080d17"/>
+    </linearGradient>
+
+    <!-- Gold Accent Gradient -->
+    <linearGradient id="accentGold10" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+
+    <filter id="shadow10" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1200" height="675" fill="url(#bg10)"/>
+
+  <!-- Main Editorial Layout Canvas -->
+  <g transform="translate(60, 45)" filter="url(#shadow10)">
+    <rect width="1080" height="585" rx="20" fill="#111827" stroke="#25354e" stroke-width="2"/>
+
+    <!-- Left Main Column: Real-World Editorial Layout (Dominant Headline vs Small Body) -->
+    <g transform="translate(50, 50)">
+      <!-- Editorial Canvas Background -->
+      <rect width="640" height="485" rx="14" fill="#0c101a" stroke="#1e293b" stroke-width="1.5"/>
+
+      <!-- Editorial Magazine Category Tag -->
+      <g transform="translate(45, 40)">
+        <rect width="150" height="26" rx="4" fill="#1e293b"/>
+        <text x="14" y="17" fill="#fbbf24" font-family="'Inter', sans-serif" font-size="11" font-weight="800" letter-spacing="1">ISSUE 04 · TYPOGRAPHY</text>
+      </g>
+
+      <!-- GIANT DOMINANT HEADLINE TEXT -->
+      <g transform="translate(45, 110)">
+        <!-- Dimension Line & Bracket -->
+        <line x1="-15" y1="0" x2="-15" y2="140" stroke="#f59e0b" stroke-width="2"/>
+        <line x1="-22" y1="0" x2="-8" y2="0" stroke="#f59e0b" stroke-width="2"/>
+        <line x1="-22" y1="140" x2="-8" y2="140" stroke="#f59e0b" stroke-width="2"/>
+
+        <text x="0" y="55" fill="#ffffff" font-family="'Outfit', 'Inter', sans-serif" font-size="64" font-weight="900" letter-spacing="-0.03em">THE POWER</text>
+        <text x="0" y="125" fill="#ffffff" font-family="'Outfit', 'Inter', sans-serif" font-size="64" font-weight="900" letter-spacing="-0.03em">OF SCALE</text>
+
+        <!-- Measurement Tag -->
+        <rect x="420" y="25" width="130" height="40" rx="6" fill="#f59e0b" fill-opacity="0.15" stroke="#f59e0b" stroke-width="1.5"/>
+        <text x="485" y="49" fill="#fbbf24" font-family="'Inter', sans-serif" font-size="14" font-weight="800" text-anchor="middle">HEADLINE: 64px</text>
+      </g>
+
+      <!-- Decorative Divider -->
+      <line x1="45" y1="280" x2="595" y2="280" stroke="#25354e" stroke-width="1.5"/>
+
+      <!-- MUCH SMALLER, READABLE PARAGRAPH BODY TEXT -->
+      <g transform="translate(45, 315)">
+        <!-- Dimension Line & Bracket -->
+        <line x1="-15" y1="0" x2="-15" y2="110" stroke="#38bdf8" stroke-width="2"/>
+        <line x1="-22" y1="0" x2="-8" y2="0" stroke="#38bdf8" stroke-width="2"/>
+        <line x1="-22" y1="110" x2="-8" y2="110" stroke="#38bdf8" stroke-width="2"/>
+
+        <text x="0" y="18" fill="#e2e8f0" font-family="'Inter', sans-serif" font-size="14" font-weight="600">Deliberate proportion establishes immediate reading hierarchy.</text>
+        <text x="0" y="42" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="13">When a designer creates a massive size contrast between the headline and the body</text>
+        <text x="0" y="64" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="13">copy, the brain immediately knows what to read first. The massive headline commands</text>
+        <text x="0" y="86" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="13">attention, while the compact 14px body text offers comfortable, effortless reading.</text>
+        <text x="0" y="108" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="13">Without this size difference, all text competes for attention, causing reader fatigue.</text>
+
+        <!-- Measurement Tag -->
+        <rect x="420" y="70" width="130" height="34" rx="6" fill="#38bdf8" fill-opacity="0.15" stroke="#38bdf8" stroke-width="1.5"/>
+        <text x="485" y="92" fill="#38bdf8" font-family="'Inter', sans-serif" font-size="13" font-weight="800" text-anchor="middle">BODY TEXT: 14px</text>
+      </g>
+    </g>
+
+    <!-- Right Column: Visual Hierarchy & Ratio Breakdown -->
+    <g transform="translate(730, 50)">
+      <rect width="300" height="485" rx="14" fill="#141c2c" stroke="#25354e" stroke-width="1.5"/>
+
+      <!-- Title -->
+      <g transform="translate(25, 28)">
+        <text x="0" y="16" fill="#ffffff" font-family="'Inter', sans-serif" font-size="15" font-weight="800">SCALE RELATIONSHIP</text>
+        <text x="0" y="36" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="12">Hierarchy Ratio Analysis</text>
+      </g>
+
+      <!-- Scale Card 1: Dominant (64px) -->
+      <g transform="translate(20, 80)">
+        <rect width="260" height="95" rx="10" fill="#0f172a" stroke="#f59e0b" stroke-width="1.5"/>
+        <text x="18" y="32" fill="#fbbf24" font-family="'Outfit', sans-serif" font-size="28" font-weight="900">4.5 × Scale</text>
+        <text x="18" y="58" fill="#ffffff" font-family="'Inter', sans-serif" font-size="13" font-weight="700">Dominant Headline (64px)</text>
+        <text x="18" y="78" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="11">Visual Weight: Primary Focus (100%)</text>
+      </g>
+
+      <!-- Scale Card 2: Subheading (24px) -->
+      <g transform="translate(20, 190)">
+        <rect width="260" height="85" rx="10" fill="#0f172a" stroke="#8b5cf6" stroke-width="1.2"/>
+        <text x="18" y="28" fill="#c084fc" font-family="'Outfit', sans-serif" font-size="20" font-weight="800">1.7 × Scale</text>
+        <text x="18" y="52" fill="#ffffff" font-family="'Inter', sans-serif" font-size="13" font-weight="600">Subheading (24px)</text>
+        <text x="18" y="72" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="11">Visual Weight: Context Anchor (40%)</text>
+      </g>
+
+      <!-- Scale Card 3: Body Text (14px) -->
+      <g transform="translate(20, 290)">
+        <rect width="260" height="85" rx="10" fill="#0f172a" stroke="#38bdf8" stroke-width="1.2"/>
+        <text x="18" y="28" fill="#38bdf8" font-family="'Outfit', sans-serif" font-size="18" font-weight="800">1.0 × Base Scale</text>
+        <text x="18" y="52" fill="#ffffff" font-family="'Inter', sans-serif" font-size="13" font-weight="600">Body Paragraph (14px)</text>
+        <text x="18" y="72" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="11">Visual Weight: High Readability (20%)</text>
+      </g>
+
+      <!-- Summary Pill at bottom of right column -->
+      <g transform="translate(20, 395)">
+        <rect width="260" height="65" rx="10" fill="#1e293b"/>
+        <text x="18" y="26" fill="#10b981" font-family="'Inter', sans-serif" font-size="12" font-weight="800">✓ INSTANT SCANNING</text>
+        <text x="18" y="46" fill="#cbd5e1" font-family="'Inter', sans-serif" font-size="11">The eye naturally descends</text>
+        <text x="18" y="58" fill="#cbd5e1" font-family="'Inter', sans-serif" font-size="11">from big to small in seconds.</text>
+      </g>
+    </g>
+  </g>
+</svg>

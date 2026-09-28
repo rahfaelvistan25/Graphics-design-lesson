@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+  <defs>
+    <!-- Ocean Monochromatic Palette -->
+    <linearGradient id="bg11" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#081426"/>
+      <stop offset="50%" stop-color="#0e2340"/>
+      <stop offset="100%" stop-color="#060f1c"/>
+    </linearGradient>
+    <linearGradient id="blueCardGrad11" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#142c4c"/>
+      <stop offset="100%" stop-color="#1b3a63"/>
+    </linearGradient>
+    <filter id="shadow11" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#020914" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#bg11)"/>
+
+  <!-- Main Monochromatic Modern Dashboard Display -->
+  <g transform="translate(50, 45)" filter="url(#shadow11)">
+    <!-- Dashboard Chrome Outer Frame -->
+    <rect width="1100" height="585" rx="20" fill="#0f2238" stroke="#1e3a5f" stroke-width="2"/>
+
+    <!-- Left Dashboard Sidebar -->
+    <rect width="230" height="585" rx="20" fill="#0b1b2d" stroke="#162e4a" stroke-width="1.5"/>
+    
+    <!-- Logo -->
+    <g transform="translate(30, 35)">
+      <circle cx="16" cy="16" r="14" fill="#38bdf8"/>
+      <text x="40" y="22" fill="#ffffff" font-family="'Outfit', sans-serif" font-size="18" font-weight="800" letter-spacing="1">CERULEAN</text>
+    </g>
+
+    <!-- Nav Items with harmonious tints -->
+    <g transform="translate(25, 105)">
+      <rect x="0" y="0" width="180" height="42" rx="8" fill="#1e40af" fill-opacity="0.5"/>
+      <circle cx="22" cy="21" r="6" fill="#38bdf8"/>
+      <text x="40" y="26" fill="#e0f2fe" font-family="'Inter', sans-serif" font-size="13" font-weight="600">Analytics Hub</text>
+
+      <g transform="translate(0, 55)">
+        <circle cx="22" cy="21" r="6" fill="#60a5fa" fill-opacity="0.5"/>
+        <text x="40" y="26" fill="#93c5fd" font-family="'Inter', sans-serif" font-size="13">Performance</text>
+      </g>
+      <g transform="translate(0, 110)">
+        <circle cx="22" cy="21" r="6" fill="#60a5fa" fill-opacity="0.5"/>
+        <text x="40" y="26" fill="#93c5fd" font-family="'Inter', sans-serif" font-size="13">Atmospheric</text>
+      </g>
+      <g transform="translate(0, 165)">
+        <circle cx="22" cy="21" r="6" fill="#60a5fa" fill-opacity="0.5"/>
+        <text x="40" y="26" fill="#93c5fd" font-family="'Inter', sans-serif" font-size="13">Team Channels</text>
+      </g>
+      <g transform="translate(0, 220)">
+        <circle cx="22" cy="21" r="6" fill="#60a5fa" fill-opacity="0.5"/>
+        <text x="40" y="26" fill="#93c5fd" font-family="'Inter', sans-serif" font-size="13">Settings</text>
+      </g>
+    </g>
+
+    <!-- Palette Swatches Callout at Bottom of Sidebar -->
+    <g transform="translate(25, 440)">
+      <text x="5" y="20" fill="#7dd3fc" font-family="'Inter', sans-serif" font-size="11" font-weight="800">MONOCHROMATIC PALETTE</text>
+      <rect x="5" y="32" width="30" height="30" rx="6" fill="#081426"/>
+      <rect x="42" y="32" width="30" height="30" rx="6" fill="#1e3a5f"/>
+      <rect x="79" y="32" width="30" height="30" rx="6" fill="#2563eb"/>
+      <rect x="116" y="32" width="30" height="30" rx="6" fill="#38bdf8"/>
+      <rect x="153" y="32" width="30" height="30" rx="6" fill="#e0f2fe"/>
+      <text x="5" y="80" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">Single Hue Family · Perfect Accord</text>
+    </g>
+
+    <!-- Main Dashboard Body (Right) -->
+    <g transform="translate(265, 30)">
+      <!-- Top Bar -->
+      <text x="15" y="32" fill="#ffffff" font-family="'Outfit', sans-serif" font-size="24" font-weight="800">Harmonic Blue Equilibrium</text>
+      <text x="15" y="56" fill="#7dd3fc" font-family="'Inter', sans-serif" font-size="13">Serene visual agreement: zero clashing hues, maximum calm clarity.</text>
+
+      <!-- Stat Cards Row (Monochromatic Blue Shades) -->
+      <g transform="translate(15, 85)">
+        <!-- Card 1 -->
+        <rect width="250" height="120" rx="14" fill="url(#blueCardGrad11)" stroke="#2563eb" stroke-width="1.2"/>
+        <text x="20" y="36" fill="#93c5fd" font-family="'Inter', sans-serif" font-size="12" font-weight="700">STABILITY INDEX</text>
+        <text x="20" y="78" fill="#ffffff" font-family="'Outfit', sans-serif" font-size="34" font-weight="900">99.8%</text>
+        <path d="M 170 75 Q 195 48, 225 55" fill="none" stroke="#38bdf8" stroke-width="3.5"/>
+
+        <!-- Card 2 -->
+        <g transform="translate(270, 0)">
+          <rect width="250" height="120" rx="14" fill="url(#blueCardGrad11)" stroke="#2563eb" stroke-width="1.2"/>
+          <text x="20" y="36" fill="#93c5fd" font-family="'Inter', sans-serif" font-size="12" font-weight="700">COGNITIVE LOAD</text>
+          <text x="20" y="78" fill="#bae6fd" font-family="'Outfit', sans-serif" font-size="34" font-weight="900">Minimal</text>
+          <text x="20" y="100" fill="#7dd3fc" font-family="'Inter', sans-serif" font-size="11">0% Clashing Dissonance</text>
+        </g>
+
+        <!-- Card 3 -->
+        <g transform="translate(540, 0)">
+          <rect width="250" height="120" rx="14" fill="url(#blueCardGrad11)" stroke="#2563eb" stroke-width="1.2"/>
+          <text x="20" y="36" fill="#93c5fd" font-family="'Inter', sans-serif" font-size="12" font-weight="700">COLOR ACCORD</text>
+          <text x="20" y="78" fill="#e0f2fe" font-family="'Outfit', sans-serif" font-size="34" font-weight="900">Perfect</text>
+          <text x="20" y="100" fill="#7dd3fc" font-family="'Inter', sans-serif" font-size="11">Unified Tonal Palette</text>
+        </g>
+      </g>
+
+      <!-- Large Flow Chart / Data Graphic in Monochromatic Tones -->
+      <g transform="translate(15, 235)">
+        <rect width="790" height="280" rx="16" fill="#0d1f35" stroke="#1d3d63" stroke-width="1.5"/>
+        <text x="25" y="38" fill="#e0f2fe" font-family="'Inter', sans-serif" font-size="16" font-weight="700">Monochromatic Waveform Accord</text>
+        <text x="25" y="60" fill="#7dd3fc" font-family="'Inter', sans-serif" font-size="12">Multiple data streams represented through subtle value steps rather than competing rainbow colors</text>
+
+        <!-- Elegant Wave Lines in Harmonious Blues -->
+        <path d="M 40 210 Q 150 110, 300 150 T 550 130 T 750 170" fill="none" stroke="#1e40af" stroke-width="3" opacity="0.6"/>
+        <path d="M 40 185 Q 180 95, 330 160 T 600 105 T 750 140" fill="none" stroke="#2563eb" stroke-width="3" opacity="0.8"/>
+        <path d="M 40 160 Q 200 195, 360 105 T 620 140 T 750 95" fill="none" stroke="#38bdf8" stroke-width="3.5"/>
+        <path d="M 40 135 Q 220 75, 420 140 T 680 95 T 750 115" fill="none" stroke="#93c5fd" stroke-width="2.5"/>
+
+        <!-- Grid Lines -->
+        <line x1="40" y1="100" x2="750" y2="100" stroke="#173152" stroke-width="1" stroke-dasharray="4 4"/>
+        <line x1="40" y1="155" x2="750" y2="155" stroke="#173152" stroke-width="1" stroke-dasharray="4 4"/>
+        <line x1="40" y1="210" x2="750" y2="210" stroke="#173152" stroke-width="1" stroke-dasharray="4 4"/>
+
+        <!-- Result Callout -->
+        <rect x="540" y="200" width="220" height="58" rx="10" fill="#081426" stroke="#38bdf8" stroke-width="1.2"/>
+        <text x="555" y="225" fill="#e0f2fe" font-family="'Inter', sans-serif" font-size="13" font-weight="700">Visual Agreement</text>
+        <text x="555" y="244" fill="#93c5fd" font-family="'Inter', sans-serif" font-size="11">Peaceful, cohesive user experience</text>
+      </g>
+    </g>
+  </g>
+</svg>

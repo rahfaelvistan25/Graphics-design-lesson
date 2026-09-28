@@ -1,0 +1,158 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 550" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bgGrad4" cx="50%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0b1120"/>
+    </radialGradient>
+    <!-- 3D Sphere Shading Gradient -->
+    <radialGradient id="sphereGrad" cx="35%" cy="30%" r="65%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="15%" stop-color="#7dd3fc"/>
+      <stop offset="50%" stop-color="#0284c7"/>
+      <stop offset="80%" stop-color="#0369a1"/>
+      <stop offset="92%" stop-color="#082f49"/>
+      <stop offset="100%" stop-color="#0c4a6e"/> <!-- Reflected light ring -->
+    </radialGradient>
+    <!-- Cast Shadow Gradient -->
+    <radialGradient id="castShadowGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#000000" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow4" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+    <linearGradient id="card3D" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#818cf8" stop-opacity="0.05"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="550" rx="16" fill="url(#bgGrad4)"/>
+
+  <!-- Top Title Banner -->
+  <g transform="translate(40, 25)">
+    <rect width="180" height="28" rx="14" fill="#c084fc" fill-opacity="0.15" stroke="#c084fc" stroke-width="1"/>
+    <text x="14" y="19" font-family="'Outfit', sans-serif" font-size="11" font-weight="700" fill="#c084fc" letter-spacing="1">ELEMENT 03 · FORM</text>
+    <text x="200" y="20" font-family="'Inter', sans-serif" font-size="13" fill="#cbd5e1">From Flat 2D Shape to 3D Volume: Light, Shadow &amp; Spatial Illusion</text>
+  </g>
+
+  <!-- Left Panel: Anatomy of Light on a 3D Sphere -->
+  <g transform="translate(40, 75)" filter="url(#shadow4)">
+    <rect width="380" height="440" rx="14" fill="#131c2e" stroke="#1e293b" stroke-width="1.5"/>
+    <text x="22" y="32" font-family="'Outfit', sans-serif" font-size="15" font-weight="700" fill="#ffffff">The Anatomy of a 3D Form</text>
+    <text x="22" y="50" font-family="'Inter', sans-serif" font-size="11" fill="#94a3b8">How value shifts trick the brain into seeing mass and volume</text>
+
+    <!-- Light Source Indicator -->
+    <g transform="translate(50, 85)">
+      <circle cx="0" cy="0" r="14" fill="#fbbf24" fill-opacity="0.3"/>
+      <circle cx="0" cy="0" r="8" fill="#fef08a"/>
+      <!-- Light rays -->
+      <line x1="12" y1="12" x2="45" y2="45" stroke="#fbbf24" stroke-width="2" stroke-dasharray="3 2"/>
+      <text x="20" y="0" font-family="'Outfit', sans-serif" font-size="10" font-weight="700" fill="#fbbf24">Light Source</text>
+    </g>
+
+    <!-- The 3D Sphere & Ground -->
+    <g transform="translate(190, 220)">
+      <!-- Ground plane line -->
+      <line x1="-140" y1="90" x2="140" y2="90" stroke="#334155" stroke-width="1.5"/>
+
+      <!-- Cast Shadow -->
+      <ellipse cx="40" cy="90" rx="90" ry="18" fill="url(#castShadowGrad)"/>
+
+      <!-- The Sphere -->
+      <circle cx="0" cy="0" r="85" fill="url(#sphereGrad)"/>
+
+      <!-- Annotations with pointers -->
+      <!-- 1. Highlight -->
+      <g transform="translate(-25, -45)">
+        <line x1="0" y1="0" x2="-80" y2="-40" stroke="#38bdf8" stroke-width="1"/>
+        <circle cx="0" cy="0" r="3" fill="#ffffff"/>
+        <rect x="-155" y="-55" width="72" height="22" rx="4" fill="#1e293b" stroke="#38bdf8" stroke-width="1"/>
+        <text x="-119" y="-40" text-anchor="middle" font-family="'Inter', sans-serif" font-size="10" font-weight="700" fill="#38bdf8">Highlight</text>
+      </g>
+
+      <!-- 2. Midtone -->
+      <g transform="translate(10, 10)">
+        <line x1="0" y1="0" x2="-100" y2="10" stroke="#38bdf8" stroke-width="1"/>
+        <circle cx="0" cy="0" r="3" fill="#7dd3fc"/>
+        <rect x="-165" y="0" width="62" height="22" rx="4" fill="#1e293b" stroke="#38bdf8" stroke-width="1"/>
+        <text x="-134" y="15" text-anchor="middle" font-family="'Inter', sans-serif" font-size="10" font-weight="700" fill="#7dd3fc">Midtone</text>
+      </g>
+
+      <!-- 3. Core Shadow -->
+      <g transform="translate(45, 45)">
+        <line x1="0" y1="0" x2="70" y2="-20" stroke="#38bdf8" stroke-width="1"/>
+        <circle cx="0" cy="0" r="3" fill="#0284c7"/>
+        <rect x="72" y="-32" width="85" height="22" rx="4" fill="#1e293b" stroke="#38bdf8" stroke-width="1"/>
+        <text x="114" y="-17" text-anchor="middle" font-family="'Inter', sans-serif" font-size="10" font-weight="700" fill="#93c5fd">Core Shadow</text>
+      </g>
+
+      <!-- 4. Reflected Light -->
+      <g transform="translate(68, 60)">
+        <line x1="0" y1="0" x2="70" y2="40" stroke="#38bdf8" stroke-width="1"/>
+        <circle cx="0" cy="0" r="3" fill="#38bdf8"/>
+        <rect x="72" y="30" width="95" height="22" rx="4" fill="#1e293b" stroke="#38bdf8" stroke-width="1"/>
+        <text x="119" y="45" text-anchor="middle" font-family="'Inter', sans-serif" font-size="10" font-weight="700" fill="#38bdf8">Reflected Light</text>
+      </g>
+
+      <!-- 5. Cast Shadow -->
+      <g transform="translate(70, 92)">
+        <line x1="0" y1="0" x2="60" y2="70" stroke="#38bdf8" stroke-width="1"/>
+        <circle cx="0" cy="0" r="3" fill="#475569"/>
+        <rect x="62" y="60" width="85" height="22" rx="4" fill="#1e293b" stroke="#38bdf8" stroke-width="1"/>
+        <text x="104" y="75" text-anchor="middle" font-family="'Inter', sans-serif" font-size="10" font-weight="700" fill="#cbd5e1">Cast Shadow</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Right Panel: Form in Modern UI & Digital Media -->
+  <g transform="translate(440, 75)" filter="url(#shadow4)">
+    <rect width="320" height="440" rx="14" fill="#131c2e" stroke="#1e293b" stroke-width="1.5"/>
+    <text x="20" y="32" font-family="'Outfit', sans-serif" font-size="15" font-weight="700" fill="#ffffff">Form in Digital Interfaces</text>
+    <text x="20" y="50" font-family="'Inter', sans-serif" font-size="11" fill="#94a3b8">Simulated elevation, z-index &amp; spatial cards</text>
+
+    <!-- 2D Shape vs 3D Form Card Comparison -->
+    <!-- 2D Flat Card -->
+    <g transform="translate(20, 70)">
+      <rect width="280" height="95" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <text x="15" y="24" font-family="'Outfit', sans-serif" font-size="12" font-weight="700" fill="#94a3b8">FLAT 2D SHAPE (Zero Depth)</text>
+      <text x="15" y="44" font-family="'Inter', sans-serif" font-size="10" fill="#64748b">No light source, no shadows, no elevation cue.</text>
+      <!-- Flat button -->
+      <rect x="15" y="55" width="100" height="28" rx="4" fill="#3b82f6"/>
+      <text x="65" y="73" text-anchor="middle" font-family="'Inter', sans-serif" font-size="10" font-weight="600" fill="#ffffff">Flat Button</text>
+      <text x="130" y="73" font-family="'Inter', sans-serif" font-size="10" fill="#94a3b8">Felt "flat &amp; unpressable"</text>
+    </g>
+
+    <!-- 3D Form Card with Elevation & Lighting -->
+    <g transform="translate(20, 185)">
+      <!-- Simulated drop shadow creating altitude -->
+      <rect x="0" y="10" width="280" height="130" rx="12" fill="#000000" fill-opacity="0.6" filter="url(#shadow4)"/>
+      <rect width="280" height="130" rx="12" fill="url(#card3D)" stroke="#38bdf8" stroke-width="1.5"/>
+      
+      <!-- Top edge specular highlight -->
+      <line x1="12" y1="1" x2="268" y2="1" stroke="#ffffff" stroke-width="1.5" stroke-opacity="0.8"/>
+      
+      <text x="18" y="26" font-family="'Outfit', sans-serif" font-size="12" font-weight="700" fill="#38bdf8">SIMULATED 3D FORM (Elevation + Blur)</text>
+      <text x="18" y="44" font-family="'Inter', sans-serif" font-size="10" fill="#cbd5e1">Ambient occlusion, rim lighting, tactile presence.</text>
+
+      <!-- 3D Button with inset light and bevel -->
+      <g transform="translate(18, 60)">
+        <rect width="110" height="34" rx="6" fill="#0284c7" stroke="#38bdf8" stroke-width="1.5" filter="url(#shadow4)"/>
+        <line x1="4" y1="2" x2="106" y2="2" stroke="#bae6fd" stroke-width="1"/>
+        <text x="55" y="22" text-anchor="middle" font-family="'Inter', sans-serif" font-size="11" font-weight="700" fill="#ffffff">Tactile Form</text>
+      </g>
+      <text x="140" y="80" font-family="'Inter', sans-serif" font-size="10" fill="#38bdf8">Feels "lifted off glass"</text>
+      <text x="18" y="115" font-family="'Inter', sans-serif" font-size="9" fill="#94a3b8">Used in iOS, macOS, VisionOS, and Unreal Engine UI.</text>
+    </g>
+
+    <!-- Form Summary Box -->
+    <g transform="translate(20, 345)">
+      <rect width="280" height="75" rx="8" fill="#1e293b" fill-opacity="0.8" stroke="#475569" stroke-width="1"/>
+      <text x="14" y="24" font-family="'Outfit', sans-serif" font-size="11" font-weight="700" fill="#c084fc">KEY FORM FORMULA:</text>
+      <text x="14" y="42" font-family="'Inter', sans-serif" font-size="10" fill="#ffffff">2D Shape + Directional Light + Shading</text>
+      <text x="14" y="58" font-family="'Inter', sans-serif" font-size="10" font-weight="700" fill="#38bdf8">= 3D Tangible Form</text>
+    </g>
+  </g>
+</svg>

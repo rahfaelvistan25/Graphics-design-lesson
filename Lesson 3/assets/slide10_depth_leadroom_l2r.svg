@@ -1,0 +1,140 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 550" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bgGrad10" cx="50%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0b1120"/>
+    </radialGradient>
+    <filter id="shadow10" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="550" rx="16" fill="url(#bgGrad10)"/>
+
+  <!-- Module Header -->
+  <g transform="translate(40, 30)">
+    <rect width="280" height="32" rx="16" fill="#38bdf8" fill-opacity="0.15" stroke="#38bdf8" stroke-width="1.2"/>
+    <text x="16" y="21" font-family="'Outfit', sans-serif" font-size="12" font-weight="700" fill="#38bdf8" letter-spacing="1">TECHNIQUES &#183; 4.7, 4.8 &amp; 4.9</text>
+    <text x="310" y="22" font-family="'Inter', sans-serif" font-size="14" fill="#94a3b8">Depth Planes, Lead Room &amp; Left-to-Right Flow</text>
+  </g>
+
+  <!-- 3 Detailed Column Panels for 4.7, 4.8, 4.9 -->
+
+  <!-- Panel 1: 4.7 FOREGROUND, MIDDLE GROUND, BACKGROUND -->
+  <g transform="translate(40, 85)" filter="url(#shadow10)">
+    <rect width="225" height="340" rx="12" fill="#0f172a" stroke="#38bdf8" stroke-width="1.5"/>
+    <rect x="0" y="0" width="225" height="42" rx="12" fill="#0284c7" fill-opacity="0.2"/>
+    <text x="16" y="27" font-family="'Outfit', sans-serif" font-size="12" font-weight="800" fill="#38bdf8">4.7 THE 3 DEPTH PLANES</text>
+
+    <!-- Visual: 3 Overlapping Dimensional Cutaways -->
+    <g transform="translate(15, 55)">
+      <rect width="195" height="150" rx="8" fill="#0c1322"/>
+      
+      <!-- Plane 3: Background (Faint Moon + Mist Mountain) -->
+      <circle cx="150" cy="40" r="18" fill="#475569" opacity="0.4"/>
+      <path d="M 0 75 Q 80 40 195 65 L 195 150 L 0 150 Z" fill="#1e293b"/>
+      <text x="12" y="32" font-family="'Outfit', sans-serif" font-size="9" font-weight="700" fill="#64748b">3. BACKGROUND</text>
+
+      <!-- Plane 2: Middle Ground (The Story / Main Character) -->
+      <path d="M 0 100 Q 100 80 195 105 L 195 150 L 0 150 Z" fill="#162238"/>
+      <!-- Subject in Middle Ground -->
+      <circle cx="95" cy="85" r="9" fill="#fbbf24"/>
+      <polygon points="95,94 102,112 88,112" fill="#fbbf24"/>
+      <text x="75" y="70" font-family="'Outfit', sans-serif" font-size="9" font-weight="700" fill="#fbbf24">2. MIDDLE (HERO)</text>
+
+      <!-- Plane 1: Foreground (Dark framing rock & foliage) -->
+      <path d="M 0 115 Q 60 120 120 150 L 0 150 Z" fill="#090d16" stroke="#38bdf8" stroke-width="1"/>
+      <text x="12" y="142" font-family="'Outfit', sans-serif" font-size="9" font-weight="700" fill="#38bdf8">1. FOREGROUND</text>
+    </g>
+
+    <g transform="translate(15, 220)">
+      <text x="0" y="16" font-family="'Outfit', sans-serif" font-size="11" font-weight="700" fill="#f8fafc">Why 3 Planes Matter:</text>
+      <text x="0" y="34" font-family="'Inter', sans-serif" font-size="10" fill="#94a3b8">&#8226; Breaks 2D screen into an immersive 3D world</text>
+      <text x="0" y="58" font-family="'Inter', sans-serif" font-size="10" fill="#94a3b8">&#8226; Foreground anchors viewer; Middle houses the hero</text>
+      <text x="0" y="82" font-family="'Inter', sans-serif" font-size="10" fill="#94a3b8">&#8226; Background establishes context, atmosphere &amp; scale</text>
+    </g>
+  </g>
+
+  <!-- Panel 2: 4.8 LEAD ROOM (LOOK ROOM / NOSE ROOM) -->
+  <g transform="translate(285, 85)" filter="url(#shadow10)">
+    <rect width="225" height="340" rx="12" fill="#0f172a" stroke="#fbbf24" stroke-width="1.5"/>
+    <rect x="0" y="0" width="225" height="42" rx="12" fill="#d97706" fill-opacity="0.2"/>
+    <text x="16" y="27" font-family="'Outfit', sans-serif" font-size="12" font-weight="800" fill="#fbbf24">4.8 LEAD ROOM (LOOK ROOM)</text>
+
+    <!-- Visual: Runner/Gaze facing toward open negative space vs edge collision -->
+    <g transform="translate(15, 55)">
+      <rect width="195" height="150" rx="8" fill="#1e293b"/>
+
+      <!-- Subject placed on Left, Facing Right -->
+      <g transform="translate(45, 75)">
+        <!-- Head looking right -->
+        <circle cx="0" cy="0" r="14" fill="#fbbf24"/>
+        <!-- Eye direction vector -->
+        <polygon points="12,-2 22,0 12,2" fill="#0f172a"/>
+        <!-- Torso & forward momentum lean -->
+        <line x1="0" y1="14" x2="8" y2="38" stroke="#fbbf24" stroke-width="3"/>
+        <line x1="8" y1="38" x2="22" y2="52" stroke="#fbbf24" stroke-width="2.5"/>
+      </g>
+
+      <!-- Generous Lead Room with Directional Arrow -->
+      <path d="M 68 75 L 175 75" stroke="#38bdf8" stroke-width="2" stroke-dasharray="4 3"/>
+      <polygon points="175,70 185,75 175,80" fill="#38bdf8"/>
+
+      <text x="75" y="65" font-family="'Outfit', sans-serif" font-size="10" font-weight="700" fill="#38bdf8">OPEN LEAD ROOM</text>
+      <text x="80" y="98" font-family="'Inter', sans-serif" font-size="8.5" fill="#94a3b8">Room for gaze &amp; motion</text>
+
+      <!-- Boundary Wall Note -->
+      <line x1="190" y1="20" x2="190" y2="130" stroke="#f43f5e" stroke-width="1.5"/>
+      <text x="10" y="25" font-family="'Inter', sans-serif" font-size="9" fill="#10b981">&#10003; Comfortable Gaze Path</text>
+    </g>
+
+    <g transform="translate(15, 220)">
+      <text x="0" y="16" font-family="'Outfit', sans-serif" font-size="11" font-weight="700" fill="#f8fafc">Psychological Comfort:</text>
+      <text x="0" y="34" font-family="'Inter', sans-serif" font-size="10" fill="#94a3b8">&#8226; Moving objects need open buffer space ahead of them</text>
+      <text x="0" y="58" font-family="'Inter', sans-serif" font-size="10" fill="#94a3b8">&#8226; If subject faces the immediate edge, it triggers claustrophobia</text>
+      <text x="0" y="82" font-family="'Inter', sans-serif" font-size="10" fill="#94a3b8">&#8226; Essential in cinematic framing, portraits &amp; UI heroes</text>
+    </g>
+  </g>
+
+  <!-- Panel 3: 4.9 LEFT TO RIGHT DIRECTION -->
+  <g transform="translate(530, 85)" filter="url(#shadow10)">
+    <rect width="230" height="340" rx="12" fill="#0f172a" stroke="#c084fc" stroke-width="1.5"/>
+    <rect x="0" y="0" width="230" height="42" rx="12" fill="#9333ea" fill-opacity="0.2"/>
+    <text x="16" y="27" font-family="'Outfit', sans-serif" font-size="12" font-weight="800" fill="#c084fc">4.9 LEFT TO RIGHT FLOW</text>
+
+    <!-- Visual: Motion vector moving from Left (Past) to Right (Future/Victory) -->
+    <g transform="translate(15, 55)">
+      <rect width="200" height="150" rx="8" fill="#1e293b"/>
+
+      <!-- Dynamic Rising Path from Left to Right -->
+      <path d="M 20 120 C 70 120, 110 50, 175 40" stroke="#c084fc" stroke-width="3" fill="none"/>
+      
+      <!-- Left side marker (Origin / Past) -->
+      <circle cx="25" cy="120" r="8" fill="#64748b"/>
+      <text x="10" y="142" font-family="'Inter', sans-serif" font-size="9" fill="#94a3b8">Origin / Past</text>
+
+      <!-- Right side marker (Destination / Future / Victory) -->
+      <circle cx="175" cy="40" r="10" fill="#34d399"/>
+      <polygon points="175,34 182,46 168,46" fill="#0f172a"/>
+      <text x="120" y="25" font-family="'Outfit', sans-serif" font-size="9" font-weight="800" fill="#34d399">FUTURE / GOAL</text>
+
+      <!-- Motion Arrows along path -->
+      <text x="65" y="80" font-family="'Outfit', sans-serif" font-size="11" font-weight="700" fill="#c084fc">&#8594; Natural Momentum</text>
+    </g>
+
+    <g transform="translate(15, 220)">
+      <text x="0" y="16" font-family="'Outfit', sans-serif" font-size="11" font-weight="700" fill="#f8fafc">The Cultural Reading Vector:</text>
+      <text x="0" y="34" font-family="'Inter', sans-serif" font-size="10" fill="#94a3b8">&#8226; Western eyes naturally enter top-left and flow right</text>
+      <text x="0" y="58" font-family="'Inter', sans-serif" font-size="10" fill="#94a3b8">&#8226; Moving Left-to-Right = Forward progress &amp; victory</text>
+      <text x="0" y="82" font-family="'Inter', sans-serif" font-size="10" fill="#94a3b8">&#8226; Moving Right-to-Left = Returning home, struggle, or retreat</text>
+    </g>
+  </g>
+
+  <!-- Bottom Synthesis Banner -->
+  <g transform="translate(40, 445)">
+    <rect width="720" height="70" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <text x="24" y="28" font-family="'Outfit', sans-serif" font-size="13" font-weight="700" fill="#38bdf8">NARRATIVE MOMENTUM:</text>
+    <text x="24" y="50" font-family="'Inter', sans-serif" font-size="12" fill="#94a3b8">Craft depth with 3 planes, grant your hero open lead room to breathe, and harness the left-to-right current of human cognition.</text>
+  </g>
+</svg>
+

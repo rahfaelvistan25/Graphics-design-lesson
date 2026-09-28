@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg9" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b101d"/>
+      <stop offset="50%" stop-color="#101828"/>
+      <stop offset="100%" stop-color="#070a12"/>
+    </linearGradient>
+
+    <!-- Glowing Vector Curve Gradient -->
+    <linearGradient id="curveGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ec4899"/>
+      <stop offset="35%" stop-color="#8b5cf6"/>
+      <stop offset="70%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+
+    <!-- Hero Image Artwork Gradient -->
+    <linearGradient id="heroArtworkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e3a8a"/>
+      <stop offset="50%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+
+    <!-- Shadow & Glow Filters -->
+    <filter id="shadow9" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000" flood-opacity="0.6"/>
+    </filter>
+    
+    <filter id="glowPath9" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Arrowhead Marker -->
+    <marker id="neonArrow" markerWidth="14" markerHeight="12" refX="10" refY="6" orient="auto">
+      <polygon points="0 0, 14 6, 0 12, 3 6" fill="#10b981"/>
+    </marker>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1200" height="675" fill="url(#bg9)"/>
+
+  <!-- Main Showcase Container (Simulating a Modern Editorial / Web Layout) -->
+  <g transform="translate(60, 45)" filter="url(#shadow9)">
+    <rect width="1080" height="585" rx="20" fill="#111827" stroke="#25354e" stroke-width="2"/>
+
+    <!-- Subtle Layout Grid Lines -->
+    <line x1="80" y1="0" x2="80" y2="585" stroke="#1f293d" stroke-width="1"/>
+    <line x1="1000" y1="0" x2="1000" y2="585" stroke="#1f293d" stroke-width="1"/>
+    <line x1="0" y1="180" x2="1080" y2="180" stroke="#1f293d" stroke-width="1" stroke-dasharray="6 6"/>
+
+    <!-- STEP 1: Dominant Headline (The Entry Point) -->
+    <g transform="translate(80, 55)">
+      <!-- Entry Point Marker -->
+      <g transform="translate(0, 0)">
+        <rect width="170" height="28" rx="14" fill="#ec4899" fill-opacity="0.15" stroke="#ec4899" stroke-width="1.2"/>
+        <circle cx="16" cy="14" r="5" fill="#ec4899"/>
+        <text x="30" y="19" fill="#f472b6" font-family="'Inter', sans-serif" font-size="12" font-weight="700" letter-spacing="1">1. ENTRY POINT</text>
+      </g>
+      
+      <!-- Big Headline -->
+      <text x="0" y="70" fill="#ffffff" font-family="'Outfit', 'Inter', sans-serif" font-size="44" font-weight="900" letter-spacing="-0.02em">THE JOURNEY OF DISCOVERY</text>
+      <text x="0" y="100" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="16">High scale and bold contrast immediately anchor the viewer&apos;s initial gaze.</text>
+    </g>
+
+    <!-- STEP 2: Secondary Content Card along the path -->
+    <g transform="translate(640, 160)" filter="url(#shadow9)">
+      <rect width="360" height="110" rx="14" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+      <rect x="20" y="18" width="130" height="22" rx="6" fill="#8b5cf6" fill-opacity="0.2"/>
+      <text x="28" y="34" fill="#c084fc" font-family="'Inter', sans-serif" font-size="11" font-weight="700">2. NARRATIVE BRIDGE</text>
+      <text x="20" y="66" fill="#f1f5f9" font-family="'Inter', sans-serif" font-size="15" font-weight="600">The Eye Follows the Dynamic Curve</text>
+      <text x="20" y="88" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="13">Leading lines sweep the gaze smoothly past key facts.</text>
+    </g>
+
+    <!-- STEP 3: Main Visual Image Destination (Hero Showcase) -->
+    <g transform="translate(240, 310)" filter="url(#shadow9)">
+      <!-- Outer Card Frame -->
+      <rect width="580" height="235" rx="16" fill="url(#heroArtworkGrad)" stroke="#60a5fa" stroke-width="2"/>
+
+      <!-- Destination Target Badge -->
+      <g transform="translate(25, 20)">
+        <rect width="180" height="26" rx="6" fill="#000000" fill-opacity="0.35"/>
+        <circle cx="14" cy="13" r="4" fill="#34d399"/>
+        <text x="26" y="17" fill="#ffffff" font-family="'Inter', sans-serif" font-size="11" font-weight="700" letter-spacing="0.5">3. FINAL DESTINATION</text>
+      </g>
+
+      <!-- Main Image Visual Content: Glowing Sci-Fi Portal / Sun Artwork -->
+      <g transform="translate(390, 118)">
+        <circle cx="0" cy="0" r="75" fill="#ffffff" fill-opacity="0.1"/>
+        <circle cx="0" cy="0" r="50" fill="#38bdf8" fill-opacity="0.25"/>
+        <circle cx="0" cy="0" r="28" fill="#ffffff"/>
+        <!-- Mountain Silhouette inside portal -->
+        <polygon points="-50,55 0,-10 35,55" fill="#0c1b33"/>
+        <polygon points="10,55 45,15 70,55" fill="#0f294a"/>
+      </g>
+
+      <text x="35" y="95" fill="#ffffff" font-family="'Outfit', sans-serif" font-size="28" font-weight="900">MAIN HERO IMAGE</text>
+      <text x="35" y="125" fill="#e0f2fe" font-family="'Inter', sans-serif" font-size="15">Where the visual vector successfully locks the viewer's attention.</text>
+
+      <!-- Call to Action Button inside Destination -->
+      <g transform="translate(35, 155)">
+        <rect width="165" height="42" rx="8" fill="#ffffff"/>
+        <text x="82" y="26" fill="#1e3a8a" font-family="'Inter', sans-serif" font-size="13" font-weight="800" text-anchor="middle">EXPLORE NOW →</text>
+      </g>
+    </g>
+
+    <!-- THE GLOWING DYNAMIC CURVED LINE / ARROW -->
+    <!-- Starts from the Headline (Step 1), arcs right past Step 2, and swoops down directly to Step 3 -->
+    <path d="M 460 125 
+             C 650 110, 850 120, 840 240
+             C 830 350, 720 380, 560 365" 
+          fill="none" 
+          stroke="url(#curveGrad)" 
+          stroke-width="7" 
+          stroke-linecap="round" 
+          marker-end="url(#neonArrow)" 
+          filter="url(#glowPath9)"/>
+
+    <!-- Motion indicator pulse dots along the curve -->
+    <circle cx="530" cy="120" r="5" fill="#ec4899"/>
+    <circle cx="630" cy="122" r="5.5" fill="#c084fc"/>
+    <circle cx="740" cy="140" r="6" fill="#8b5cf6"/>
+    <circle cx="825" cy="190" r="6.5" fill="#6366f1"/>
+    <circle cx="830" cy="270" r="7" fill="#06b6d4"/>
+    <circle cx="750" cy="340" r="7" fill="#10b981"/>
+
+    <!-- Path Label Pill -->
+    <g transform="translate(860, 260)">
+      <rect width="165" height="40" rx="8" fill="#0f172a" stroke="#22d3ee" stroke-width="1.5"/>
+      <text x="82" y="24" fill="#22d3ee" font-family="'Inter', sans-serif" font-size="11" font-weight="800" text-anchor="middle">INTENTIONAL EYE PATH</text>
+    </g>
+  </g>
+</svg>

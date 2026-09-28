@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rules of Composition — Interactive Masterclass</title>
+  <meta name="description" content="An interactive visual masterclass exploring the Rules of Composition: Focal Points, Scale, Contrast, Leading Lines, Rule of Thirds, Golden Ratio, Framing, Depth Planes, and Professional Composition Tips.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="lesson-selector.css">
+</head>
+<body class="theme-dark" data-current-lesson="3" data-current-type="deck" data-root-path="../">
+
+  <!-- Main Presentation Wrapper -->
+  <div class="deck-container" id="deckApp">
+
+    <!-- Top Status / Navigation Bar -->
+    <header class="deck-header">
+      <div class="header-left">
+        <div class="logo-badge">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="3" width="18" height="18" rx="2"/>
+            <line x1="3" y1="9" x2="21" y2="9"/>
+            <line x1="9" y1="21" x2="9" y2="9"/>
+          </svg>
+          <span class="logo-text">RULES OF COMPOSITION</span>
+        </div>
+        <div class="divider-v"></div>
+        <button class="lesson-picker-btn lesson-3" id="lessonPickerBtn" aria-label="Select Lesson" title="Switch Lesson (Press L)">
+          <span class="lesson-picker-badge">L3</span>
+          <span class="lesson-picker-name">Lesson 3: Composition</span>
+          <svg class="lesson-picker-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </button>
+        <span class="slide-indicator" id="slideIndicator">01 / 12</span>
+      </div>
+
+      <div class="header-center">
+        <h2 class="current-slide-heading" id="topSlideTitle">1. Introduction: The Symphony of Visual Arrangement</h2>
+      </div>
+
+      <div class="header-right">
+        <a href="quiz/index.html" class="nav-btn-icon quiz-link" title="Open Interactive Knowledge Quiz" id="headerQuizBtn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+          <span class="btn-label">Quiz Challenge</span>
+        </a>
+
+        <button class="nav-btn-icon" id="drawerToggleBtn" title="Toggle Slide Drawer (T)" aria-label="Toggle Slide Drawer">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="3" y="3" width="7" height="7"/>
+            <rect x="14" y="3" width="7" height="7"/>
+            <rect x="14" y="14" width="7" height="7"/>
+            <rect x="3" y="14" width="7" height="7"/>
+          </svg>
+          <span class="btn-label">All Slides</span>
+        </button>
+
+        <button class="nav-btn-icon" id="fullscreenBtn" title="Toggle Fullscreen (F)" aria-label="Toggle Fullscreen">
+          <svg id="fsIconExpand" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/>
+          </svg>
+          <svg id="fsIconCompress" class="hidden" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 14h6m0 0v6m0-6L3 21m17-7h-6m0 0v6m0-6l7 7M4 10h6m0 0V4m0 6L3 3m17 7h-6m0 0V4m0 6l7-7"/>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- Top Interactive Progress Bar -->
+    <div class="progress-track">
+      <div class="progress-bar" id="progressBar" style="width: 8.33%;"></div>
+    </div>
+
+    <!-- Main Slide Stage Area -->
+    <main class="slide-viewport">
+
+      <!-- ===================================================================
+           SLIDE 1: 1 INTRODUCTION
+           =================================================================== -->
+      <section class="slide active" data-index="1" data-title="1. Introduction: The Symphony of Visual Arrangement">
+        <div class="slide-grid">
+          <div class="slide-content-pane">
+            <div class="module-tag">MODULE 01 / 12 &middot; 1 INTRODUCTION</div>
+            <h1 class="slide-title">The Art of <span class="gradient-text">Composition</span></h1>
+            
+            <div class="info-card card-concept">
+              <div class="card-icon-title">
+                <span class="badge-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+                </span>
+                <h3>The Visual Conductor</h3>
+              </div>
+              <p>In our previous lesson, we learned the <strong>Elements of Design</strong>: the raw instruments (lines, shapes, colors, textures). But how do we conduct them so they play a breathtaking symphony instead of cacophony? That invisible conductor is <strong>Composition</strong>.</p>
+            </div>
+
+            <div class="info-card card-purpose">
+              <div class="card-icon-title">
+                <span class="badge-icon accent-purple">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+                </span>
+                <h3>The 3 Pillars of Composition</h3>
+              </div>
+              <ul>
+                <li><strong>Intentionality:</strong> Nothing in the frame exists by accident or lazy default.</li>
+                <li><strong>Gaze Navigation:</strong> Guiding where the viewer enters, pauses, and exits.</li>
+                <li><strong>Emotional Harmony:</strong> Balancing visual tension, rhythm, and stability.</li>
+              </ul>
+            </div>
+
+            <div class="live-widget">
+              <div class="widget-title-row">
+                <span class="widget-label">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="9" y1="3" x2="9" y2="21"/><line x1="15" y1="3" x2="15" y2="21"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="3" y1="15" x2="21" y2="15"/></svg>
+                  Interactive Guide Overlay
+                </span>
+                <button class="widget-btn active" id="widgetThirdsToggle">Grid Guides: ON</button>
+              </div>
+              <p style="font-size: 0.82rem; color: var(--text-muted); margin: 0;">Toggle compositional guides over the camera viewfinder to visualize the invisible power anchors.</p>
+            </div>
+
+            <div class="interactive-checkpoint">
+              <div class="checkpoint-header">
+                <span class="sparkle-icon">&#10024;</span>
+                <h4>Classroom Checkpoint: The 3-Second Gaze Test</h4>
+              </div>
+              <p class="checkpoint-prompt">When someone looks at a movie poster, advertisement, or UI screen for 3 seconds, what should happen?</p>
+              <button class="reveal-btn" data-target="reveal1">Reveal Design Insight</button>
+              <div class="reveal-content hidden" id="reveal1">
+                <strong>Key Insight:</strong> In the first 3 seconds, the viewer should effortlessly absorb: 1) What is this? 2) Why should I care? and 3) Where does my eye look next? If the eye wanders in confusion, the composition has failed.
+              </div>
+            </div>
+          </div>
+
+          <div class="slide-media-pane">
+            <div class="media-frame" data-zoom="assets/slide1_intro.svg">
+              <img src="assets/slide1_intro.svg" alt="Composition matrix illustrating the director's baton, viewfinder frame, and power anchors" class="slide-img">
+              <div class="image-overlay-hint">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <span>Click image to inspect full screen</span>
+              </div>
+            </div>
+            <figcaption class="media-caption">
+              <strong>Visual Study:</strong> The Composition Viewfinder: Leading entry trajectories, power intersections, and the foundational pillars of visual attention.
+            </figcaption>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           SLIDE 2: 2 WHAT IS COMPOSITION?
+           =================================================================== -->
+      <section class="slide" data-index="2" data-title="2. What Is Composition? (Subject vs. Arrangement)">
+        <div class="slide-grid">
+          <div class="slide-content-pane">
+            <div class="module-tag">MODULE 02 / 12 &middot; 2 WHAT IS COMPOSITION?</div>
+            <h1 class="slide-title">The Frame Is a <span class="gradient-text">Stage</span></h1>
+            
+            <div class="info-card card-concept">
+              <div class="card-icon-title">
+                <span class="badge-icon accent-green">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="3"/></svg>
+                </span>
+                <h3>Formal Definition</h3>
+              </div>
+              <p><strong>Composition</strong> is the conscious orchestration and placement of visual elements within a frame or canvas boundary. It is the language that transforms chaotic optical information into intentional meaning.</p>
+            </div>
+
+            <div class="info-card card-comparison">
+              <div class="card-icon-title">
+                <span class="badge-icon accent-rose">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/></svg>
+                </span>
+                <h3>The Subject vs. Composition Paradox</h3>
+              </div>
+              <p>Amateurs believe the subject is all that matters. Masters know that:
+                <br>&bull; A breathtaking subject (a mountain sunset) can look completely mediocre if shot with lazy dead-center bullseye composition and cut-off edges.
+                <br>&bull; An ordinary subject (a coffee cup, a single chair) can look iconic and sublime if orchestrated with master lighting, leading vectors, and deliberate negative space.
+              </p>
+            </div>
+
+            <div class="interactive-checkpoint">
+              <div class="checkpoint-header">
+                <span class="sparkle-icon">&#10024;</span>
+                <h4>The 4 Gravitational Forces of the Frame</h4>
+              </div>
+              <p class="checkpoint-prompt">Why do objects placed right near the canvas border feel uncomfortable?</p>
+              <button class="reveal-btn" data-target="reveal2">Reveal Design Insight</button>
+              <div class="reveal-content hidden" id="reveal2">
+                <strong>Edge Tension &amp; Visual Gravity:</strong> Frame borders exert an invisible magnetic pull. When an element touches the border without crossing it (an edge tangent), the brain gets trapped in friction. Either cross the border boldly, or keep a comfortable breathing buffer!
+              </div>
+            </div>
+          </div>
+
+          <div class="slide-media-pane">
+            <div class="media-frame" data-zoom="assets/slide2_what_is_composition.svg">
+              <img src="assets/slide2_what_is_composition.svg" alt="Side-by-side comparison of unconsidered snapshot vs orchestrated composition" class="slide-img">
+              <div class="image-overlay-hint">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <span>Click image to inspect full screen</span>
+              </div>
+            </div>
+            <figcaption class="media-caption">
+              <strong>Case Study:</strong> Left (Static dead-center bullseye, bisecting horizon, edge friction) vs. Right (Dynamic power point, leading S-curve, generous negative space).
+            </figcaption>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           SLIDE 3: 3.1 FOCAL POINT & 3.2 SCALE
+           =================================================================== -->
+      <section class="slide" data-index="3" data-title="3. Key Principles &middot; 3.1 Focal Point &amp; 3.2 Scale">
+        <div class="slide-grid">
+          <div class="slide-content-pane">
+            <div class="module-tag">MODULE 03 / 12 &middot; PRINCIPLES 3.1 &amp; 3.2</div>
+            <h1 class="slide-title">Focal Point &amp; <span class="gradient-gold">Scale</span></h1>
+            
+            <div class="info-card card-concept">
+              <div class="card-icon-title">
+                <span class="badge-icon accent-amber">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+                </span>
+                <h3>3.1 Focal Point (The Eye's Anchor)</h3>
+              </div>
+              <p>The primary area of interest where the viewer's gaze lands first. Established through <strong>isolation</strong> (putting it apart), <strong>contrast</strong> (making it brighter/warmer), or <strong>convergence</strong> (lines pointing directly to it).</p>
+            </div>
+
+            <div class="info-card card-scale">
+              <div class="card-icon-title">
+                <span class="badge-icon accent-purple">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+                </span>
+                <h3>3.2 Scale (Narrative Proportion)</h3>
+              </div>
+              <p>Scale is never absolute; it is relative. Placing a tiny human silhouette next to a massive monolith communicates grandeur, mystery, and awe. Placing two objects of identical size creates competition and neutralizes visual drama.</p>
+            </div>
+
+            <div class="live-widget">
+              <div class="widget-title-row">
+                <span class="widget-label">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="4 14 10 14 10 20"/><polyline points="20 10 14 10 14 4"/></svg>
+                  Interactive Scale Delta
+                </span>
+                <span class="widget-val" id="scaleVal">10x</span>
+              </div>
+              <div class="widget-slider-wrap">
+                <span style="font-size: 0.75rem; color: var(--text-muted);">1x (Flat)</span>
+                <input type="range" class="widget-slider" id="scaleSlider" min="1" max="20" value="10">
+                <span style="font-size: 0.75rem; color: var(--text-muted);">20x (Monumental)</span>
+              </div>
+            </div>
+
+            <div class="interactive-checkpoint">
+              <div class="checkpoint-header">
+                <span class="sparkle-icon">&#10024;</span>
+                <h4>The Law of the Solo King</h4>
+              </div>
+              <p class="checkpoint-prompt">What occurs when a designer creates two equally massive, equally bright focal points on opposite sides of the canvas?</p>
+              <button class="reveal-btn" data-target="reveal3">Reveal Design Insight</button>
+              <div class="reveal-content hidden" id="reveal3">
+                <strong>Visual Ping-Pong:</strong> The viewer's eyes dart uncomfortably back and forth without resting, causing cognitive fatigue. A composition can have secondary supporting anchors, but only ONE supreme focal monarch.
+              </div>
+            </div>
+          </div>
+
+          <div class="slide-media-pane">
+            <div class="media-frame" data-zoom="assets/slide3_focal_scale.svg">
+              <img src="assets/slide3_focal_scale.svg" alt="Diagram showing focal point spotlight isolation and scale hierarchy" class="slide-img">
+              <div class="image-overlay-hint">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <span>Click image to inspect full screen</span>
+              </div>
+            </div>
+            <figcaption class="media-caption">
+              <strong>Visual Matrix:</strong> 3.1 The Spotlight Focal Point (Isolation &amp; Convergence) &middot; 3.2 Scale Differential (The Colossus vs. The Wanderer).
+            </figcaption>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           SLIDE 4: 3.3 CONTRAST & 3.4 LEADING LINES
+           =================================================================== -->
+      <section class="slide" data-index="4" data-title="3. Key Principles &middot; 3.3 Contrast &amp; 3.4 Leading Lines">
+        <div class="slide-grid">
+          <div class="slide-content-pane">
+            <div class="module-tag">MODULE 03 / 12 &middot; PRINCIPLES 3.3 &amp; 3.4</div>
+            <h1 class="slide-title">Contrast &amp; <span class="gradient-text">Leading Lines</span></h1>
+            
+            <div class="info-card card-concept">
+              <div class="card-icon-title">
+                <span class="badge-icon accent-amber">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a10 10 0 0 1 0 20z"/></svg>
+                </span>
+                <h3>3.3 Contrast (Tension &amp; Pop)</h3>
+              </div>
+              <p>Without contrast, elements dissolve into wallpaper. Master composers use 4 distinct contrast levers:
+                <br>&bull; <strong>Value Contrast:</strong> Radiant luminance against deep shadow.
+                <br>&bull; <strong>Chromatic Contrast:</strong> Warm fiery orange against cool icy slate.
+                <br>&bull; <strong>Shape Contrast:</strong> Razor-sharp geometric edges against soft organic contours.
+                <br>&bull; <strong>Density Contrast:</strong> Dense detailed clutter vs. calm breathing negative space.
+              </p>
+            </div>
+
+            <div class="info-card card-lines">
+              <div class="card-icon-title">
+                <span class="badge-icon accent-green">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19L19 4"/><polyline points="10 4 19 4 19 13"/></svg>
+                </span>
+                <h3>3.4 Leading Lines (Gaze Superhighways)</h3>
+              </div>
+              <p>Lines naturally command human optical tracking. Converging perspective lines (roads, hallways, bridges) pull the eye straight toward the vanishing point, while Hogarth's <strong>S-Curve ("Line of Beauty")</strong> creates graceful, leisurely exploration.</p>
+            </div>
+
+            <div class="live-widget">
+              <div class="widget-title-row">
+                <span class="widget-label">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                  Live Gaze Pathway Tracker
+                </span>
+                <button class="widget-btn active" id="laserTracerBtn">Gaze Path: Active</button>
+              </div>
+              <p style="font-size: 0.82rem; color: var(--text-muted); margin: 0;">Notice how perspective road lines act as laser-guided funnels directly to the sunset horizon.</p>
+            </div>
+
+            <div class="interactive-checkpoint">
+              <div class="checkpoint-header">
+                <span class="sparkle-icon">&#10024;</span>
+                <h4>The Vanishing Point Payoff</h4>
+              </div>
+              <p class="checkpoint-prompt">What catastrophic mistake do beginner photographers make when using converging leading lines?</p>
+              <button class="reveal-btn" data-target="reveal4">Reveal Design Insight</button>
+              <div class="reveal-content hidden" id="reveal4">
+                <strong>Empty Destination:</strong> They build a dramatic, high-contrast perspective highway that leads... to absolutely nothing! If leading lines drive the viewer's eye somewhere, there MUST be a visual payoff (a subject, beacon, or focal point) at the destination.
+              </div>
+            </div>
+          </div>
+
+          <div class="slide-media-pane">
+            <div class="media-frame" data-zoom="assets/slide4_contrast_lines.svg">
+              <img src="assets/slide4_contrast_lines.svg" alt="Infographic illustrating contrast types and leading lines convergence" class="slide-img">
+              <div class="image-overlay-hint">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <span>Click image to inspect full screen</span>
+              </div>
+            </div>
+            <figcaption class="media-caption">
+              <strong>Visual Matrix:</strong> The 4 Quadrants of Contrast (Value, Color, Shape, Density) &amp; Converging Perspective Highway with Hogarth's S-Curve.
+            </figcaption>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           SLIDE 5: 3.5 HIERARCHY & 3.6 DISTANCE
+           =================================================================== -->
+      <section class="slide" data-index="5" data-title="3. Key Principles &middot; 3.5 Hierarchy &amp; 3.6 Distance">
+        <div class="slide-grid">
+          <div class="slide-content-pane">
+            <div class="module-tag">MODULE 03 / 12 &middot; PRINCIPLES 3.5 &amp; 3.6</div>
+            <h1 class="slide-title">Hierarchy &amp; <span class="gradient-text">Distance Depth</span></h1>
+            
+            <div class="info-card card-concept">
+              <div class="card-icon-title">
+                <span class="badge-icon accent-purple">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="12" x2="14" y2="12"/><line x1="4" y1="18" x2="8" y2="18"/></svg>
+                </span>
+                <h3>3.5 Visual Hierarchy (Reading Order)</h3>
+              </div>
+              <p>Hierarchy is the roadmap of visual importance:
+                <br>&bull; <strong>Level 1 (Primary):</strong> The Hero hook (headline, key character) that grabs the first 50ms read.
+                <br>&bull; <strong>Level 2 (Secondary):</strong> Subheadings, badges, and supporting contextual clues.
+                <br>&bull; <strong>Level 3 (Tertiary):</strong> Nuanced details, metadata, captions, and fine print.
+              </p>
+            </div>
+
+            <div class="info-card card-distance">
+              <div class="card-icon-title">
+                <span class="badge-icon accent-green">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"/></svg>
+                </span>
+                <h3>3.6 Distance (Atmospheric Perspective)</h3>
+              </div>
+              <p>How do we convey 10 miles of distance on flat 2D glass? Through <strong>Atmospheric Perspective</strong>: moisture and dust scatter light, causing distant objects to lose contrast, blur slightly, and shift toward cooler background hues.</p>
+            </div>
+
+            <div class="live-widget">
+              <div class="widget-title-row">
+                <span class="widget-label">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/></svg>
+                  Hierarchy Level Scanner
+                </span>
+                <div class="widget-controls">
+                  <button class="widget-btn hier-btn active" data-level="1">Level 1</button>
+                  <button class="widget-btn hier-btn" data-level="2">Level 2</button>
+                  <button class="widget-btn hier-btn" data-level="3">Level 3</button>
+                </div>
+              </div>
+              <p style="font-size: 0.82rem; color: var(--text-secondary); margin: 0;" id="hierNotice">
+                <strong>Level 1 (Hero Hook):</strong> Captures 100% of human attention in the first 50ms. High contrast, largest scale.
+              </p>
+            </div>
+
+            <div class="interactive-checkpoint">
+              <div class="checkpoint-header">
+                <span class="sparkle-icon">&#10024;</span>
+                <h4>The Z-Pattern Scan Law</h4>
+              </div>
+              <p class="checkpoint-prompt">How does Western cultural literacy shape the way viewers consume landing pages and posters?</p>
+              <button class="reveal-btn" data-target="reveal5">Reveal Design Insight</button>
+              <div class="reveal-content hidden" id="reveal5">
+                <strong>The Z-Pattern Path:</strong> Because Western text reads Left-to-Right and Top-to-Bottom, the gaze naturally starts Top-Left (Brand/Logo), scans across to Top-Right (Nav/Sign-In), cuts diagonally across the center (Hero Visual), and lands at Bottom-Right (Call-To-Action Button).
+              </div>
+            </div>
+          </div>
+
+          <div class="slide-media-pane">
+            <div class="media-frame" data-zoom="assets/slide5_hierarchy_distance.svg">
+              <img src="assets/slide5_hierarchy_distance.svg" alt="Hierarchy 3-tier model and atmospheric perspective visual study" class="slide-img">
+              <div class="image-overlay-hint">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <span>Click image to inspect full screen</span>
+              </div>
+            </div>
+            <figcaption class="media-caption">
+              <strong>Visual Matrix:</strong> 3.5 The 3-Tier Hierarchy &amp; Z-Scan Vector &middot; 3.6 Atmospheric Falloff (Sharp foreground vs. desaturated distant ridges).
+            </figcaption>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           SLIDE 6: 3.7 BALANCE, 3.8 SPACE & 3.9 REPETITION
+           =================================================================== -->
+      <section class="slide" data-index="6" data-title="3. Key Principles &middot; 3.7 Balance, 3.8 Space &amp; 3.9 Repetition">
+        <div class="slide-grid">
+          <div class="slide-content-pane">
+            <div class="module-tag">MODULE 03 / 12 &middot; PRINCIPLES 3.7, 3.8 &amp; 3.9</div>
+            <h1 class="slide-title">Balance, Space &amp; <span class="gradient-emerald">Rhythm</span></h1>
+            
+            <div class="info-card card-concept">
+              <div class="card-icon-title">
+                <span class="badge-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v18"/><path d="M4 12l8-9 8 9"/></svg>
+                </span>
+                <h3>3.7 Balance (Symmetry vs. Asymmetry)</h3>
+              </div>
+              <p>Visual weight operates like a physics lever: <strong>Weight = Mass &times; Distance from Center</strong>. Symmetrical balance feels calm, formal, and sacred; Asymmetrical balance balances 1 heavy center mass against 2 or 3 smaller energetic accents placed far out near the margins.</p>
+            </div>
+
+            <div class="info-card card-space">
+              <div class="card-icon-title">
+                <span class="badge-icon accent-green">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="12" cy="12" r="3"/></svg>
+                </span>
+                <h3>3.8 Active Space &amp; 3.9 Repetition</h3>
+              </div>
+              <p><strong>Space:</strong> White space is not dead void; it is the visual oxygen that gives luxury products their aura of prestige and prevents cognitive burnout.
+                <br><strong>Repetition:</strong> Establishing visual motifs creates unity and rhythm. Break the pattern deliberately (the anomaly rule), and you create an instant shock of attention.
+              </p>
+            </div>
+
+            <div class="live-widget">
+              <div class="widget-title-row">
+                <span class="widget-label">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                  Interactive Balance Fulcrum
+                </span>
+                <div class="widget-controls">
+                  <button class="widget-btn active" id="balAsymBtn">Asymmetric</button>
+                  <button class="widget-btn" id="balSymBtn">Symmetric</button>
+                </div>
+              </div>
+              <p style="font-size: 0.82rem; color: var(--text-secondary); margin: 0;" id="balDesc">
+                Asymmetrical: Dynamic equilibrium. 1 Heavy center mass balanced by 2 small vibrant outer masses.
+              </p>
+            </div>
+
+            <div class="interactive-checkpoint">
+              <div class="checkpoint-header">
+                <span class="sparkle-icon">&#10024;</span>
+                <h4>The Luxury White Space Rule</h4>
+              </div>
+              <p class="checkpoint-prompt">Why do discount supermarket flyers cram every square millimeter with text, while Rolex and Apple leave 70% of the canvas untouched?</p>
+              <button class="reveal-btn" data-target="reveal6">Reveal Design Insight</button>
+              <div class="reveal-content hidden" id="reveal6">
+                <strong>Space = Value &amp; Confidence:</strong> Budget flyers create urgency and cheapness through sensory overload. Luxury brands use vast macro negative space to declare: "Our product is so desirable, it requires no shouting. We have the confidence to give it room to breathe."
+              </div>
+            </div>
+          </div>
+
+          <div class="slide-media-pane">
+            <div class="media-frame" data-zoom="assets/slide6_balance_space_repetition.svg">
+              <img src="assets/slide6_balance_space_repetition.svg" alt="Balance seesaw, active negative space field, and rhythmic pattern anomaly" class="slide-img">
+              <div class="image-overlay-hint">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <span>Click image to inspect full screen</span>
+              </div>
+            </div>
+            <figcaption class="media-caption">
+              <strong>Visual Matrix:</strong> 3.7 Asymmetrical Lever Fulcrum &middot; 3.8 Active Negative Space Buffer &middot; 3.9 Pattern Repetition with the Broken Anomaly Pop.
+            </figcaption>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           SLIDE 7: 4.1 RULE OF THIRDS & 4.2 RULE OF ODDS
+           =================================================================== -->
+      <section class="slide" data-index="7" data-title="4. Techniques &middot; 4.1 Rule of Thirds &amp; 4.2 Rule of Odds">
+        <div class="slide-grid">
+          <div class="slide-content-pane">
+            <div class="module-tag">MODULE 04 / 12 &middot; TECHNIQUES 4.1 &amp; 4.2</div>
+            <h1 class="slide-title">Rule of Thirds &amp; <span class="gradient-gold">Rule of Odds</span></h1>
+            
+            <div class="info-card card-concept">
+              <div class="card-icon-title">
+                <span class="badge-icon accent-amber">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="9" y1="3" x2="9" y2="21"/><line x1="15" y1="3" x2="15" y2="21"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="3" y1="15" x2="21" y2="15"/></svg>
+                </span>
+                <h3>4.1 Rule of Thirds (The 3&times;3 Power Grid)</h3>
+              </div>
+              <p>Divide your canvas into nine equal rectangles with two horizontal and two vertical lines.
+                <br>&bull; The <strong>4 Power Intersections</strong> are where the human eye naturally gravitates first.
+                <br>&bull; Align horizons to either the <strong>lower third</strong> (to emphasize expansive sky) or <strong>upper third</strong> (to emphasize ground terrain). Avoid bisecting dead-center!
+              </p>
+            </div>
+
+            <div class="info-card card-odds">
+              <div class="card-icon-title">
+                <span class="badge-icon accent-green">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="6" cy="12" r="3"/><circle cx="12" cy="7" r="3"/><circle cx="18" cy="12" r="3"/></svg>
+                </span>
+                <h3>4.2 Rule of Odds (1, 3, 5, 7...)</h3>
+              </div>
+              <p>An even number of subjects (e.g. 2 trees, 2 faces) encourages the brain to pair them up into a duel, creating a static deadlock. An odd number (especially 3 or 5) provides a natural central anchor and forms dynamic triangular relationships that keep the eye circulating.</p>
+            </div>
+
+            <div class="live-widget">
+              <div class="widget-title-row">
+                <span class="widget-label">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                  Grouping Dynamic Simulator
+                </span>
+                <div class="widget-controls">
+                  <button class="widget-btn active" id="oddsBtn">Odd (3 Trio)</button>
+                  <button class="widget-btn" id="evensBtn">Even (2 Pair)</button>
+                </div>
+              </div>
+              <p style="font-size: 0.82rem; color: var(--text-secondary); margin: 0;" id="oddsDesc">
+                Rule of Odds (Trio): Natural center anchor. The brain loops gracefully around the triangle.
+              </p>
+            </div>
+
+            <div class="interactive-checkpoint">
+              <div class="checkpoint-header">
+                <span class="sparkle-icon">&#10024;</span>
+                <h4>Why We Avoid Dead Center</h4>
+              </div>
+              <p class="checkpoint-prompt">When is dead-center placement actually desirable?</p>
+              <button class="reveal-btn" data-target="reveal7">Reveal Design Insight</button>
+              <div class="reveal-content hidden" id="reveal7">
+                <strong>Formal Symmetry &amp; Direct Confrontation:</strong> Dead center works brilliantly when you intentionally want stillness, solemnity, or intense confrontation (e.g., Stanley Kubrick cinema shots, Wes Anderson symmetry, passport photos, or sacred religious icons). For drama and life, use thirds!
+              </div>
+            </div>
+          </div>
+
+          <div class="slide-media-pane">
+            <div class="media-frame" data-zoom="assets/slide7_thirds_odds.svg">
+              <img src="assets/slide7_thirds_odds.svg" alt="Rule of thirds 3x3 grid with power intersections and rule of odds comparison" class="slide-img">
+              <div class="image-overlay-hint">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <span>Click image to inspect full screen</span>
+              </div>
+            </div>
+            <figcaption class="media-caption">
+              <strong>Visual Matrix:</strong> 4.1 The 3&times;3 Thirds Grid &amp; Power Point Placements &middot; 4.2 The Rule of Odds (Stagnant pair of 2 vs. Dynamic triad of 3).
+            </figcaption>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           SLIDE 8: 4.3 GOLDEN RATIO & 4.4 GOLDEN TRIANGLE
+           =================================================================== -->
+      <section class="slide" data-index="8" data-title="4. Techniques &middot; 4.3 Golden Ratio &amp; 4.4 Golden Triangle">
+        <div class="slide-grid">
+          <div class="slide-content-pane">
+            <div class="module-tag">MODULE 04 / 12 &middot; TECHNIQUES 4.3 &amp; 4.4</div>
+            <h1 class="slide-title">Golden Ratio &amp; <span class="gradient-text">Golden Triangle</span></h1>
+            
+            <div class="info-card card-concept">
+              <div class="card-icon-title">
+                <span class="badge-icon accent-amber">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 0 1 10 10c0 5.52-4.48 10-10 10S2 17.52 2 12A10 10 0 0 1 12 2z"/></svg>
+                </span>
+                <h3>4.3 The Golden Ratio (&Phi; = 1:1.618)</h3>
+              </div>
+              <p>Known since antiquity as the Divine Proportion. Based on the Fibonacci sequence (1, 1, 2, 3, 5, 8, 13, 21...), it generates a logarithmic spiral found throughout sunflowers, hurricanes, and nautilus shells. The spiral pulls the eye organically inward toward the tightest focal vortex.</p>
+            </div>
+
+            <div class="info-card card-triangle">
+              <div class="card-icon-title">
+                <span class="badge-icon accent-purple">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="3 20 21 20 12 4 3 20"/></svg>
+                </span>
+                <h3>4.4 The Golden Triangle (Dynamic Diagonal Spine)</h3>
+              </div>
+              <p>A diagonal line slices from one corner to the opposite corner. Two perpendicular lines then shoot out from the remaining two corners to strike the main diagonal at 90&deg; right angles.
+                <br>&bull; Breaks the canvas into 3 dynamic right-angled triangles.
+                <br>&bull; The 90&deg; collision intersections form potent secondary focal anchors.
+                <br>&bull; Perfect for athletic action, movie posters, and high-energy motion.
+              </p>
+            </div>
+
+            <div class="interactive-checkpoint">
+              <div class="checkpoint-header">
+                <span class="sparkle-icon">&#10024;</span>
+                <h4>Rule of Thirds vs. Golden Ratio</h4>
+              </div>
+              <p class="checkpoint-prompt">How does the Golden Ratio grid differ mathematically from the Rule of Thirds?</p>
+              <button class="reveal-btn" data-target="reveal8">Reveal Design Insight</button>
+              <div class="reveal-content hidden" id="reveal8">
+                <strong>Thirds vs. Phi:</strong> The Rule of Thirds divides space evenly (1:1:1 or 33%-33%-33%). The Golden Ratio divides space as 1:0.618:1 (approx 38%-24%-38%). The Golden grid clusters its power lines slightly closer to the center, creating a tighter, more organic focal field!
+              </div>
+            </div>
+          </div>
+
+          <div class="slide-media-pane">
+            <div class="media-frame" data-zoom="assets/slide8_golden_ratio_triangle.svg">
+              <img src="assets/slide8_golden_ratio_triangle.svg" alt="Golden spiral Fibonacci ratio and golden triangle diagonal grid" class="slide-img">
+              <div class="image-overlay-hint">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <span>Click image to inspect full screen</span>
+              </div>
+            </div>
+            <figcaption class="media-caption">
+              <strong>Visual Matrix:</strong> 4.3 The Logarithmic Fibonacci Spiral &amp; Golden Rectangles &middot; 4.4 The Golden Triangle with 90&deg; Perpendicular Intersections.
+            </figcaption>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           SLIDE 9: 4.5 FRAMING & 4.6 DOMINANCE
+           =================================================================== -->
+      <section class="slide" data-index="9" data-title="4. Techniques &middot; 4.5 Framing &amp; 4.6 Dominance">
+        <div class="slide-grid">
+          <div class="slide-content-pane">
+            <div class="module-tag">MODULE 04 / 12 &middot; TECHNIQUES 4.5 &amp; 4.6</div>
+            <h1 class="slide-title">Framing &amp; <span class="gradient-text">Visual Dominance</span></h1>
+            
+            <div class="info-card card-concept">
+              <div class="card-icon-title">
+                <span class="badge-icon accent-green">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><rect x="7" y="7" width="10" height="10" rx="1"/></svg>
+                </span>
+                <h3>4.5 Framing (Sub-Frames)</h3>
+              </div>
+              <p>Placing a "frame within a frame" by using doorways, stone arches, window panes, tree branches, or cast shadows.
+                <br>&bull; Blocks distracting visual edge bleed.
+                <br>&bull; Gives the viewer the psychological feeling of peeking into an intimate, protected world.
+                <br>&bull; In UI design: Modal containers, glass card borders, and hero photo masks.
+              </p>
+            </div>
+
+            <div class="info-card card-dominance">
+              <div class="card-icon-title">
+                <span class="badge-icon accent-rose">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                </span>
+                <h3>4.6 Dominance (The King of the Frame)</h3>
+              </div>
+              <p>Dominance establishes an undisputed hierarchy:
+                <br>&bull; <strong>Dominance by Size:</strong> The hero dwarfs all surrounding elements.
+                <br>&bull; <strong>Dominance by Color:</strong> A single warm crimson orb amidst muted teal subordinates.
+                <br>&bull; <strong>Dominance by Sharpness:</strong> Razor-sharp subject with creamy background bokeh.
+              </p>
+            </div>
+
+            <div class="live-widget">
+              <div class="widget-title-row">
+                <span class="widget-label">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/></svg>
+                  Sub-Frame Aperture Width
+                </span>
+                <span class="widget-val" id="frameVal">65%</span>
+              </div>
+              <div class="widget-slider-wrap">
+                <span style="font-size: 0.75rem; color: var(--text-muted);">Tight Arch</span>
+                <input type="range" class="widget-slider" id="frameSlider" min="20" max="90" value="65">
+                <span style="font-size: 0.75rem; color: var(--text-muted);">Wide Open</span>
+              </div>
+            </div>
+
+            <div class="interactive-checkpoint">
+              <div class="checkpoint-header">
+                <span class="sparkle-icon">&#10024;</span>
+                <h4>The Over-Framing Hazard</h4>
+              </div>
+              <p class="checkpoint-prompt">Can a natural sub-frame ever be TOO heavy or interesting?</p>
+              <button class="reveal-btn" data-target="reveal9">Reveal Design Insight</button>
+              <div class="reveal-content hidden" id="reveal9">
+                <strong>Stealing the Spotlight:</strong> Yes! If your framing archway is brightly illuminated, heavily textured, and packed with ornament, the viewer's eyes will linger on the frame itself rather than passing through to the intended subject. Keep sub-frames darker and subordinate!
+              </div>
+            </div>
+          </div>
+
+          <div class="slide-media-pane">
+            <div class="media-frame" data-zoom="assets/slide9_framing_dominance.svg">
+              <img src="assets/slide9_framing_dominance.svg" alt="Natural architectural arch sub-frame and visual dominance hierarchy diagram" class="slide-img">
+              <div class="image-overlay-hint">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <span>Click image to inspect full screen</span>
+              </div>
+            </div>
+            <figcaption class="media-caption">
+              <strong>Visual Matrix:</strong> 4.5 Sub-Framing Archway Spotlight &middot; 4.6 Dominance Establishing (1 Crowned Hero vs. Muted Subordinates).
+            </figcaption>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           SLIDE 10: 4.7 FG/MG/BG, 4.8 LEAD ROOM & 4.9 LEFT TO RIGHT
+           =================================================================== -->
+      <section class="slide" data-index="10" data-title="4. Techniques &middot; 4.7 Depth Planes, 4.8 Lead Room &amp; 4.9 Left to Right">
+        <div class="slide-grid">
+          <div class="slide-content-pane">
+            <div class="module-tag">MODULE 04 / 12 &middot; TECHNIQUES 4.7, 4.8 &amp; 4.9</div>
+            <h1 class="slide-title">Depth, Lead Room &amp; <span class="gradient-text">Flow Vector</span></h1>
+            
+            <div class="info-card card-concept">
+              <div class="card-icon-title">
+                <span class="badge-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+                </span>
+                <h3>4.7 The 3 Depth Planes (FG, MG, BG)</h3>
+              </div>
+              <p>Every flat 2D canvas becomes a 3D window when staged across three distinct spatial planes:
+                <br>&bull; <strong>Foreground:</strong> Anchors the viewer, adds scale, provides a physical doorstep.
+                <br>&bull; <strong>Middle Ground:</strong> Houses the main narrative hero and key action.
+                <br>&bull; <strong>Background:</strong> Establishes environment, world context, and atmospheric scale.
+              </p>
+            </div>
+
+            <div class="info-card card-motion">
+              <div class="card-icon-title">
+                <span class="badge-icon accent-amber">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                </span>
+                <h3>4.8 Lead Room &amp; 4.9 Left to Right Flow</h3>
+              </div>
+              <p><strong>4.8 Lead Room (Look Room):</strong> Always grant open buffer space in front of moving or looking subjects. Cramming a subject right against the edge triggers instant claustrophobia.
+                <br><strong>4.9 Left to Right Flow:</strong> In Western cognition, motion moving from Left to Right feels like progressive triumph and forward journey; Right to Left feels like returning home or struggling against resistance.
+              </p>
+            </div>
+
+            <div class="live-widget">
+              <div class="widget-title-row">
+                <span class="widget-label">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                  Lead Room Distance Buffer
+                </span>
+                <span class="widget-val" id="leadRoomVal">60% buffer</span>
+              </div>
+              <div class="widget-slider-wrap">
+                <span style="font-size: 0.75rem; color: var(--text-muted);">0% (Wall Crash)</span>
+                <input type="range" class="widget-slider" id="leadRoomSlider" min="5" max="80" value="60">
+                <span style="font-size: 0.75rem; color: var(--text-muted);">80% (Open Run)</span>
+              </div>
+            </div>
+
+            <div class="interactive-checkpoint">
+              <div class="checkpoint-header">
+                <span class="sparkle-icon">&#10024;</span>
+                <h4>The Horror Movie Lead Room Hack</h4>
+              </div>
+              <p class="checkpoint-prompt">When would a filmmaker deliberately DESTROY lead room?</p>
+              <button class="reveal-btn" data-target="reveal10">Reveal Design Insight</button>
+              <div class="reveal-content hidden" id="reveal10">
+                <strong>Weaponizing Claustrophobia:</strong> In horror and psychological thrillers, directors deliberately frame the protagonist looking directly into an immediate brick wall, leaving all the empty space BEHIND their back. This triggers unbearable dread because the viewer fears an unseen threat approaching from behind!
+              </div>
+            </div>
+          </div>
+
+          <div class="slide-media-pane">
+            <div class="media-frame" data-zoom="assets/slide10_depth_leadroom_l2r.svg">
+              <img src="assets/slide10_depth_leadroom_l2r.svg" alt="3 Depth planes, lead room look space, and left-to-right cognitive momentum vector" class="slide-img">
+              <div class="image-overlay-hint">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <span>Click image to inspect full screen</span>
+              </div>
+            </div>
+            <figcaption class="media-caption">
+              <strong>Visual Matrix:</strong> 4.7 Foreground/Middle/Background &middot; 4.8 Lead Room Looking Vector &middot; 4.9 Left-to-Right Narrative Momentum.
+            </figcaption>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           SLIDE 11: 5.1 LAYERING, 5.2 HORIZON LINE & 5.3 UNUSUAL POV
+           =================================================================== -->
+      <section class="slide" data-index="11" data-title="5. Tips &middot; 5.1 Layering, 5.2 Horizon Line &amp; 5.3 Unusual POV">
+        <div class="slide-grid">
+          <div class="slide-content-pane">
+            <div class="module-tag">MODULE 05 / 12 &middot; TIPS 5.1, 5.2 &amp; 5.3</div>
+            <h1 class="slide-title">Layering, Horizon &amp; <span class="gradient-text">Unusual POV</span></h1>
+            
+            <div class="info-card card-concept">
+              <div class="card-icon-title">
+                <span class="badge-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/></svg>
+                </span>
+                <h3>5.1 Layering (Physical Occlusion)</h3>
+              </div>
+              <p>When one element partially overlaps another, the human brain instantly registers depth without needing any 3D glasses. Overlapping ties disparate elements into a unified physical environment and is the backbone of modern glassmorphic UI card layering.</p>
+            </div>
+
+            <div class="info-card card-horizon">
+              <div class="card-icon-title">
+                <span class="badge-icon accent-amber">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="12" y1="3" x2="12" y2="21"/></svg>
+                </span>
+                <h3>5.2 Horizon Line &amp; 5.3 Unusual Point of View</h3>
+              </div>
+              <p><strong>5.2 Horizon Placement:</strong>
+                <br>&bull; <em>Low Horizon:</em> Emphasizes sky, towering monumentality, and awe.
+                <br>&bull; <em>High Horizon:</em> Emphasizes ground pathways, intimate terrain, and maps.
+                <br><strong>5.3 Breaking Eye Level (POV):</strong> Human beings spend their lives looking at standard 5.5-foot eye level. Break it! Use <strong>Worm's Eye</strong> (looking up for power), <strong>Bird's Eye</strong> (top-down geometric omniscience), or <strong>Dutch Angle</strong> (tilted axis for suspense).
+              </p>
+            </div>
+
+            <div class="live-widget">
+              <div class="widget-title-row">
+                <span class="widget-label">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/></svg>
+                  Horizon Line Elevator
+                </span>
+                <span class="widget-val" id="horizonVal">25% (Low Horizon: Epic Sky)</span>
+              </div>
+              <div class="widget-slider-wrap">
+                <span style="font-size: 0.75rem; color: var(--text-muted);">Low (Sky)</span>
+                <input type="range" class="widget-slider" id="horizonSlider" min="15" max="85" value="25">
+                <span style="font-size: 0.75rem; color: var(--text-muted);">High (Ground)</span>
+              </div>
+            </div>
+
+            <div class="interactive-checkpoint">
+              <div class="checkpoint-header">
+                <span class="sparkle-icon">&#10024;</span>
+                <h4>The Drone &amp; Dutch Angle Impact</h4>
+              </div>
+              <p class="checkpoint-prompt">Why does tilting the horizon by just 5 to 10 degrees (Dutch Angle) trigger instant adrenaline?</p>
+              <button class="reveal-btn" data-target="reveal11">Reveal Design Insight</button>
+              <div class="reveal-content hidden" id="reveal11">
+                <strong>Vestibular Alarm:</strong> Our inner ear and brain rely on horizontal lines for balance and gravity. When the horizon tilts diagonally, our subconscious warns: "We are falling or the ground is collapsing!" It triggers immediate alertness, tension, and kinetic excitement.
+              </div>
+            </div>
+          </div>
+
+          <div class="slide-media-pane">
+            <div class="media-frame" data-zoom="assets/slide11_layering_horizon_pov.svg">
+              <img src="assets/slide11_layering_horizon_pov.svg" alt="Diagram showing layer occlusion, low vs high horizon line, and bird's eye/worm's eye viewpoints" class="slide-img">
+              <div class="image-overlay-hint">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <span>Click image to inspect full screen</span>
+              </div>
+            </div>
+            <figcaption class="media-caption">
+              <strong>Visual Matrix:</strong> 5.1 Physical Occlusion &amp; Glass Layering &middot; 5.2 Low vs. High Horizon Shift &middot; 5.3 Bird's Eye, Worm's Eye &amp; Dutch Tilt.
+            </figcaption>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           SLIDE 12: 5.4 FILLING THE FRAME, 5.5 SIMPLIFICATION, 5.6 CONTRAST & AUDIT
+           =================================================================== -->
+      <section class="slide" data-index="12" data-title="5. Tips &middot; 5.4 Fill Frame, 5.5 Simplification &amp; 10-Point Audit">
+        <div class="slide-grid">
+          <div class="slide-content-pane">
+            <div class="module-tag">MODULE 05 / 12 &middot; TIPS 5.4, 5.5, 5.6 &amp; MASTER AUDIT</div>
+            <h1 class="slide-title">Filling Frame, Simplification &amp; <span class="gradient-gold">Master Audit</span></h1>
+            
+            <div class="info-card card-concept">
+              <div class="card-icon-title">
+                <span class="badge-icon accent-green">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                </span>
+                <h3>The Final Polish Trifecta</h3>
+              </div>
+              <p><strong>5.4 Filling the Frame:</strong> Get closer! Crop dead, wasted margins to elevate intimate texture and macro impact.
+                <br><strong>5.5 Simplification:</strong> <em>"Perfection is achieved not when there is nothing more to add, but when there is nothing left to take away."</em> Strip out competing clutter ruthlessly.
+                <br><strong>5.6 Contrast Mastery:</strong> Test your layout with the <strong>Squint Test</strong>: if the primary message dissolves when squinting, boost value contrast immediately!
+              </p>
+            </div>
+
+            <div class="interactive-checkpoint">
+              <div class="checkpoint-header">
+                <span class="sparkle-icon">&#127942;</span>
+                <h4>The 10-Point Composition Pre-Flight Scorecard</h4>
+              </div>
+              <p class="checkpoint-prompt">Run through the 10-point audit on the right before exporting any poster, UI screen, or photo.</p>
+              <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 0.5rem;">
+                <span style="font-family: var(--font-display); font-weight: 700; color: var(--accent-gold); font-size: 0.9rem;" id="auditScore">0 / 10 Checked</span>
+              </div>
+              <a href="quiz/index.html" class="footer-btn btn-primary" style="display: inline-flex; width: fit-content; text-decoration: none; margin-top: 0.5rem;">
+                Launch Interactive Knowledge Quiz &rarr;
+              </a>
+            </div>
+          </div>
+
+          <div class="slide-media-pane">
+            <div class="media-frame" data-zoom="assets/slide12_fill_simplify_audit.svg">
+              <img src="assets/slide12_fill_simplify_audit.svg" alt="Before and after cropping frame comparison and the 10-point composition scorecard" class="slide-img">
+              <div class="image-overlay-hint">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <span>Click image to inspect full screen</span>
+              </div>
+            </div>
+            <figcaption class="media-caption">
+              <strong>Visual Matrix:</strong> 5.4-5.6 Filling the Frame &amp; De-cluttering Before/After &middot; The Official 10-Point Composition Audit Scorecard.
+            </figcaption>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Bottom Footer Navigation Bar -->
+    <footer class="deck-footer">
+      <div class="footer-left">
+        <button class="footer-btn" id="prevBtn" disabled title="Previous Slide (Left Arrow / PageUp)">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+          <span>Previous</span>
+        </button>
+        <button class="footer-btn btn-primary" id="nextBtn" title="Next Slide (Right Arrow / Spacebar)">
+          <span>Next Slide</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+      </div>
+
+      <div class="footer-center" id="dotPagination">
+        <!-- Dynamically populated dot buttons -->
+      </div>
+
+      <div class="footer-right">
+        <div class="keyboard-hints">
+          <span>Keys:</span>
+          <span class="kbd-key">&larr;</span>
+          <span class="kbd-key">&rarr;</span>
+          <span class="kbd-key">Space</span>
+          <span class="kbd-key">F</span>
+          <span class="kbd-key">T</span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Slide Drawer (Jump Menu) -->
+    <div class="drawer-backdrop" id="drawerBackdrop"></div>
+    <aside class="slide-drawer" id="slideDrawer" aria-label="Slide Navigation Drawer">
+      <div class="drawer-header">
+        <h3>All 12 Lesson Slides</h3>
+        <button class="close-drawer-btn" id="closeDrawerBtn" aria-label="Close Drawer">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+      <div class="drawer-grid" id="drawerGrid">
+        <!-- Dynamically populated drawer items -->
+      </div>
+    </aside>
+
+    <!-- Lightbox Zoom Modal -->
+    <div class="lightbox-modal" id="lightboxModal" role="dialog" aria-modal="true">
+      <div class="lightbox-backdrop" id="lightboxBackdrop"></div>
+      <div class="lightbox-content">
+        <button class="lightbox-close" id="lightboxClose" aria-label="Close Lightbox">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          <span>Close (Esc)</span>
+        </button>
+        <img src="" alt="Enlarged Visual Inspection" class="lightbox-img" id="lightboxImg">
+        <p class="lightbox-caption" id="lightboxCaption"></p>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="app.js"></script>
+  <script src="lesson-selector.js"></script>
+</body>
+</html>

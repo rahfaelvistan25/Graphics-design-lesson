@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg12" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16"/>
+      <stop offset="50%" stop-color="#0e1422"/>
+      <stop offset="100%" stop-color="#060911"/>
+    </linearGradient>
+
+    <!-- Card Gradients -->
+    <linearGradient id="roseGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f43f5e"/>
+      <stop offset="100%" stop-color="#fb7185"/>
+    </linearGradient>
+    <linearGradient id="violetGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#a855f7"/>
+    </linearGradient>
+    <linearGradient id="amberGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0891b2"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <linearGradient id="emeraldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+
+    <!-- Drop Shadow Filter -->
+    <filter id="bentoShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="1200" height="675" fill="url(#bg12)"/>
+
+  <!-- COLUMN 1 (x: 45, width: 365) -->
+  <!-- 1. Large Hero Media Card -->
+  <g transform="translate(45, 45)" filter="url(#bentoShadow)">
+    <rect width="365" height="310" rx="16" fill="url(#roseGrad)"/>
+    <circle cx="65" cy="65" r="35" fill="#ffffff" fill-opacity="0.2"/>
+    <text x="32" y="165" fill="#ffffff" font-family="'Outfit', sans-serif" font-size="28" font-weight="900">BOLD HERO</text>
+    <text x="32" y="195" fill="#ffe4e6" font-family="'Inter', sans-serif" font-size="13">Vibrant saturated gradient with large type</text>
+    <rect x="32" y="225" width="120" height="34" rx="17" fill="#ffffff"/>
+    <text x="92" y="247" fill="#e11d48" font-family="'Inter', sans-serif" font-size="12" font-weight="800" text-anchor="middle">Large Media</text>
+  </g>
+
+  <!-- 2. Shape Diversity Card -->
+  <g transform="translate(45, 380)" filter="url(#bentoShadow)">
+    <rect width="365" height="250" rx="16" fill="#151d2c" stroke="#25354e" stroke-width="1.5"/>
+    <g transform="translate(32, 35)">
+      <polygon points="35,0 70,60 0,60" fill="#10b981"/>
+      <circle cx="120" cy="30" r="28" fill="#f59e0b"/>
+      <rect x="175" y="5" width="50" height="50" rx="10" fill="#06b6d4"/>
+    </g>
+    <text x="32" y="150" fill="#ffffff" font-family="'Outfit', sans-serif" font-size="20" font-weight="800">SHAPE DIVERSITY</text>
+    <text x="32" y="180" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="13">Triangles, circles &amp; squares preventing visual monotony</text>
+    <text x="32" y="205" fill="#64748b" font-family="'Inter', sans-serif" font-size="12">Geometric variety unified by consistent stroke</text>
+  </g>
+
+  <!-- COLUMN 2 (x: 435, width: 310) -->
+  <!-- 3. Tall Portrait Card (Spans full height) -->
+  <g transform="translate(435, 45)" filter="url(#bentoShadow)">
+    <rect width="310" height="585" rx="16" fill="url(#violetGrad)"/>
+    <rect x="25" y="28" width="125" height="26" rx="6" fill="#3b0764" fill-opacity="0.4"/>
+    <text x="87" y="45" fill="#f3e8ff" font-family="'Inter', sans-serif" font-size="11" font-weight="800" text-anchor="middle">VERTICAL FLOW</text>
+    
+    <circle cx="155" cy="240" r="75" fill="#ffffff" fill-opacity="0.12"/>
+    <circle cx="155" cy="240" r="45" fill="#ffffff" fill-opacity="0.18"/>
+    <text x="155" y="248" fill="#ffffff" font-family="'Outfit', sans-serif" font-size="26" font-weight="900" text-anchor="middle">PORTRAIT</text>
+    
+    <text x="25" y="475" fill="#ffffff" font-family="'Outfit', sans-serif" font-size="22" font-weight="800">Aspect Ratio Shift</text>
+    <text x="25" y="505" fill="#f3e8ff" font-family="'Inter', sans-serif" font-size="13">Contrasting horizontal &amp; vertical</text>
+    <text x="25" y="525" fill="#f3e8ff" font-family="'Inter', sans-serif" font-size="13">proportions keeps the eye active.</text>
+  </g>
+
+  <!-- COLUMN 3 (x: 770, width: 385) -->
+  <!-- 4. Micro-Interaction Amber Card -->
+  <g transform="translate(770, 45)" filter="url(#bentoShadow)">
+    <rect width="385" height="175" rx="16" fill="url(#amberGrad)"/>
+    <text x="28" y="38" fill="#451a03" font-family="'Inter', sans-serif" font-size="11" font-weight="800" letter-spacing="1">MICRO-INTERACTION CARD</text>
+    <text x="28" y="85" fill="#ffffff" font-family="'Outfit', sans-serif" font-size="30" font-weight="900">7 UNIQUE ASSETS</text>
+    <text x="28" y="120" fill="#fef3c7" font-family="'Inter', sans-serif" font-size="13">Unified by a consistent 16px grid system</text>
+  </g>
+
+  <!-- 5. Cyan Metric Card -->
+  <g transform="translate(770, 245)" filter="url(#bentoShadow)">
+    <rect width="385" height="175" rx="16" fill="url(#cyanGrad)"/>
+    <text x="28" y="38" fill="#083344" font-family="'Inter', sans-serif" font-size="11" font-weight="800" letter-spacing="1">SPECTRUM ACCENT</text>
+    <text x="28" y="85" fill="#ffffff" font-family="'Outfit', sans-serif" font-size="26" font-weight="900">Dynamic Color Variety</text>
+    <text x="28" y="120" fill="#cffafe" font-family="'Inter', sans-serif" font-size="13">High visual vitality across all interface components</text>
+  </g>
+
+  <!-- 6. Emerald Texture Card -->
+  <g transform="translate(770, 445)" filter="url(#bentoShadow)">
+    <rect width="385" height="185" rx="16" fill="url(#emeraldGrad)"/>
+    <text x="28" y="38" fill="#022c22" font-family="'Inter', sans-serif" font-size="11" font-weight="800" letter-spacing="1">ORGANIC TEXTURE SHIFT</text>
+    <text x="28" y="85" fill="#ffffff" font-family="'Outfit', sans-serif" font-size="26" font-weight="900">Texture &amp; Depth Variation</text>
+    <text x="28" y="120" fill="#d1fae5" font-family="'Inter', sans-serif" font-size="13">Variety excites the eye; Unity provides discipline.</text>
+  </g>
+</svg>

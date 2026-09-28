@@ -1,0 +1,109 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 550" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bgGrad2" cx="50%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0b1120"/>
+    </radialGradient>
+    <linearGradient id="badGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f43f5e"/>
+      <stop offset="100%" stop-color="#be123c"/>
+    </linearGradient>
+    <linearGradient id="goodGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+    <filter id="shadow2" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="550" rx="16" fill="url(#bgGrad2)"/>
+
+  <!-- Top Module Tag -->
+  <g transform="translate(40, 30)">
+    <rect width="210" height="32" rx="16" fill="#38bdf8" fill-opacity="0.15" stroke="#38bdf8" stroke-width="1.2"/>
+    <text x="16" y="21" font-family="'Outfit', sans-serif" font-size="12" font-weight="700" fill="#38bdf8" letter-spacing="1">WHAT IS COMPOSITION?</text>
+    <text x="240" y="22" font-family="'Inter', sans-serif" font-size="14" fill="#94a3b8">Subject vs. Arrangement: The Frame is a Stage</text>
+  </g>
+
+  <!-- Side-by-Side Comparison: Bad vs. Masterful Composition -->
+  <!-- LEFT: Poor Composition (Cluttered, Bullseye Dead Center, Edge Collision, Cut-off Horizon) -->
+  <g transform="translate(60, 90)" filter="url(#shadow2)">
+    <rect width="320" height="330" rx="12" fill="#0f172a" stroke="#f43f5e" stroke-width="2" stroke-opacity="0.8"/>
+    
+    <!-- Header -->
+    <rect x="0" y="0" width="320" height="42" rx="12" fill="#f43f5e" fill-opacity="0.15"/>
+    <circle cx="24" cy="21" r="10" fill="#f43f5e"/>
+    <text x="20" y="25" font-family="'Inter', sans-serif" font-size="12" font-weight="900" fill="#ffffff">&#215;</text>
+    <text x="44" y="26" font-family="'Outfit', sans-serif" font-size="14" font-weight="700" fill="#f43f5e">UNCONSIDERED SNAPSHOT</text>
+
+    <!-- Visual Content -->
+    <!-- Cluttered horizon right through center -->
+    <line x1="0" y1="180" x2="320" y2="180" stroke="#64748b" stroke-width="2"/>
+    <text x="18" y="172" font-family="'Inter', sans-serif" font-size="10" fill="#94a3b8">Bisecting Horizon (Cuts frame in half)</text>
+
+    <!-- Subject Bullseyed Dead Center with no room to breathe -->
+    <circle cx="160" cy="180" r="38" fill="#475569" stroke="#94a3b8" stroke-width="2"/>
+    <circle cx="160" cy="180" r="16" fill="#cbd5e1"/>
+    
+    <!-- Distracting edge collisions -->
+    <rect x="0" y="55" width="40" height="60" fill="#334155"/>
+    <path d="M 280 50 L 320 90 L 320 50 Z" fill="#e11d48" opacity="0.6"/>
+    <text x="210" y="70" font-family="'Inter', sans-serif" font-size="9" fill="#f43f5e">&#8593; Edge Distraction</text>
+
+    <!-- Awkward tangent cut off -->
+    <circle cx="310" cy="300" r="25" fill="#3b82f6" opacity="0.4"/>
+    <line x1="310" y1="275" x2="310" y2="325" stroke="#f43f5e" stroke-width="2" stroke-dasharray="3 3"/>
+
+    <!-- Critique Labels -->
+    <g transform="translate(18, 260)">
+      <rect width="284" height="54" rx="6" fill="#1e1e2d" stroke="#f43f5e" stroke-width="1" stroke-opacity="0.4"/>
+      <text x="10" y="18" font-family="'Inter', sans-serif" font-size="11" font-weight="600" fill="#fca5a5">&#8226; Dead-center bullseye feels static</text>
+      <text x="10" y="34" font-family="'Inter', sans-serif" font-size="11" font-weight="600" fill="#fca5a5">&#8226; Horizon cuts canvas in half awkwardly</text>
+      <text x="10" y="48" font-family="'Inter', sans-serif" font-size="11" font-weight="600" fill="#fca5a5">&#8226; Edge tangents pull viewer's eye out of frame</text>
+    </g>
+  </g>
+
+  <!-- RIGHT: Masterful Composition (Intentional placement, Rule of Thirds, Leading line, breathing room) -->
+  <g transform="translate(420, 90)" filter="url(#shadow2)">
+    <rect width="320" height="330" rx="12" fill="#0f172a" stroke="#10b981" stroke-width="2" stroke-opacity="0.8"/>
+    
+    <!-- Header -->
+    <rect x="0" y="0" width="320" height="42" rx="12" fill="#10b981" fill-opacity="0.15"/>
+    <circle cx="24" cy="21" r="10" fill="#10b981"/>
+    <text x="20" y="25" font-family="'Inter', sans-serif" font-size="12" font-weight="900" fill="#ffffff">&#10003;</text>
+    <text x="44" y="26" font-family="'Outfit', sans-serif" font-size="14" font-weight="700" fill="#10b981">ORCHESTRATED COMPOSITION</text>
+
+    <!-- Visual Content -->
+    <!-- Lower 1/3 Horizon Line -->
+    <line x1="0" y1="230" x2="320" y2="230" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="4 4"/>
+    <text x="16" y="222" font-family="'Inter', sans-serif" font-size="10" fill="#38bdf8">Ground Plane on Lower 1/3</text>
+
+    <!-- Leading S-Curve pathway -->
+    <path d="M 40 330 Q 90 280 120 230 T 215 130" stroke="#38bdf8" stroke-width="3" fill="none"/>
+    
+    <!-- Subject on Upper-Right Power Intersection -->
+    <circle cx="215" cy="130" r="32" fill="#0284c7" stroke="#38bdf8" stroke-width="2.5"/>
+    <circle cx="215" cy="130" r="14" fill="#fef08a"/>
+    <circle cx="215" cy="130" r="42" fill="none" stroke="#fef08a" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.7"/>
+
+    <!-- Generous negative space on left -->
+    <text x="35" y="110" font-family="'Outfit', sans-serif" font-size="11" font-weight="600" fill="#94a3b8">Breathing Negative Space</text>
+    
+    <!-- Praise Labels -->
+    <g transform="translate(18, 260)">
+      <rect width="284" height="54" rx="6" fill="#062e24" stroke="#10b981" stroke-width="1" stroke-opacity="0.4"/>
+      <text x="10" y="18" font-family="'Inter', sans-serif" font-size="11" font-weight="600" fill="#6ee7b7">&#8226; Dynamic placement at power intersection</text>
+      <text x="10" y="34" font-family="'Inter', sans-serif" font-size="11" font-weight="600" fill="#6ee7b7">&#8226; Leading S-curve naturally pulls viewer inward</text>
+      <text x="10" y="48" font-family="'Inter', sans-serif" font-size="11" font-weight="600" fill="#6ee7b7">&#8226; Controlled border buffers prevent eye runoff</text>
+    </g>
+  </g>
+
+  <!-- Core Takeaway Banner -->
+  <g transform="translate(60, 445)">
+    <rect width="680" height="70" rx="10" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+    <text x="24" y="28" font-family="'Outfit', sans-serif" font-size="14" font-weight="800" fill="#f8fafc">THE GOLDEN DEFINITION:</text>
+    <text x="24" y="50" font-family="'Inter', sans-serif" font-size="12" fill="#94a3b8">Composition is not what you show; it is how you guide the human consciousness through what you show.</text>
+  </g>
+</svg>
+

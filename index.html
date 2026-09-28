@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Principles of Design — Interactive Masterclass</title>
+  <meta name="description" content="An interactive, visual masterclass exploring the 11 core Principles of Art and Design with real-world digital media, UI, and gaming examples.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="lesson-selector.css">
+</head>
+<body class="theme-dark" data-current-lesson="1" data-current-type="deck" data-root-path="./">
+
+  <!-- Main Presentation Wrapper -->
+  <div class="deck-container" id="deckApp">
+
+    <!-- Top Status / Navigation Bar -->
+    <header class="deck-header">
+      <div class="header-left">
+        <div class="logo-badge">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="12 2 2 7 12 12 22 7 12 2"/>
+            <polyline points="2 17 12 22 22 17"/>
+            <polyline points="2 12 12 17 22 12"/>
+          </svg>
+          <span class="logo-text">DESIGN PRINCIPLES</span>
+        </div>
+        <div class="divider-v"></div>
+        <button class="lesson-picker-btn lesson-1" id="lessonPickerBtn" aria-label="Select Lesson" title="Switch Lesson (Press L)">
+          <span class="lesson-picker-badge">L1</span>
+          <span class="lesson-picker-name">Lesson 1: Principles</span>
+          <svg class="lesson-picker-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </button>
+        <span class="slide-indicator" id="slideIndicator">01 / 13</span>
+      </div>
+
+      <div class="header-center">
+        <h2 class="current-slide-heading" id="topSlideTitle">Introduction to Principles of Design</h2>
+      </div>
+
+      <div class="header-right">
+        <a href="quiz/index.html" class="nav-btn-icon quiz-link" title="Open Interactive Knowledge Quiz" id="headerQuizBtn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+          <span class="btn-label">Quiz</span>
+        </a>
+        <button class="nav-btn-icon" id="drawerToggleBtn" title="Toggle Slide Drawer (T)" aria-label="Toggle Slide Drawer">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="3" y="3" width="7" height="7"/>
+            <rect x="14" y="3" width="7" height="7"/>
+            <rect x="14" y="14" width="7" height="7"/>
+            <rect x="3" y="14" width="7" height="7"/>
+          </svg>
+          <span class="btn-label">All Slides</span>
+        </button>
+
+        <button class="nav-btn-icon" id="fullscreenBtn" title="Toggle Fullscreen (F)" aria-label="Toggle Fullscreen">
+          <svg id="fsIconExpand" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/>
+          </svg>
+          <svg id="fsIconCompress" class="hidden" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 14h6m0 0v6m0-6L3 21m17-7h-6m0 0v6m0-6l7 7M4 10h6m0 0V4m0 6L3 3m17 7h-6m0 0V4m0 6l7-7"/>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- Top Interactive Progress Bar -->
+    <div class="progress-track">
+      <div class="progress-bar" id="progressBar" style="width: 7.69%;"></div>
+    </div>
+
+    <!-- Main Slide Stage Area -->
+    <main class="slide-viewport">
+
+      <!-- SLIDE 1: INTRODUCTION -->
+      <section class="slide active" data-index="1" data-title="Introduction to Design Principles">
+        <div class="slide-grid">
+          <div class="slide-content-pane">
+            <div class="module-tag">MODULE 01 / 13 &middot; FOUNDATIONS</div>
+            <h1 class="slide-title">Introduction to the <span class="gradient-text">Principles of Design</span></h1>
+            
+            <div class="info-card card-concept">
+              <div class="card-icon-title">
+                <span class="badge-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+                </span>
+                <h3>Concept</h3>
+              </div>
+              <p>The fundamental structural rules and psychological guidelines used by creators to organize the raw elements of art and visual design.</p>
+            </div>
+
+            <div class="info-card card-purpose">
+              <div class="card-icon-title">
+                <span class="badge-icon accent-blue">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                </span>
+                <h3>Purpose</h3>
+              </div>
+              <p>To transform chaotic visual noise into effective, intuitive, and visually captivating layouts across media, websites, games, and digital interfaces.</p>
+            </div>
+
+            <div class="interactive-checkpoint">
+              <div class="checkpoint-header">
+                <span class="sparkle-icon">&#10024;</span>
+                <h4>Classroom Checkpoint: Spot the Difference</h4>
+              </div>
+              <p class="checkpoint-prompt">Look at the two websites on the right. What is the very first thing that causes cognitive friction on the left layout?</p>
+              <button class="reveal-btn" data-target="reveal1">Reveal Design Insight</button>
+              <div class="reveal-content hidden" id="reveal1">
+                <strong>Key Insight:</strong> Lack of visual hierarchy and clashing typefaces. Without structural principles, the viewer's eye has no focal anchor and bounces erratically.
+              </div>
+            </div>
+          </div>
+
+          <div class="slide-media-pane">
+            <div class="media-frame" data-zoom="assets/slide1_intro.jpg">
+              <img src="assets/slide1_intro.jpg" alt="Educational split comparison of bad chaotic design vs good structured modern web design" class="slide-img">
+              <div class="image-overlay-hint">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                <span>Click image to inspect full screen</span>
+              </div>
+            </div>
+            <figcaption class="media-caption">
+              <strong>Visual Study:</strong> Cluttered 90s layout lacking structure vs. Modern layout utilizing intentional spacing, clear hierarchy, and balanced alignment.
+            </figcaption>
+          </div>
+        </div>
+      </section>
+
+      <!-- SLIDE 2: BALANCE -->
+      <section class="slide" data-index="2" data-title="Balance: Visual Equilibrium">
+        <div class="slide-grid">
+          <div class="slide-content-pane">
+            <div class="module-tag">MODULE 02 / 13 &middot; EQUILIBRIUM</div>
+            <h1 class="slide-title">Visual <span class="gradient-text">Balance</span></h1>
+            
+            <div class="info-card card-concept">
+              <div class="card-icon-title">
+                <span class="badge-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="M7 21h10"/><path d="M12 3v18"/><path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"/></svg>
+                </span>
+                <h3>Concept</h3>
+              </div>
+              <p>The deliberate distribution of visual weight within a composition to evoke stability, equilibrium, or intentional tension.</p>
+            </div>
+
+            <div class="info-card card-types">
+              <div class="card-icon-title">
+                <span class="badge-icon accent-purple">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M12 3v18"/></svg>
+                </span>
+                <h3>The 3 Core Types</h3>
+              </div>
+              <ul class="bullet-list">
+                <li><strong>Symmetrical Balance:</strong> Equal visual weight mirrored across a central axis (dignified, formal, dependable).</li>
+                <li><strong>Asymmetrical Balance:</strong> Unequal elements that counterbalance each other through contrast in size, color, or density.</li>
+                <li><strong>Radial Balance:</strong> Visual elements radiating outward symmetrically or spirally from a single central anchor.</li>
+              </ul>
+            </div>
+
+            <div class="interactive-checkpoint">
+              <div class="checkpoint-header">
+                <span class="sparkle-icon">&#10024;</span>
+                <h4>Classroom Checkpoint: Visual Weight Physics</h4>
+              </div>
+              <p class="checkpoint-prompt">On the right layout, how does the small photo balance out the massive headline block?</p>
+              <button class="reveal-btn" data-target="reveal2">Reveal Design Insight</button>
+              <div class="reveal-content hidden" id="reveal2">
+                <strong>Key Insight:</strong> Color intensity, high contrast, and photographic detail carry higher visual density per square inch than text, balancing a much larger area of typography.
+              </div>
+            </div>
+          </div>
+
+          <div class="slide-media-pane">
+            <div class="media-frame" data-zoom="assets/slide2_balance.jpg">
+              <img src="assets/slide2_balance.jpg" alt="Symmetrical PlayStation controller alongside asymmetrical modern website layout" class="slide-img">
+              <div class="image-overlay-hint">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <span>Click image to inspect full screen</span>
+              </div>
+            </div>
+            <figcaption class="media-caption">
+              <strong>Visual Study:</strong> Symmetrical controller layout (50/50 mirrored axis) paired with asymmetrical editorial composition (large type balanced with rich imagery).
+            </figcaption>
+          </div>
+        </div>
+      </section>
+
+      <!-- SLIDE 3: UNITY -->
+      <section class="slide" data-index="3" data-title="Unity: Cohesion & Harmony">
+        <div class="slide-grid">
+          <div class="slide-content-pane">
+            <div class="module-tag">MODULE 03 / 13 &middot; COHESION</div>
+            <h1 class="slide-title">Design <span class="gradient-text">Unity</span></h1>
+            
+            <div class="info-card card-concept">
+              <div class="card-icon-title">
+                <span class="badge-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+                </span>
+                <h3>Concept</h3>
+              </div>
+              <p>How seamlessly different elements of a design communicate and work together as a single, coherent, harmonized whole.</p>
+            </div>
+
+            <div class="info-card card-purpose">
+              <div class="card-icon-title">
+                <span class="badge-icon accent-green">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </span>
+                <h3>Purpose &amp; Psychological Impact</h3>
+              </div>
+              <p>Prevents the composition from feeling fragmented, disconnected, or chaotic. Fosters psychological trust and professional polish in digital tools.</p>
+            </div>
+
+            <div class="interactive-checkpoint">
+              <div class="checkpoint-header">
+                <span class="sparkle-icon">&#10024;</span>
+                <h4>Classroom Checkpoint: UI Consistency Check</h4>
+              </div>
+              <p class="checkpoint-prompt">Can you identify the 3 specific styling parameters that repeat across all components on this dashboard?</p>
+              <button class="reveal-btn" data-target="reveal3">Reveal Design Insight</button>
+              <div class="reveal-content hidden" id="reveal3">
+                <strong>Key Insight:</strong> 1) Matching 8px corner radii on every card and button, 2) Curated monochromatic palette (royal blue, indigo, slate), and 3) Uniform geometric icon stroke weights.
+              </div>
+            </div>
+          </div>
+
+          <div class="slide-media-pane">
+            <div class="media-frame" data-zoom="assets/slide3_unity.jpg">
+              <img src="assets/slide3_unity.jpg" alt="Cohesive SaaS software interface demonstrating unified corner radii, typography, and color palette" class="slide-img">
+              <div class="image-overlay-hint">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <span>Click image to inspect full screen</span>
+              </div>
+            </div>
+            <figcaption class="media-caption">
+              <strong>Visual Study:</strong> An interconnected dashboard ecosystem where all cards, buttons, fonts, and icons share uniform visual DNA.
+            </figcaption>
+          </div>
+        </div>
+      </section>
+
+      <!-- SLIDE 4: CONTRAST -->
+      <section class="slide" data-index="4" data-title="Contrast: Visual Energy">
+        <div class="slide-grid">
+          <div class="slide-content-pane">
+            <div class="module-tag">MODULE 04 / 13 &middot; OPPOSITION</div>
+            <h1 class="slide-title">Visual <span class="gradient-text">Contrast</span></h1>
+            
+            <div class="info-card card-concept">
+              <div class="card-icon-title">
+                <span class="badge-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a10 10 0 0 1 0 20z"/></svg>
+                </span>
+                <h3>Concept</h3>
+              </div>
+              <p>The juxtaposition of opposing visual qualities: deep darks against vivid lights, rough surfaces against glassy planes, or bold heavy shapes against delicate line art.</p>
+            </div>
+
+            <div class="info-card card-purpose">
+              <div class="card-icon-title">
+                <span class="badge-icon accent-amber">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                </span>
+                <h3>Purpose &amp; Engagement</h3>
+              </div>
+              <p>Instills excitement, establishes clear readability, breaks monotony, and ensures essential interactions jump out effortlessly to the user.</p>
+            </div>
+
+            <div class="interactive-checkpoint">
+              <div class="checkpoint-header">
+                <span class="sparkle-icon">&#10024;</span>
+                <h4>Classroom Checkpoint: The 3-Second Test</h4>
+              </div>
+              <p class="checkpoint-prompt">Close your eyes for 2 seconds, open them, and look at the image. Where did your gaze lock onto instantly?</p>
+              <button class="reveal-btn" data-target="reveal4">Reveal Design Insight</button>
+              <div class="reveal-content hidden" id="reveal4">
+                <strong>Key Insight:</strong> The luminous yellow "START GAME" button. Maximum luminance difference against a low-key dark background guarantees instant foreground pop.
+              </div>
+            </div>
+          </div>
+
+          <div class="slide-media-pane">
+            <div class="media-frame" data-zoom="assets/slide4_contrast.jpg">
+              <img src="assets/slide4_contrast.jpg" alt="Glowing electric yellow Call to Action button on dark moody game UI background" class="slide-img">
+              <div class="image-overlay-hint">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <span>Click image to inspect full screen</span>
+              </div>
+            </div>
+            <figcaption class="media-caption">
+              <strong>Visual Study:</strong> Maximum value &amp; saturation disparity: Deep obsidian backdrop isolating a radiant gold primary action trigger.
+            </figcaption>
+          </div>
+        </div>
+      </section>
+
+      <!-- SLIDE 5: EMPHASIS -->
+      <section class="slide" data-index="5" data-title="Emphasis: The Focal Point">
+        <div class="slide-grid">
+          <div class="slide-content-pane">
+            <div class="module-tag">MODULE 05 / 13 &middot; DOMINANCE</div>
+            <h1 class="slide-title">Focal Point &amp; <span class="gradient-text">Emphasis</span></h1>
+            
+            <div class="info-card card-concept">
+              <div class="card-icon-title">
+                <span class="badge-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+                </span>
+                <h3>Concept</h3>
+              </div>
+              <p>The primary focal point of a visual composition; the specific zone or hero element engineered to command the viewer's immediate attention.</p>
+            </div>
+
+            <div class="info-card card-purpose">
+              <div class="card-icon-title">
+                <span class="badge-icon accent-rose">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+                </span>
+                <h3>Purpose</h3>
+              </div>
+              <p>Eliminates viewer hesitation by dictating exactly where the eye must land first before exploring secondary supporting details.</p>
+            </div>
+
+            <div class="interactive-checkpoint">
+              <div class="checkpoint-header">
+                <span class="sparkle-icon">&#10024;</span>
+                <h4>Classroom Checkpoint: Spotlight Anatomy</h4>
+              </div>
+              <p class="checkpoint-prompt">Name three distinct techniques the artist used to make the central warrior dominate this cinematic poster.</p>
+              <button class="reveal-btn" data-target="reveal5">Reveal Design Insight</button>
+              <div class="reveal-content hidden" id="reveal5">
+                <strong>Key Insight:</strong> 1) Dramatic conical overhead lighting, 2) Spatial isolation from background silhouettes, and 3) High micro-contrast and edge sharpness on the armor.
+              </div>
+            </div>
+          </div>
+
+          <div class="slide-media-pane">
+            <div class="media-frame" data-zoom="assets/slide5_emphasis.jpg">
+              <img src="assets/slide5_emphasis.jpg" alt="Cinematic poster showing a single hero warrior illuminated by a spotlight against dark misty ruins" class="slide-img">
+              <div class="image-overlay-hint">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <span>Click image to inspect full screen</span>
+              </div>
+            </div>
+            <figcaption class="media-caption">
+              <strong>Visual Study:</strong> Deliberate directional lighting isolating the hero character, creating an unmistakable primary focal point.
+            </figcaption>
+          </div>
+        </div>
+      </section>
+
+      <!-- SLIDE 6: REPETITION (REPLAY) -->
+      <section class="slide" data-index="6" data-title="Repetition (Replay): Identity & Pattern">
+        <div class="slide-grid">
+          <div class="slide-content-pane">
+            <div class="module-tag">MODULE 06 / 13 &middot; CONSISTENCY</div>
+            <h1 class="slide-title">Repetition <span class="gradient-text">(Replay)</span></h1>
+            
+            <div class="info-card card-concept">
+              <div class="card-icon-title">
+                <span class="badge-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m17 2 4 4-4 4"/><path d="M3 11v-1a4 4 0 0 1 4-4h14"/><path d="m7 22-4-4 4-4"/><path d="M21 13v1a4 4 0 0 1-4 4H3"/></svg>
+                </span>
+                <h3>Concept</h3>
+              </div>
+              <p>Reusing identical or closely related visual elements—colors, motifs, fonts, shapes, or grid spacing—throughout a layout or brand ecosystem.</p>
+            </div>
+
+            <div class="info-card card-purpose">
+              <div class="card-icon-title">
+                <span class="badge-icon accent-indigo">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+                </span>
+                <h3>Purpose &amp; Familiarity</h3>
+              </div>
+              <p>Builds instant structural consistency, reinforces brand identity, and reduces the user's cognitive learning curve through predictable repetition.</p>
+            </div>
+
+            <div class="interactive-checkpoint">
+              <div class="checkpoint-header">
+                <span class="sparkle-icon">&#10024;</span>
+                <h4>Classroom Checkpoint: Mobile UX Muscle Memory</h4>
+              </div>
+              <p class="checkpoint-prompt">Why do popular apps always keep their bottom navigation icons identical in style across every subpage?</p>
+              <button class="reveal-btn" data-target="reveal6">Reveal Design Insight</button>
+              <div class="reveal-content hidden" id="reveal6">
+                <strong>Key Insight:</strong> Muscle memory and visual predictability. Users navigate instinctively without having to stop and reinterpret changing symbols.
+              </div>
+            </div>
+          </div>
+
+          <div class="slide-media-pane">
+            <div class="media-frame" data-zoom="assets/slide6_repetition.jpg">
+              <img src="assets/slide6_repetition.jpg" alt="Mobile app interface showcasing consistent bottom navigation bar icons and repeating feed cards" class="slide-img">
+              <div class="image-overlay-hint">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <span>Click image to inspect full screen</span>
+              </div>
+            </div>
+            <figcaption class="media-caption">
+              <strong>Visual Study:</strong> Repetition of icon weights and card structures across a smartphone UI, creating seamless navigation predictability.
+            </figcaption>
+          </div>
+        </div>
+      </section>
+
+      <!-- SLIDE 7: PATTERN -->
+      <section class="slide" data-index="7" data-title="Pattern: Structured Repetition">
+        <div class="slide-grid">
+          <div class="slide-content-pane">
+            <div class="module-tag">MODULE 07 / 13 &middot; STRUCTURE</div>
+            <h1 class="slide-title">Visual <span class="gradient-text">Pattern</span></h1>
+            
+            <div class="info-card card-concept">
+              <div class="card-icon-title">
+                <span class="badge-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+                </span>
+                <h3>Concept</h3>
+              </div>
+              <p>A calculated, regular arrangement of alternating or repeated geometric or organic motifs across a surface or canvas.</p>
+            </div>
+
+            <div class="info-card card-purpose">
+              <div class="card-icon-title">
+                <span class="badge-icon accent-emerald">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                </span>
+                <h3>Purpose</h3>
+              </div>
+              <p>Adds tactile texture, rich atmosphere, and environmental depth without overpowering the foreground focal content.</p>
+            </div>
+
+            <div class="interactive-checkpoint">
+              <div class="checkpoint-header">
+                <span class="sparkle-icon">&#10024;</span>
+                <h4>Classroom Checkpoint: Tile Map Logic</h4>
+              </div>
+              <p class="checkpoint-prompt">How do 2D video game creators build gigantic lush game worlds using just a few repeating patterns?</p>
+              <button class="reveal-btn" data-target="reveal7">Reveal Design Insight</button>
+              <div class="reveal-content hidden" id="reveal7">
+                <strong>Key Insight:</strong> Seamless edge matching. Designing a single 16px tile with seamless boundaries allows it to tessellate infinitely across coordinates with minimal memory usage.
+              </div>
+            </div>
+          </div>
+
+          <div class="slide-media-pane">
+            <div class="media-frame" data-zoom="assets/slide7_pattern.svg">
+              <img src="assets/slide7_pattern.svg" alt="Tessellated geometric pattern and 16-bit pixel-art game tile map diagram" class="slide-img">
+              <div class="image-overlay-hint">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <span>Click image to inspect full screen</span>
+              </div>
+            </div>
+            <figcaption class="media-caption">
+              <strong>Visual Study:</strong> Pixel-art tile mapping (repeating grass, path, and water) alongside mathematical geometric tessellations.
+            </figcaption>
+          </div>
+        </div>
+      </section>
+
+      <!-- SLIDE 8: RHYTHM -->
+      <section class="slide" data-index="8" data-title="Rhythm: Visual Tempo & Beat">
+        <div class="slide-grid">
+          <div class="slide-content-pane">
+            <div class="module-tag">MODULE 08 / 13 &middot; TEMPO</div>
+            <h1 class="slide-title">Visual <span class="gradient-text">Rhythm</span></h1>
+            
+            <div class="info-card card-concept">
+              <div class="card-icon-title">
+                <span class="badge-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+                </span>
+                <h3>Concept</h3>
+              </div>
+              <p>A visual tempo, pulse, or cadence generated by modulating the intervals, scale, and spacing of repeated elements across space.</p>
+            </div>
+
+            <div class="info-card card-purpose">
+              <div class="card-icon-title">
+                <span class="badge-icon accent-violet">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                </span>
+                <h3>Purpose</h3>
+              </div>
+              <p>Suggests organized musical movement, controls reading pace, and keeps the viewer's subconscious actively engaged across large canvases.</p>
+            </div>
+
+            <div class="interactive-checkpoint">
+              <div class="checkpoint-header">
+                <span class="sparkle-icon">&#10024;</span>
+                <h4>Classroom Checkpoint: Visual Music</h4>
+              </div>
+              <p class="checkpoint-prompt">Notice how the columns on the right transition from left to right. What happens to the "tempo"?</p>
+              <button class="reveal-btn" data-target="reveal8">Reveal Design Insight</button>
+              <div class="reveal-content hidden" id="reveal8">
+                <strong>Key Insight:</strong> The tempo accelerates. Wide spacing creates slow, calming intervals, while compressed spacing creates a dense crescendo and rapid visual beat.
+              </div>
+            </div>
+          </div>
+
+          <div class="slide-media-pane">
+            <div class="media-frame" data-zoom="assets/slide8_rhythm.svg">
+              <img src="assets/slide8_rhythm.svg" alt="Series of vertical columns gradually changing in thickness and spacing from left to right" class="slide-img">
+              <div class="image-overlay-hint">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <span>Click image to inspect full screen</span>
+              </div>
+            </div>
+            <figcaption class="media-caption">
+              <strong>Visual Study:</strong> Column intervals and thickness variations demonstrating visual tempo acceleration, peak syncopation, and musical cadence.
+            </figcaption>
+          </div>
+        </div>
+      </section>
+
+      <!-- SLIDE 9: MOVEMENT -->
+      <section class="slide" data-index="9" data-title="Movement: Choreographing the Eye">
+        <div class="slide-grid">
+          <div class="slide-content-pane">
+            <div class="module-tag">MODULE 09 / 13 &middot; DIRECTION</div>
+            <h1 class="slide-title">Eye <span class="gradient-text">Movement</span></h1>
+            
+            <div class="info-card card-concept">
+              <div class="card-icon-title">
+                <span class="badge-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                </span>
+                <h3>Concept</h3>
+              </div>
+              <p>The intentional path the viewer's eye takes as it travels through an artwork, interface, or editorial narrative.</p>
+            </div>
+
+            <div class="info-card card-purpose">
+              <div class="card-icon-title">
+                <span class="badge-icon accent-cyan">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
+                </span>
+                <h3>Purpose</h3>
+              </div>
+              <p>Guides the user through a deliberate sequence of information—ensuring they digest the headline, understand the context, and arrive at the intended action.</p>
+            </div>
+
+            <div class="interactive-checkpoint">
+              <div class="checkpoint-header">
+                <span class="sparkle-icon">&#10024;</span>
+                <h4>Classroom Checkpoint: Visual Pathfinding</h4>
+              </div>
+              <p class="checkpoint-prompt">Trace the curved neon path on the right. How does the curve prevent the user from bouncing off the page?</p>
+              <button class="reveal-btn" data-target="reveal9">Reveal Design Insight</button>
+              <div class="reveal-content hidden" id="reveal9">
+                <strong>Key Insight:</strong> The sweeping S-curve acts as a visual rail, hooking the gaze from the top entry point and looping it smoothly down into the call-to-action button.
+              </div>
+            </div>
+          </div>
+
+          <div class="slide-media-pane">
+            <div class="media-frame" data-zoom="assets/slide9_movement.svg">
+              <img src="assets/slide9_movement.svg" alt="Dynamic curved vector line leading the viewer's eye sequentially from headline to image" class="slide-img">
+              <div class="image-overlay-hint">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <span>Click image to inspect full screen</span>
+              </div>
+            </div>
+            <figcaption class="media-caption">
+              <strong>Visual Study:</strong> Three-stage gaze vector: Entry point headline &rarr; Contextual narrative card &rarr; Destination Hero Action.
+            </figcaption>
+          </div>
+        </div>
+      </section>
+
+      <!-- SLIDE 10: PROPORTION -->
+      <section class="slide" data-index="10" data-title="Proportion: Scale & Hierarchy">
+        <div class="slide-grid">
+          <div class="slide-content-pane">
+            <div class="module-tag">MODULE 10 / 13 &middot; HIERARCHY</div>
+            <h1 class="slide-title">Proportion &amp; <span class="gradient-text">Scale</span></h1>
+            
+            <div class="info-card card-concept">
+              <div class="card-icon-title">
+                <span class="badge-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 3H3v18h18V3z"/><path d="M9 3v18"/><path d="M3 9h18"/></svg>
+                </span>
+                <h3>Concept</h3>
+              </div>
+              <p>The comparative relationship of sizes, dimensions, and quantities between various elements and the overall composition.</p>
+            </div>
+
+            <div class="info-card card-purpose">
+              <div class="card-icon-title">
+                <span class="badge-icon accent-amber">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>
+                </span>
+                <h3>Purpose</h3>
+              </div>
+              <p>Dictates visual hierarchy and reading priority. Establishes immediate clarity on what is essential, what is supportive, and what is supplemental.</p>
+            </div>
+
+            <div class="interactive-checkpoint">
+              <div class="checkpoint-header">
+                <span class="sparkle-icon">&#10024;</span>
+                <h4>Classroom Checkpoint: Typographic Scale</h4>
+              </div>
+              <p class="checkpoint-prompt">What would happen if the headline, subheading, and body text were all formatted at the same 28px font size?</p>
+              <button class="reveal-btn" data-target="reveal10">Reveal Design Insight</button>
+              <div class="reveal-content hidden" id="reveal10">
+                <strong>Key Insight:</strong> Hierarchy collapses entirely. The reader experiences cognitive fatigue trying to figure out where the message starts.
+              </div>
+            </div>
+          </div>
+
+          <div class="slide-media-pane">
+            <div class="media-frame" data-zoom="assets/slide10_proportion.svg">
+              <img src="assets/slide10_proportion.svg" alt="Typographic hierarchy scale diagram and golden ratio proportions" class="slide-img">
+              <div class="image-overlay-hint">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <span>Click image to inspect full screen</span>
+              </div>
+            </div>
+            <figcaption class="media-caption">
+              <strong>Visual Study:</strong> Typographic scale hierarchy (64px &rarr; 24px &rarr; 14px) alongside the classic Golden Ratio (1 : 1.618) logarithmic spiral.
+            </figcaption>
+          </div>
+        </div>
+      </section>
+
+      <!-- SLIDE 11: HARMONY -->
+      <section class="slide" data-index="11" data-title="Harmony: Visual Agreement">
+        <div class="slide-grid">
+          <div class="slide-content-pane">
+            <div class="module-tag">MODULE 11 / 13 &middot; ACCORD</div>
+            <h1 class="slide-title">Visual <span class="gradient-text">Harmony</span></h1>
+            
+            <div class="info-card card-concept">
+              <div class="card-icon-title">
+                <span class="badge-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                </span>
+                <h3>Concept</h3>
+              </div>
+              <p>The visually satisfying, soothing effect created by blending similar, related elements and tonal families into natural accord.</p>
+            </div>
+
+            <div class="info-card card-purpose">
+              <div class="card-icon-title">
+                <span class="badge-icon accent-blue">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+                </span>
+                <h3>Purpose</h3>
+              </div>
+              <p>Creates a tranquil atmosphere of visual agreement, emotional calm, and professional stability, minimizing visual fatigue.</p>
+            </div>
+
+            <div class="interactive-checkpoint">
+              <div class="checkpoint-header">
+                <span class="sparkle-icon">&#10024;</span>
+                <h4>Classroom Checkpoint: Monochromatic Power</h4>
+              </div>
+              <p class="checkpoint-prompt">Why do enterprise and banking platforms frequently favor monochromatic palettes over high-contrast rainbow palettes?</p>
+              <button class="reveal-btn" data-target="reveal11">Reveal Design Insight</button>
+              <div class="reveal-content hidden" id="reveal11">
+                <strong>Key Insight:</strong> Monochromatic schemes reduce cognitive load. The mind associates harmonious blue tones with security, competence, and reliability.
+              </div>
+            </div>
+          </div>
+
+          <div class="slide-media-pane">
+            <div class="media-frame" data-zoom="assets/slide11_harmony.svg">
+              <img src="assets/slide11_harmony.svg" alt="Monochromatic blue dashboard interface showcasing color harmony and visual accord" class="slide-img">
+              <div class="image-overlay-hint">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <span>Click image to inspect full screen</span>
+              </div>
+            </div>
+            <figcaption class="media-caption">
+              <strong>Visual Study:</strong> Monochromatic blue dashboard illustrating color agreement across navigation, metric cards, and data waveforms.
+            </figcaption>
+          </div>
+        </div>
+      </section>
+
+      <!-- SLIDE 12: VARIETY -->
+      <section class="slide" data-index="12" data-title="Variety: Visual Vitality">
+        <div class="slide-grid">
+          <div class="slide-content-pane">
+            <div class="module-tag">MODULE 12 / 13 &middot; DIVERSITY</div>
+            <h1 class="slide-title">Visual <span class="gradient-text">Variety</span></h1>
+            
+            <div class="info-card card-concept">
+              <div class="card-icon-title">
+                <span class="badge-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m4.93 4.93 4.24 4.24"/><path d="m14.83 9.17 4.24-4.24"/><path d="m14.83 14.83 4.24 4.24"/><path d="m9.17 14.83-4.24 4.24"/></svg>
+                </span>
+                <h3>Concept</h3>
+              </div>
+              <p>The deliberate use of diverse visual elements—shapes, scales, orientations, colors, and textures—to hold the viewer's curiosity and attention.</p>
+            </div>
+
+            <div class="info-card card-purpose">
+              <div class="card-icon-title">
+                <span class="badge-icon accent-rose">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                </span>
+                <h3>Purpose &amp; The Unity Partnership</h3>
+              </div>
+              <p>Prevents monotony and boredom. Variety excites the viewer's eye, while Unity provides the foundational discipline that prevents chaos.</p>
+            </div>
+
+            <div class="interactive-checkpoint">
+              <div class="checkpoint-header">
+                <span class="sparkle-icon">&#10024;</span>
+                <h4>Classroom Checkpoint: Controlled Variety</h4>
+              </div>
+              <p class="checkpoint-prompt">Look at the bento grid. It has 7 different colors and shapes, yet it feels organized. What keeps it together?</p>
+              <button class="reveal-btn" data-target="reveal12">Reveal Design Insight</button>
+              <div class="reveal-content hidden" id="reveal12">
+                <strong>Key Insight:</strong> The underlying grid alignment, identical padding (16px), and matching rounded corners establish unity, allowing the interior colors to be wild and expressive.
+              </div>
+            </div>
+          </div>
+
+          <div class="slide-media-pane">
+            <div class="media-frame" data-zoom="assets/slide12_variety.svg">
+              <img src="assets/slide12_variety.svg" alt="Dynamic digital bento media grid featuring diverse shapes, colors, and textures in structured harmony" class="slide-img">
+              <div class="image-overlay-hint">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <span>Click image to inspect full screen</span>
+              </div>
+            </div>
+            <figcaption class="media-caption">
+              <strong>Visual Study:</strong> Digital media bento grid demonstrating controlled variety: diverse aspect ratios, color accents, and geometric shapes held in structural order.
+            </figcaption>
+          </div>
+        </div>
+      </section>
+
+      <!-- SLIDE 13: CONCLUSION -->
+      <section class="slide" data-index="13" data-title="Conclusion: Good Design is Intentional">
+        <div class="slide-grid">
+          <div class="slide-content-pane">
+            <div class="module-tag">MODULE 13 / 13 &middot; SYNTHESIS</div>
+            <h1 class="slide-title">Conclusion: <span class="gradient-text">Design is Intentional</span></h1>
+            
+            <div class="info-card card-concept">
+              <div class="card-icon-title">
+                <span class="badge-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                </span>
+                <h3>Concept</h3>
+              </div>
+              <p>Great design never happens by accident. Every line, space, color choice, and scale contrast is an intentional decision made to solve a visual challenge.</p>
+            </div>
+
+            <div class="info-card card-purpose">
+              <div class="card-icon-title">
+                <span class="badge-icon accent-emerald">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                </span>
+                <h3>The Final Takeaway</h3>
+              </div>
+              <p>Mastering these principles elevates standard visual elements into a professional, emotionally engaging, and world-class product.</p>
+            </div>
+
+            <div class="formula-box">
+              <div class="formula-item">
+                <span class="f-label">INGREDIENTS</span>
+                <span class="f-val">Elements</span>
+              </div>
+              <span class="f-op">+</span>
+              <div class="formula-item">
+                <span class="f-label">RECIPE</span>
+                <span class="f-val">Principles</span>
+              </div>
+              <span class="f-op">=</span>
+              <div class="formula-item highlight">
+                <span class="f-label">FINAL DISH</span>
+                <span class="f-val">Effective Design</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="slide-media-pane">
+            <div class="media-frame" data-zoom="assets/slide13_conclusion.svg">
+              <img src="assets/slide13_conclusion.svg" alt="Master formula diagram: Elements + Principles = Effective Design" class="slide-img">
+              <div class="image-overlay-hint">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <span>Click image to inspect full screen</span>
+              </div>
+            </div>
+            <figcaption class="media-caption">
+              <strong>Visual Study:</strong> The Master Synthesis: Raw elements organized through governing principles to produce world-class creative work.
+            </figcaption>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Bottom Dock Controller -->
+    <footer class="deck-footer">
+      <div class="footer-left">
+        <button class="nav-control-btn" id="prevBtn" title="Previous Slide (Left Arrow)">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+          <span>Previous</span>
+          <kbd class="key-hint">&larr;</kbd>
+        </button>
+      </div>
+
+      <div class="footer-center">
+        <!-- Quick Dot pagination -->
+        <div class="dot-pagination" id="dotPagination"></div>
+      </div>
+
+      <div class="footer-right">
+        <button class="nav-control-btn primary-btn" id="nextBtn" title="Next Slide (Right Arrow or Space)">
+          <span>Next</span>
+          <kbd class="key-hint">Space / &rarr;</kbd>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+      </div>
+    </footer>
+
+    <!-- Slide Drawer / Grid Modal -->
+    <aside class="slide-drawer" id="slideDrawer">
+      <div class="drawer-header">
+        <div class="drawer-title-group">
+          <h3>Lesson Table of Contents</h3>
+          <span class="drawer-subtitle">13 Interactive Modules</span>
+        </div>
+        <button class="close-drawer-btn" id="closeDrawerBtn" aria-label="Close Drawer">&times;</button>
+      </div>
+      <div class="drawer-grid" id="drawerGrid">
+        <!-- Generated dynamically in JS -->
+      </div>
+    </aside>
+    <div class="drawer-backdrop" id="drawerBackdrop"></div>
+
+    <!-- Image Lightbox Modal for Classroom Projector Zoom -->
+    <div class="lightbox-modal" id="lightboxModal">
+      <div class="lightbox-backdrop" id="lightboxBackdrop"></div>
+      <div class="lightbox-content">
+        <button class="lightbox-close" id="lightboxClose" aria-label="Close Lightbox">&times;</button>
+        <img src="" alt="Enlarged design study" id="lightboxImg" class="lightbox-image">
+        <p class="lightbox-caption" id="lightboxCaption"></p>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="app.js"></script>
+  <script src="lesson-selector.js"></script>
+</body>
+</html>

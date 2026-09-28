@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Basic Elements of Design — Interactive Masterclass</title>
+  <meta name="description" content="An interactive, visual masterclass exploring the fundamental Elements of Design: Lines, Shape, Form, Space, Colour, Value, and Texture.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="lesson-selector.css">
+</head>
+<body class="theme-dark" data-current-lesson="2" data-current-type="deck" data-root-path="../">
+
+  <!-- Main Presentation Wrapper -->
+  <div class="deck-container" id="deckApp">
+
+    <!-- Top Status / Navigation Bar -->
+    <header class="deck-header">
+      <div class="header-left">
+        <div class="logo-badge">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="3" width="18" height="18" rx="2"/>
+            <path d="M3 9h18"/>
+            <path d="M9 21V9"/>
+          </svg>
+          <span class="logo-text">ELEMENTS OF DESIGN</span>
+        </div>
+        <div class="divider-v"></div>
+        <button class="lesson-picker-btn lesson-2" id="lessonPickerBtn" aria-label="Select Lesson" title="Switch Lesson (Press L)">
+          <span class="lesson-picker-badge">L2</span>
+          <span class="lesson-picker-name">Lesson 2: Elements</span>
+          <svg class="lesson-picker-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </button>
+        <span class="slide-indicator" id="slideIndicator">01 / 09</span>
+      </div>
+
+      <div class="header-center">
+        <h2 class="current-slide-heading" id="topSlideTitle">Introduction to the Elements of Design</h2>
+      </div>
+
+      <div class="header-right">
+        <a href="quiz/index.html" class="nav-btn-icon quiz-link" title="Open Interactive Knowledge Quiz" id="headerQuizBtn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+          <span class="btn-label">Quiz</span>
+        </a>
+
+        <button class="nav-btn-icon" id="drawerToggleBtn" title="Toggle Slide Drawer (T)" aria-label="Toggle Slide Drawer">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="3" y="3" width="7" height="7"/>
+            <rect x="14" y="3" width="7" height="7"/>
+            <rect x="14" y="14" width="7" height="7"/>
+            <rect x="3" y="14" width="7" height="7"/>
+          </svg>
+          <span class="btn-label">All Slides</span>
+        </button>
+
+        <button class="nav-btn-icon" id="fullscreenBtn" title="Toggle Fullscreen (F)" aria-label="Toggle Fullscreen">
+          <svg id="fsIconExpand" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/>
+          </svg>
+          <svg id="fsIconCompress" class="hidden" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 14h6m0 0v6m0-6L3 21m17-7h-6m0 0v6m0-6l7 7M4 10h6m0 0V4m0 6L3 3m17 7h-6m0 0V4m0 6l7-7"/>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- Top Interactive Progress Bar -->
+    <div class="progress-track">
+      <div class="progress-bar" id="progressBar" style="width: 11.11%;"></div>
+    </div>
+
+    <!-- Main Slide Stage Area -->
+    <main class="slide-viewport">
+
+      <!-- ===================================================================
+           SLIDE 1: INTRODUCTION
+           =================================================================== -->
+      <section class="slide active" data-index="1" data-title="Introduction: The 7 Building Blocks">
+        <div class="slide-grid">
+          <div class="slide-content-pane">
+            <div class="module-tag">MODULE 01 / 09 &middot; FOUNDATIONS</div>
+            <h1 class="slide-title">The Basic <span class="gradient-text">Elements of Design</span></h1>
+            
+            <div class="info-card card-concept">
+              <div class="card-icon-title">
+                <span class="badge-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+                </span>
+                <h3>Concept</h3>
+              </div>
+              <p>The visual building blocks and sensory vocabulary used to construct every graphic layout, user interface, digital product, and work of art.</p>
+            </div>
+
+            <div class="info-card card-purpose">
+              <div class="card-icon-title">
+                <span class="badge-icon accent-purple">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+                </span>
+                <h3>The Master Recipe Analogy</h3>
+              </div>
+              <p>If the <strong>Principles of Design</strong> are the recipe and architectural blueprints, the <strong>Elements</strong> are the physical raw ingredients: the timber, flour, steel, and pigments from which everything is crafted.</p>
+            </div>
+
+            <div class="interactive-checkpoint">
+              <div class="checkpoint-header">
+                <span class="sparkle-icon">&#10024;</span>
+                <h4>Classroom Checkpoint: The Visual Atom</h4>
+              </div>
+              <p class="checkpoint-prompt">Look around the room or at your smartphone screen right now. Can you find any visible object that does NOT consist of Lines, Shapes, or Colors?</p>
+              <button class="reveal-btn" data-target="reveal1">Reveal Design Insight</button>
+              <div class="reveal-content hidden" id="reveal1">
+                <strong>Key Insight:</strong> It is physically impossible! Every optical stimulus perceived by the human retina breaks down entirely into combinations of the 7 basic elements. Master the elements, and you command human visual attention.
+              </div>
+            </div>
+          </div>
+
+          <div class="slide-media-pane">
+            <div class="media-frame" data-zoom="assets/slide1_intro.svg">
+              <img src="assets/slide1_intro.svg" alt="Infographic illustrating the 7 Basic Elements of Design arrayed around a central composition" class="slide-img">
+              <div class="image-overlay-hint">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <span>Click image to inspect full screen</span>
+              </div>
+            </div>
+            <figcaption class="media-caption">
+              <strong>Visual Study:</strong> The 7 Elemental Building Blocks: Line, Shape, Form, Space, Colour, Value, and Texture interconnected in a unified visual matrix.
+            </figcaption>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           SLIDE 2: LINES
+           =================================================================== -->
+      <section class="slide" data-index="2" data-title="Lines: Direction, Trajectory & Weight">
+        <div class="slide-grid">
+          <div class="slide-content-pane">
+            <div class="module-tag">MODULE 02 / 09 &middot; ELEMENT 01</div>
+            <h1 class="slide-title">The Power of <span class="gradient-text">Lines</span></h1>
+            
+            <div class="info-card card-concept">
+              <div class="card-icon-title">
+                <span class="badge-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                </span>
+                <h3>Concept</h3>
+              </div>
+              <p>A continuous mark made on a surface by a moving point. The most fundamental connector of visual thoughts, creating pathfinding, boundaries, and motion.</p>
+            </div>
+
+            <div class="info-card card-types">
+              <div class="card-icon-title">
+                <span class="badge-icon accent-green">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                </span>
+                <h3>Key Characteristics &amp; Orientations</h3>
+              </div>
+              <ul class="bullet-list">
+                <li><strong>Horizontal:</strong> Stability, rest, horizon, calm ground.</li>
+                <li><strong>Vertical:</strong> Strength, dignity, authority, lofty height.</li>
+                <li><strong>Diagonal:</strong> Kinetic energy, speed, tension, action.</li>
+                <li><strong>Curved:</strong> Organic grace, sensory comfort, natural flow.</li>
+                <li><strong>Stroke Weight:</strong> Thin hairlines for grids vs bold lines for focal spikes.</li>
+              </ul>
+            </div>
+
+            <!-- Live Line Tester Widget -->
+            <div class="live-widget-box">
+              <div class="widget-label">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/></svg>
+                <span>Interactive Live Stroke Weight Tester:</span>
+              </div>
+              <div class="widget-controls">
+                <div class="widget-slider-group">
+                  <span>Weight:</span>
+                  <input type="range" id="lineWeightSlider" min="1" max="16" value="2">
+                  <span id="lineWeightVal" style="color: var(--primary-accent); font-weight: 700;">2px</span>
+                </div>
+              </div>
+              <div class="live-line-preview" id="liveLinePreview"></div>
+            </div>
+
+            <div class="interactive-checkpoint">
+              <div class="checkpoint-header">
+                <span class="sparkle-icon">&#10024;</span>
+                <h4>Classroom Checkpoint: The Kinetic Angle</h4>
+              </div>
+              <p class="checkpoint-prompt">Why do action sports logos (Nike, Adidas, Puma) and speed lines in anime always angle diagonally instead of laying horizontal?</p>
+              <button class="reveal-btn" data-target="reveal2">Reveal Design Insight</button>
+              <div class="reveal-content hidden" id="reveal2">
+                <strong>Key Insight:</strong> Gravity physics! A horizontal line rests securely on the earth. A diagonal line represents an unstable object in active motion or falling, instantly triggering adrenaline and perceived momentum in our brain.
+              </div>
+            </div>
+          </div>
+
+          <div class="slide-media-pane">
+            <div class="media-frame" data-zoom="assets/slide2_lines.svg">
+              <img src="assets/slide2_lines.svg" alt="Visual study of line orientations, stroke weights, and UI wireframe scaffolding" class="slide-img">
+              <div class="image-overlay-hint">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <span>Click image to inspect full screen</span>
+              </div>
+            </div>
+            <figcaption class="media-caption">
+              <strong>Visual Study:</strong> Directional psychology matrix (Horizontal, Vertical, Diagonal, Curved, Zig-Zag) alongside line weight hierarchy and digital UI wireframing.
+            </figcaption>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           SLIDE 3: SHAPE
+           =================================================================== -->
+      <section class="slide" data-index="3" data-title="Shape: 2D Boundaries & Silhouettes">
+        <div class="slide-grid">
+          <div class="slide-content-pane">
+            <div class="module-tag">MODULE 03 / 09 &middot; ELEMENT 02</div>
+            <h1 class="slide-title">2D Boundaries: <span class="gradient-text">Shape</span></h1>
+            
+            <div class="info-card card-concept">
+              <div class="card-icon-title">
+                <span class="badge-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 22 22 22"/></svg>
+                </span>
+                <h3>Concept</h3>
+              </div>
+              <p>A two-dimensional, enclosed area defined by boundaries such as lines, contrasting colors, or value shifts. Possesses height and width, but flat zero depth.</p>
+            </div>
+
+            <div class="info-card card-types">
+              <div class="card-icon-title">
+                <span class="badge-icon accent-purple">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/></svg>
+                </span>
+                <h3>The 3 Core Categories of Shape</h3>
+              </div>
+              <ul class="bullet-list">
+                <li><strong>Geometric:</strong> Precise, mathematical circles, squares, polygons (order, structure, digital tech).</li>
+                <li><strong>Organic:</strong> Asymmetrical, fluid, irregular leaves, clouds, bodies (warmth, vitality, nature).</li>
+                <li><strong>Abstract / Symbolic:</strong> Stylized glyphs, icons, and simplified representations (app icons, branding).</li>
+              </ul>
+            </div>
+
+            <!-- Live Shape Radius Widget -->
+            <div class="live-widget-box">
+              <div class="widget-label">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="4"/></svg>
+                <span>Interactive UI Corner Radius Psychology:</span>
+              </div>
+              <div class="widget-controls">
+                <div class="widget-slider-group">
+                  <span>Border Radius:</span>
+                  <input type="range" id="shapeRadiusSlider" min="0" max="22" value="8">
+                  <span id="shapeRadiusVal" style="color: var(--accent-indigo); font-weight: 700;">8px</span>
+                </div>
+                <div class="live-shape-preview" id="liveShapePreview"></div>
+              </div>
+            </div>
+
+            <div class="interactive-checkpoint">
+              <div class="checkpoint-header">
+                <span class="sparkle-icon">&#10024;</span>
+                <h4>Classroom Checkpoint: The Silhouette Test</h4>
+              </div>
+              <p class="checkpoint-prompt">Why can you recognize the Batman logo, Mickey Mouse ears, or the Apple logo even when filled with 100% flat pitch black?</p>
+              <button class="reveal-btn" data-target="reveal3">Reveal Design Insight</button>
+              <div class="reveal-content hidden" id="reveal3">
+                <strong>Key Insight:</strong> The human visual cortex parses shape silhouettes in less than 50 milliseconds before it even analyzes surface colors or textures. A memorable silhouette guarantees instant brand recall.
+              </div>
+            </div>
+          </div>
+
+          <div class="slide-media-pane">
+            <div class="media-frame" data-zoom="assets/slide3_shape.svg">
+              <img src="assets/slide3_shape.svg" alt="Classification of Geometric, Organic, and Abstract shapes, with the silhouette test and button radius psychology" class="slide-img">
+              <div class="image-overlay-hint">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <span>Click image to inspect full screen</span>
+              </div>
+            </div>
+            <figcaption class="media-caption">
+              <strong>Visual Study:</strong> Shape classification (Geometric vs. Organic vs. Abstract), the 50ms Silhouette Recognition Test, and button geometry psychology.
+            </figcaption>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           SLIDE 4: FORM
+           =================================================================== -->
+      <section class="slide" data-index="4" data-title="Form: 3D Volume, Mass & Depth">
+        <div class="slide-grid">
+          <div class="slide-content-pane">
+            <div class="module-tag">MODULE 04 / 09 &middot; ELEMENT 03</div>
+            <h1 class="slide-title">3D Volume &amp; Mass: <span class="gradient-text">Form</span></h1>
+            
+            <div class="info-card card-concept">
+              <div class="card-icon-title">
+                <span class="badge-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+                </span>
+                <h3>Concept</h3>
+              </div>
+              <p>A three-dimensional object with height, width, and depth; or the illusion of physical mass and tangible volume created on a flat 2D canvas.</p>
+            </div>
+
+            <div class="info-card card-types">
+              <div class="card-icon-title">
+                <span class="badge-icon accent-amber">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/></svg>
+                </span>
+                <h3>The 5 Light Zones Creating 3D Form</h3>
+              </div>
+              <ul class="bullet-list">
+                <li><strong>Highlight:</strong> Point of direct light reflection (pure brightest point).</li>
+                <li><strong>Midtone:</strong> The true natural surface hue receiving angled light.</li>
+                <li><strong>Core Shadow:</strong> The darkest band where the form curves away from light.</li>
+                <li><strong>Reflected Light:</strong> Ambient light bouncing off the floor back onto the underside.</li>
+                <li><strong>Cast Shadow:</strong> The dark silhouette projected onto surrounding surfaces.</li>
+              </ul>
+            </div>
+
+            <!-- Live Form Elevation Widget -->
+            <div class="live-widget-box">
+              <div class="widget-label">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                <span>Interactive Digital Elevation / Altitude Slider:</span>
+              </div>
+              <div class="widget-controls">
+                <div class="widget-slider-group">
+                  <span>Elevation:</span>
+                  <input type="range" id="formElevationSlider" min="1" max="10" value="3">
+                </div>
+                <div class="live-form-preview" id="liveFormPreview">3D Card</div>
+              </div>
+            </div>
+
+            <div class="interactive-checkpoint">
+              <div class="checkpoint-header">
+                <span class="sparkle-icon">&#10024;</span>
+                <h4>Classroom Checkpoint: The Illusion of Weight</h4>
+              </div>
+              <p class="checkpoint-prompt">What single visual element tells your brain whether a sphere is resting on the tabletop or hovering 3 feet in the air?</p>
+              <button class="reveal-btn" data-target="reveal4">Reveal Design Insight</button>
+              <div class="reveal-content hidden" id="reveal4">
+                <strong>Key Insight:</strong> The <em>Cast Shadow!</em> If the cast shadow touches the base of the object, it is grounded. If the cast shadow is detached and blurred below it, your brain calculates optical altitude and depth!
+              </div>
+            </div>
+          </div>
+
+          <div class="slide-media-pane">
+            <div class="media-frame" data-zoom="assets/slide4_form.svg">
+              <img src="assets/slide4_form.svg" alt="Anatomy of light and shadow on a 3D sphere compared with UI digital elevation" class="slide-img">
+              <div class="image-overlay-hint">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <span>Click image to inspect full screen</span>
+              </div>
+            </div>
+            <figcaption class="media-caption">
+              <strong>Visual Study:</strong> The 5 zones of light on a shaded sphere (Highlight, Midtone, Core Shadow, Reflected Light, Cast Shadow) and digital UI card altitude.
+            </figcaption>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           SLIDE 5: SPACE
+           =================================================================== -->
+      <section class="slide" data-index="5" data-title="Space: Positive vs. Negative & White Space">
+        <div class="slide-grid">
+          <div class="slide-content-pane">
+            <div class="module-tag">MODULE 05 / 09 &middot; ELEMENT 04</div>
+            <h1 class="slide-title">Visual Breathing Room: <span class="gradient-text">Space</span></h1>
+            
+            <div class="info-card card-concept">
+              <div class="card-icon-title">
+                <span class="badge-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/></svg>
+                </span>
+                <h3>Concept</h3>
+              </div>
+              <p>The area between, around, above, below, or contained within elements. It dictates perspective, breathing room, and visual focus across layouts.</p>
+            </div>
+
+            <div class="info-card card-types">
+              <div class="card-icon-title">
+                <span class="badge-icon accent-green">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="12" cy="12" r="4"/></svg>
+                </span>
+                <h3>Positive Space vs. Negative Space</h3>
+              </div>
+              <ul class="bullet-list">
+                <li><strong>Positive Space (Figure):</strong> The primary subject matter, characters, text, and active interactive controls.</li>
+                <li><strong>Negative Space (Ground / White Space):</strong> The background and empty buffer surrounding objects.</li>
+                <li><strong>Macro White Space:</strong> Large margins separating cards, sections, and headers.</li>
+                <li><strong>Micro White Space:</strong> Spacing between paragraphs, lines (leading), and letters (kerning).</li>
+              </ul>
+            </div>
+
+            <!-- Live Space Inverter Widget -->
+            <div class="live-widget-box">
+              <div class="widget-label">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
+                <span>Interactive Figure-Ground Inverter:</span>
+              </div>
+              <div class="widget-controls">
+                <button class="widget-btn" id="spaceInvertBtn">Invert Figure / Ground</button>
+              </div>
+            </div>
+
+            <div class="interactive-checkpoint">
+              <div class="checkpoint-header">
+                <span class="sparkle-icon">&#10024;</span>
+                <h4>Classroom Checkpoint: The Luxury Space Paradox</h4>
+              </div>
+              <p class="checkpoint-prompt">Why do elite luxury brands (Apple, Rolex, Chanel) leave 60%–80% of their websites empty with massive negative space, while discount websites pack every pixel?</p>
+              <button class="reveal-btn" data-target="reveal5">Reveal Design Insight</button>
+              <div class="reveal-content hidden" id="reveal5">
+                <strong>Key Insight:</strong> Space signals confidence, luxury, and prestige! Cramped pixels scream "cheap bargain panic", whereas generous white space conveys psychological calm, premium craftsmanship, and effortless focus.
+              </div>
+            </div>
+          </div>
+
+          <div class="slide-media-pane" id="spacePreviewFrame">
+            <div class="media-frame" data-zoom="assets/slide5_space.svg">
+              <img src="assets/slide5_space.svg" alt="Positive vs Negative Space Rubin Vase illusion and UI white space comparison" class="slide-img">
+              <div class="image-overlay-hint">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <span>Click image to inspect full screen</span>
+              </div>
+            </div>
+            <figcaption class="media-caption">
+              <strong>Visual Study:</strong> Figure-ground optical duality (Rubin's Vase), Positive vs. Negative Space, and the cognitive luxury of Macro vs. Micro white space.
+            </figcaption>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           SLIDE 6: COLOUR
+           =================================================================== -->
+      <section class="slide" data-index="6" data-title="Colour: Hue, Saturation & Emotional Mood">
+        <div class="slide-grid">
+          <div class="slide-content-pane">
+            <div class="module-tag">MODULE 06 / 09 &middot; ELEMENT 05</div>
+            <h1 class="slide-title">Visual Emotion: <span class="gradient-text">Colour</span></h1>
+            
+            <div class="info-card card-concept">
+              <div class="card-icon-title">
+                <span class="badge-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a10 10 0 0 1 0 20z"/></svg>
+                </span>
+                <h3>Concept</h3>
+              </div>
+              <p>The visual perception of reflected light wavelengths. The most emotionally charged, instant communicator in human visual design.</p>
+            </div>
+
+            <div class="info-card card-types">
+              <div class="card-icon-title">
+                <span class="badge-icon accent-rose">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m4.93 4.93 4.24 4.24"/><path d="m14.83 9.17 4.24-4.24"/><path d="m14.83 14.83 4.24 4.24"/><path d="m9.17 14.83-4.24 4.24"/></svg>
+                </span>
+                <h3>The 3 Core Dimensions of Colour</h3>
+              </div>
+              <ul class="bullet-list">
+                <li><strong>Hue:</strong> The distinct name / wavelength family (Red, Cyan, Violet).</li>
+                <li><strong>Saturation (Chroma):</strong> The purity or intensity (electric neon vs muted slate).</li>
+                <li><strong>Temperature:</strong> Warm (Red/Orange = advances, energetic) vs Cool (Blue/Green = recedes, serene).</li>
+                <li><strong>Harmonies:</strong> Complementary (opposites), Analogous (neighbors), Triadic (triangle).</li>
+              </ul>
+            </div>
+
+            <!-- Live Color Harmony Tester Widget -->
+            <div class="live-widget-box">
+              <div class="widget-label">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="6" cy="6" r="3"/><circle cx="18" cy="6" r="3"/><circle cx="12" cy="18" r="3"/></svg>
+                <span>Interactive Color Harmony Live Preview:</span>
+              </div>
+              <div class="widget-controls">
+                <button class="widget-btn color-harmony-btn active" data-harmony="complementary">Complementary</button>
+                <button class="widget-btn color-harmony-btn" data-harmony="analogous">Analogous</button>
+                <button class="widget-btn color-harmony-btn" data-harmony="triadic">Triadic</button>
+                <button class="widget-btn color-harmony-btn" data-harmony="monochromatic">Monochrome</button>
+              </div>
+              <div class="color-live-box" id="colorLiveBox"></div>
+            </div>
+
+            <div class="interactive-checkpoint">
+              <div class="checkpoint-header">
+                <span class="sparkle-icon">&#10024;</span>
+                <h4>Classroom Checkpoint: The CTA Magnet</h4>
+              </div>
+              <p class="checkpoint-prompt">Why do the highest-converting digital checkout buttons use a complementary accent color that appears nowhere else on the interface?</p>
+              <button class="reveal-btn" data-target="reveal6">Reveal Design Insight</button>
+              <div class="reveal-content hidden" id="reveal6">
+                <strong>Key Insight:</strong> The Von Restorff Isolation Effect! When a single element breaks the entire page's color scheme, human attention is irresistibly drawn to it like a beacon, accelerating user action.
+              </div>
+            </div>
+          </div>
+
+          <div class="slide-media-pane">
+            <div class="media-frame" data-zoom="assets/slide6_colour.svg">
+              <img src="assets/slide6_colour.svg" alt="12-segment color wheel, color harmonies, warm vs cool temperature, and 60-30-10 UI rule" class="slide-img">
+              <div class="image-overlay-hint">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <span>Click image to inspect full screen</span>
+              </div>
+            </div>
+            <figcaption class="media-caption">
+              <strong>Visual Study:</strong> The 12-segment Color Wheel, Complementary &amp; Triadic harmonies, Hue vs Saturation, and the 60-30-10 digital palette system.
+            </figcaption>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           SLIDE 7: VALUE
+           =================================================================== -->
+      <section class="slide" data-index="7" data-title="Value: Tonal Contrast & Luminance">
+        <div class="slide-grid" id="valueSlideGrid">
+          <div class="slide-content-pane">
+            <div class="module-tag">MODULE 07 / 09 &middot; ELEMENT 06</div>
+            <h1 class="slide-title">Tonal Luminance: <span class="gradient-text">Value</span></h1>
+            
+            <div class="info-card card-concept">
+              <div class="card-icon-title">
+                <span class="badge-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a10 10 0 0 1 0 20z"/></svg>
+                </span>
+                <h3>Concept</h3>
+              </div>
+              <p>The relative lightness or darkness of a hue or surface, ranging on a gradient from purest white (100% luminance) to absolute black (0% luminance).</p>
+            </div>
+
+            <div class="info-card card-types">
+              <div class="card-icon-title">
+                <span class="badge-icon accent-amber">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364-.707-.707M6.343 6.343l-.707-.707m12.728 0-.707.707M6.343 17.657l-.707.707"/></svg>
+                </span>
+                <h3>The Master Law of Value</h3>
+              </div>
+              <p style="color: #f59e0b; font-weight: 700; margin-bottom: 0.5rem;">"Colour gets the credit, but VALUE does all the heavy work!"</p>
+              <ul class="bullet-list">
+                <li><strong>High-Key:</strong> Compositions dominated by light values (steps 1–4): optimistic, pure, ethereal.</li>
+                <li><strong>Low-Key:</strong> Compositions dominated by deep dark values (steps 6–9): dramatic, cinematic, mystery.</li>
+                <li><strong>Readability:</strong> Without sufficient value contrast, colored text becomes completely unreadable.</li>
+              </ul>
+            </div>
+
+            <!-- Live Squint Test Widget -->
+            <div class="live-widget-box">
+              <div class="widget-label">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+                <span>Interactive Classroom Squint / Grayscale Test:</span>
+              </div>
+              <div class="widget-controls">
+                <button class="widget-btn" id="squintTestBtn">Activate Squint / Grayscale Test</button>
+              </div>
+            </div>
+
+            <div class="interactive-checkpoint">
+              <div class="checkpoint-header">
+                <span class="sparkle-icon">&#10024;</span>
+                <h4>Classroom Checkpoint: The Squint Test</h4>
+              </div>
+              <p class="checkpoint-prompt">Why do master painters, movie cinematographers, and veteran UI designers squint their eyes when evaluating a layout?</p>
+              <button class="reveal-btn" data-target="reveal7">Reveal Design Insight</button>
+              <div class="reveal-content hidden" id="reveal7">
+                <strong>Key Insight:</strong> Squinting reduces fine detail and color distraction, leaving only the raw light/dark value contrast. If your design is clear when squinting, your visual hierarchy is bulletproof!
+              </div>
+            </div>
+          </div>
+
+          <div class="slide-media-pane">
+            <div class="media-frame" data-zoom="assets/slide7_value.svg">
+              <img src="assets/slide7_value.svg" alt="9-step value scale from white to black, High-key vs Low-key, and dark mode UI surface elevation" class="slide-img">
+              <div class="image-overlay-hint">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <span>Click image to inspect full screen</span>
+              </div>
+            </div>
+            <figcaption class="media-caption">
+              <strong>Visual Study:</strong> The 9-Step Tonal Scale, High-Key vs. Low-Key tonal atmospheres, and dark-mode elevation layering (surface Z-0 to modal Z-2).
+            </figcaption>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           SLIDE 8: TEXTURE
+           =================================================================== -->
+      <section class="slide" data-index="8" data-title="Texture: Surface Quality & Tactile Illusion">
+        <div class="slide-grid">
+          <div class="slide-content-pane">
+            <div class="module-tag">MODULE 08 / 09 &middot; ELEMENT 07</div>
+            <h1 class="slide-title">Tactile Quality: <span class="gradient-text">Texture</span></h1>
+            
+            <div class="info-card card-concept">
+              <div class="card-icon-title">
+                <span class="badge-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 14h6m0 0v6m0-6L3 21m17-7h-6m0 0v6m0-6l7 7M4 10h6m0 0V4m0 6L3 3m17 7h-6m0 0V4m0 6l7-7"/></svg>
+                </span>
+                <h3>Concept</h3>
+              </div>
+              <p>The physical feel or visual illusion of a surface's tactile characteristics (smooth, rough, grainy, matte, glossy, frosted, woven).</p>
+            </div>
+
+            <div class="info-card card-types">
+              <div class="card-icon-title">
+                <span class="badge-icon accent-cyan">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+                </span>
+                <h3>Tactile vs. Visual (Implied) Texture</h3>
+              </div>
+              <ul class="bullet-list">
+                <li><strong>Tactile Texture:</strong> Physical surface you can feel with fingers (embossed packaging, book linen, matte phone chassis).</li>
+                <li><strong>Visual / Implied Texture:</strong> Optical 2D simulation on flat glass using lighting, noise, and shadow shaders.</li>
+                <li><strong>Glassmorphism:</strong> Frosted translucent glass blur bringing depth to modern software (iOS, VisionOS, Windows 11).</li>
+                <li><strong>Grain &amp; Noise:</strong> Prevents digital color banding and imparts tactile warmth to digital screens.</li>
+              </ul>
+            </div>
+
+            <!-- Live Texture Swapper Widget -->
+            <div class="live-widget-box">
+              <div class="widget-label">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/></svg>
+                <span>Interactive Live Digital Surface Texture Switcher:</span>
+              </div>
+              <div class="widget-controls">
+                <button class="widget-btn texture-mode-btn active" data-texture="smooth">Smooth</button>
+                <button class="widget-btn texture-mode-btn" data-texture="noise">Film Grain</button>
+                <button class="widget-btn texture-mode-btn" data-texture="frosted">Frosted Glass</button>
+                <button class="widget-btn texture-mode-btn" data-texture="grid">Tech Grid</button>
+              </div>
+              <div class="live-texture-box texture-smooth" id="textureLiveBox">Surface Texture Preview</div>
+            </div>
+
+            <div class="interactive-checkpoint">
+              <div class="checkpoint-header">
+                <span class="sparkle-icon">&#10024;</span>
+                <h4>Classroom Checkpoint: The Glass Revival</h4>
+              </div>
+              <p class="checkpoint-prompt">Why did modern tech companies reintroduce subtle noise grain, glassmorphic frosted blur, and haptic clicks after 10 years of sterile flat design?</p>
+              <button class="reveal-btn" data-target="reveal8">Reveal Design Insight</button>
+              <div class="reveal-content hidden" id="reveal8">
+                <strong>Key Insight:</strong> Humans are sensory, tactile creatures! Total flatness felt sterile, robotic, and uninviting. Subtle texture bridges the psychological gap between cold digital screens and physical reality, inspiring delight!
+              </div>
+            </div>
+          </div>
+
+          <div class="slide-media-pane">
+            <div class="media-frame" data-zoom="assets/slide8_texture.svg">
+              <img src="assets/slide8_texture.svg" alt="Tactile vs Visual texture comparison, frosted glassmorphism, and subtle noise grain" class="slide-img">
+              <div class="image-overlay-hint">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <span>Click image to inspect full screen</span>
+              </div>
+            </div>
+            <figcaption class="media-caption">
+              <strong>Visual Study:</strong> Tactile vs. Visual Texture taxonomy, modern Glassmorphism optical refraction, and film noise grain in digital product design.
+            </figcaption>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           SLIDE 9: CONCLUSION
+           =================================================================== -->
+      <section class="slide" data-index="9" data-title="Conclusion: The Grand Synthesis">
+        <div class="slide-grid">
+          <div class="slide-content-pane">
+            <div class="module-tag">MODULE 09 / 09 &middot; MASTERY</div>
+            <h1 class="slide-title">The Grand <span class="gradient-text">Synthesis</span></h1>
+            
+            <div class="info-card card-concept">
+              <div class="card-icon-title">
+                <span class="badge-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                </span>
+                <h3>The Grand Formula</h3>
+              </div>
+              <p>Great design is never an accident. It is the deliberate alchemy of the <strong>7 Elements</strong> organized with the wisdom of the <strong>Principles of Design</strong>.</p>
+            </div>
+
+            <div class="info-card card-types">
+              <div class="card-icon-title">
+                <span class="badge-icon accent-purple">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                </span>
+                <h3>Your 7-Element Mastery Recap</h3>
+              </div>
+              <ul class="bullet-list">
+                <li><strong>Line:</strong> Directs the user's eye and carves structure.</li>
+                <li><strong>Shape:</strong> Provides instantaneous 50ms silhouette recognition.</li>
+                <li><strong>Form:</strong> Imparts tangible 3D mass, depth, and elevation.</li>
+                <li><strong>Space:</strong> Gives breathing room, elegance, and cognitive calm.</li>
+                <li><strong>Colour:</strong> Stirs raw emotion and commands priority action.</li>
+                <li><strong>Value:</strong> Anchors visual contrast and guarantees readability.</li>
+                <li><strong>Texture:</strong> Delivers sensory warmth and physical tangibility.</li>
+              </ul>
+            </div>
+
+            <div class="interactive-checkpoint">
+              <div class="checkpoint-header">
+                <span class="sparkle-icon">&#10024;</span>
+                <h4>Final Mastery Challenge: The Designer's Eye</h4>
+              </div>
+              <p class="checkpoint-prompt">Next time you open your favorite video game, app, or website: pause for 10 seconds. Identify each of the 7 elements at play.</p>
+              <a href="quiz/index.html" class="footer-btn btn-primary" style="display: inline-flex; width: fit-content; text-decoration: none; margin-top: 0.5rem;">
+                Launch Interactive Knowledge Quiz &rarr;
+              </a>
+            </div>
+          </div>
+
+          <div class="slide-media-pane">
+            <div class="media-frame" data-zoom="assets/slide9_conclusion.svg">
+              <img src="assets/slide9_conclusion.svg" alt="The Visual Alchemy Equation and 7-Element Audit Checklist" class="slide-img">
+              <div class="image-overlay-hint">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <span>Click image to inspect full screen</span>
+              </div>
+            </div>
+            <figcaption class="media-caption">
+              <strong>Visual Study:</strong> The Design Alchemy Equation: Elements + Principles = World-Class Visual Masterpieces, complete with the 7-Element Audit Checklist.
+            </figcaption>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Bottom Footer Navigation Bar -->
+    <footer class="deck-footer">
+      <div class="footer-left">
+        <button class="footer-btn" id="prevBtn" disabled title="Previous Slide (Left Arrow / PageUp)">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+          <span>Previous</span>
+        </button>
+        <button class="footer-btn btn-primary" id="nextBtn" title="Next Slide (Right Arrow / Spacebar)">
+          <span>Next Slide</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+      </div>
+
+      <div class="footer-center" id="dotPagination">
+        <!-- Dynamically populated dot buttons -->
+      </div>
+
+      <div class="footer-right">
+        <div class="keyboard-hints">
+          <span>Keys:</span>
+          <span class="kbd-key">&larr;</span>
+          <span class="kbd-key">&rarr;</span>
+          <span class="kbd-key">Space</span>
+          <span class="kbd-key">F</span>
+          <span class="kbd-key">T</span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Slide Drawer (Jump Menu) -->
+    <div class="drawer-backdrop" id="drawerBackdrop"></div>
+    <aside class="slide-drawer" id="slideDrawer" aria-label="Slide Navigation Drawer">
+      <div class="drawer-header">
+        <h3>All Lesson Slides</h3>
+        <button class="close-drawer-btn" id="closeDrawerBtn" aria-label="Close Drawer">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+      <div class="drawer-grid" id="drawerGrid">
+        <!-- Dynamically populated drawer items -->
+      </div>
+    </aside>
+
+    <!-- Lightbox Zoom Modal -->
+    <div class="lightbox-modal" id="lightboxModal" role="dialog" aria-modal="true">
+      <div class="lightbox-backdrop" id="lightboxBackdrop"></div>
+      <div class="lightbox-content">
+        <button class="lightbox-close" id="lightboxClose" aria-label="Close Lightbox">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          <span>Close (Esc)</span>
+        </button>
+        <img src="" alt="Enlarged Visual Inspection" class="lightbox-img" id="lightboxImg">
+        <p class="lightbox-caption" id="lightboxCaption"></p>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="app.js"></script>
+  <script src="lesson-selector.js"></script>
+</body>
+</html>

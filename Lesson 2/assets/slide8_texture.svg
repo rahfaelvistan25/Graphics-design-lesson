@@ -1,0 +1,166 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 550" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bgGrad8" cx="50%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0b1120"/>
+    </radialGradient>
+    <filter id="shadow8" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+    <!-- Pattern: Crosshatch Texture -->
+    <pattern id="crosshatch" width="8" height="8" patternUnits="userSpaceOnUse">
+      <path d="M 0 0 L 8 8 M 8 0 L 0 8" stroke="#38bdf8" stroke-width="0.8" stroke-opacity="0.4"/>
+    </pattern>
+    <!-- Pattern: Dots Texture -->
+    <pattern id="dots" width="10" height="10" patternUnits="userSpaceOnUse">
+      <circle cx="5" cy="5" r="1.5" fill="#34d399" fill-opacity="0.5"/>
+    </pattern>
+    <!-- Pattern: Subtle Noise/Grain -->
+    <pattern id="grainPattern" width="16" height="16" patternUnits="userSpaceOnUse">
+      <rect width="1" height="1" x="2" y="3" fill="#ffffff" fill-opacity="0.25"/>
+      <rect width="1" height="1" x="7" y="11" fill="#ffffff" fill-opacity="0.2"/>
+      <rect width="1" height="1" x="13" y="6" fill="#ffffff" fill-opacity="0.3"/>
+      <rect width="1" height="1" x="10" y="14" fill="#ffffff" fill-opacity="0.2"/>
+      <rect width="1" height="1" x="4" y="9" fill="#000000" fill-opacity="0.4"/>
+    </pattern>
+    <!-- Frosted Glass Filter -->
+    <filter id="frostBlur">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="550" rx="16" fill="url(#bgGrad8)"/>
+
+  <!-- Top Title Banner -->
+  <g transform="translate(40, 25)">
+    <rect width="180" height="28" rx="14" fill="#06b6d4" fill-opacity="0.15" stroke="#06b6d4" stroke-width="1"/>
+    <text x="14" y="19" font-family="'Outfit', sans-serif" font-size="11" font-weight="700" fill="#06b6d4" letter-spacing="1">ELEMENT 07 · TEXTURE</text>
+    <text x="200" y="20" font-family="'Inter', sans-serif" font-size="13" fill="#cbd5e1">Tactile vs. Visual (Implied) Texture: Surface Feel, Grain, &amp; Glassmorphism</text>
+  </g>
+
+  <!-- Left Panel: Tactile vs Visual / Implied Texture -->
+  <g transform="translate(40, 75)" filter="url(#shadow8)">
+    <rect width="345" height="440" rx="14" fill="#131c2e" stroke="#1e293b" stroke-width="1.5"/>
+    <text x="20" y="32" font-family="'Outfit', sans-serif" font-size="15" font-weight="700" fill="#ffffff">The 2 Texture Worlds</text>
+    <text x="20" y="50" font-family="'Inter', sans-serif" font-size="11" fill="#94a3b8">Physical touch vs. 2D optical illusion</text>
+
+    <!-- Card 1: Tactile Texture -->
+    <g transform="translate(20, 70)">
+      <rect width="305" height="130" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <text x="14" y="24" font-family="'Outfit', sans-serif" font-size="13" font-weight="700" fill="#38bdf8">1. Physical / Tactile Texture</text>
+      <text x="14" y="42" font-family="'Inter', sans-serif" font-size="10" fill="#94a3b8">You can physically feel it with nerve endings in your fingers.</text>
+      
+      <!-- Swatches -->
+      <g transform="translate(14, 55)">
+        <!-- Embossed card swatch -->
+        <rect x="0" y="0" width="80" height="45" rx="6" fill="#0f172a" stroke="#475569" stroke-width="1"/>
+        <text x="40" y="26" text-anchor="middle" font-family="'Inter', sans-serif" font-size="9" fill="#cbd5e1">Embossed</text>
+
+        <!-- Fabric weave swatch -->
+        <rect x="95" y="0" width="80" height="45" rx="6" fill="#0f172a" stroke="#475569" stroke-width="1"/>
+        <rect x="95" y="0" width="80" height="45" rx="6" fill="url(#crosshatch)"/>
+        <text x="135" y="26" text-anchor="middle" font-family="'Inter', sans-serif" font-size="9" fill="#ffffff">Woven Fabric</text>
+
+        <!-- Matte paper swatch -->
+        <rect x="190" y="0" width="80" height="45" rx="6" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+        <rect x="190" y="0" width="80" height="45" rx="6" fill="url(#dots)"/>
+        <text x="230" y="26" text-anchor="middle" font-family="'Inter', sans-serif" font-size="9" fill="#ffffff">Matte Screen</text>
+      </g>
+      <text x="14" y="118" font-family="'Inter', sans-serif" font-size="9" fill="#64748b">Key: Real world packaging, book covers, hardware casing.</text>
+    </g>
+
+    <!-- Card 2: Visual (Implied) Texture -->
+    <g transform="translate(20, 215)">
+      <rect width="305" height="195" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <text x="14" y="24" font-family="'Outfit', sans-serif" font-size="13" font-weight="700" fill="#06b6d4">2. Visual / Implied Texture</text>
+      <text x="14" y="42" font-family="'Inter', sans-serif" font-size="10" fill="#94a3b8">The screen surface is flat glass, but your brain PERCEIVES texture.</text>
+
+      <!-- 4 Visual Texture Swatches -->
+      <g transform="translate(14, 55)">
+        <!-- Rough Stone / Noise -->
+        <g transform="translate(0, 0)">
+          <rect width="60" height="60" rx="6" fill="#334155"/>
+          <rect width="60" height="60" rx="6" fill="url(#grainPattern)"/>
+          <text x="30" y="74" text-anchor="middle" font-family="'Inter', sans-serif" font-size="9" fill="#94a3b8">Rough Grain</text>
+        </g>
+
+        <!-- Brushed Metal -->
+        <g transform="translate(70, 0)">
+          <rect width="60" height="60" rx="6" fill="#475569"/>
+          <!-- linear brush strokes -->
+          <line x1="0" y1="10" x2="60" y2="10" stroke="#94a3b8" stroke-width="0.8"/>
+          <line x1="0" y1="22" x2="60" y2="22" stroke="#cbd5e1" stroke-width="0.8"/>
+          <line x1="0" y1="36" x2="60" y2="36" stroke="#94a3b8" stroke-width="0.8"/>
+          <line x1="0" y1="48" x2="60" y2="48" stroke="#cbd5e1" stroke-width="0.8"/>
+          <text x="30" y="74" text-anchor="middle" font-family="'Inter', sans-serif" font-size="9" fill="#94a3b8">Brushed Metal</text>
+        </g>
+
+        <!-- Frosted Blur -->
+        <g transform="translate(140, 0)">
+          <rect width="60" height="60" rx="6" fill="#0284c7" fill-opacity="0.4"/>
+          <rect width="60" height="60" rx="6" fill="url(#crosshatch)" fill-opacity="0.3"/>
+          <text x="30" y="74" text-anchor="middle" font-family="'Inter', sans-serif" font-size="9" fill="#94a3b8">Frosted Glass</text>
+        </g>
+
+        <!-- Dot Matrix -->
+        <g transform="translate(210, 0)">
+          <rect width="60" height="60" rx="6" fill="#0f172a"/>
+          <rect width="60" height="60" rx="6" fill="url(#dots)"/>
+          <text x="30" y="74" text-anchor="middle" font-family="'Inter', sans-serif" font-size="9" fill="#94a3b8">Halftone Grid</text>
+        </g>
+      </g>
+
+      <text x="14" y="150" font-family="'Inter', sans-serif" font-size="9" fill="#cbd5e1">
+        Simulated using light and shadow micro-variations.
+      </text>
+      <text x="14" y="170" font-family="'Inter', sans-serif" font-size="9" fill="#38bdf8">
+        Bridges the emotional gap between cold glass &amp; human memory!
+      </text>
+    </g>
+  </g>
+
+  <!-- Right Panel: Modern Digital Glassmorphism & UI Grain -->
+  <g transform="translate(415, 75)" filter="url(#shadow8)">
+    <rect width="345" height="440" rx="14" fill="#131c2e" stroke="#1e293b" stroke-width="1.5"/>
+    <text x="20" y="32" font-family="'Outfit', sans-serif" font-size="15" font-weight="700" fill="#ffffff">Digital Texture: Glassmorphism</text>
+    <text x="20" y="50" font-family="'Inter', sans-serif" font-size="11" fill="#94a3b8">Frosted glass optics &amp; subtle film noise</text>
+
+    <!-- Glassmorphic Card Simulation -->
+    <g transform="translate(20, 72)">
+      <!-- Background colored shapes under the glass -->
+      <circle cx="60" cy="50" r="45" fill="#f43f5e"/>
+      <circle cx="200" cy="90" r="55" fill="#38bdf8"/>
+      <polygon points="120,40 180,120 70,130" fill="#a855f7" fill-opacity="0.8"/>
+
+      <!-- Frosted Glass Overlay Card -->
+      <rect x="25" y="25" width="250" height="150" rx="14" fill="#ffffff" fill-opacity="0.12" stroke="#ffffff" stroke-width="1.2" stroke-opacity="0.3" filter="url(#shadow8)"/>
+      <rect x="25" y="25" width="250" height="150" rx="14" fill="url(#grainPattern)"/>
+
+      <!-- Top highlight specular stroke -->
+      <line x1="38" y1="26" x2="262" y2="26" stroke="#ffffff" stroke-width="1.5" stroke-opacity="0.6"/>
+
+      <!-- Content inside glass card -->
+      <text x="45" y="56" font-family="'Outfit', sans-serif" font-size="13" font-weight="800" fill="#ffffff">FROSTED GLASS CARD</text>
+      <text x="45" y="74" font-family="'Inter', sans-serif" font-size="10" fill="#e2e8f0">backdrop-filter: blur(20px);</text>
+      <text x="45" y="90" font-family="'Inter', sans-serif" font-size="10" fill="#e2e8f0">border: 1px solid rgba(255,255,255,0.2);</text>
+
+      <rect x="45" y="110" width="90" height="28" rx="6" fill="#38bdf8" fill-opacity="0.9"/>
+      <text x="90" y="128" text-anchor="middle" font-family="'Inter', sans-serif" font-size="10" font-weight="700" fill="#0f172a">Interact</text>
+    </g>
+
+    <!-- Why Texture Matters in Modern Design -->
+    <g transform="translate(20, 268)">
+      <rect width="305" height="150" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+      <text x="14" y="24" font-family="'Outfit', sans-serif" font-size="12" font-weight="700" fill="#38bdf8">Why Designers Added Noise Back to UI</text>
+      
+      <g transform="translate(14, 40)">
+        <text x="0" y="12" font-family="'Inter', sans-serif" font-size="10" fill="#cbd5e1">• Eliminates digital color banding on OLED screens</text>
+        <text x="0" y="32" font-family="'Inter', sans-serif" font-size="10" fill="#cbd5e1">• Imparts cinematic warmth &amp; vintage craft feel</text>
+        <text x="0" y="52" font-family="'Inter', sans-serif" font-size="10" fill="#cbd5e1">• Prevents UI from feeling sterile, clinical, or robotic</text>
+        <text x="0" y="74" font-family="'Inter', sans-serif" font-size="10" font-weight="700" fill="#34d399">• Creates instant sensory delight and premium prestige</text>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Basic Elements of Design — Quiz Challenge</title>
+  <meta name="description" content="Test your knowledge on the 7 core Elements of Design: Lines, Shape, Form, Space, Colour, Value, and Texture with this interactive 15-question challenge.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="quiz-styles.css">
+  <link rel="stylesheet" href="lesson-selector.css">
+</head>
+<body data-current-lesson="2" data-current-type="quiz" data-root-path="../../">
+
+  <!-- Animated Background Orbs -->
+  <div class="bg-orbs" aria-hidden="true">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
+
+  <div class="quiz-app" id="quizApp">
+
+    <!-- ========== START SCREEN ========== -->
+    <section class="screen start-screen active" id="startScreen">
+      <div class="start-card">
+        <div class="start-badge">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="3" width="18" height="18" rx="2"/>
+            <path d="M3 9h18"/>
+            <path d="M9 21V9"/>
+          </svg>
+        </div>
+        <h1 class="start-title">The Basic Elements of <span class="gradient-text">Design</span></h1>
+        <p class="start-subtitle">Interactive Mastery Quiz</p>
+        <div class="start-meta">
+          <div class="meta-chip">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11H4a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h5m10-9h5a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1h-5M12 2v2m0 16v2"/></svg>
+            <span>15 Questions</span>
+          </div>
+          <div class="meta-chip">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            <span>Multiple Choice</span>
+          </div>
+          <div class="meta-chip">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <span>7 Core Elements</span>
+          </div>
+        </div>
+        <p class="start-description">Test your mastery of the 7 foundational building blocks of visual communication: Lines, Shape, Form, Space, Colour, Value, and Texture. Each question includes a visual illustration clue. Good luck!</p>
+        <button class="btn-primary btn-start" id="startQuizBtn">
+          <span>Begin Quiz</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </button>
+      </div>
+    </section>
+
+    <!-- ========== QUIZ SCREEN ========== -->
+    <section class="screen quiz-screen" id="quizScreen">
+      <!-- Top Bar -->
+      <header class="quiz-header">
+        <div class="header-left">
+          <div class="logo-mini">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+          </div>
+          <span class="q-counter" id="qCounter">Q1 / 15</span>
+        </div>
+        <div class="header-center">
+          <div class="score-display">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <span id="scoreDisplay">Score: 0</span>
+          </div>
+        </div>
+        <div class="header-right">
+          <span class="timer-display" id="timerDisplay">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            <span id="timerText">00:00</span>
+          </span>
+        </div>
+      </header>
+
+      <!-- Progress Bar -->
+      <div class="quiz-progress-track">
+        <div class="quiz-progress-bar" id="quizProgressBar"></div>
+      </div>
+
+      <!-- Question Area -->
+      <div class="question-container" id="questionContainer">
+        <div class="question-image-wrap" id="questionImageWrap">
+          <img src="" alt="Quiz visual clue" class="question-image" id="questionImage">
+        </div>
+        <div class="question-content">
+          <div class="question-number-badge" id="questionBadge">Question 1</div>
+          <h2 class="question-text" id="questionText"></h2>
+          <div class="options-grid" id="optionsGrid"></div>
+          <div class="nav-buttons-row" id="navButtonsRow">
+            <button class="btn-nav btn-prev" id="prevBtn" disabled>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+              <span>Previous</span>
+            </button>
+            <button class="btn-nav btn-next hidden" id="nextBtn">
+              <span>Next</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== RESULTS SCREEN ========== -->
+    <section class="screen results-screen" id="resultsScreen">
+      <div class="results-card">
+        <div class="results-icon" id="resultsIcon">&#127942;</div>
+        <h1 class="results-title" id="resultsTitle">Quiz Complete!</h1>
+        <p class="results-subtitle" id="resultsSubtitle">Here's your Elements of Design mastery score:</p>
+
+        <div class="score-ring-container">
+          <svg class="score-ring" viewBox="0 0 120 120">
+            <circle class="ring-bg" cx="60" cy="60" r="52" />
+            <circle class="ring-fill" id="scoreRing" cx="60" cy="60" r="52" />
+          </svg>
+          <div class="score-ring-text">
+            <span class="score-number" id="scoreNumber">0</span>
+            <span class="score-total">/ 15</span>
+          </div>
+        </div>
+
+        <div class="results-stats">
+          <div class="stat-card">
+            <span class="stat-value" id="statCorrect">0</span>
+            <span class="stat-label">Correct</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-value" id="statWrong">0</span>
+            <span class="stat-label">Wrong</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-value" id="statPercent">0%</span>
+            <span class="stat-label">Accuracy</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-value" id="statTime">00:00</span>
+            <span class="stat-label">Time</span>
+          </div>
+        </div>
+
+        <p class="results-message" id="resultsMessage"></p>
+
+        <div class="results-actions">
+          <button class="btn-primary btn-retry" id="retryBtn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
+            <span>Try Again</span>
+          </button>
+          <a href="../index.html" class="btn-secondary btn-back">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m15 18-6-6 6-6"/></svg>
+            <span>Back to Lesson Deck</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <script src="quiz-app.js"></script>
+  <script src="lesson-selector.js"></script>
+</body>
+</html>

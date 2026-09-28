@@ -1,0 +1,161 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 550" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bgGrad3" cx="50%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0b1120"/>
+    </radialGradient>
+    <linearGradient id="geomGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#2563eb"/>
+    </linearGradient>
+    <linearGradient id="orgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+    <linearGradient id="absGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f43f5e"/>
+      <stop offset="100%" stop-color="#9333ea"/>
+    </linearGradient>
+    <filter id="shadow3" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="550" rx="16" fill="url(#bgGrad3)"/>
+
+  <!-- Top Title Banner -->
+  <g transform="translate(40, 25)">
+    <rect width="180" height="28" rx="14" fill="#818cf8" fill-opacity="0.15" stroke="#818cf8" stroke-width="1"/>
+    <text x="14" y="19" font-family="'Outfit', sans-serif" font-size="11" font-weight="700" fill="#818cf8" letter-spacing="1">ELEMENT 02 · SHAPE</text>
+    <text x="200" y="20" font-family="'Inter', sans-serif" font-size="13" fill="#cbd5e1">2D Enclosed Boundaries: Geometric, Organic, and Abstract Silhouettes</text>
+  </g>
+
+  <!-- Row 1: The 3 Core Families of Shapes -->
+  <!-- Card 1: Geometric Shapes -->
+  <g transform="translate(40, 75)" filter="url(#shadow3)">
+    <rect width="225" height="225" rx="14" fill="#131c2e" stroke="#38bdf8" stroke-width="1.5"/>
+    <text x="18" y="28" font-family="'Outfit', sans-serif" font-size="14" font-weight="700" fill="#38bdf8">1. Geometric Shapes</text>
+    <text x="18" y="44" font-family="'Inter', sans-serif" font-size="10" fill="#94a3b8">Mathematical · Precise · Structured</text>
+    
+    <!-- Illustrations -->
+    <g transform="translate(18, 58)">
+      <!-- Circle -->
+      <circle cx="36" cy="36" r="28" fill="url(#geomGrad)" fill-opacity="0.8"/>
+      <!-- Square -->
+      <rect x="110" y="8" width="56" height="56" rx="4" fill="url(#geomGrad)" fill-opacity="0.8"/>
+      <!-- Triangle -->
+      <polygon points="100,140 60,78 140,78" fill="url(#geomGrad)" fill-opacity="0.9"/>
+    </g>
+    <text x="18" y="210" font-family="'Inter', sans-serif" font-size="10" fill="#cbd5e1">Connotes: Order, technology, stability</text>
+  </g>
+
+  <!-- Card 2: Organic Shapes -->
+  <g transform="translate(285, 75)" filter="url(#shadow3)">
+    <rect width="225" height="225" rx="14" fill="#131c2e" stroke="#34d399" stroke-width="1.5"/>
+    <text x="18" y="28" font-family="'Outfit', sans-serif" font-size="14" font-weight="700" fill="#34d399">2. Organic Shapes</text>
+    <text x="18" y="44" font-family="'Inter', sans-serif" font-size="10" fill="#94a3b8">Natural · Irregular · Asymmetrical</text>
+    
+    <!-- Illustrations -->
+    <g transform="translate(18, 58)">
+      <!-- Leaf / Organic curve -->
+      <path d="M 20 60 C 20 10, 80 10, 80 60 C 80 100, 20 100, 20 60 Z" fill="url(#orgGrad)" fill-opacity="0.85"/>
+      <!-- Cloud/Puddle shape -->
+      <path d="M 120 40 C 105 20, 150 10, 165 30 C 185 20, 195 50, 175 65 C 190 85, 140 95, 120 75 C 95 80, 100 50, 120 40 Z" fill="url(#orgGrad)" fill-opacity="0.75"/>
+      <!-- Water droplet -->
+      <path d="M 120 100 C 100 125, 140 145, 140 120 C 140 105, 120 100, 120 100 Z" fill="url(#orgGrad)" fill-opacity="0.9"/>
+    </g>
+    <text x="18" y="210" font-family="'Inter', sans-serif" font-size="10" fill="#cbd5e1">Connotes: Life, freedom, warmth, growth</text>
+  </g>
+
+  <!-- Card 3: Abstract Shapes -->
+  <g transform="translate(530, 75)" filter="url(#shadow3)">
+    <rect width="230" height="225" rx="14" fill="#131c2e" stroke="#c084fc" stroke-width="1.5"/>
+    <text x="18" y="28" font-family="'Outfit', sans-serif" font-size="14" font-weight="700" fill="#c084fc">3. Abstract / Symbolic</text>
+    <text x="18" y="44" font-family="'Inter', sans-serif" font-size="10" fill="#94a3b8">Stylized · Universal Glyphs · Icons</text>
+    
+    <!-- Illustrations -->
+    <g transform="translate(18, 58)">
+      <!-- Stylized Star / Sparkle -->
+      <polygon points="50,15 57,38 80,38 61,52 68,75 50,60 32,75 39,52 20,38 43,38" fill="url(#absGrad)" fill-opacity="0.9"/>
+      <!-- Location Pin -->
+      <path d="M 140 30 C 125 30, 115 42, 115 55 C 115 72, 140 90, 140 90 C 140 90, 165 72, 165 55 C 165 42, 155 30, 140 30 Z M 140 62 C 135 62, 131 58, 131 53 C 131 48, 135 44, 140 44 C 145 44, 149 48, 149 53 C 149 58, 145 62, 140 62 Z" fill="url(#absGrad)" fill-opacity="0.85"/>
+      <!-- Gear glyph -->
+      <circle cx="95" cy="115" r="16" fill="url(#absGrad)" fill-opacity="0.6"/>
+      <circle cx="95" cy="115" r="8" fill="#131c2e"/>
+    </g>
+    <text x="18" y="210" font-family="'Inter', sans-serif" font-size="10" fill="#cbd5e1">Connotes: Concept representation &amp; quick recognition</text>
+  </g>
+
+  <!-- Bottom Panel: The Silhouette Test & UI Shape Language -->
+  <g transform="translate(40, 320)" filter="url(#shadow3)">
+    <rect width="720" height="195" rx="14" fill="#131c2e" stroke="#1e293b" stroke-width="1.5"/>
+
+    <!-- Left Sub-Panel: The Silhouette Test -->
+    <g transform="translate(20, 20)">
+      <text x="0" y="16" font-family="'Outfit', sans-serif" font-size="14" font-weight="700" fill="#ffffff">The Silhouette Test: Cognitive Recognition in &lt; 50ms</text>
+      <text x="0" y="34" font-family="'Inter', sans-serif" font-size="11" fill="#94a3b8">The human visual cortex parses shape outlines before color or surface details.</text>
+      
+      <!-- Silhouettes -->
+      <g transform="translate(0, 50)">
+        <!-- Gamepad Silhouette -->
+        <g transform="translate(0, 0)">
+          <rect width="80" height="60" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+          <!-- Gamepad outline in solid black -->
+          <path d="M 22 24 C 20 18, 30 16, 40 18 C 50 16, 60 18, 58 24 L 62 44 C 63 50, 52 52, 48 46 L 44 38 L 36 38 L 32 46 C 28 52, 17 50, 18 44 Z" fill="#ffffff"/>
+          <text x="40" y="74" text-anchor="middle" font-family="'Inter', sans-serif" font-size="9" fill="#94a3b8">Game Controller</text>
+        </g>
+
+        <!-- Coffee Mug Silhouette -->
+        <g transform="translate(95, 0)">
+          <rect width="80" height="60" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+          <path d="M 26 22 L 52 22 L 50 48 C 50 52, 28 52, 28 48 Z M 52 26 C 60 26, 60 40, 52 40" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+          <text x="40" y="74" text-anchor="middle" font-family="'Inter', sans-serif" font-size="9" fill="#94a3b8">Coffee Cup</text>
+        </g>
+
+        <!-- Notification Bell Silhouette -->
+        <g transform="translate(190, 0)">
+          <rect width="80" height="60" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+          <path d="M 40 18 C 34 18, 30 24, 30 36 L 24 44 L 56 44 L 50 36 C 50 24, 46 18, 40 18 Z M 37 46 C 37 48, 43 48, 43 46" fill="#ffffff"/>
+          <text x="40" y="74" text-anchor="middle" font-family="'Inter', sans-serif" font-size="9" fill="#94a3b8">Notification</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- Divider -->
+    <line x1="330" y1="20" x2="330" y2="175" stroke="#334155" stroke-width="1" stroke-dasharray="3 3"/>
+
+    <!-- Right Sub-Panel: UI Button Geometry Psychology -->
+    <g transform="translate(355, 20)">
+      <text x="0" y="16" font-family="'Outfit', sans-serif" font-size="14" font-weight="700" fill="#38bdf8">UI Shape Psychology in Interface Design</text>
+      <text x="0" y="34" font-family="'Inter', sans-serif" font-size="11" fill="#94a3b8">Corner radius changes user trust, comfort, and clickability.</text>
+
+      <g transform="translate(0, 52)">
+        <!-- 0px sharp rect -->
+        <g transform="translate(0, 0)">
+          <rect width="90" height="34" rx="0" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+          <text x="45" y="21" text-anchor="middle" font-family="'Inter', sans-serif" font-size="10" font-weight="700" fill="#ffffff">0px Radius</text>
+          <text x="45" y="48" text-anchor="middle" font-family="'Inter', sans-serif" font-size="9" fill="#94a3b8">Formal · Strict</text>
+        </g>
+
+        <!-- 8px rounded rect -->
+        <g transform="translate(115, 0)">
+          <rect width="95" height="34" rx="8" fill="#1e293b" stroke="#818cf8" stroke-width="1.5"/>
+          <text x="47" y="21" text-anchor="middle" font-family="'Inter', sans-serif" font-size="10" font-weight="700" fill="#ffffff">8px Radius</text>
+          <text x="47" y="48" text-anchor="middle" font-family="'Inter', sans-serif" font-size="9" fill="#818cf8">Standard · Balanced</text>
+        </g>
+
+        <!-- 999px pill button -->
+        <g transform="translate(235, 0)">
+          <rect width="105" height="34" rx="17" fill="#38bdf8" stroke="#38bdf8" stroke-width="1.5"/>
+          <text x="52" y="21" text-anchor="middle" font-family="'Inter', sans-serif" font-size="10" font-weight="700" fill="#0f172a">Pill / Stadium</text>
+          <text x="52" y="48" text-anchor="middle" font-family="'Inter', sans-serif" font-size="9" fill="#38bdf8">Friendly · Clickable</text>
+        </g>
+      </g>
+
+      <text x="0" y="142" font-family="'Inter', sans-serif" font-size="10" fill="#64748b">
+        Rounder shapes activate primitive safety cues (no sharp edges to poke or scratch).
+      </text>
+    </g>
+  </g>
+</svg>

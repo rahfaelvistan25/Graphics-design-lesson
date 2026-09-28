@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rules of Composition — Interactive Mastery Quiz</title>
+  <meta name="description" content="Test your mastery of the Rules of Composition: Focal Points, Scale, Contrast, Leading Lines, Rule of Thirds, Golden Ratio, Framing, Depth Planes, and Pro Tips with this interactive 15-question challenge.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="quiz-styles.css">
+  <link rel="stylesheet" href="lesson-selector.css">
+</head>
+<body data-current-lesson="3" data-current-type="quiz" data-root-path="../../">
+
+  <!-- Animated Background Orbs -->
+  <div class="bg-orbs" aria-hidden="true">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
+
+  <div class="quiz-app" id="quizApp">
+
+    <!-- ========== START SCREEN ========== -->
+    <section class="screen start-screen active" id="startScreen">
+      <div class="start-card">
+        <div class="start-badge">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="3" width="18" height="18" rx="2"/>
+            <path d="M3 9h18"/>
+            <path d="M9 21V9"/>
+          </svg>
+        </div>
+        <h1 class="start-title">Rules of <span class="gradient-text">Composition</span></h1>
+        <p class="start-subtitle">Interactive Mastery Quiz Challenge</p>
+        <div class="start-meta">
+          <div class="meta-chip">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11H4a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h5m10-9h5a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1h-5M12 2v2m0 16v2"/></svg>
+            <span>15 Questions</span>
+          </div>
+          <div class="meta-chip">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            <span>Multiple Choice</span>
+          </div>
+          <div class="meta-chip">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <span>All 5 Core Modules</span>
+          </div>
+        </div>
+        <p class="start-description">Test your understanding of visual architecture: from Focal Points, Scale, Contrast, and Leading Lines to the Rule of Thirds, Rule of Odds, Golden Ratio, Golden Triangle, Framing, Depth Planes, and Pro Compositional Tips. Each question features a visual illustration diagram clue. Good luck!</p>
+        <div class="start-actions">
+          <button class="btn-primary btn-start" id="startQuizBtn">
+            <span>Begin Quiz</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </button>
+          <a href="../index.html" class="btn-secondary">
+            <span>&larr; Return to Slides</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== QUIZ SCREEN ========== -->
+    <section class="screen quiz-screen" id="quizScreen">
+      <!-- Top Bar -->
+      <header class="quiz-header">
+        <div class="header-left">
+          <a href="../index.html" class="back-link" title="Exit to Slide Deck">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+            <span>Slides</span>
+          </a>
+          <span class="q-counter" id="qCounter">Q1 / 15</span>
+        </div>
+        <div class="header-center">
+          <div class="score-display">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <span id="scoreDisplay">Score: 0</span>
+          </div>
+        </div>
+        <div class="header-right">
+          <span class="timer-display" id="timerDisplay">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            <span id="timerText">00:00</span>
+          </span>
+        </div>
+      </header>
+
+      <!-- Progress Bar -->
+      <div class="quiz-progress-track">
+        <div class="quiz-progress-bar" id="quizProgressBar"></div>
+      </div>
+
+      <!-- Question Area -->
+      <div class="question-container" id="questionContainer">
+        <div class="question-image-wrap" id="questionImageWrap">
+          <img src="" alt="Quiz visual clue" class="question-image" id="questionImage">
+        </div>
+        <div class="question-content">
+          <div class="question-number-badge" id="questionBadge">Question 1</div>
+          <h2 class="question-text" id="questionText"></h2>
+          <div class="options-grid" id="optionsGrid"></div>
+          
+          <!-- Explanation Reveal Card -->
+          <div class="explanation-card hidden" id="explanationCard">
+            <div class="explanation-header">
+              <span class="explanation-icon" id="explanationIcon">💡</span>
+              <strong id="explanationTitle">Explanation</strong>
+            </div>
+            <p class="explanation-text" id="explanationText"></p>
+          </div>
+
+          <div class="nav-buttons-row" id="navButtonsRow">
+            <button class="btn-nav btn-prev" id="prevBtn" disabled>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+              <span>Previous</span>
+            </button>
+            <button class="btn-nav btn-next hidden" id="nextBtn">
+              <span>Next</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== RESULTS SCREEN ========== -->
+    <section class="screen results-screen" id="resultsScreen">
+      <div class="results-card">
+        <div class="results-icon" id="resultsIcon">&#127942;</div>
+        <h1 class="results-title" id="resultsTitle">Quiz Complete!</h1>
+        <p class="results-subtitle" id="resultsSubtitle">Here is your Rules of Composition mastery scorecard:</p>
+
+        <div class="score-ring-container">
+          <svg class="score-ring" viewBox="0 0 120 120">
+            <circle class="ring-bg" cx="60" cy="60" r="52" />
+            <circle class="ring-fill" id="scoreRing" cx="60" cy="60" r="52" />
+          </svg>
+          <div class="score-ring-text">
+            <span class="score-big" id="finalScore">0</span>
+            <span class="score-total" id="finalTotal">/ 15</span>
+          </div>
+        </div>
+
+        <div class="rank-badge" id="rankBadge">
+          <span class="rank-icon">&#127941;</span>
+          <span class="rank-name" id="rankName">Master Visual Architect</span>
+        </div>
+
+        <p class="rank-message" id="rankMessage"></p>
+
+        <!-- Category Performance Breakdown -->
+        <div class="breakdown-grid" id="breakdownGrid"></div>
+
+        <!-- Action Buttons -->
+        <div class="results-actions">
+          <button class="btn-secondary" id="reviewBtn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            <span>Review Answers</span>
+          </button>
+          <button class="btn-primary" id="restartBtn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"/></svg>
+            <span>Retake Quiz</span>
+          </button>
+          <a href="../index.html" class="btn-secondary">
+            <span>&larr; Back to Slides</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Review Drawer Modal -->
+    <div class="review-modal" id="reviewModal" aria-modal="true" role="dialog">
+      <div class="review-backdrop" id="reviewBackdrop"></div>
+      <div class="review-content">
+        <div class="review-header">
+          <h3>Question Review</h3>
+          <button class="close-review-btn" id="closeReviewBtn">&times;</button>
+        </div>
+        <div class="review-list" id="reviewList"></div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="quiz-app.js"></script>
+  <script src="lesson-selector.js"></script>
+</body>
+</html>
