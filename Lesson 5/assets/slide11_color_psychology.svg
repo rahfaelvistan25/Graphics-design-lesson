@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="50%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#090d16"/>
+    </linearGradient>
+    <linearGradient id="primaryAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ec4899"/>
+      <stop offset="50%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="800" height="560" rx="16" fill="url(#bgGrad)" stroke="#334155" stroke-width="1.5"/>
+  <rect x="1" y="1" width="798" height="3" fill="url(#primaryAccent)"/>
+
+  <!-- Header Section -->
+  <g transform="translate(32, 40)">
+    <rect x="0" y="0" width="120" height="24" rx="12" fill="rgba(139, 92, 246, 0.18)" stroke="#a855f7" stroke-width="1"/>
+    <text x="60" y="16" fill="#c084fc" font-family="'Inter', sans-serif" font-size="11" font-weight="700" letter-spacing="1" text-anchor="middle">COLOR THEORY</text>
+    <text x="135" y="17" fill="#f8fafc" font-family="'Outfit', sans-serif" font-size="20" font-weight="700">Color Psychology: Emotional Triggers in Global Brand Identity</text>
+  </g>
+
+  <!-- Main Diagram Body -->
+  
+  <g transform="translate(40, 85)">
+    <!-- 6 Color Emotion Cards in a Grid -->
+    <!-- 1. RED -->
+    <g transform="translate(0, 10)">
+      <rect x="0" y="0" width="225" height="135" rx="8" fill="rgba(239, 68, 68, 0.12)" stroke="#ef4444" stroke-width="1.2"/>
+      <circle cx="25" cy="25" r="10" fill="#ef4444"/>
+      <text x="45" y="29" fill="#f87171" font-family="'Outfit', sans-serif" font-size="14" font-weight="700">RED</text>
+      <text x="16" y="55" fill="#f8fafc" font-family="'Inter', sans-serif" font-size="11" font-weight="600">Urgency, Passion, Appetite, Energy</text>
+      <text x="16" y="75" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">Physiologically raises heart rate.</text>
+      <text x="16" y="105" fill="#fca5a5" font-family="'Inter', sans-serif" font-size="10" font-weight="700">Brands: Coca-Cola, Netflix, Target, Ferrari</text>
+    </g>
+
+    <!-- 2. BLUE -->
+    <g transform="translate(245, 10)">
+      <rect x="0" y="0" width="225" height="135" rx="8" fill="rgba(59, 130, 246, 0.12)" stroke="#3b82f6" stroke-width="1.2"/>
+      <circle cx="25" cy="25" r="10" fill="#3b82f6"/>
+      <text x="45" y="29" fill="#60a5fa" font-family="'Outfit', sans-serif" font-size="14" font-weight="700">BLUE</text>
+      <text x="16" y="55" fill="#f8fafc" font-family="'Inter', sans-serif" font-size="11" font-weight="600">Trust, Security, Reliability, Calm</text>
+      <text x="16" y="75" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">Most preferred corporate brand color.</text>
+      <text x="16" y="105" fill="#93c5fd" font-family="'Inter', sans-serif" font-size="10" font-weight="700">Brands: IBM, PayPal, Intel, LinkedIn, Ford</text>
+    </g>
+
+    <!-- 3. GREEN -->
+    <g transform="translate(490, 10)">
+      <rect x="0" y="0" width="225" height="135" rx="8" fill="rgba(34, 197, 94, 0.12)" stroke="#22c55e" stroke-width="1.2"/>
+      <circle cx="25" cy="25" r="10" fill="#22c55e"/>
+      <text x="45" y="29" fill="#4ade80" font-family="'Outfit', sans-serif" font-size="14" font-weight="700">GREEN</text>
+      <text x="16" y="55" fill="#f8fafc" font-family="'Inter', sans-serif" font-size="11" font-weight="600">Health, Nature, Growth, Wealth</text>
+      <text x="16" y="75" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">Easiest on human retina; relaxation.</text>
+      <text x="16" y="105" fill="#86efac" font-family="'Inter', sans-serif" font-size="10" font-weight="700">Brands: Starbucks, Whole Foods, Spotify</text>
+    </g>
+
+    <!-- 4. YELLOW -->
+    <g transform="translate(0, 160)">
+      <rect x="0" y="0" width="225" height="135" rx="8" fill="rgba(234, 179, 8, 0.12)" stroke="#eab308" stroke-width="1.2"/>
+      <circle cx="25" cy="25" r="10" fill="#eab308"/>
+      <text x="45" y="29" fill="#facc15" font-family="'Outfit', sans-serif" font-size="14" font-weight="700">YELLOW</text>
+      <text x="16" y="55" fill="#f8fafc" font-family="'Inter', sans-serif" font-size="11" font-weight="600">Optimism, Clarity, Warmth, Caution</text>
+      <text x="16" y="75" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">Most luminous color in daytime light.</text>
+      <text x="16" y="105" fill="#fde047" font-family="'Inter', sans-serif" font-size="10" font-weight="700">Brands: McDonald's, IKEA, Snapchat, Nikon</text>
+    </g>
+
+    <!-- 5. PURPLE -->
+    <g transform="translate(245, 160)">
+      <rect x="0" y="0" width="225" height="135" rx="8" fill="rgba(168, 85, 247, 0.12)" stroke="#a855f7" stroke-width="1.2"/>
+      <circle cx="25" cy="25" r="10" fill="#a855f7"/>
+      <text x="45" y="29" fill="#c084fc" font-family="'Outfit', sans-serif" font-size="14" font-weight="700">PURPLE</text>
+      <text x="16" y="55" fill="#f8fafc" font-family="'Inter', sans-serif" font-size="11" font-weight="600">Royalty, Luxury, Mystery, Creativity</text>
+      <text x="16" y="75" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">Historically rarest pigment (Phoenician Tyrian).</text>
+      <text x="16" y="105" fill="#d8b4fe" font-family="'Inter', sans-serif" font-size="10" font-weight="700">Brands: Cadbury, Hallmark, Twitch, Roku</text>
+    </g>
+
+    <!-- 6. BLACK / MONOCHROME -->
+    <g transform="translate(490, 160)">
+      <rect x="0" y="0" width="225" height="135" rx="8" fill="rgba(255, 255, 255, 0.05)" stroke="#94a3b8" stroke-width="1.2"/>
+      <circle cx="25" cy="25" r="10" fill="#f8fafc"/>
+      <text x="45" y="29" fill="#f8fafc" font-family="'Outfit', sans-serif" font-size="14" font-weight="700">BLACK / NEUTRAL</text>
+      <text x="16" y="55" fill="#f8fafc" font-family="'Inter', sans-serif" font-size="11" font-weight="600">Sophistication, Elegance, Authority</text>
+      <text x="16" y="75" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">Understated timeless luxury and restraint.</text>
+      <text x="16" y="105" fill="#cbd5e1" font-family="'Inter', sans-serif" font-size="10" font-weight="700">Brands: Apple, Chanel, Nike, Prada, Sony</text>
+    </g>
+
+    <!-- Bottom Stat -->
+    <text x="360" y="335" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="12" text-anchor="middle">Up to 90% of an initial snap judgment about a consumer product is based purely on color psychology alone.</text>
+  </g>
+
+
+  <!-- Footer Note -->
+  <g transform="translate(32, 536)">
+    <line x1="0" y1="0" x2="736" y2="0" stroke="#1e293b" stroke-width="1"/>
+    <text x="0" y="16" fill="#64748b" font-family="'Inter', sans-serif" font-size="11">Lesson 5: Visual Design &amp; Communication &#8226; Master Graphic Standards</text>
+    <text x="736" y="16" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="11" text-anchor="end">SHS Digital Arts Curriculum</text>
+  </g>
+</svg>

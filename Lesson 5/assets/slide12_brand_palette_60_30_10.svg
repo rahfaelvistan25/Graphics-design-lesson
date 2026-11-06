@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="50%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#090d16"/>
+    </linearGradient>
+    <linearGradient id="primaryAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ec4899"/>
+      <stop offset="50%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="800" height="560" rx="16" fill="url(#bgGrad)" stroke="#334155" stroke-width="1.5"/>
+  <rect x="1" y="1" width="798" height="3" fill="url(#primaryAccent)"/>
+
+  <!-- Header Section -->
+  <g transform="translate(32, 40)">
+    <rect x="0" y="0" width="120" height="24" rx="12" fill="rgba(139, 92, 246, 0.18)" stroke="#a855f7" stroke-width="1"/>
+    <text x="60" y="16" fill="#c084fc" font-family="'Inter', sans-serif" font-size="11" font-weight="700" letter-spacing="1" text-anchor="middle">COLOR THEORY</text>
+    <text x="135" y="17" fill="#f8fafc" font-family="'Outfit', sans-serif" font-size="20" font-weight="700">Designing Brand Color Palettes: The 60-30-10 Proportion Rule</text>
+  </g>
+
+  <!-- Main Diagram Body -->
+  
+  <g transform="translate(40, 85)">
+    <!-- 60-30-10 Visual Proportion Bar -->
+    <g transform="translate(0, 10)">
+      <rect x="0" y="0" width="720" height="95" rx="10" fill="rgba(30, 41, 59, 0.6)" stroke="#8b5cf6" stroke-width="1.5"/>
+      <text x="20" y="28" fill="#f8fafc" font-family="'Outfit', sans-serif" font-size="15" font-weight="700">THE GOLDEN 60-30-10 PALETTE PROPORTION RULE</text>
+      
+      <!-- Proportion Bar -->
+      <g transform="translate(20, 42)">
+        <!-- 60% Dominant Base -->
+        <rect x="0" y="0" width="408" height="34" rx="4" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+        <text x="204" y="22" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="12" font-weight="700" text-anchor="middle">60% DOMINANT BASE (Background / Canvas / Walls)</text>
+
+        <!-- 30% Secondary -->
+        <rect x="414" y="0" width="204" height="34" rx="4" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+        <text x="516" y="22" fill="#cbd5e1" font-family="'Inter', sans-serif" font-size="11" font-weight="700" text-anchor="middle">30% SECONDARY</text>
+
+        <!-- 10% Accent -->
+        <rect x="624" y="0" width="56" height="34" rx="4" fill="#ec4899" stroke="#ffffff" stroke-width="1.5"/>
+        <text x="652" y="22" fill="#ffffff" font-family="'Inter', sans-serif" font-size="11" font-weight="800" text-anchor="middle">10%</text>
+      </g>
+    </g>
+
+    <!-- 3 Roles Breakdown Cards -->
+    <g transform="translate(0, 120)">
+      <!-- 60% Card -->
+      <rect x="0" y="0" width="225" height="175" rx="8" fill="rgba(30, 41, 59, 0.5)" stroke="#64748b" stroke-width="1"/>
+      <text x="16" y="28" fill="#94a3b8" font-family="'Outfit', sans-serif" font-size="14" font-weight="700">60% DOMINANT COLOR</text>
+      <text x="16" y="48" fill="#f8fafc" font-family="'Inter', sans-serif" font-size="12" font-weight="600">Neutral Canvas / Breathing Room</text>
+      <text x="16" y="72" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="11">&#8226; Purpose: Provides stable grounding.</text>
+      <text x="16" y="92" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="11">&#8226; Application: App backgrounds, page margins, large card containers.</text>
+      <text x="16" y="125" fill="#cbd5e1" font-family="'Inter', sans-serif" font-size="11">Typical Hues: Deep charcoal, off-white, soft cream, muted slate.</text>
+
+      <!-- 30% Card -->
+      <g transform="translate(245, 0)">
+        <rect x="0" y="0" width="225" height="175" rx="8" fill="rgba(30, 41, 59, 0.5)" stroke="#38bdf8" stroke-width="1"/>
+        <text x="16" y="28" fill="#38bdf8" font-family="'Outfit', sans-serif" font-size="14" font-weight="700">30% SECONDARY COLOR</text>
+        <text x="16" y="48" fill="#f8fafc" font-family="'Inter', sans-serif" font-size="12" font-weight="600">Structural Brand Identity</text>
+        <text x="16" y="72" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="11">&#8226; Purpose: Establishes visual theme.</text>
+        <text x="16" y="92" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="11">&#8226; Application: Navigation headers, secondary cards, typography headings.</text>
+        <text x="16" y="125" fill="#38bdf8" font-family="'Inter', sans-serif" font-size="11">Typical Hues: Deep navy, forest green, rich burgundy.</text>
+      </g>
+
+      <!-- 10% Card -->
+      <g transform="translate(490, 0)">
+        <rect x="0" y="0" width="225" height="175" rx="8" fill="rgba(30, 41, 59, 0.5)" stroke="#ec4899" stroke-width="1.5"/>
+        <text x="16" y="28" fill="#ec4899" font-family="'Outfit', sans-serif" font-size="14" font-weight="700">10% ACCENT COLOR</text>
+        <text x="16" y="48" fill="#f8fafc" font-family="'Inter', sans-serif" font-size="12" font-weight="600">Focal Call-To-Action (CTA)</text>
+        <text x="16" y="72" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="11">&#8226; Purpose: Guides user eyes directly to critical conversion actions.</text>
+        <text x="16" y="102" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="11">&#8226; Application: Buy buttons, alerts, badges, hyperlinks.</text>
+        <text x="16" y="135" fill="#f472b6" font-family="'Inter', sans-serif" font-size="11">Typical Hues: Neon pink, electric amber, vivid cyan.</text>
+      </g>
+    </g>
+
+    <!-- Bottom Pro Tip -->
+    <rect x="0" y="310" width="720" height="65" rx="8" fill="rgba(15, 23, 42, 0.9)" stroke="#475569" stroke-width="1"/>
+    <text x="20" y="337" fill="#fbbf24" font-family="'Outfit', sans-serif" font-size="13" font-weight="700">&#9888; The Rookie Mistake: When Everything Yells, Nothing is Heard</text>
+    <text x="20" y="357" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="12">If you paint 50% of your website in hot pink or red, the user suffers visual fatigue and can no longer locate what to click.</text>
+  </g>
+
+
+  <!-- Footer Note -->
+  <g transform="translate(32, 536)">
+    <line x1="0" y1="0" x2="736" y2="0" stroke="#1e293b" stroke-width="1"/>
+    <text x="0" y="16" fill="#64748b" font-family="'Inter', sans-serif" font-size="11">Lesson 5: Visual Design &amp; Communication &#8226; Master Graphic Standards</text>
+    <text x="736" y="16" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="11" text-anchor="end">SHS Digital Arts Curriculum</text>
+  </g>
+</svg>

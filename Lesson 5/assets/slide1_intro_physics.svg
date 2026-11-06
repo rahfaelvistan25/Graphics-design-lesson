@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="50%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#090d16"/>
+    </linearGradient>
+    <linearGradient id="primaryAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ec4899"/>
+      <stop offset="50%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="800" height="560" rx="16" fill="url(#bgGrad)" stroke="#334155" stroke-width="1.5"/>
+  <rect x="1" y="1" width="798" height="3" fill="url(#primaryAccent)"/>
+
+  <!-- Header Section -->
+  <g transform="translate(32, 40)">
+    <rect x="0" y="0" width="120" height="24" rx="12" fill="rgba(139, 92, 246, 0.18)" stroke="#a855f7" stroke-width="1"/>
+    <text x="60" y="16" fill="#c084fc" font-family="'Inter', sans-serif" font-size="11" font-weight="700" letter-spacing="1" text-anchor="middle">COLOR THEORY</text>
+    <text x="135" y="17" fill="#f8fafc" font-family="'Outfit', sans-serif" font-size="20" font-weight="700">The Physics of Light &amp; The Visible Spectrum</text>
+  </g>
+
+  <!-- Main Diagram Body -->
+  
+  <g transform="translate(40, 95)">
+    <!-- White Light Beam -->
+    <line x1="40" y1="180" x2="220" y2="180" stroke="#ffffff" stroke-width="6" stroke-linecap="round" filter="url(#glow)"/>
+    <text x="120" y="160" fill="#f8fafc" font-family="'Inter', sans-serif" font-size="13" font-weight="600" text-anchor="middle">Incident White Light</text>
+
+    <!-- Glass Prism -->
+    <polygon points="220,90 340,290 100,290" fill="rgba(255,255,255,0.08)" stroke="#94a3b8" stroke-width="2.5"/>
+    <text x="220" y="240" fill="#cbd5e1" font-family="'Inter', sans-serif" font-size="14" font-weight="600" text-anchor="middle">Dispersive Prism</text>
+    <text x="220" y="260" fill="#64748b" font-family="'Inter', sans-serif" font-size="11" text-anchor="middle">(Sir Isaac Newton, 1666)</text>
+
+    <!-- Spectrum Rays & Waves -->
+    <path d="M 230,175 L 480,110" stroke="#ef4444" stroke-width="4.5"/>
+    <path d="M 230,178 L 480,135" stroke="#f97316" stroke-width="4.5"/>
+    <path d="M 230,181 L 480,160" stroke="#eab308" stroke-width="4.5"/>
+    <path d="M 230,184 L 480,185" stroke="#22c55e" stroke-width="4.5"/>
+    <path d="M 230,187 L 480,210" stroke="#06b6d4" stroke-width="4.5"/>
+    <path d="M 230,190 L 480,235" stroke="#3b82f6" stroke-width="4.5"/>
+    <path d="M 230,193 L 480,260" stroke="#8b5cf6" stroke-width="4.5"/>
+
+    <!-- Spectrum Labels -->
+    <g transform="translate(500, 105)">
+      <text x="0" y="10" fill="#f87171" font-family="'Inter', sans-serif" font-size="12" font-weight="600">Red &#8226; 700 nm (Longest Wavelength, Lowest Energy)</text>
+      <text x="0" y="35" fill="#fb923c" font-family="'Inter', sans-serif" font-size="12" font-weight="600">Orange &#8226; 620 nm</text>
+      <text x="0" y="60" fill="#facc15" font-family="'Inter', sans-serif" font-size="12" font-weight="600">Yellow &#8226; 580 nm</text>
+      <text x="0" y="85" fill="#4ade80" font-family="'Inter', sans-serif" font-size="12" font-weight="600">Green &#8226; 530 nm (Human Eye Most Sensitive)</text>
+      <text x="0" y="110" fill="#22d3ee" font-family="'Inter', sans-serif" font-size="12" font-weight="600">Cyan &#8226; 490 nm</text>
+      <text x="0" y="135" fill="#60a5fa" font-family="'Inter', sans-serif" font-size="12" font-weight="600">Blue &#8226; 450 nm</text>
+      <text x="0" y="160" fill="#c084fc" font-family="'Inter', sans-serif" font-size="12" font-weight="600">Violet &#8226; 380 nm (Shortest Wavelength, Highest Energy)</text>
+    </g>
+
+    <!-- Key Principle Card -->
+    <rect x="0" y="320" width="720" height="70" rx="10" fill="rgba(30, 41, 59, 0.7)" stroke="#334155" stroke-width="1"/>
+    <text x="20" y="348" fill="#f8fafc" font-family="'Outfit', sans-serif" font-size="14" font-weight="600">&#128161; Core Scientific Insight: Color is Not Inherent to Objects</text>
+    <text x="20" y="370" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="12">An apple is not red; its surface molecular skin reflects the 700 nm electromagnetic frequency while absorbing all other wavelengths.</text>
+  </g>
+
+
+  <!-- Footer Note -->
+  <g transform="translate(32, 536)">
+    <line x1="0" y1="0" x2="736" y2="0" stroke="#1e293b" stroke-width="1"/>
+    <text x="0" y="16" fill="#64748b" font-family="'Inter', sans-serif" font-size="11">Lesson 5: Visual Design &amp; Communication &#8226; Master Graphic Standards</text>
+    <text x="736" y="16" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="11" text-anchor="end">SHS Digital Arts Curriculum</text>
+  </g>
+</svg>

@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="50%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#090d16"/>
+    </linearGradient>
+    <linearGradient id="primaryAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ec4899"/>
+      <stop offset="50%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="800" height="560" rx="16" fill="url(#bgGrad)" stroke="#334155" stroke-width="1.5"/>
+  <rect x="1" y="1" width="798" height="3" fill="url(#primaryAccent)"/>
+
+  <!-- Header Section -->
+  <g transform="translate(32, 40)">
+    <rect x="0" y="0" width="120" height="24" rx="12" fill="rgba(139, 92, 246, 0.18)" stroke="#a855f7" stroke-width="1"/>
+    <text x="60" y="16" fill="#c084fc" font-family="'Inter', sans-serif" font-size="11" font-weight="700" letter-spacing="1" text-anchor="middle">COLOR THEORY</text>
+    <text x="135" y="17" fill="#f8fafc" font-family="'Outfit', sans-serif" font-size="20" font-weight="700">The 12-Part Color Wheel: Primary, Secondary &amp; Tertiary</text>
+  </g>
+
+  <!-- Main Diagram Body -->
+  
+  <g transform="translate(40, 85)">
+    <!-- Left Column: Circular Wheel -->
+    <g transform="translate(180, 160)">
+      <!-- 12 segments represented by circles around center -->
+      <!-- Primaries: Red(0), Yellow(120), Blue(240) in RYB / artist wheel -->
+      <!-- Red at top: angle 270 (-90 deg), Yellow at 30 deg, Blue at 150 deg -->
+      <!-- We will place 12 nodes at r=120 -->
+      <circle cx="0" cy="0" r="140" fill="none" stroke="#334155" stroke-dasharray="4 4" stroke-width="1.5"/>
+      <circle cx="0" cy="0" r="40" fill="#1e293b" stroke="#475569" stroke-width="1.5"/>
+      <text x="0" y="5" fill="#f8fafc" font-family="'Outfit', sans-serif" font-size="12" font-weight="700" text-anchor="middle">12 HUES</text>
+
+      <!-- 12 Color Nodes -->
+      <!-- 1. Red (Primary) Top -->
+      <circle cx="0" cy="-120" r="18" fill="#ef4444" stroke="#ffffff" stroke-width="2.5"/>
+      <text x="0" y="-145" fill="#f87171" font-family="'Inter', sans-serif" font-size="11" font-weight="700" text-anchor="middle">RED [P]</text>
+
+      <!-- 2. Red-Orange (Tertiary) -->
+      <circle cx="60" cy="-104" r="14" fill="#f97316"/>
+      <!-- 3. Orange (Secondary) -->
+      <circle cx="104" cy="-60" r="16" fill="#fb923c" stroke="#ffffff" stroke-width="1.5"/>
+      <text x="145" y="-60" fill="#fb923c" font-family="'Inter', sans-serif" font-size="11" font-weight="700">ORANGE [S]</text>
+
+      <!-- 4. Yellow-Orange (Tertiary) -->
+      <circle cx="120" cy="0" r="14" fill="#facc15"/>
+      <!-- 5. Yellow (Primary) -->
+      <circle cx="104" cy="60" r="18" fill="#eab308" stroke="#ffffff" stroke-width="2.5"/>
+      <text x="135" y="80" fill="#facc15" font-family="'Inter', sans-serif" font-size="11" font-weight="700">YELLOW [P]</text>
+
+      <!-- 6. Yellow-Green (Tertiary) -->
+      <circle cx="60" cy="104" r="14" fill="#a3e635"/>
+      <!-- 7. Green (Secondary) -->
+      <circle cx="0" cy="120" r="16" fill="#22c55e" stroke="#ffffff" stroke-width="1.5"/>
+      <text x="0" y="152" fill="#4ade80" font-family="'Inter', sans-serif" font-size="11" font-weight="700" text-anchor="middle">GREEN [S]</text>
+
+      <!-- 8. Blue-Green (Tertiary) -->
+      <circle cx="-60" cy="104" r="14" fill="#14b8a6"/>
+      <!-- 9. Blue (Primary) -->
+      <circle cx="-104" cy="60" r="18" fill="#3b82f6" stroke="#ffffff" stroke-width="2.5"/>
+      <text x="-145" y="80" fill="#60a5fa" font-family="'Inter', sans-serif" font-size="11" font-weight="700" text-anchor="end">BLUE [P]</text>
+
+      <!-- 10. Blue-Violet (Tertiary) -->
+      <circle cx="-120" cy="0" r="14" fill="#6366f1"/>
+      <!-- 11. Violet / Purple (Secondary) -->
+      <circle cx="-104" cy="-60" r="16" fill="#8b5cf6" stroke="#ffffff" stroke-width="1.5"/>
+      <text x="-145" y="-60" fill="#a78bfa" font-family="'Inter', sans-serif" font-size="11" font-weight="700" text-anchor="end">VIOLET [S]</text>
+
+      <!-- 12. Red-Violet (Tertiary) -->
+      <circle cx="-60" cy="-104" r="14" fill="#d946ef"/>
+    </g>
+
+    <!-- Right Column: Explanatory Breakdown Cards -->
+    <g transform="translate(380, 20)">
+      <!-- Primaries -->
+      <rect x="0" y="0" width="340" height="85" rx="8" fill="rgba(30, 41, 59, 0.6)" stroke="#ef4444" stroke-width="1"/>
+      <text x="16" y="24" fill="#f87171" font-family="'Outfit', sans-serif" font-size="13" font-weight="700">&#9670; PRIMARY COLORS (P)</text>
+      <text x="16" y="44" fill="#f8fafc" font-family="'Inter', sans-serif" font-size="12">Red, Yellow, Blue (RYB Traditional Model)</text>
+      <text x="16" y="64" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="11">Cannot be created by mixing other colors. The fundamental roots of all color mixing.</text>
+
+      <!-- Secondaries -->
+      <rect x="0" y="100" width="340" height="85" rx="8" fill="rgba(30, 41, 59, 0.6)" stroke="#fb923c" stroke-width="1"/>
+      <text x="16" y="124" fill="#fb923c" font-family="'Outfit', sans-serif" font-size="13" font-weight="700">&#9670; SECONDARY COLORS (S)</text>
+      <text x="16" y="144" fill="#f8fafc" font-family="'Inter', sans-serif" font-size="12">Orange (R+Y), Green (Y+B), Violet (B+R)</text>
+      <text x="16" y="164" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="11">Formed by mixing two equal parts of adjacent primary hues.</text>
+
+      <!-- Tertiaries -->
+      <rect x="0" y="200" width="340" height="95" rx="8" fill="rgba(30, 41, 59, 0.6)" stroke="#c084fc" stroke-width="1"/>
+      <text x="16" y="224" fill="#c084fc" font-family="'Outfit', sans-serif" font-size="13" font-weight="700">&#9670; TERTIARY / INTERMEDIATE (T)</text>
+      <text x="16" y="244" fill="#f8fafc" font-family="'Inter', sans-serif" font-size="12">Red-Orange, Yellow-Orange, Yellow-Green, etc.</text>
+      <text x="16" y="264" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="11">Formed by combining equal parts of one primary with one neighboring secondary color.</text>
+    </g>
+  </g>
+
+
+  <!-- Footer Note -->
+  <g transform="translate(32, 536)">
+    <line x1="0" y1="0" x2="736" y2="0" stroke="#1e293b" stroke-width="1"/>
+    <text x="0" y="16" fill="#64748b" font-family="'Inter', sans-serif" font-size="11">Lesson 5: Visual Design &amp; Communication &#8226; Master Graphic Standards</text>
+    <text x="736" y="16" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="11" text-anchor="end">SHS Digital Arts Curriculum</text>
+  </g>
+</svg>

@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="50%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#090d16"/>
+    </linearGradient>
+    <linearGradient id="primaryAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ec4899"/>
+      <stop offset="50%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="800" height="560" rx="16" fill="url(#bgGrad)" stroke="#334155" stroke-width="1.5"/>
+  <rect x="1" y="1" width="798" height="3" fill="url(#primaryAccent)"/>
+
+  <!-- Header Section -->
+  <g transform="translate(32, 40)">
+    <rect x="0" y="0" width="120" height="24" rx="12" fill="rgba(139, 92, 246, 0.18)" stroke="#a855f7" stroke-width="1"/>
+    <text x="60" y="16" fill="#c084fc" font-family="'Inter', sans-serif" font-size="11" font-weight="700" letter-spacing="1" text-anchor="middle">COLOR THEORY</text>
+    <text x="135" y="17" fill="#f8fafc" font-family="'Outfit', sans-serif" font-size="20" font-weight="700">RGB vs. CMYK: Gamut Boundaries &amp; Pre-Press Decision Matrix</text>
+  </g>
+
+  <!-- Main Diagram Body -->
+  
+  <g transform="translate(40, 85)">
+    <!-- CIE Gamut Visual Comparison -->
+    <g transform="translate(0, 10)">
+      <rect x="0" y="0" width="345" height="280" rx="10" fill="rgba(30, 41, 59, 0.6)" stroke="#3b82f6" stroke-width="1.5"/>
+      <text x="20" y="30" fill="#60a5fa" font-family="'Outfit', sans-serif" font-size="15" font-weight="700">THE COLOR GAMUT MISMATCH</text>
+      <text x="20" y="50" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="11">Why Electric Neon Screen Colors Dull in Print</text>
+
+      <!-- Concentric Boundary Rings -->
+      <g transform="translate(172, 160)">
+        <!-- Human Eye Gamut -->
+        <ellipse cx="0" cy="0" rx="140" ry="85" fill="none" stroke="#64748b" stroke-width="1.5" stroke-dasharray="4 4"/>
+        <text x="0" y="-72" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10" text-anchor="middle">Human Eye Visible Spectrum (Largest)</text>
+
+        <!-- RGB Gamut -->
+        <ellipse cx="-10" cy="5" rx="105" ry="65" fill="rgba(59, 130, 246, 0.15)" stroke="#38bdf8" stroke-width="2"/>
+        <text x="-10" y="-45" fill="#38bdf8" font-family="'Inter', sans-serif" font-size="10" font-weight="600" text-anchor="middle">sRGB / DCI-P3 Screen Gamut</text>
+
+        <!-- CMYK Gamut -->
+        <ellipse cx="-20" cy="15" rx="65" ry="40" fill="rgba(236, 72, 153, 0.25)" stroke="#ec4899" stroke-width="2"/>
+        <text x="-20" y="15" fill="#fbcfe8" font-family="'Inter', sans-serif" font-size="10" font-weight="700" text-anchor="middle">CMYK Print Gamut</text>
+        <text x="-20" y="28" fill="#fbcfe8" font-family="'Inter', sans-serif" font-size="9" text-anchor="middle">(Narrowest)</text>
+      </g>
+    </g>
+
+    <!-- Decision Matrix Table -->
+    <g transform="translate(365, 10)">
+      <rect x="0" y="0" width="355" height="280" rx="10" fill="rgba(30, 41, 59, 0.6)" stroke="#10b981" stroke-width="1.5"/>
+      <text x="20" y="30" fill="#34d399" font-family="'Outfit', sans-serif" font-size="15" font-weight="700">PRODUCTION DECISION MATRIX</text>
+      
+      <!-- Table Headers -->
+      <g transform="translate(20, 55)">
+        <text x="0" y="15" fill="#f8fafc" font-family="'Inter', sans-serif" font-size="12" font-weight="700">Project Type</text>
+        <text x="180" y="15" fill="#38bdf8" font-family="'Inter', sans-serif" font-size="12" font-weight="700">Required Model</text>
+        <line x1="0" y1="25" x2="315" y2="25" stroke="#475569" stroke-width="1"/>
+
+        <!-- Rows -->
+        <text x="0" y="48" fill="#cbd5e1" font-family="'Inter', sans-serif" font-size="11">Websites, Apps, UI Design</text>
+        <text x="180" y="48" fill="#38bdf8" font-family="'Inter', sans-serif" font-size="11" font-weight="600">RGB (sRGB / Hex)</text>
+
+        <text x="0" y="73" fill="#cbd5e1" font-family="'Inter', sans-serif" font-size="11">Social Media Graphics, Reels</text>
+        <text x="180" y="73" fill="#38bdf8" font-family="'Inter', sans-serif" font-size="11" font-weight="600">RGB (sRGB)</text>
+
+        <text x="0" y="98" fill="#cbd5e1" font-family="'Inter', sans-serif" font-size="11">Business Cards, Flyers</text>
+        <text x="180" y="98" fill="#ec4899" font-family="'Inter', sans-serif" font-size="11" font-weight="600">CMYK (300 DPI)</text>
+
+        <text x="0" y="123" fill="#cbd5e1" font-family="'Inter', sans-serif" font-size="11">Packaging, Billboards</text>
+        <text x="180" y="123" fill="#ec4899" font-family="'Inter', sans-serif" font-size="11" font-weight="600">CMYK + Spot (PMS)</text>
+
+        <text x="0" y="148" fill="#cbd5e1" font-family="'Inter', sans-serif" font-size="11">Corporate Brand Guidelines</text>
+        <text x="180" y="148" fill="#a78bfa" font-family="'Inter', sans-serif" font-size="11" font-weight="600">Both RGB + CMYK + PMS</text>
+      </g>
+    </g>
+
+    <!-- Bottom Golden Rule -->
+    <rect x="0" y="305" width="720" height="75" rx="8" fill="rgba(15, 23, 42, 0.9)" stroke="#475569" stroke-width="1"/>
+    <text x="20" y="332" fill="#fbbf24" font-family="'Outfit', sans-serif" font-size="13" font-weight="700">&#9733; The Professional Pre-Press Rule: Always Design in CMYK for Print</text>
+    <text x="20" y="352" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="12">Converting an RGB document to CMYK at the last second causes unexpected color shifting (dull muddy blues and neon greens turning army green). Always work in CMYK mode from project day 1.</text>
+  </g>
+
+
+  <!-- Footer Note -->
+  <g transform="translate(32, 536)">
+    <line x1="0" y1="0" x2="736" y2="0" stroke="#1e293b" stroke-width="1"/>
+    <text x="0" y="16" fill="#64748b" font-family="'Inter', sans-serif" font-size="11">Lesson 5: Visual Design &amp; Communication &#8226; Master Graphic Standards</text>
+    <text x="736" y="16" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="11" text-anchor="end">SHS Digital Arts Curriculum</text>
+  </g>
+</svg>

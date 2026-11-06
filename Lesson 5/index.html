@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Theory — Interactive Masterclass (Lesson 5)</title>
+  <meta name="description" content="An interactive visual masterclass exploring color science, the 12-part wheel, harmonies, RGB vs CMYK printing, brand psychology, and the 60-30-10 palette rule.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="lesson-selector.css">
+</head>
+<body class="theme-dark" data-current-lesson="5" data-current-type="deck" data-root-path="../">
+
+  <!-- Main Presentation Wrapper -->
+  <div class="deck-container" id="deckApp">
+
+    <!-- Top Status / Navigation Bar -->
+    <header class="deck-header">
+      <div class="header-left">
+        <div class="logo-badge">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M12 2a10 10 0 0 1 10 10c0 5.52-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2z"/>
+          </svg>
+          <span class="logo-text">COLOR THEORY MASTERCLASS</span>
+        </div>
+        <div class="divider-v"></div>
+        <button class="lesson-picker-btn lesson-5" id="lessonPickerBtn" aria-label="Select Lesson" title="Switch Lesson (Press L)">
+          <span class="lesson-picker-badge">L5</span>
+          <span class="lesson-picker-name">Lesson 5: Color Theory</span>
+          <svg class="lesson-picker-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </button>
+        <span class="slide-indicator" id="slideIndicator">01 / 13</span>
+      </div>
+
+      <div class="header-center">
+        <h2 class="current-slide-heading" id="topSlideTitle">1. Introduction: The Science of Color &amp; Human Perception</h2>
+      </div>
+
+      <div class="header-right">
+        <a href="quiz/index.html" class="nav-btn-icon quiz-link" title="Open Interactive Knowledge Quiz" id="headerQuizBtn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+          <span class="btn-label">Quiz Challenge</span>
+        </a>
+
+        <button class="nav-btn-icon" id="drawerToggleBtn" title="Toggle Slide Drawer (T)" aria-label="Toggle Slide Drawer">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="3" y="3" width="7" height="7"/>
+            <rect x="14" y="3" width="7" height="7"/>
+            <rect x="14" y="14" width="7" height="7"/>
+            <rect x="3" y="14" width="7" height="7"/>
+          </svg>
+          <span class="btn-label">All Slides</span>
+        </button>
+
+        <button class="nav-btn-icon" id="fullscreenBtn" title="Toggle Fullscreen (F)" aria-label="Toggle Fullscreen">
+          <svg id="fsIconExpand" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/>
+          </svg>
+          <svg id="fsIconCompress" class="hidden" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 14h6m0 0v6m0-6L3 21m17-7h-6m0 0v6m0-6l7 7M4 10h6m0 0V4m0 6L3 3m17 7h-6m0 0V4m0 6l7-7"/>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- Top Interactive Progress Bar -->
+    <div class="progress-track">
+      <div class="progress-bar" id="progressBar" style="width: 7.69%;"></div>
+    </div>
+
+    <!-- Main Slide Stage Area -->
+    <main class="slide-viewport">
+
+      <!-- ===================================================================
+           SLIDE 1: 1. Introduction: The Science of Color & Human Perception
+           =================================================================== -->
+      <section class="slide active" data-index="1" data-title="1. Introduction: The Science of Color & Human Perception">
+        <div class="slide-grid">
+          
+          <!-- Left Content Pane -->
+          <div class="slide-content-pane">
+            <div class="module-tag">FOUNDATIONS &#8226; OPTICS &amp; PERCEPTION</div>
+            <h1 class="slide-title">The Science of <span class="gradient-text">Color &amp; Light</span></h1>
+            
+            <div class="info-card">
+              <div class="card-icon-title">
+                <span class="badge-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></span>
+                <h3>Newton's Optical Discovery (1666): The Visible Spectrum</h3>
+              </div>
+              <p>Color does not physically reside within objects; it is an optical phenomenon. In 1666, Sir Isaac Newton passed sunlight through a glass prism, proving that pure white light is composed of the visible electromagnetic spectrum: Red (700 nm) through Violet (380 nm). An apple appears red solely because its surface molecules reflect 700 nm wavelengths while absorbing all others.</p>
+            </div>
+            <div class="info-card">
+              <div class="card-icon-title">
+                <span class="badge-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg></span>
+                <h3>Trichromatic Vision: Cones, Rods & Optical Synthesis</h3>
+              </div>
+              <p>Human retinas process visual reality through two photoreceptor types: 120 million Rods (light intensity/night vision) and 6 to 7 million Cones (chromatic acuity). Humans possess Trichromatic vision with three cone classes: L-cones (Red), M-cones (Green), and S-cones (Blue). The visual cortex blends these three bio-electrical signals into millions of perceivable color nuances.</p>
+            </div>
+            
+            <div class="interactive-checkpoint">
+              <div class="checkpoint-header">
+                <span class="sparkle-icon">&#10024;</span>
+                <h4>Classroom Checkpoint: The Metamerism Paradox</h4>
+              </div>
+              <p class="checkpoint-prompt">Why does a printed brand logo match perfectly under office fluorescent lighting, but shifts noticeably under outdoor natural sunlight?</p>
+              <button class="reveal-btn" data-target="rev1">Reveal Design Insight</button>
+              <div class="reveal-content hidden" id="rev1">
+                <strong>Expert Insight:</strong> Metamerism occurs when two color specimens match under one specific spectral power distribution (e.g., 4000K fluorescent lamps) but appear completely mismatched under another (e.g., 6500K natural sunlight), because different light sources emit drastically different proportions of visible wavelengths.
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Media Pane (Interactive Multi-Example Showcase) -->
+          <div class="slide-media-pane">
+            <nav class="gallery-nav" aria-label="Visual Example Switcher">
+              
+                <button class="gallery-tab-btn active" data-img="assets/newton_prism_light.jpg" data-alt="Newton's Prism Experiment (JPG)" data-caption="Authentic Historical Artifact: Newton's dual prism experiment demonstrating chromatic light dispersion.">
+                  <span>Newton's Prism Experiment (JPG)</span>
+                </button>
+                <button class="gallery-tab-btn " data-img="assets/visible_spectrum_wavelengths.png" data-alt="Solar Spectrum Wavelengths (PNG)" data-caption="Scientific Solar Spectrum: Measured electromagnetic radiation from 380nm (Violet) to 700nm (Red).">
+                  <span>Solar Spectrum Wavelengths (PNG)</span>
+                </button>
+                <button class="gallery-tab-btn " data-img="assets/slide1_intro_physics.svg" data-alt="Optical Physics Diagram (SVG)" data-caption="Master Diagram: Newton's prism, wavelength frequencies, and the trichromatic human retinal response.">
+                  <span>Optical Physics Diagram (SVG)</span>
+                </button>
+            </nav>
+            <div class="media-frame" data-zoom="assets/newton_prism_light.jpg">
+              <img src="assets/newton_prism_light.jpg" alt="Isaac Newton dual prism experiment showing light dispersion into visible spectrum" class="slide-img">
+              <div class="image-overlay-hint">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <span>Click image to inspect full screen</span>
+              </div>
+            </div>
+            <figcaption class="media-caption">
+              <strong>Authentic Historical Artifact (JPG):</strong> Sir Isaac Newton's seminal experiment demonstrating that white light refracts into the continuous visible spectrum.
+            </figcaption>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           SLIDE 2: 2. The Color Wheel: Primary, Secondary & Tertiary Hues
+           =================================================================== -->
+      <section class="slide " data-index="2" data-title="2. The Color Wheel: Primary, Secondary & Tertiary Hues">
+        <div class="slide-grid">
+          
+          <!-- Left Content Pane -->
+          <div class="slide-content-pane">
+            <div class="module-tag">SYSTEMS &#8226; 12-PART COLOR WHEEL</div>
+            <h1 class="slide-title">The Anatomy of the <span class="gradient-text">Color Wheel</span></h1>
+            
+            <div class="info-card">
+              <div class="card-icon-title">
+                <span class="badge-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/><line x1="4.93" y1="4.93" x2="9.17" y2="9.17"/><line x1="14.83" y1="14.83" x2="19.07" y2="19.07"/><line x1="14.83" y1="9.17" x2="19.07" y2="4.93"/><line x1="4.93" y1="19.07" x2="9.17" y2="14.83"/></svg></span>
+                <h3>The 3 Architectural Tiers of the 12-Part Wheel</h3>
+              </div>
+              <p>The traditional artist's wheel organizes 12 fundamental hues into a circular continuum: 1) Primaries [Red, Yellow, Blue] which cannot be produced by mixing; 2) Secondaries [Orange, Green, Violet] formed by equal 50/50 parts of two primaries; and 3) Tertiaries [Red-Orange, Yellow-Orange, Yellow-Green, Blue-Green, Blue-Violet, Red-Violet] formed by pairing a primary with an adjacent secondary.</p>
+            </div>
+            <div class="info-card">
+              <div class="card-icon-title">
+                <span class="badge-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 22 22 22"/></svg></span>
+                <h3>Bauhaus Legacy: Johannes Itten's 1961 Farbkreis</h3>
+              </div>
+              <p>Formalized at the Weimar Bauhaus design school, painter Johannes Itten created the 12-part color sphere to teach students spatial relationships between hues. Itten recognized that geometric positioning dictates psychological contrast, allowing artists to anticipate visual vibration before putting brush to canvas.</p>
+            </div>
+            
+            <div class="interactive-checkpoint">
+              <div class="checkpoint-header">
+                <span class="sparkle-icon">&#10024;</span>
+                <h4>Classroom Checkpoint: The RYB vs. CMY Pigment Revolution</h4>
+              </div>
+              <p class="checkpoint-prompt">Why did classical renaissance masters use Red, Yellow, and Blue as primaries, while modern commercial printers use Cyan, Magenta, and Yellow?</p>
+              <button class="reveal-btn" data-target="rev2">Reveal Design Insight</button>
+              <div class="reveal-content hidden" id="rev2">
+                <strong>Expert Insight:</strong> Historical artists lacked synthetic organic pigments, relying on mineral earth pigments (lapis lazuli, vermilion, yellow ochre). Modern color science proved that Cyan, Magenta, and Yellow are the true physical subtractive primaries capable of producing the widest possible chromatic spectrum without muddiness.
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Media Pane (Interactive Multi-Example Showcase) -->
+          <div class="slide-media-pane">
+            <nav class="gallery-nav" aria-label="Visual Example Switcher">
+              
+                <button class="gallery-tab-btn active" data-img="assets/johannes_itten_color_wheel.png" data-alt="Johannes Itten Farbkreis (PNG)" data-caption="Bauhaus Historic Artifact: Johannes Itten's 12-color wheel with central primary triangle and secondary hexagon.">
+                  <span>Johannes Itten Farbkreis (PNG)</span>
+                </button>
+                <button class="gallery-tab-btn " data-img="assets/primary_secondary_tertiary_wheel.jpg" data-alt="1908 Primary-Secondary Wheel (JPG)" data-caption="Archival 1908 color chart demonstrating primary, secondary, and tertiary pigment combinations.">
+                  <span>1908 Primary-Secondary Wheel (JPG)</span>
+                </button>
+                <button class="gallery-tab-btn " data-img="assets/slide2_color_wheel.svg" data-alt="12-Part Vector Wheel (SVG)" data-caption="Master Vector Diagram: The complete 12-part color wheel with labeled geometric tiers and mixing formulas.">
+                  <span>12-Part Vector Wheel (SVG)</span>
+                </button>
+            </nav>
+            <div class="media-frame" data-zoom="assets/johannes_itten_color_wheel.png">
+              <img src="assets/johannes_itten_color_wheel.png" alt="Johannes Itten Bauhaus 12-color wheel Farbkreis (1961)" class="slide-img">
+              <div class="image-overlay-hint">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <span>Click image to inspect full screen</span>
+              </div>
+            </div>
+            <figcaption class="media-caption">
+              <strong>Authentic Bauhaus Artifact (PNG):</strong> Johannes Itten's 1961 Farbkreis, the foundational 12-hue color wheel taught at the Bauhaus academy.
+            </figcaption>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           SLIDE 3: 2b. Color Attributes: Hue, Saturation, and Value (HSV / HSB)
+           =================================================================== -->
+      <section class="slide " data-index="3" data-title="2b. Color Attributes: Hue, Saturation, and Value (HSV / HSB)">
+        <div class="slide-grid">
+          
+          <!-- Left Content Pane -->
+          <div class="slide-content-pane">
+            <div class="module-tag">DIMENSIONS &#8226; 3D COLOR SPACE</div>
+            <h1 class="slide-title">The 3 Dimensions: <span class="gradient-text">Hue, Saturation &amp; Value</span></h1>
+            
+            <div class="info-card">
+              <div class="card-icon-title">
+                <span class="badge-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg></span>
+                <h3>The HSV / HSB Cylindrical Coordinates</h3>
+              </div>
+              <p>Every color on earth requires three coordinates to define: 1) Hue (0°–360°): The pure wavelength family along the circle; 2) Saturation / Chroma (0%–100%): The purity or vividness of the hue, where 0% is dull gray and 100% is intense pigment; 3) Value / Brightness (0%–100%): The relative luminance from absolute black (0%) to full illumination (100%).</p>
+            </div>
+            <div class="info-card">
+              <div class="card-icon-title">
+                <span class="badge-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></span>
+                <h3>Albert Munsell's 3D Color Tree (1900)</h3>
+              </div>
+              <p>American artist Albert Munsell recognized that color is not a flat disk. Because human eyes perceive different colors reaching maximum chroma at differing lightness levels (pure yellow is naturally bright, whereas pure ultramarine is naturally deep), Munsell mapped color onto an asymmetrical 3D tree that remains the bedrock of US industrial standards.</p>
+            </div>
+            
+            <div class="interactive-checkpoint">
+              <div class="checkpoint-header">
+                <span class="sparkle-icon">&#10024;</span>
+                <h4>Classroom Checkpoint: The Senior Art Director's Grayscale Test</h4>
+              </div>
+              <p class="checkpoint-prompt">What is the fastest professional technique to determine whether a complex web interface has successful visual hierarchy and contrast?</p>
+              <button class="reveal-btn" data-target="rev3">Reveal Design Insight</button>
+              <div class="reveal-content hidden" id="rev3">
+                <strong>Expert Insight:</strong> Desaturate the entire design to 100% Grayscale! If your headings, call-to-action buttons, and cards are immediately readable in pure black-and-white, your Value hierarchy is solid. Value does all the structural work; Hue merely gets the credit.
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Media Pane (Interactive Multi-Example Showcase) -->
+          <div class="slide-media-pane">
+            <nav class="gallery-nav" aria-label="Visual Example Switcher">
+              
+                <button class="gallery-tab-btn active" data-img="assets/hsv_color_solid_cylinder.png" data-alt="HSV 3D Color Cylinder (PNG)" data-caption="Scientific Color Solid: Cylinder illustrating Hue angle (0-360°), radial Saturation (0-100%), and vertical Value.">
+                  <span>HSV 3D Color Cylinder (PNG)</span>
+                </button>
+                <button class="gallery-tab-btn " data-img="assets/munsell_color_tree.jpg" data-alt="Munsell Color Tree (JPG)" data-caption="Albert Munsell's 1900 Color Tree: Archival representation of 3D color space graded by Hue, Chroma, and Value.">
+                  <span>Munsell Color Tree (JPG)</span>
+                </button>
+                <button class="gallery-tab-btn " data-img="assets/slide3_hue_saturation_value.svg" data-alt="HSV Dimension Scales (SVG)" data-caption="Master Vector Diagram: Hue spectrum strip, saturation decay gradient, and value luminance steps.">
+                  <span>HSV Dimension Scales (SVG)</span>
+                </button>
+            </nav>
+            <div class="media-frame" data-zoom="assets/hsv_color_solid_cylinder.png">
+              <img src="assets/hsv_color_solid_cylinder.png" alt="HSV color solid 3D cylinder showing hue, saturation, and value coordinates" class="slide-img">
+              <div class="image-overlay-hint">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <span>Click image to inspect full screen</span>
+              </div>
+            </div>
+            <figcaption class="media-caption">
+              <strong>Scientific 3D Model (PNG):</strong> The HSV cylindrical color solid, showing Hue around the perimeter, Saturation moving outward, and Value on the vertical axis.
+            </figcaption>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           SLIDE 4: 2c. Altering Color: Tints, Shades, and Tones
+           =================================================================== -->
+      <section class="slide " data-index="4" data-title="2c. Altering Color: Tints, Shades, and Tones">
+        <div class="slide-grid">
+          
+          <!-- Left Content Pane -->
+          <div class="slide-content-pane">
+            <div class="module-tag">MODULATION &#8226; VALUE MANIPULATION</div>
+            <h1 class="slide-title">Tints, Shades &amp; <span class="gradient-text">Tones</span></h1>
+            
+            <div class="info-card">
+              <div class="card-icon-title">
+                <span class="badge-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg></span>
+                <h3>The 3 Modulation Formulations</h3>
+              </div>
+              <p>Modulating a base hue requires specific additives: 1) Tint = Base Hue + White: Elevates value, reduces saturation, creating gentle pastels and airy atmospheric tints; 2) Shade = Base Hue + Black: Lowers value, creating dramatic, rich, authoritative shadows; 3) Tone = Base Hue + Gray: Desaturates chroma without moving to pure black or white, producing sophisticated, vintage, and earthy palettes.</p>
+            </div>
+            <div class="info-card">
+              <div class="card-icon-title">
+                <span class="badge-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></span>
+                <h3>Digital UI Token Scales (50 to 900)</h3>
+              </div>
+              <p>In production design systems (Tailwind, Figma tokens, Google Material), colors are engineered into 10-step numerical scales (50, 100, 200... 900). Steps 50–300 are Tints used for backgrounds and active hover states; step 500 is the pure brand Hue; steps 700–900 are Shades used for accessible typography and dark mode surfaces.</p>
+            </div>
+            
+            <div class="interactive-checkpoint">
+              <div class="checkpoint-header">
+                <span class="sparkle-icon">&#10024;</span>
+                <h4>Classroom Checkpoint: The 'Muddy Shadow' Rookie Mistake</h4>
+              </div>
+              <p class="checkpoint-prompt">Why should digital artists and illustrators never create shadow tones by simply blending pure black (#000000) over a color?</p>
+              <button class="reveal-btn" data-target="rev4">Reveal Design Insight</button>
+              <div class="reveal-content hidden" id="rev4">
+                <strong>Expert Insight:</strong> Adding pure black strips away chromatic saturation, resulting in lifeless 'muddy' grey shadows. Master artists shift the Hue slightly toward cool blue/violet while adding shade, mimicking real-world ambient skylight reflected into natural shadows!
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Media Pane (Interactive Multi-Example Showcase) -->
+          <div class="slide-media-pane">
+            <nav class="gallery-nav" aria-label="Visual Example Switcher">
+              
+                <button class="gallery-tab-btn active" data-img="assets/tint_tone_shade_chart.png" data-alt="Hints on Tints Archive (PNG)" data-caption="Historic 1875 textbook plate: Empirical formulations for mixing delicate tints and deep shades in printing inks.">
+                  <span>Hints on Tints Archive (PNG)</span>
+                </button>
+                <button class="gallery-tab-btn " data-img="assets/slide4_tint_shade_tone.svg" data-alt="Tint-Shade-Tone Vector Swatches (SVG)" data-caption="Master Vector Breakdown: Pure hue modulated with White (+Tint), Black (+Shade), and Gray (+Tone).">
+                  <span>Tint-Shade-Tone Vector Swatches (SVG)</span>
+                </button>
+            </nav>
+            <div class="media-frame" data-zoom="assets/tint_tone_shade_chart.png">
+              <img src="assets/tint_tone_shade_chart.png" alt="Historic 1875 Hints on Tints and How to Mix Them color chart" class="slide-img">
+              <div class="image-overlay-hint">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <span>Click image to inspect full screen</span>
+              </div>
+            </div>
+            <figcaption class="media-caption">
+              <strong>Authentic Educational Specimen (PNG):</strong> Historical 1875 printing textbook showing systematic gradations of tints, tones, and shades for typographic ink mixing.
+            </figcaption>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           SLIDE 5: 2d. Color Temperature: Warm vs. Cool Colors
+           =================================================================== -->
+      <section class="slide " data-index="5" data-title="2d. Color Temperature: Warm vs. Cool Colors">
+        <div class="slide-grid">
+          
+          <!-- Left Content Pane -->
+          <div class="slide-content-pane">
+            <div class="module-tag">TEMPERATURE &#8226; EMOTIONAL ATMOSPHERE</div>
+            <h1 class="slide-title">Warm vs. Cool: <span class="gradient-text">Psychological Temperature</span></h1>
+            
+            <div class="info-card">
+              <div class="card-icon-title">
+                <span class="badge-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a10 10 0 0 1 0 20Z"/></svg></span>
+                <h3>The Thermal Division & Optical Illusions</h3>
+              </div>
+              <p>Dividing the 12-part wheel down the center creates two psychological zones: Warm Colors (Reds, Oranges, Yellows) and Cool Colors (Blues, Greens, Violets). Warm colors physiologically increase pulse rates and create the optical illusion of advancing forward toward the viewer. Cool colors evoke calm and appear to recede backward into depth.</p>
+            </div>
+            <div class="info-card">
+              <div class="card-icon-title">
+                <span class="badge-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg></span>
+                <h3>Atmospheric Perspective in Art & UI Design</h3>
+              </div>
+              <p>Impressionist master Claude Monet utilized warm oranges against misty cool blues in 'Impression, Sunrise' to capture the luminous morning dawn. UI designers harness this exact principle: critical Call-to-Action buttons and warning toasts use warm advancing tones, while cool slate backgrounds recede unobtrusively.</p>
+            </div>
+            
+            <div class="interactive-checkpoint">
+              <div class="checkpoint-header">
+                <span class="sparkle-icon">&#10024;</span>
+                <h4>Classroom Checkpoint: The Astrophysics vs. Human Psychology Paradox</h4>
+              </div>
+              <p class="checkpoint-prompt">In astrophysics, blue stars (25,000K) are intensely hotter than red stars (3,000K). Why does human psychology perceive red as scorching hot and blue as freezing cold?</p>
+              <button class="reveal-btn" data-target="rev5">Reveal Design Insight</button>
+              <div class="reveal-content hidden" id="rev5">
+                <strong>Expert Insight:</strong> Terrestrial evolutionary biology! Early humans developed survival instincts around earthbound elements: glowing wood embers, molten lava, and blood represent heat and danger, whereas glacial ice, alpine snow, and deep water represent freezing cold.
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Media Pane (Interactive Multi-Example Showcase) -->
+          <div class="slide-media-pane">
+            <nav class="gallery-nav" aria-label="Visual Example Switcher">
+              
+                <button class="gallery-tab-btn active" data-img="assets/monet_impression_sunrise_warm_cool.jpg" data-alt="Monet: Impression Sunrise (JPG)" data-caption="Art Historical Icon: Monet's legendary painting exhibiting the dramatic kinetic tension between warm orange and cool blue.">
+                  <span>Monet: Impression Sunrise (JPG)</span>
+                </button>
+                <button class="gallery-tab-btn " data-img="assets/warm_vs_cool_color_wheel.jpg" data-alt="Warm/Cool Wheel Division (JPG)" data-caption="Educational Specimen: Split color wheel illustrating the boundary separating warm and cool chromatic families.">
+                  <span>Warm/Cool Wheel Division (JPG)</span>
+                </button>
+                <button class="gallery-tab-btn " data-img="assets/slide5_warm_vs_cool.svg" data-alt="Thermal Dynamics Vector (SVG)" data-caption="Master Vector Diagram: Advancing warm rays vs. receding cool depths with UI and emotional application breakdown.">
+                  <span>Thermal Dynamics Vector (SVG)</span>
+                </button>
+            </nav>
+            <div class="media-frame" data-zoom="assets/monet_impression_sunrise_warm_cool.jpg">
+              <img src="assets/monet_impression_sunrise_warm_cool.jpg" alt="Claude Monet Impression Sunrise (1872) masterpiece showing warm orange sun over cool blue harbor" class="slide-img">
+              <div class="image-overlay-hint">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <span>Click image to inspect full screen</span>
+              </div>
+            </div>
+            <figcaption class="media-caption">
+              <strong>Masterpiece Specimen (JPG):</strong> Claude Monet's <em>Impression, Sunrise</em> (1872), the quintessential study of warm advancing sunlight piercing cool receding coastal fog.
+            </figcaption>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           SLIDE 6: 3. Color Harmonies I: Complementary & Analogous Schemes
+           =================================================================== -->
+      <section class="slide " data-index="6" data-title="3. Color Harmonies I: Complementary & Analogous Schemes">
+        <div class="slide-grid">
+          
+          <!-- Left Content Pane -->
+          <div class="slide-content-pane">
+            <div class="module-tag">HARMONIES &#8226; GEOMETRIC RELATIONSHIPS</div>
+            <h1 class="slide-title">Complementary &amp; <span class="gradient-text">Analogous Harmonies</span></h1>
+            
+            <div class="info-card">
+              <div class="card-icon-title">
+                <span class="badge-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/></svg></span>
+                <h3>Complementary Harmony (180° Direct Opposites)</h3>
+              </div>
+              <p>Colors placed 180° directly opposite on the wheel (Blue + Orange, Red + Green, Yellow + Violet). Generates maximum simultaneous contrast: each hue makes its partner appear more vibrant and luminous. Ideal for focal Call-to-Action buttons, sports branding (Knicks, Mets), and high-energy movie posters.</p>
+            </div>
+            <div class="info-card">
+              <div class="card-icon-title">
+                <span class="badge-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 0 1 7.07 17.07L12 12Z"/></svg></span>
+                <h3>Analogous Harmony (30°–60° Adjacent Neighbors)</h3>
+              </div>
+              <p>Three to five colors sitting side-by-side along the circle (e.g., Yellow, Yellow-Green, Green). Because they share a common root wavelength, analogous palettes produce organic unity, zero chromatic friction, and soothing visual comfort. Abundantly found in landscapes, forest canopies, and serene brand identities (BP, Mastercard).</p>
+            </div>
+            
+            <div class="interactive-checkpoint">
+              <div class="checkpoint-header">
+                <span class="sparkle-icon">&#10024;</span>
+                <h4>Classroom Checkpoint: The Hollywood 'Teal & Orange' Phenomenon</h4>
+              </div>
+              <p class="checkpoint-prompt">Why do over 80% of Hollywood blockbuster movies (Transformers, Mad Max, Marvel films) grade their film scenes in teal and orange?</p>
+              <button class="reveal-btn" data-target="rev6">Reveal Design Insight</button>
+              <div class="reveal-content hidden" id="rev6">
+                <strong>Expert Insight:</strong> Human skin tones naturally fall within the warm orange-peach spectrum across all human ethnicities. The exact mathematical opposite of orange is teal (cyan-blue). Coloring shadows teal and actors' faces orange creates maximum cinematic depth, popping actors off backgrounds!
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Media Pane (Interactive Multi-Example Showcase) -->
+          <div class="slide-media-pane">
+            <nav class="gallery-nav" aria-label="Visual Example Switcher">
+              
+                <button class="gallery-tab-btn active" data-img="assets/van_gogh_night_cafe_complementary.jpg" data-alt="Van Gogh: Night Café (JPG)" data-caption="Art Historical Icon: Van Gogh's aggressive red-and-green complementary palette expressing human passion and tension.">
+                  <span>Van Gogh: Night Café (JPG)</span>
+                </button>
+                <button class="gallery-tab-btn " data-img="assets/van_gogh_cafe_terrace.jpg" data-alt="Van Gogh: Café Terrace (JPG)" data-caption="Complementary Night Glow: Van Gogh's luminous golden-yellow terrace contrasted against rich ultramarine night sky.">
+                  <span>Van Gogh: Café Terrace (JPG)</span>
+                </button>
+                <button class="gallery-tab-btn " data-img="assets/slide6_harmonies_part1.svg" data-alt="Complementary & Analogous (SVG)" data-caption="Master Geometric Diagram: 180° axis vs. adjacent 30° arc geometry with visual contrast comparisons.">
+                  <span>Complementary & Analogous (SVG)</span>
+                </button>
+            </nav>
+            <div class="media-frame" data-zoom="assets/van_gogh_night_cafe_complementary.jpg">
+              <img src="assets/van_gogh_night_cafe_complementary.jpg" alt="Vincent van Gogh The Night Cafe (1888) showing intense complementary red and green contrasts" class="slide-img">
+              <div class="image-overlay-hint">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <span>Click image to inspect full screen</span>
+              </div>
+            </div>
+            <figcaption class="media-caption">
+              <strong>Masterpiece Specimen (JPG):</strong> Vincent van Gogh's <em>The Night Café</em> (1888), famous for weaponizing complementary red walls and green billiard tables to evoke psychological tension.
+            </figcaption>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           SLIDE 7: 3b. Color Harmonies II: Monochromatic, Triadic & Tetradic Schemes
+           =================================================================== -->
+      <section class="slide " data-index="7" data-title="3b. Color Harmonies II: Monochromatic, Triadic & Tetradic Schemes">
+        <div class="slide-grid">
+          
+          <!-- Left Content Pane -->
+          <div class="slide-content-pane">
+            <div class="module-tag">HARMONIES &#8226; ADVANCED GEOMETRIES</div>
+            <h1 class="slide-title">Monochromatic, Triadic &amp; <span class="gradient-text">Tetradic Harmonies</span></h1>
+            
+            <div class="info-card">
+              <div class="card-icon-title">
+                <span class="badge-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 22 22 22"/></svg></span>
+                <h3>Monochromatic & Triadic Geometries</h3>
+              </div>
+              <p>Monochromatic uses a single hue varied exclusively through tints, shades, and tones; impossible to clash, imparting supreme elegance (Picasso's Blue Period). Triadic places an equilateral triangle (120° apart) on the wheel (Red, Yellow, Blue). It delivers vibrant kinetic energy while preserving optical equilibrium (Piet Mondrian, Superman comic books).</p>
+            </div>
+            <div class="info-card">
+              <div class="card-icon-title">
+                <span class="badge-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/></svg></span>
+                <h3>Tetradic (Double-Complementary) Schemes</h3>
+              </div>
+              <p>Tetradic harmonies link four colors composed of two complementary pairs (forming a rectangle or square). It offers the richest chromatic variety of any color scheme, making it a staple of vibrant retail packaging. To avoid visual chaos, designers must allow one color to dominate, using the remaining three as supporting accents.</p>
+            </div>
+            
+            <div class="interactive-checkpoint">
+              <div class="checkpoint-header">
+                <span class="sparkle-icon">&#10024;</span>
+                <h4>Classroom Checkpoint: The Mondrian Constraint</h4>
+              </div>
+              <p class="checkpoint-prompt">How did Dutch master Piet Mondrian revolutionize modern graphic design by using only the primary triad (Red, Yellow, Blue) with black grids?</p>
+              <button class="reveal-btn" data-target="rev7">Reveal Design Insight</button>
+              <div class="reveal-content hidden" id="rev7">
+                <strong>Expert Insight:</strong> By stripping away all ornamental distractions and relying strictly on the primary triad balanced with asymmetrical white space and black lines, Mondrian proved that rhythm, balance, and visual tension can achieve monumental emotional power through pure geometric harmony.
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Media Pane (Interactive Multi-Example Showcase) -->
+          <div class="slide-media-pane">
+            <nav class="gallery-nav" aria-label="Visual Example Switcher">
+              
+                <button class="gallery-tab-btn active" data-img="assets/mondrian_composition_triadic.jpg" data-alt="Mondrian: Triadic Composition (JPG)" data-caption="Modernist Masterwork: Mondrian's iconic Neo-Plasticist composition balancing red, blue, and yellow with black grids.">
+                  <span>Mondrian: Triadic Composition (JPG)</span>
+                </button>
+                <button class="gallery-tab-btn " data-img="assets/picasso_old_guitarist_monochromatic.jpg" data-alt="Picasso: Monochromatic Blue (JPG)" data-caption="Pablo Picasso's Blue Period: Melancholy emotional storytelling achieved entirely through monochromatic blue values.">
+                  <span>Picasso: Monochromatic Blue (JPG)</span>
+                </button>
+                <button class="gallery-tab-btn " data-img="assets/tetradic_color_harmony_design.jpg" data-alt="Tetradic Scheme Specimen (JPG)" data-caption="Archival design plate showcasing double-complementary rectangular color harmony in print.">
+                  <span>Tetradic Scheme Specimen (JPG)</span>
+                </button>
+                <button class="gallery-tab-btn " data-img="assets/slide7_harmonies_part2.svg" data-alt="Multi-Harmony Vector (SVG)" data-caption="Master Geometric Diagram: Monochromatic value scales, 120° triadic triangle, and tetradic rectangle architectures.">
+                  <span>Multi-Harmony Vector (SVG)</span>
+                </button>
+            </nav>
+            <div class="media-frame" data-zoom="assets/mondrian_composition_triadic.jpg">
+              <img src="assets/mondrian_composition_triadic.jpg" alt="Piet Mondrian Composition with Red, Yellow, and Blue (1930) modern triadic masterpiece" class="slide-img">
+              <div class="image-overlay-hint">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <span>Click image to inspect full screen</span>
+              </div>
+            </div>
+            <figcaption class="media-caption">
+              <strong>Masterpiece Specimen (JPG):</strong> Piet Mondrian's <em>Composition with Red, Yellow, and Blue</em> (1930), the definitive modern triadic harmony that inspired modern graphic design.
+            </figcaption>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           SLIDE 8: 4. Color Models I: RGB (Additive Screen Light)
+           =================================================================== -->
+      <section class="slide " data-index="8" data-title="4. Color Models I: RGB (Additive Screen Light)">
+        <div class="slide-grid">
+          
+          <!-- Left Content Pane -->
+          <div class="slide-content-pane">
+            <div class="module-tag">MODELS &#8226; SCREEN OPTICS</div>
+            <h1 class="slide-title">RGB Color Model: <span class="gradient-text">Additive Light</span></h1>
+            
+            <div class="info-card">
+              <div class="card-icon-title">
+                <span class="badge-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></span>
+                <h3>The Additive Mechanism: Emitting Photons</h3>
+              </div>
+              <p>Digital displays begin in absolute darkness (Black = #000000). By emitting colored photons from microscopic Red, Green, and Blue subpixels at varying channel intensities (0 to 255), monitors stimulate retinal cones. Combining all three at maximum intensity produces pure luminous White (255, 255, 255). Used for web, mobile apps, video, and UI.</p>
+            </div>
+            <div class="info-card">
+              <div class="card-icon-title">
+                <span class="badge-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></span>
+                <h3>8-Bit Truecolor & Hexadecimal Math</h3>
+              </div>
+              <p>Digital screens store color in 8 bits per channel (2^8 = 256 levels). Multiplying 256 Red x 256 Green x 256 Blue yields 16.7 million distinct colors. Web developers represent this via Hex codes (#RRGGBB): #FF0000 is 100% Red, #00FF00 is 100% Green, and #FFFF00 combines red and green light into pure electric yellow.</p>
+            </div>
+            
+            <div class="interactive-checkpoint">
+              <div class="checkpoint-header">
+                <span class="sparkle-icon">&#10024;</span>
+                <h4>Classroom Checkpoint: The Yellow Light Optical Deception</h4>
+              </div>
+              <p class="checkpoint-prompt">Your smartphone screen contains only physical Red, Green, and Blue light LEDs—no yellow pixels exist. How do you see vivid yellow on screen?</p>
+              <button class="reveal-btn" data-target="rev8">Reveal Design Insight</button>
+              <div class="reveal-content hidden" id="rev8">
+                <strong>Expert Insight:</strong> Retinal cone synthesis! When the display illuminates adjacent Red and Green subpixels at full power, photons hit your eye and stimulate both your L-cones (red) and M-cones (green) equally. Your brain's visual cortex interprets this combined neural signal as pure Yellow light!
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Media Pane (Interactive Multi-Example Showcase) -->
+          <div class="slide-media-pane">
+            <nav class="gallery-nav" aria-label="Visual Example Switcher">
+              
+                <button class="gallery-tab-btn active" data-img="assets/rgb_additive_spotlights.png" data-alt="Additive Light Beams (PNG)" data-caption="Empirical Physics Specimen: Red, green, and blue light spotlights combining to form secondary colors and pure white.">
+                  <span>Additive Light Beams (PNG)</span>
+                </button>
+                <button class="gallery-tab-btn " data-img="assets/rgb_oled_subpixel_macro.jpg" data-alt="OLED Subpixel Macro (JPG)" data-caption="High-Magnification Microscope Photo: Individual red, green, and blue subpixels illuminating a commercial display.">
+                  <span>OLED Subpixel Macro (JPG)</span>
+                </button>
+                <button class="gallery-tab-btn " data-img="assets/slide8_rgb_additive.svg" data-alt="RGB Screen Vector (SVG)" data-caption="Master Vector Diagram: The additive light circles, hex math breakdown, and subpixel matrix schematic.">
+                  <span>RGB Screen Vector (SVG)</span>
+                </button>
+            </nav>
+            <div class="media-frame" data-zoom="assets/rgb_additive_spotlights.png">
+              <img src="assets/rgb_additive_spotlights.png" alt="Additive colour mixing of overlapping red, green, and blue light beams creating white" class="slide-img">
+              <div class="image-overlay-hint">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <span>Click image to inspect full screen</span>
+              </div>
+            </div>
+            <figcaption class="media-caption">
+              <strong>Optical Physics Specimen (PNG):</strong> Additive color mixing of red, green, and blue focused light beams intersecting to produce cyan, magenta, yellow, and central white.
+            </figcaption>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           SLIDE 9: 4b. Color Models II: CMYK (Subtractive Print Pigments) & The Gamut Warning
+           =================================================================== -->
+      <section class="slide " data-index="9" data-title="4b. Color Models II: CMYK (Subtractive Print Pigments) & The Gamut Warning">
+        <div class="slide-grid">
+          
+          <!-- Left Content Pane -->
+          <div class="slide-content-pane">
+            <div class="module-tag">MODELS &#8226; PRINT PRODUCTION</div>
+            <h1 class="slide-title">CMYK Color Model: <span class="gradient-text">Subtractive Inks</span></h1>
+            
+            <div class="info-card">
+              <div class="card-icon-title">
+                <span class="badge-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></span>
+                <h3>The Subtractive Mechanism: Absorbing Wavelengths</h3>
+              </div>
+              <p>Printing begins on white paper that reflects ambient room illumination. Applied translucent inks act as chemical light filters: Cyan ink subtracts (absorbs) red wavelengths; Magenta ink subtracts green; Yellow ink subtracts blue. Overlapping all three inks subtracts all light, theoretically yielding black.</p>
+            </div>
+            <div class="info-card">
+              <div class="card-icon-title">
+                <span class="badge-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></span>
+                <h3>Why Key Black (K) is Mandatory</h3>
+              </div>
+              <p>Because chemical ink pigments contain microscopic impurities, blending 100% C + 100% M + 100% Y produces a muddy, murky brown rather than deep pitch black. A fourth plate—Key Black (K)—is essential for crisp typographic legibility, rich shadow contrast, and dramatic cost savings on commercial presses.</p>
+            </div>
+            
+            <div class="interactive-checkpoint">
+              <div class="checkpoint-header">
+                <span class="sparkle-icon">&#10024;</span>
+                <h4>Classroom Checkpoint: The Total Area Coverage (TAC) Disaster</h4>
+              </div>
+              <p class="checkpoint-prompt">What catastrophic physical failure occurs if a graphic designer submits a print file containing 100% C, 100% M, 100% Y, and 100% K (400% ink)?</p>
+              <button class="reveal-btn" data-target="rev9">Reveal Design Insight</button>
+              <div class="reveal-content hidden" id="rev9">
+                <strong>Expert Insight:</strong> The paper becomes drenched in liquid ink, tearing in high-speed rotary presses, smearing wet ink across adjacent sheets (offsetting), and failing to dry. Commercial printers strictly enforce a Total Area Coverage (TAC) limit between 280% and 320%.
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Media Pane (Interactive Multi-Example Showcase) -->
+          <div class="slide-media-pane">
+            <nav class="gallery-nav" aria-label="Visual Example Switcher">
+              
+                <button class="gallery-tab-btn active" data-img="assets/cmyk_four_color_process_plates.jpg" data-alt="CMYK Process Plates (JPG)" data-caption="Authentic Industrial Artifact: CMYK 4-color printing plate alignment and halftone screening standards handbook.">
+                  <span>CMYK Process Plates (JPG)</span>
+                </button>
+                <button class="gallery-tab-btn " data-img="assets/slide9_cmyk_subtractive.svg" data-alt="CMYK Pigment Vector (SVG)" data-caption="Master Vector Diagram: Subtractive ink circles, halftone rosette angles, and TAC ink density limits.">
+                  <span>CMYK Pigment Vector (SVG)</span>
+                </button>
+            </nav>
+            <div class="media-frame" data-zoom="assets/cmyk_four_color_process_plates.jpg">
+              <img src="assets/cmyk_four_color_process_plates.jpg" alt="Four-color printing process handbook and halftone proofing plate" class="slide-img">
+              <div class="image-overlay-hint">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <span>Click image to inspect full screen</span>
+              </div>
+            </div>
+            <figcaption class="media-caption">
+              <strong>Industrial Print Specimen (JPG):</strong> Four-color process standards handbook demonstrating cyan, magenta, yellow, and black halftone plate separations.
+            </figcaption>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           SLIDE 10: 4c. Production Workflow: When to Use RGB vs. CMYK & The Gamut Wall
+           =================================================================== -->
+      <section class="slide " data-index="10" data-title="4c. Production Workflow: When to Use RGB vs. CMYK & The Gamut Wall">
+        <div class="slide-grid">
+          
+          <!-- Left Content Pane -->
+          <div class="slide-content-pane">
+            <div class="module-tag">WORKFLOW &#8226; PRE-PRESS RULES</div>
+            <h1 class="slide-title">RGB vs. CMYK: <span class="gradient-text">The Gamut Wall &amp; Workflow</span></h1>
+            
+            <div class="info-card">
+              <div class="card-icon-title">
+                <span class="badge-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span>
+                <h3>The Color Gamut Mismatch</h3>
+              </div>
+              <p>A 'gamut' represents the complete palette spectrum a given device can physically reproduce. The human eye's visible spectrum is largest; the digital sRGB screen gamut is medium; the physical CMYK print gamut is significantly narrower. Glowing electric limes, neon magentas, and deep vibrant blues exist in RGB light but are physically impossible to mix with CMYK process inks.</p>
+            </div>
+            <div class="info-card">
+              <div class="card-icon-title">
+                <span class="badge-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m4.93 4.93 4.24 4.24"/><path d="m14.83 9.17 4.24-4.24"/><path d="m14.83 14.83 4.24 4.24"/><path d="m9.17 14.83-4.24 4.24"/></svg></span>
+                <h3>Pantone (PMS) Spot Colors: The 5th Ink Station</h3>
+              </div>
+              <p>When a brand identity demands a specific vibrant color (e.g., Tiffany Blue, Coca-Cola Red, metallic gold) that CMYK cannot achieve, designers specify a Pantone Matching System (PMS) spot color. Spot inks are pre-mixed chemical formulas poured into a dedicated 5th printing unit for 100% universal accuracy worldwide.</p>
+            </div>
+            
+            <div class="interactive-checkpoint">
+              <div class="checkpoint-header">
+                <span class="sparkle-icon">&#10024;</span>
+                <h4>Classroom Checkpoint: The Adobe Photoshop Gamut Warning</h4>
+              </div>
+              <p class="checkpoint-prompt">What does the yellow warning triangle with an exclamation point mean when selecting colors inside Adobe Photoshop?</p>
+              <button class="reveal-btn" data-target="rev10">Reveal Design Insight</button>
+              <div class="reveal-content hidden" id="rev10">
+                <strong>Expert Insight:</strong> 'Warning: Out of Gamut for Print!' The selected RGB screen color cannot be reproduced using physical CMYK inks. Clicking the alert automatically snaps the color to the closest achievable CMYK printing equivalent.
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Media Pane (Interactive Multi-Example Showcase) -->
+          <div class="slide-media-pane">
+            <nav class="gallery-nav" aria-label="Visual Example Switcher">
+              
+                <button class="gallery-tab-btn active" data-img="assets/cie_gamut_rgb_vs_cmyk.png" data-alt="CIE 1931 Gamut Chart (PNG)" data-caption="Scientific Gamut Comparison: Human visible tongue diagram vs. sRGB screen boundary vs. CMYK print limits.">
+                  <span>CIE 1931 Gamut Chart (PNG)</span>
+                </button>
+                <button class="gallery-tab-btn " data-img="assets/pantone_swatch_book_pms.jpg" data-alt="Color Guide Fan Swatch (JPG)" data-caption="Archival Color Swatch Fan: Standardized printed formula guide for precise chromatic matching.">
+                  <span>Color Guide Fan Swatch (JPG)</span>
+                </button>
+                <button class="gallery-tab-btn " data-img="assets/slide10_rgb_vs_cmyk_gamut.svg" data-alt="Pre-Press Decision Matrix (SVG)" data-caption="Master Vector Matrix: Project type checklist, RGB vs. CMYK selection rules, and pre-press safety protocols.">
+                  <span>Pre-Press Decision Matrix (SVG)</span>
+                </button>
+            </nav>
+            <div class="media-frame" data-zoom="assets/cie_gamut_rgb_vs_cmyk.png">
+              <img src="assets/cie_gamut_rgb_vs_cmyk.png" alt="CIE 1931 chromaticity diagram comparing human vision, sRGB, and print gamuts" class="slide-img">
+              <div class="image-overlay-hint">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <span>Click image to inspect full screen</span>
+              </div>
+            </div>
+            <figcaption class="media-caption">
+              <strong>Scientific Gamut Chart (PNG):</strong> The CIE 1931 Chromaticity diagram illustrating the wide sRGB/ACES screen gamut vs. the constrained CMYK print boundary.
+            </figcaption>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           SLIDE 11: 5. Color Palette & Branding: Color Psychology & Semiotics
+           =================================================================== -->
+      <section class="slide " data-index="11" data-title="5. Color Palette & Branding: Color Psychology & Semiotics">
+        <div class="slide-grid">
+          
+          <!-- Left Content Pane -->
+          <div class="slide-content-pane">
+            <div class="module-tag">BRANDING &#8226; SUBCONSCIOUS EMOTIONS</div>
+            <h1 class="slide-title">Color Psychology: <span class="gradient-text">Emotional Triggers</span></h1>
+            
+            <div class="info-card">
+              <div class="card-icon-title">
+                <span class="badge-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 1 0 10 10H12V2z"/></svg></span>
+                <h3>The Subconscious 90-Second Snap Judgment</h3>
+              </div>
+              <p>Academic marketing research proves that up to 90% of a consumer's snap judgment about a product or digital brand is based on color alone. Color acts as an emotional shortcut that bypasses analytical thought: Red triggers physical arousal and appetite (Netflix, Coca-Cola); Blue communicates security, corporate logic, and institutional trust (IBM, PayPal, Intel).</p>
+            </div>
+            <div class="info-card">
+              <div class="card-icon-title">
+                <span class="badge-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></span>
+                <h3>The Strategic Emotional Archetypes</h3>
+              </div>
+              <p>Green signals renewal, organic health, and wealth (Starbucks, Whole Foods); Yellow radiates luminous optimism, affordability, and clarity (McDonald's, IKEA); Purple conveys regal luxury, exclusivity, and creativity (Cadbury, Twitch); Black and Monochrome embody elite sophistication, authority, and modern minimalism (Apple, Nike, Chanel).</p>
+            </div>
+            
+            <div class="interactive-checkpoint">
+              <div class="checkpoint-header">
+                <span class="sparkle-icon">&#10024;</span>
+                <h4>Classroom Checkpoint: Cultural Color Semiotics Across Borders</h4>
+              </div>
+              <p class="checkpoint-prompt">Why could an international marketing campaign featuring white bridal gowns and red celebration envelopes cause offensive confusion in China or India?</p>
+              <button class="reveal-btn" data-target="rev11">Reveal Design Insight</button>
+              <div class="reveal-content hidden" id="rev11">
+                <strong>Expert Insight:</strong> Color symbolism is culturally constructed! In Western nations, white signifies purity and weddings, while red signifies romance. In East Asian traditions, white is the sacred mourning color of funerals, while red embodies good fortune, joy, and celebratory wedding festivities.
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Media Pane (Interactive Multi-Example Showcase) -->
+          <div class="slide-media-pane">
+            <nav class="gallery-nav" aria-label="Visual Example Switcher">
+              
+                <button class="gallery-tab-btn active" data-img="assets/color_psychology_matrix.jpg" data-alt="Applied Psychology Archive (JPG)" data-caption="Historical Educational Archive: Textbook study examining the psychological impact of color on commerce and attention.">
+                  <span>Applied Psychology Archive (JPG)</span>
+                </button>
+                <button class="gallery-tab-btn " data-img="assets/slide11_color_psychology.svg" data-alt="Brand Psychology Grid (SVG)" data-caption="Master Vector Infographic: Red, Blue, Green, Yellow, Purple, and Black brand archetypes and emotional triggers.">
+                  <span>Brand Psychology Grid (SVG)</span>
+                </button>
+            </nav>
+            <div class="media-frame" data-zoom="assets/color_psychology_matrix.jpg">
+              <img src="assets/color_psychology_matrix.jpg" alt="Applied psychology of color in personal and business efficiency textbook" class="slide-img">
+              <div class="image-overlay-hint">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <span>Click image to inspect full screen</span>
+              </div>
+            </div>
+            <figcaption class="media-caption">
+              <strong>Historical Psychological Archive (JPG):</strong> Applied Psychology of Color research text documenting human emotional responses to chromatic stimuli in business.
+            </figcaption>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           SLIDE 12: 5b. Designing a Brand Color Palette: The 60-30-10 Rule & Systems
+           =================================================================== -->
+      <section class="slide " data-index="12" data-title="5b. Designing a Brand Color Palette: The 60-30-10 Rule & Systems">
+        <div class="slide-grid">
+          
+          <!-- Left Content Pane -->
+          <div class="slide-content-pane">
+            <div class="module-tag">PALETTES &#8226; RATIO ARCHITECTURE</div>
+            <h1 class="slide-title">The 60-30-10 Rule: <span class="gradient-text">Building Master Palettes</span></h1>
+            
+            <div class="info-card">
+              <div class="card-icon-title">
+                <span class="badge-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></span>
+                <h3>The Golden Proportional Architecture</h3>
+              </div>
+              <p>Borrowed from architectural interior design, the 60-30-10 rule prevents visual fatigue: 60% Dominant Base: The grounding canvas (backgrounds, negative space, neutral cards); 30% Secondary Color: The brand identity (headers, structural cards, subheadings); 10% Accent Color: The high-contrast focal beacon reserved strictly for Call-to-Action buttons, active badges, and key alerts.</p>
+            </div>
+            <div class="info-card">
+              <div class="card-icon-title">
+                <span class="badge-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg></span>
+                <h3>Design System Tokenization (Figma & Code)</h3>
+              </div>
+              <p>Professional design systems tokenize palettes into functional tiers: 1) Brand Core (Primary, Secondary); 2) Surface & Neutrals (Canvas, elevated card background, borders); 3) Semantic Functional Colors (Success Green, Warning Amber, Danger Red, Info Blue). This ensures scalable consistency across thousands of mobile and desktop screens.</p>
+            </div>
+            
+            <div class="interactive-checkpoint">
+              <div class="checkpoint-header">
+                <span class="sparkle-icon">&#10024;</span>
+                <h4>Classroom Checkpoint: The 'Carnival Clutter' Rookie Pitfall</h4>
+              </div>
+              <p class="checkpoint-prompt">What common mistake causes an amateur graphic designer's website or brand style guide to look cheap, unreadable, and chaotic?</p>
+              <button class="reveal-btn" data-target="rev12">Reveal Design Insight</button>
+              <div class="reveal-content hidden" id="rev12">
+                <strong>Expert Insight:</strong> Using five saturated neon colors in equal 20% proportions! When every element screams for attention with saturated color, visual hierarchy collapses. Keeping 60% neutral allows the 10% accent color to shine like a navigational lighthouse.
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Media Pane (Interactive Multi-Example Showcase) -->
+          <div class="slide-media-pane">
+            <nav class="gallery-nav" aria-label="Visual Example Switcher">
+              
+                <button class="gallery-tab-btn active" data-img="assets/palette_design_swatches.jpg" data-alt="Palette Swatch System (JPG)" data-caption="Systematic Color Standards: Calibrated multi-tier color swatches engineered for contrast and readability.">
+                  <span>Palette Swatch System (JPG)</span>
+                </button>
+                <button class="gallery-tab-btn " data-img="assets/slide12_brand_palette_60_30_10.svg" data-alt="60-30-10 Vector Architecture (SVG)" data-caption="Master Vector Diagram: 60% Dominant Neutral, 30% Secondary Brand, and 10% High-Contrast CTA Accent distribution.">
+                  <span>60-30-10 Vector Architecture (SVG)</span>
+                </button>
+            </nav>
+            <div class="media-frame" data-zoom="assets/palette_design_swatches.jpg">
+              <img src="assets/palette_design_swatches.jpg" alt="Color palette swatches for data visualization and design systems" class="slide-img">
+              <div class="image-overlay-hint">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <span>Click image to inspect full screen</span>
+              </div>
+            </div>
+            <figcaption class="media-caption">
+              <strong>Design System Specimen (JPG):</strong> Standardized chromatic swatches illustrating balanced value steps and harmonious palette distributions.
+            </figcaption>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           SLIDE 13: 6. Conclusion: The Master Color Playbook & WCAG Accessibility
+           =================================================================== -->
+      <section class="slide " data-index="13" data-title="6. Conclusion: The Master Color Playbook & WCAG Accessibility">
+        <div class="slide-grid">
+          
+          <!-- Left Content Pane -->
+          <div class="slide-content-pane">
+            <div class="module-tag">MASTERY &#8226; ACCESSIBILITY &amp; PLAYBOOK</div>
+            <h1 class="slide-title">Conclusion: <span class="gradient-text">The Master Color Playbook</span></h1>
+            
+            <div class="info-card">
+              <div class="card-icon-title">
+                <span class="badge-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span>
+                <h3>WCAG 2.1 Accessibility & Colorblind Inclusivity</h3>
+              </div>
+              <p>Design is not truly functional unless accessible to everyone. The Web Content Accessibility Guidelines (WCAG) mandate: 1) Level AA Minimum Contrast: 4.5:1 ratio for regular text, 3.0:1 for large headings; 2) Level AAA Enhanced: 7.0:1 ratio. Because 8% of males experience color vision deficiency (Deuteranopia red-green blindness), never convey information using color alone; always pair color with text, icons, or texture.</p>
+            </div>
+            <div class="info-card">
+              <div class="card-icon-title">
+                <span class="badge-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span>
+                <h3>The 5 Immutable Laws of Color Mastery</h3>
+              </div>
+              <p>1) Value Precedes Color: Grayscale contrast dictates legibility; 2) Temperature Directs Attention: Warm advances, cool recedes; 3) Harmony Governs Emotion: Anchor in geometry rather than guesswork; 4) Respect the Physical Medium: RGB light for screens, CMYK pigments for paper; 5) Protect the 60-30-10 Hierarchy: Keep 60% neutral so your 10% accent commands instant conversion.</p>
+            </div>
+            
+            <div class="interactive-checkpoint">
+              <div class="checkpoint-header">
+                <span class="sparkle-icon">&#10024;</span>
+                <h4>Classroom Checkpoint: The Final Design Challenge</h4>
+              </div>
+              <p class="checkpoint-prompt">If a corporate client demands a high-energy neon yellow brand color, how does an elite designer ensure their mobile application passes international accessibility laws?</p>
+              <button class="reveal-btn" data-target="rev13">Reveal Design Insight</button>
+              <div class="reveal-content hidden" id="rev13">
+                <strong>Expert Insight:</strong> Confine the neon yellow strictly to the 10% accent budget (active badges, CTA button fills with dark charcoal 12:1 contrast text, and focus rings) against a deep 60% slate canvas. Never place white text on neon yellow, and always accompany error states with universal icons!
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Media Pane (Interactive Multi-Example Showcase) -->
+          <div class="slide-media-pane">
+            <nav class="gallery-nav" aria-label="Visual Example Switcher">
+              
+                <button class="gallery-tab-btn active" data-img="assets/wcag_color_contrast_accessibility.png" data-alt="WCAG Contrast Guidelines (PNG)" data-caption="Accessibility Standards: Visual matrix illustrating 4.5:1 Level AA and 7:1 Level AAA contrast ratios for digital legibility.">
+                  <span>WCAG Contrast Guidelines (PNG)</span>
+                </button>
+                <button class="gallery-tab-btn " data-img="assets/slide13_wcag_accessibility.svg" data-alt="Color Playbook Vector (SVG)" data-caption="Master Vector Summary: WCAG ratio compliance cards, the 5 Laws of Color Mastery, and graduation checklist.">
+                  <span>Color Playbook Vector (SVG)</span>
+                </button>
+            </nav>
+            <div class="media-frame" data-zoom="assets/wcag_color_contrast_accessibility.png">
+              <img src="assets/wcag_color_contrast_accessibility.png" alt="WCAG web safe contrast ratio guidelines showing AA and AAA compliance" class="slide-img">
+              <div class="image-overlay-hint">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <span>Click image to inspect full screen</span>
+              </div>
+            </div>
+            <figcaption class="media-caption">
+              <strong>Accessibility Standard Specimen (PNG):</strong> Official WCAG contrast matrix illustrating passing vs. failing foreground/background color combinations.
+            </figcaption>
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Bottom Navigation Bar -->
+    <footer class="deck-footer">
+      <div class="footer-left">
+        <button class="nav-control-btn prev-btn" id="prevBtn" disabled aria-label="Previous Slide">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+          <span>Previous</span>
+        </button>
+      </div>
+
+      <div class="footer-center">
+        <!-- Dot Pagination -->
+        <div class="dot-pagination" id="dotPagination"></div>
+        <div class="keyboard-hints">
+          <span class="key-hint"><kbd>&larr;</kbd><kbd>&rarr;</kbd> Navigate</span>
+          <span class="key-hint"><kbd>T</kbd> Drawer</span>
+          <span class="key-hint"><kbd>L</kbd> Switch Lesson</span>
+          <span class="key-hint"><kbd>F</kbd> Fullscreen</span>
+        </div>
+      </div>
+
+      <div class="footer-right">
+        <button class="nav-control-btn next-btn" id="nextBtn" aria-label="Next Slide">
+          <span>Next Slide</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Slide Drawer Modal -->
+  <div class="slide-drawer" id="slideDrawer" role="dialog" aria-modal="true" aria-label="Slide Selector Drawer">
+    <div class="drawer-header">
+      <div class="drawer-title-wrap">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+        <h3>Lesson 5 Curriculum: 13 Master Slides</h3>
+      </div>
+      <button class="drawer-close-btn" id="closeDrawerBtn" aria-label="Close Drawer">&times;</button>
+    </div>
+    <div class="drawer-body">
+      <div class="drawer-grid" id="drawerGrid"></div>
+    </div>
+  </div>
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+
+  <!-- Lightbox Zoom Modal -->
+  <div class="lightbox-modal" id="lightboxModal" role="dialog" aria-modal="true" aria-label="Image Zoom Lightbox">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close Lightbox">&times;</button>
+    <div class="lightbox-content">
+      <img src="" alt="" class="lightbox-img" id="lightboxImg">
+      <div class="lightbox-caption" id="lightboxCaption"></div>
+    </div>
+    <div class="lightbox-backdrop" id="lightboxBackdrop"></div>
+  </div>
+
+  <!-- Core Scripts -->
+  <script src="app.js"></script>
+  <script src="lesson-selector.js"></script>
+</body>
+</html>

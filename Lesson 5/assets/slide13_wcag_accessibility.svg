@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="50%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#090d16"/>
+    </linearGradient>
+    <linearGradient id="primaryAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ec4899"/>
+      <stop offset="50%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="800" height="560" rx="16" fill="url(#bgGrad)" stroke="#334155" stroke-width="1.5"/>
+  <rect x="1" y="1" width="798" height="3" fill="url(#primaryAccent)"/>
+
+  <!-- Header Section -->
+  <g transform="translate(32, 40)">
+    <rect x="0" y="0" width="120" height="24" rx="12" fill="rgba(139, 92, 246, 0.18)" stroke="#a855f7" stroke-width="1"/>
+    <text x="60" y="16" fill="#c084fc" font-family="'Inter', sans-serif" font-size="11" font-weight="700" letter-spacing="1" text-anchor="middle">COLOR THEORY</text>
+    <text x="135" y="17" fill="#f8fafc" font-family="'Outfit', sans-serif" font-size="20" font-weight="700">Conclusion &amp; Accessibility: The Master Color Playbook (WCAG)</text>
+  </g>
+
+  <!-- Main Diagram Body -->
+  
+  <g transform="translate(40, 85)">
+    <!-- Left: WCAG Compliance Standards -->
+    <g transform="translate(0, 10)">
+      <rect x="0" y="0" width="345" height="280" rx="10" fill="rgba(30, 41, 59, 0.6)" stroke="#22c55e" stroke-width="1.5"/>
+      <text x="20" y="32" fill="#4ade80" font-family="'Outfit', sans-serif" font-size="16" font-weight="700">WCAG ACCESSIBILITY RATIOS</text>
+      <text x="20" y="52" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="12">Web Content Accessibility Guidelines (ISO)</text>
+
+      <g transform="translate(20, 75)">
+        <!-- AA Normal Text -->
+        <rect x="0" y="0" width="305" height="48" rx="6" fill="#14532d" stroke="#22c55e" stroke-width="1"/>
+        <text x="14" y="22" fill="#ffffff" font-family="'Inter', sans-serif" font-size="12" font-weight="700">&#10004; Level AA (Minimum Standard): 4.5:1</text>
+        <text x="14" y="38" fill="#bbf7d0" font-family="'Inter', sans-serif" font-size="10">Mandatory contrast ratio for standard body text (&lt; 18pt).</text>
+
+        <!-- Large Text -->
+        <rect x="0" y="58" width="305" height="48" rx="6" fill="#14532d" stroke="#22c55e" stroke-width="1"/>
+        <text x="14" y="80" fill="#ffffff" font-family="'Inter', sans-serif" font-size="12" font-weight="700">&#10004; Level AA (Large Headings): 3.0:1</text>
+        <text x="14" y="96" fill="#bbf7d0" font-family="'Inter', sans-serif" font-size="10">For bold text &#8805; 14pt or regular text &#8805; 18pt.</text>
+
+        <!-- AAA Enhanced -->
+        <rect x="0" y="116" width="305" height="48" rx="6" fill="#064e3b" stroke="#34d399" stroke-width="1"/>
+        <text x="14" y="138" fill="#ffffff" font-family="'Inter', sans-serif" font-size="12" font-weight="700">&#9733; Level AAA (Enhanced Standard): 7.0:1</text>
+        <text x="14" y="154" fill="#a7f3d0" font-family="'Inter', sans-serif" font-size="10">Required for government, healthcare, and educational portals.</text>
+      </g>
+    </g>
+
+    <!-- Right: The 5 Laws of Color Mastery -->
+    <g transform="translate(365, 10)">
+      <rect x="0" y="0" width="355" height="280" rx="10" fill="rgba(30, 41, 59, 0.6)" stroke="#a855f7" stroke-width="1.5"/>
+      <text x="20" y="32" fill="#c084fc" font-family="'Outfit', sans-serif" font-size="16" font-weight="700">THE 5 LAWS OF COLOR MASTERY</text>
+      
+      <g transform="translate(20, 60)">
+        <text x="0" y="16" fill="#f8fafc" font-family="'Inter', sans-serif" font-size="12" font-weight="600">1. Value Precedes Color:</text>
+        <text x="14" y="32" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="11">Ensure strong grayscale contrast before choosing hues.</text>
+
+        <text x="0" y="56" fill="#f8fafc" font-family="'Inter', sans-serif" font-size="12" font-weight="600">2. Respect Color Temperature:</text>
+        <text x="14" y="72" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="11">Advance warm hues to the front; recede cool hues to the back.</text>
+
+        <text x="0" y="96" fill="#f8fafc" font-family="'Inter', sans-serif" font-size="12" font-weight="600">3. Anchor in Color Harmony:</text>
+        <text x="14" y="112" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="11">Complementary for impact, Analogous for organic comfort.</text>
+
+        <text x="0" y="136" fill="#f8fafc" font-family="'Inter', sans-serif" font-size="12" font-weight="600">4. Match the Medium (RGB vs CMYK):</text>
+        <text x="14" y="152" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="11">RGB light for screens; CMYK ink with TIC limits for print.</text>
+
+        <text x="0" y="176" fill="#f8fafc" font-family="'Inter', sans-serif" font-size="12" font-weight="600">5. Guard the 60-30-10 Hierarchy:</text>
+        <text x="14" y="192" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="11">Keep 60% neutral so your 10% accent can shine like a beacon.</text>
+      </g>
+    </g>
+
+    <!-- Bottom Graduation Banner -->
+    <rect x="0" y="305" width="720" height="75" rx="8" fill="rgba(15, 23, 42, 0.9)" stroke="#475569" stroke-width="1"/>
+    <text x="20" y="332" fill="#f8fafc" font-family="'Outfit', sans-serif" font-size="14" font-weight="700">&#127891; Congratulations! You Have Mastered Color Theory</text>
+    <text x="20" y="352" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="12">You are now equipped with the scientific, optical, and psychological tools to direct human emotions, design accessible interfaces, and pass the Lesson 5 Mastery Quiz.</text>
+  </g>
+
+
+  <!-- Footer Note -->
+  <g transform="translate(32, 536)">
+    <line x1="0" y1="0" x2="736" y2="0" stroke="#1e293b" stroke-width="1"/>
+    <text x="0" y="16" fill="#64748b" font-family="'Inter', sans-serif" font-size="11">Lesson 5: Visual Design &amp; Communication &#8226; Master Graphic Standards</text>
+    <text x="736" y="16" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="11" text-anchor="end">SHS Digital Arts Curriculum</text>
+  </g>
+</svg>

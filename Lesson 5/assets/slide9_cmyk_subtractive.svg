@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="50%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#090d16"/>
+    </linearGradient>
+    <linearGradient id="primaryAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ec4899"/>
+      <stop offset="50%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="800" height="560" rx="16" fill="url(#bgGrad)" stroke="#334155" stroke-width="1.5"/>
+  <rect x="1" y="1" width="798" height="3" fill="url(#primaryAccent)"/>
+
+  <!-- Header Section -->
+  <g transform="translate(32, 40)">
+    <rect x="0" y="0" width="120" height="24" rx="12" fill="rgba(139, 92, 246, 0.18)" stroke="#a855f7" stroke-width="1"/>
+    <text x="60" y="16" fill="#c084fc" font-family="'Inter', sans-serif" font-size="11" font-weight="700" letter-spacing="1" text-anchor="middle">COLOR THEORY</text>
+    <text x="135" y="17" fill="#f8fafc" font-family="'Outfit', sans-serif" font-size="20" font-weight="700">Color Models II: CMYK Subtractive Inks for Print Production</text>
+  </g>
+
+  <!-- Main Diagram Body -->
+  
+  <g transform="translate(40, 85)">
+    <!-- Diagram of 3 Overlapping Pigment Circles -->
+    <g transform="translate(180, 160)">
+      <!-- Cyan Circle -->
+      <circle cx="-35" cy="-25" r="75" fill="rgba(6, 182, 212, 0.85)" style="mix-blend-mode: multiply;"/>
+      <!-- Magenta Circle -->
+      <circle cx="35" cy="-25" r="75" fill="rgba(236, 72, 153, 0.85)" style="mix-blend-mode: multiply;"/>
+      <!-- Yellow Circle -->
+      <circle cx="0" cy="35" r="75" fill="rgba(234, 179, 8, 0.85)" style="mix-blend-mode: multiply;"/>
+
+      <!-- Labels -->
+      <text x="-65" y="-55" fill="#a5f3fc" font-family="'Inter', sans-serif" font-size="12" font-weight="700">CYAN</text>
+      <text x="65" y="-55" fill="#fbcfe8" font-family="'Inter', sans-serif" font-size="12" font-weight="700">MAGENTA</text>
+      <text x="0" y="130" fill="#fef08a" font-family="'Inter', sans-serif" font-size="12" font-weight="700" text-anchor="middle">YELLOW</text>
+
+      <!-- Center K (Black) -->
+      <text x="0" y="-5" fill="#ffffff" font-family="'Outfit', sans-serif" font-size="13" font-weight="800" text-anchor="middle">KEY / BLACK</text>
+      <text x="0" y="10" fill="#ffffff" font-family="'Inter', sans-serif" font-size="9" font-weight="600" text-anchor="middle">(All Absorbed)</text>
+    </g>
+
+    <!-- Right Side Explanations -->
+    <g transform="translate(380, 20)">
+      <rect x="0" y="0" width="340" height="280" rx="10" fill="rgba(30, 41, 59, 0.7)" stroke="#ec4899" stroke-width="1"/>
+      <text x="20" y="32" fill="#ec4899" font-family="'Outfit', sans-serif" font-size="16" font-weight="700">SUBTRACTIVE COLOR (INK)</text>
+      <text x="20" y="52" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="12">Used for Commercial Lithography, Books &amp; Packaging</text>
+
+      <g transform="translate(20, 75)">
+        <text x="0" y="16" fill="#f8fafc" font-family="'Inter', sans-serif" font-size="12" font-weight="600">&#8226; Physical Basis:</text>
+        <text x="12" y="34" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="11">Starts with white paper reflecting ambient light. Physical ink layers subtract (absorb) wavelengths. Cyan absorbs red, Magenta absorbs green, Yellow absorbs blue.</text>
+
+        <text x="0" y="74" fill="#f8fafc" font-family="'Inter', sans-serif" font-size="12" font-weight="600">&#8226; Why &quot;K&quot; (Key Black) is Essential:</text>
+        <text x="12" y="92" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="11">Mixing 100% C + M + Y in real ink produces a muddy brown due to chemical impurities. A dedicated Key (black) plate is required for crisp text, deep shadow density, and cost savings.</text>
+
+        <text x="0" y="132" fill="#f8fafc" font-family="'Inter', sans-serif" font-size="12" font-weight="600">&#8226; Unit Measurement:</text>
+        <text x="12" y="150" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="11">Measured in percentage dot coverage (0% to 100% for each ink plate).</text>
+      </g>
+    </g>
+
+    <!-- Bottom Warning -->
+    <rect x="0" y="315" width="720" height="65" rx="8" fill="rgba(15, 23, 42, 0.9)" stroke="#475569" stroke-width="1"/>
+    <text x="20" y="342" fill="#facc15" font-family="'Outfit', sans-serif" font-size="13" font-weight="700">&#9888; Maximum Ink Density (TIC / TAC Limit)</text>
+    <text x="20" y="362" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="12">Commercial offset presses cannot handle 400% total ink (100C+100M+100Y+100K) without paper soaking, tearing, or smudging. Standard TAC is capped at 300% to 320%.</text>
+  </g>
+
+
+  <!-- Footer Note -->
+  <g transform="translate(32, 536)">
+    <line x1="0" y1="0" x2="736" y2="0" stroke="#1e293b" stroke-width="1"/>
+    <text x="0" y="16" fill="#64748b" font-family="'Inter', sans-serif" font-size="11">Lesson 5: Visual Design &amp; Communication &#8226; Master Graphic Standards</text>
+    <text x="736" y="16" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="11" text-anchor="end">SHS Digital Arts Curriculum</text>
+  </g>
+</svg>
