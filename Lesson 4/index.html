@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Design Styles Across the Decades — Interactive Masterclass</title>
+  <meta name="description" content="An interactive visual masterclass exploring 100 years of graphic design evolution from 1920s Art Deco to 2020s Neo-Futurism & Sustainability.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="lesson-selector.css">
+</head>
+<body class="theme-dark" data-current-lesson="4" data-current-type="deck" data-root-path="../">
+
+  <!-- Main Presentation Wrapper -->
+  <div class="deck-container" id="deckApp">
+
+    <!-- Top Status / Navigation Bar -->
+    <header class="deck-header">
+      <div class="header-left">
+        <div class="logo-badge">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <polyline points="12 6 12 12 16 14"/>
+          </svg>
+          <span class="logo-text">STYLES ACROSS DECADES</span>
+        </div>
+        <div class="divider-v"></div>
+        <button class="lesson-picker-btn lesson-4" id="lessonPickerBtn" aria-label="Select Lesson" title="Switch Lesson (Press L)">
+          <span class="lesson-picker-badge">L4</span>
+          <span class="lesson-picker-name">Lesson 4: Styles &amp; Decades</span>
+          <svg class="lesson-picker-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </button>
+        <span class="slide-indicator" id="slideIndicator">01 / 12</span>
+      </div>
+
+      <div class="header-center">
+        <h2 class="current-slide-heading" id="topSlideTitle">1. Introduction: A Century of Graphic Evolution</h2>
+      </div>
+
+      <div class="header-right">
+        <a href="quiz/index.html" class="nav-btn-icon quiz-link" title="Open Interactive Knowledge Quiz" id="headerQuizBtn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+          <span class="btn-label">Quiz Challenge</span>
+        </a>
+
+        <button class="nav-btn-icon" id="drawerToggleBtn" title="Toggle Slide Drawer (T)" aria-label="Toggle Slide Drawer">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="3" y="3" width="7" height="7"/>
+            <rect x="14" y="3" width="7" height="7"/>
+            <rect x="14" y="14" width="7" height="7"/>
+            <rect x="3" y="14" width="7" height="7"/>
+          </svg>
+          <span class="btn-label">All Slides</span>
+        </button>
+
+        <button class="nav-btn-icon" id="fullscreenBtn" title="Toggle Fullscreen (F)" aria-label="Toggle Fullscreen">
+          <svg id="fsIconExpand" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/>
+          </svg>
+          <svg id="fsIconCompress" class="hidden" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 14h6m0 0v6m0-6L3 21m17-7h-6m0 0v6m0-6l7 7M4 10h6m0 0V4m0 6L3 3m17 7h-6m0 0V4m0 6l7-7"/>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- Top Interactive Progress Bar -->
+    <div class="progress-track">
+      <div class="progress-bar" id="progressBar" style="width: 8.33%;"></div>
+    </div>
+
+    <!-- Main Slide Stage Area -->
+    <main class="slide-viewport">
+
+      <!-- ===================================================================
+           SLIDE 1: Introduction: A Century of Graphic Evolution (1920s–2020s)
+           =================================================================== -->
+      <section class="slide active" data-index="1" data-title="1. Introduction: A Century of Graphic Evolution (1920s–2020s)">
+        <div class="slide-grid">
+          
+          <!-- Left Content Pane -->
+          <div class="slide-content-pane">
+            <div class="module-tag">CHRONOLOGY &bull; OVERVIEW</div>
+            <h1 class="slide-title">100 Years of <span class="gradient-text">Design Evolution</span></h1>
+            
+            <div class="info-card">
+              <div class="card-icon-title">
+                <span class="badge-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span>
+                <h3>The Cyclical Pendulum of Visual Culture</h3>
+              </div>
+              <p>Graphic design never evolves in a vacuum. It is the visual mirror of humanity: an aesthetic pendulum that continuously swings between periods of <strong>ornamentation &amp; emotional expression</strong> (1920s Art Deco, 1960s Psychedelia, 1980s Memphis, 2020s Neo-Brutalism) and periods of <strong>austere rationalism &amp; functional order</strong> (1930s WPA Realism, 1950s/60s Swiss Modernism, 2000s/2010s Flat Design).</p>
+            </div>
+            <div class="info-card">
+              <div class="card-icon-title">
+                <span class="badge-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg></span>
+                <h3>The 3 Engine Forces Driving Design Revolutions</h3>
+              </div>
+              <ul><li><strong>1. Technological Mediums:</strong> From lithographic stone and silkscreen to phototypesetting, desktop Macintoshes, web browsers, and generative AI. The medium defines the aesthetic boundary.</li><li><strong>2. Socio-Economic Climate:</strong> Post-war prosperity triggers consumer optimism and luxury; economic depressions and wartime crises demand stoic clarity, patriotism, and frugality.</li><li><strong>3. Generational Rebellion:</strong> Every young generation of visual artists aggressively rejects the visual clich&eacute;s of their predecessors.</li></ul>
+            </div>
+            
+            <div class="interactive-checkpoint">
+              <div class="checkpoint-header">
+                <span class="sparkle-icon">&#10024;</span>
+                <h4>Classroom Checkpoint: The 25-Year Nostalgia Loop</h4>
+              </div>
+              <p class="checkpoint-prompt">Why do graphic design aesthetics (such as 1980s neon grids or 1990s Y2K cyber graphics) experience massive mainstream resurgences roughly 25 to 30 years after their original debut?</p>
+              <button class="reveal-btn" data-target="rev1">Reveal Design Insight</button>
+              <div class="reveal-content hidden" id="rev1">
+                <strong>Historical Insight:</strong> The Generational Creative Director Cycle: When children who grew up absorbing the pop culture and visual ephemera of an era turn 30–35, they become creative directors, product leads, and brand designers at major agencies. Their childhood nostalgia becomes the next commercial zeitgeist!
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Media Pane (Interactive Multi-Example Showcase) -->
+          <div class="slide-media-pane">
+            
+            <nav class="gallery-nav" aria-label="Visual Example Switcher">
+              
+                <button class="gallery-tab-btn active" data-img="assets/slide1_intro.svg" data-alt="100-year master evolutionary infographic showing all 11 design movements across the timeline" data-caption="<strong>Master Timeline Specimen:</strong> The 100-year aesthetic pendulum showing the oscillation between Ornamentation/Emotion and Order/Rationalism (1920s to 2020s).">
+                  <span>100-Year Timeline Specimen</span>
+                </button>
+                <button class="gallery-tab-btn " data-img="assets/1920s_london_underground_1922.jpg" data-alt="Authentic 1922 London Underground poster" data-caption="<strong>Early 20th-Century Commercial Poster:</strong> Authentic 1922 London Underground poster (CH 18447525), showcasing early transport branding and pictorial storytelling.">
+                  <span>1922 London Underground Poster (JPG)</span>
+                </button>
+            </nav>
+            <div class="media-frame" data-zoom="assets/slide1_intro.svg">
+              <img src="assets/slide1_intro.svg" alt="Introduction: A Century of Graphic Evolution (1920s–2020s)" class="slide-img">
+              <div class="image-overlay-hint">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <span>Click image to inspect full screen</span>
+              </div>
+            </div>
+            <figcaption class="media-caption">
+              <strong>Master Timeline Specimen:</strong> The 100-year aesthetic pendulum showing the oscillation between Ornamentation/Emotion and Order/Rationalism (1920s to 2020s).
+            </figcaption>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           SLIDE 2: 1920s Graphic Design: Art Deco & The Jazz Age
+           =================================================================== -->
+      <section class="slide " data-index="2" data-title="2. 1920s Graphic Design: Art Deco & The Jazz Age">
+        <div class="slide-grid">
+          
+          <!-- Left Content Pane -->
+          <div class="slide-content-pane">
+            <div class="module-tag">DECADE 01 / 11 &bull; 1920s</div>
+            <h1 class="slide-title">Art Deco & The <span class="gradient-text">Jazz Age</span></h1>
+            
+            <div class="info-card">
+              <div class="card-icon-title">
+                <span class="badge-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span>
+                <h3>Historical Context: The Machine Age & Paris 1925</h3>
+              </div>
+              <p>Emerging from the ruins of World War I, the 1920s (&ldquo;The Roaring Twenties&rdquo;) was an era of intoxicating economic exuberance, jazz clubs, flapper culture, and rapid industrialization. Formalized at the <strong>1925 Exposition Internationale des Arts D&eacute;coratifs et Industriels Modernes</strong> in Paris, Art Deco became the visual signature of modern luxury, transatlantic ocean liners, locomotives, and soaring skyscrapers.</p>
+            </div>
+            <div class="info-card">
+              <div class="card-icon-title">
+                <span class="badge-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span>
+                <h3>Stylistic Hallmarks & Visual Language</h3>
+              </div>
+              <ul><li><strong>Stepped Ziggurats &amp; Chevrons:</strong> Symmetrical geometric pyramids inspired by ancient Mayan and Egyptian excavations (King Tutankhamun's tomb discovery, 1922).</li><li><strong>Radiating Sunbursts &amp; Speed Lines:</strong> Energetic geometric rays celebrating aviation, electrical power, and mechanical velocity.</li><li><strong>Opulent Materials &amp; Palettes:</strong> Deep obsidian blacks paired with metallic gold leaf, polished brass, chrome silver, rich emerald, and ruby red.</li><li><strong>Iconic Designers &amp; Typefaces:</strong> A.M. Cassandre (<em>Nord Express</em>, <em>L'Atlantique</em>), Heinz Schulz-Neudamm (<em>Metropolis</em>, 1927). Fonts: Bifur, Peignot, Broadway, and Futura (1927).</li></ul>
+            </div>
+            
+            <div class="interactive-checkpoint">
+              <div class="checkpoint-header">
+                <span class="sparkle-icon">&#10024;</span>
+                <h4>Classroom Checkpoint: The Chrysler Spire Test</h4>
+              </div>
+              <p class="checkpoint-prompt">How does the architectural crown of New York's Chrysler Building embody the exact same design DNA as an A.M. Cassandre travel poster?</p>
+              <button class="reveal-btn" data-target="rev2">Reveal Design Insight</button>
+              <div class="reveal-content hidden" id="rev2">
+                <strong>Historical Insight:</strong> Both utilize stepped sunburst arches, stainless steel radiants, and aerodynamic chevrons designed with geometric compasses and set-squares—transforming industrial speed into monumental elegance!
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Media Pane (Interactive Multi-Example Showcase) -->
+          <div class="slide-media-pane">
+            
+            <nav class="gallery-nav" aria-label="Visual Example Switcher">
+              
+                <button class="gallery-tab-btn active" data-img="assets/1920s_royal_mail_art_deco.jpg" data-alt="Historic Royal Mail Lines Art Deco travel poster by Horace Taylor (1920-1925)" data-caption="<strong>Authentic Historical Artifact (JPG):</strong> Horace Taylor's Royal Mail Lines poster (ca. 1920–1925), showcasing Art Deco luxury ocean liner typography and maritime streamline elegance.">
+                  <span>Royal Mail Art Deco Poster (JPG)</span>
+                </button>
+                <button class="gallery-tab-btn " data-img="assets/1920s_chrysler_art_deco.jpg" data-alt="Chrysler Building Art Deco architectural sunburst crown" data-caption="<strong>Art Deco Architectural Icon (JPG):</strong> William Van Alen's Chrysler Building spire (1928–1930), exhibiting terraced sunburst arches, stainless steel radiants, and aerodynamic radiator caps.">
+                  <span>Chrysler Building Spire (JPG)</span>
+                </button>
+                <button class="gallery-tab-btn " data-img="assets/1920s_art_deco_stained_glass.jpg" data-alt="Concertgebouw de Vereeniging Art Deco stained glass poster work" data-caption="<strong>Architectural Graphic Ornament (JPG):</strong> Concertgebouw de Vereeniging stained glass study, showing the geometric chevron and floral abstraction quintessential to 1920s Deco.">
+                  <span>Art Deco Stained Glass (JPG)</span>
+                </button>
+                <button class="gallery-tab-btn " data-img="assets/slide2_1920s_art_deco.svg" data-alt="Art Deco geometric anatomy and Chrysler spire breakdown diagram" data-caption="<strong>Master Design Diagram:</strong> The Anatomy of Art Deco: Stepped ziggurats, radiating sunbursts, and metallic gold streamline symmetry.">
+                  <span>Master Geometric Anatomy (SVG)</span>
+                </button>
+            </nav>
+            <div class="media-frame" data-zoom="assets/1920s_royal_mail_art_deco.jpg">
+              <img src="assets/1920s_royal_mail_art_deco.jpg" alt="1920s Graphic Design: Art Deco & The Jazz Age" class="slide-img">
+              <div class="image-overlay-hint">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <span>Click image to inspect full screen</span>
+              </div>
+            </div>
+            <figcaption class="media-caption">
+              <strong>Authentic Historical Artifact (JPG):</strong> Horace Taylor's Royal Mail Lines poster (ca. 1920–1925), showcasing Art Deco luxury ocean liner typography and maritime streamline elegance.
+            </figcaption>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           SLIDE 3: 1930s Graphic Design: Depression Era & The WPA
+           =================================================================== -->
+      <section class="slide " data-index="3" data-title="3. 1930s Graphic Design: Depression Era & The WPA">
+        <div class="slide-grid">
+          
+          <!-- Left Content Pane -->
+          <div class="slide-content-pane">
+            <div class="module-tag">DECADE 02 / 11 &bull; 1930s</div>
+            <h1 class="slide-title">Depression Era & <span class="gradient-text">WPA Graphics</span></h1>
+            
+            <div class="info-card">
+              <div class="card-icon-title">
+                <span class="badge-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span>
+                <h3>Historical Context: The Great Crash & The New Deal</h3>
+              </div>
+              <p>The October 1929 Wall Street crash threw the world into economic paralysis. In the United States, President Franklin D. Roosevelt countered the crisis with the New Deal, creating the <strong>Works Progress Administration (WPA)</strong>. Under Federal Project Number One (1935–1943), the government hired thousands of unemployed graphic artists to design civic posters promoting public health, literacy, theater, and national park tourism.</p>
+            </div>
+            <div class="info-card">
+              <div class="card-icon-title">
+                <span class="badge-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span>
+                <h3>Stylistic Hallmarks & Technical Constraints</h3>
+              </div>
+              <ul><li><strong>Silkscreen Serigraphy Dominance:</strong> Scarcity forced artists to abandon expensive offset process printing in favor of screen printing, using 3 to 4 flat, opaque color separations.</li><li><strong>Stoic Heroism &amp; Condensed Wood Type:</strong> Portraying the dignity of working-class laborers (farmers, carpenters, dockworkers) with bold, heavy, condensed sans-serif grotesques.</li><li><strong>Lester Beall's REA Modernism:</strong> Lester Beall's posters for the Rural Electrification Administration fused European Bauhaus avant-garde photomontage with bold arrows and primary symbols.</li><li><strong>Color &amp; Type:</strong> Earthy terracotta, navy blue, dusty mustard, olive drab, forest green. Fonts: Futura Bold, Gill Sans, Kabel, Condensed Wood Type.</li></ul>
+            </div>
+            
+            <div class="interactive-checkpoint">
+              <div class="checkpoint-header">
+                <span class="sparkle-icon">&#10024;</span>
+                <h4>Classroom Checkpoint: Creative Power of Constraints</h4>
+              </div>
+              <p class="checkpoint-prompt">How did the extreme budget limitations of the 1930s Great Depression accidentally give birth to one of the most recognizable poster styles in history?</p>
+              <button class="reveal-btn" data-target="rev3">Reveal Design Insight</button>
+              <div class="reveal-content hidden" id="rev3">
+                <strong>Historical Insight:</strong> By limiting designers to only 3 flat silkscreen ink screens and inexpensive paper stock, artists were forced to strip away all visual clutter. Flat solid color blocking and bold typographic silhouettes created unforgettable visual punch!
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Media Pane (Interactive Multi-Example Showcase) -->
+          <div class="slide-media-pane">
+            
+            <nav class="gallery-nav" aria-label="Visual Example Switcher">
+              
+                <button class="gallery-tab-btn active" data-img="assets/1930s_wpa_see_america.jpg" data-alt="Authentic historic Works Progress Administration See America poster (ca. 1937)" data-caption="<strong>Authentic Historical Artifact (JPG):</strong> 'See America' (ca. 1937) silkscreen poster from the WPA Federal Art Project, championing national park conservation with flat opaque color planes.">
+                  <span>WPA 'See America' (JPG)</span>
+                </button>
+                <button class="gallery-tab-btn " data-img="assets/1930s_wpa_work_pays.jpg" data-alt="Historic WPA Work Pays America Prosperity Poster" data-caption="<strong>Civic Morale Campaign (JPG):</strong> 'Work Pays America' silkscreen poster, celebrating American industry, construction, and economic rehabilitation during the Great Depression.">
+                  <span>WPA 'Work Pays America' (JPG)</span>
+                </button>
+                <button class="gallery-tab-btn " data-img="assets/1930s_wpa_jessie_james.jpg" data-alt="Federal Theatre Project Little Jessie James poster" data-caption="<strong>Cultural Arts Advocacy (JPG):</strong> WPA Federal Theatre Project poster for 'Little Jessie James', exhibiting hand-cut stencils and high-contrast color overlays.">
+                  <span>WPA Theater Poster (JPG)</span>
+                </button>
+                <button class="gallery-tab-btn " data-img="assets/slide3_1930s_depression.svg" data-alt="1930s WPA silkscreen poster anatomy and industrial iconography" data-caption="<strong>Master Design Diagram:</strong> The WPA Silkscreen Aesthetic: Heavy condensed wood type, flat 3-color separations, and stoic labor iconography.">
+                  <span>Master WPA Silkscreen Diagram (SVG)</span>
+                </button>
+            </nav>
+            <div class="media-frame" data-zoom="assets/1930s_wpa_see_america.jpg">
+              <img src="assets/1930s_wpa_see_america.jpg" alt="1930s Graphic Design: Depression Era & The WPA" class="slide-img">
+              <div class="image-overlay-hint">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <span>Click image to inspect full screen</span>
+              </div>
+            </div>
+            <figcaption class="media-caption">
+              <strong>Authentic Historical Artifact (JPG):</strong> 'See America' (ca. 1937) silkscreen poster from the WPA Federal Art Project, championing national park conservation with flat opaque color planes.
+            </figcaption>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           SLIDE 4: 1940s Graphic Design: Soviet Design, Midcentury Modern Roots & WWII
+           =================================================================== -->
+      <section class="slide " data-index="4" data-title="4. 1940s Graphic Design: Soviet Design, Midcentury Modern Roots & WWII">
+        <div class="slide-grid">
+          
+          <!-- Left Content Pane -->
+          <div class="slide-content-pane">
+            <div class="module-tag">DECADE 03 / 11 &bull; 1940s</div>
+            <h1 class="slide-title">WWII Propaganda & <span class="gradient-text">Soviet Dynamics</span></h1>
+            
+            <div class="info-card">
+              <div class="card-icon-title">
+                <span class="badge-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span>
+                <h3>Historical Context: Total Mobilization & Homefront Morale</h3>
+              </div>
+              <p>With World War II engulfing the planet, commercial advertising transformed overnight into state-driven wartime mobilization. Governments mobilized citizens to buy war bonds, conserve scrap rubber and tin, avoid careless talk (&ldquo;Loose Lips Sink Ships&rdquo;), and step into defense factories to produce munitions, tanks, and aircraft around the clock.</p>
+            </div>
+            <div class="info-card">
+              <div class="card-icon-title">
+                <span class="badge-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span>
+                <h3>Stylistic Hallmarks & Dynamic Composition</h3>
+              </div>
+              <ul><li><strong>The Kinetic 45-Degree Diagonal:</strong> Inherited from Soviet Constructivist agitprop (El Lissitzky, Alexander Rodchenko), diagonal vectors and wedges triggered immediate visceral urgency and heroic forward momentum.</li><li><strong>J. Howard Miller's &lsquo;We Can Do It!&rsquo; (1943):</strong> Created for Westinghouse Electric, depicting a factory worker rolling up her sleeve with a clenched fist—an immortal symbol of industrial resilience and female power.</li><li><strong>High-Contrast Triad Palette:</strong> Intense patriotic red, deep industrial navy blue, stark charcoal, and caution yellow.</li><li><strong>Typefaces:</strong> Heavy military Stencil, Franklin Gothic, Futura, and Soviet Cyrillic bold grotesques with zero decorative flourishes.</li></ul>
+            </div>
+            
+            <div class="interactive-checkpoint">
+              <div class="checkpoint-header">
+                <span class="sparkle-icon">&#10024;</span>
+                <h4>Classroom Checkpoint: The Psychology of the Clenched Fist</h4>
+              </div>
+              <p class="checkpoint-prompt">Why did wartime posters universally rely on clenched fists, industrial rivets, and upward-angled perspective shots rather than realistic civilian portraits?</p>
+              <button class="reveal-btn" data-target="rev4">Reveal Design Insight</button>
+              <div class="reveal-content hidden" id="rev4">
+                <strong>Historical Insight:</strong> Upward low-angle perspective conveys monumental strength and invulnerability. The clenched fist transforms an individual worker into an anonymous, heroic avatar of collective national will!
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Media Pane (Interactive Multi-Example Showcase) -->
+          <div class="slide-media-pane">
+            
+            <nav class="gallery-nav" aria-label="Visual Example Switcher">
+              
+                <button class="gallery-tab-btn active" data-img="assets/1940s_we_can_do_it.jpg" data-alt="Official restoration of J. Howard Miller's 1943 We Can Do It poster" data-caption="<strong>Authentic Historical Artifact (JPG):</strong> J. Howard Miller's official 1943 Westinghouse defense poster ('We Can Do It!'), symbolizing wartime manufacturing resolve (later celebrated globally as Rosie the Riveter).">
+                  <span>'We Can Do It!' 1943 Poster (JPG)</span>
+                </button>
+                <button class="gallery-tab-btn " data-img="assets/1940s_soviet_red_wedge.jpg" data-alt="El Lissitzky Beat the Whites with the Red Wedge poster" data-caption="<strong>Soviet Constructivist Foundation (JPG):</strong> El Lissitzky's seminal graphic masterpiece 'Beat the Whites with the Red Wedge', establishing the visual power of geometric diagonal thrust in political agitprop.">
+                  <span>El Lissitzky 'Red Wedge' (JPG)</span>
+                </button>
+                <button class="gallery-tab-btn " data-img="assets/slide4_1940s_soviet_wwii.svg" data-alt="1940s WWII and Soviet Constructivist diagonal agitprop breakdown" data-caption="<strong>Master Design Diagram:</strong> The 1940s Agitprop Framework: 45-degree diagonal slashes, high-contrast patriotic primaries, and industrial stencil lettering.">
+                  <span>Master Agitprop Diagram (SVG)</span>
+                </button>
+            </nav>
+            <div class="media-frame" data-zoom="assets/1940s_we_can_do_it.jpg">
+              <img src="assets/1940s_we_can_do_it.jpg" alt="1940s Graphic Design: Soviet Design, Midcentury Modern Roots & WWII" class="slide-img">
+              <div class="image-overlay-hint">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <span>Click image to inspect full screen</span>
+              </div>
+            </div>
+            <figcaption class="media-caption">
+              <strong>Authentic Historical Artifact (JPG):</strong> J. Howard Miller's official 1943 Westinghouse defense poster ('We Can Do It!'), symbolizing wartime manufacturing resolve (later celebrated globally as Rosie the Riveter).
+            </figcaption>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           SLIDE 5: 1950s Graphic Design: Economic Boom & Modernist Graphic Design
+           =================================================================== -->
+      <section class="slide " data-index="5" data-title="5. 1950s Graphic Design: Economic Boom & Modernist Graphic Design">
+        <div class="slide-grid">
+          
+          <!-- Left Content Pane -->
+          <div class="slide-content-pane">
+            <div class="module-tag">DECADE 04 / 11 &bull; 1950s</div>
+            <h1 class="slide-title">Economic Boom & <span class="gradient-text">Mid-Century Modern</span></h1>
+            
+            <div class="info-card">
+              <div class="card-icon-title">
+                <span class="badge-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span>
+                <h3>Historical Context: Suburbia, Television & The Atomic Age</h3>
+              </div>
+              <p>The post-WWII 1950s unleashed unprecedented consumer prosperity. American families moved into suburban tract homes filled with refrigerators, television sets, and station wagons. The Space Race, atomic energy discoveries, and the dawn of corporate multinational giants created a culture radiating with bright technological optimism and playful domestic freedom.</p>
+            </div>
+            <div class="info-card">
+              <div class="card-icon-title">
+                <span class="badge-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span>
+                <h3>Stylistic Hallmarks & Seminal Innovators</h3>
+              </div>
+              <ul><li><strong>Organic Kidney &amp; Boomerang Shapes:</strong> Asymmetrical fluid contours inspired by organic biology, Calder mobiles, and Eames furniture.</li><li><strong>Saul Bass's Film Title Revolution:</strong> Transformed cinematic advertising from mundane cast headshots into conceptual graphic metaphors (<em>The Man with the Golden Arm</em>, <em>Vertigo</em>) using jagged cut-paper silhouettes.</li><li><strong>Paul Rand's Corporate Modernism:</strong> Revolutionized American branding with timeless identities for IBM, ABC, and UPS, demonstrating that logos should be functional, witty, and geometrically distilled.</li><li><strong>The Birth of Helvetica (1957):</strong> Max Miedinger and Eduard Hoffmann created Neue Haas Grotesk in Switzerland, destined to become the undisputed corporate typography king.</li><li><strong>Atomic Pastel Palette:</strong> Mint teal, coral pink, buttercup yellow, atomic orange, and charcoal grey.</li></ul>
+            </div>
+            
+            <div class="interactive-checkpoint">
+              <div class="checkpoint-header">
+                <span class="sparkle-icon">&#10024;</span>
+                <h4>Classroom Checkpoint: The Conceptual Poster Metaphor</h4>
+              </div>
+              <p class="checkpoint-prompt">Why was Saul Bass's cut-paper poster for 'The Man with the Golden Arm' (featuring a jagged geometric arm) considered a seismic shock to Hollywood conventions?</p>
+              <button class="reveal-btn" data-target="rev5">Reveal Design Insight</button>
+              <div class="reveal-content hidden" id="rev5">
+                <strong>Historical Insight:</strong> Before Bass, movie posters were basically literal photo-collages showing actors smiling. Bass realized audiences don't need to see the actor's face—they need to FEEL the inner trauma and psychological struggle of the story in a single symbolic graphic stroke!
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Media Pane (Interactive Multi-Example Showcase) -->
+          <div class="slide-media-pane">
+            
+            <nav class="gallery-nav" aria-label="Visual Example Switcher">
+              
+                <button class="gallery-tab-btn active" data-img="assets/1950s_saul_bass_vertigo.jpg" data-alt="Alfred Hitchcock Vertigo movie poster designed by Saul Bass (1958)" data-caption="<strong>Authentic Historical Artifact (JPG):</strong> Saul Bass's legendary 1958 movie poster for Alfred Hitchcock's 'Vertigo', employing hypnotic Lissajous spiral curves and falling cut-paper silhouette figures.">
+                  <span>Saul Bass 'Vertigo' Poster (JPG)</span>
+                </button>
+                <button class="gallery-tab-btn " data-img="assets/1950s_paul_rand_ibm_rebus.jpg" data-alt="Paul Rand Eye Bee M Rebus poster for IBM" data-caption="<strong>Corporate Modernist Wit (JPG):</strong> Paul Rand's iconic 1981 'Eye-Bee-M' rebus poster, illustrating his philosophy that corporate identity should marry playful wit with rigorous geometric distillation.">
+                  <span>Paul Rand IBM Rebus (JPG)</span>
+                </button>
+                <button class="gallery-tab-btn " data-img="assets/slide5_1950s_midcentury_modern.svg" data-alt="1950s Mid-Century Modern boomerang tables, atomic starbursts, and cutouts" data-caption="<strong>Master Design Diagram:</strong> Mid-Century Modernism: Asymmetrical boomerang curves, atomic starbursts, and Saul Bass jagged cut-paper silhouettes.">
+                  <span>Master Mid-Century Diagram (SVG)</span>
+                </button>
+            </nav>
+            <div class="media-frame" data-zoom="assets/1950s_saul_bass_vertigo.jpg">
+              <img src="assets/1950s_saul_bass_vertigo.jpg" alt="1950s Graphic Design: Economic Boom & Modernist Graphic Design" class="slide-img">
+              <div class="image-overlay-hint">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <span>Click image to inspect full screen</span>
+              </div>
+            </div>
+            <figcaption class="media-caption">
+              <strong>Authentic Historical Artifact (JPG):</strong> Saul Bass's legendary 1958 movie poster for Alfred Hitchcock's 'Vertigo', employing hypnotic Lissajous spiral curves and falling cut-paper silhouette figures.
+            </figcaption>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           SLIDE 6: 1960s Graphic Design: Psychedelic & Swiss Style Graphic Design
+           =================================================================== -->
+      <section class="slide " data-index="6" data-title="6. 1960s Graphic Design: Psychedelic & Swiss Style Graphic Design">
+        <div class="slide-grid">
+          
+          <!-- Left Content Pane -->
+          <div class="slide-content-pane">
+            <div class="module-tag">DECADE 05 / 11 &bull; 1960s</div>
+            <h1 class="slide-title">Swiss Precision vs. <span class="gradient-text">Psychedelic Rock</span></h1>
+            
+            <div class="info-card">
+              <div class="card-icon-title">
+                <span class="badge-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span>
+                <h3>Historical Context: The Great Ideological Duality</h3>
+              </div>
+              <p>No decade illustrates the visual pendulum more vividly than the 1960s. The world divided into two radically opposed visual philosophies: on one side stood the corporate establishment demanding <strong>scientific Swiss objectivity</strong>; on the other stood the anti-war youth counterculture in San Francisco igniting the <strong>hallucinogenic psychedelic revolution</strong>.</p>
+            </div>
+            <div class="info-card">
+              <div class="card-icon-title">
+                <span class="badge-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span>
+                <h3>The Two Competing Movements Side-by-Side</h3>
+              </div>
+              <ul><li><strong>Swiss Style (International Typographic Style):</strong> Josef M&uuml;ller-Brockmann and Armin Hofmann codified the mathematical modular grid, objective black-and-white photography, flush-left rag-right typography, and the total eradication of arbitrary decoration.</li><li><strong>Psychedelic Counterculture:</strong> Wes Wilson, Victor Moscoso, and Rick Griffin created Fillmore concert posters featuring melting, hand-lettered warped typography that pushed illegibility to the limit.</li><li><strong>Retinal Vibration Contrast:</strong> Psychedelic designers paired high-saturation complementary colors (electric magenta against day-glo green, cyan against orange) that created optical illusions and shimmering vibrations on the retina.</li><li><strong>Typefaces:</strong> Swiss: Helvetica &amp; Univers. Psychedelic: Freehand melting Art Nouveau-inspired letterforms.</li></ul>
+            </div>
+            
+            <div class="interactive-checkpoint">
+              <div class="checkpoint-header">
+                <span class="sparkle-icon">&#10024;</span>
+                <h4>Classroom Checkpoint: The Illegibility Paradox</h4>
+              </div>
+              <p class="checkpoint-prompt">Why did psychedelic concert poster designers intentionally design lettering that was almost impossible to read for mainstream adults?</p>
+              <button class="reveal-btn" data-target="rev6">Reveal Design Insight</button>
+              <div class="reveal-content hidden" id="rev6">
+                <strong>Historical Insight:</strong> Cultural Encryption! If a poster could be read in 0.5 seconds, it was an ad for the 'straight' corporate world. But if a poster took 5 minutes of concentrated optical deciphering, it acted as a secret handshake that filtered out authority figures and united the counterculture community.
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Media Pane (Interactive Multi-Example Showcase) -->
+          <div class="slide-media-pane">
+            
+            <nav class="gallery-nav" aria-label="Visual Example Switcher">
+              
+                <button class="gallery-tab-btn active" data-img="assets/1960s_swiss_muller_brockmann.jpg" data-alt="Josef Müller-Brockmann Der Film poster 1960" data-caption="<strong>Swiss Style Masterpiece (JPG):</strong> Josef Müller-Brockmann's iconic 'Der Film' poster (1960), demonstrating the power of mathematical proportion and Akzidenz-Grotesk hierarchy.">
+                  <span>Müller-Brockmann 'Der Film' (JPG)</span>
+                </button>
+                <button class="gallery-tab-btn " data-img="assets/1960s_armin_hofmann_swiss.jpg" data-alt="Armin Hofmann Gewerbemuseum Basel poster 1959" data-caption="<strong>International Typographic Masterpiece (JPG):</strong> Armin Hofmann's 1959 Gewerbemuseum Basel exhibition poster, exemplifying radical asymmetrical grid discipline.">
+                  <span>Armin Hofmann Basel 1959 (JPG)</span>
+                </button>
+                <button class="gallery-tab-btn " data-img="assets/1960s_psychedelic_eye.jpg" data-alt="1960s Psychedelic counterculture eye artwork with swirling color bands" data-caption="<strong>Psychedelic Hallucinogenic Art (JPG):</strong> Swirling concentric psychedelic color bands and optical distortion reflecting the 1960s Summer of Love revolution.">
+                  <span>Psychedelic Counterculture Art (JPG)</span>
+                </button>
+                <button class="gallery-tab-btn " data-img="assets/1960s_psychedelic_sun.jpg" data-alt="Psychedelic counterculture artwork with vibrant saturated rays" data-caption="<strong>Psychedelic Retinal Vibration (JPG):</strong> Hand-crafted counterculture artwork utilizing intense saturated complementary color clashes and swirling hypnotic solar vectors.">
+                  <span>Psychedelic Sun Vector (JPG)</span>
+                </button>
+                <button class="gallery-tab-btn " data-img="assets/slide6_1960s_swiss_psychedelic.svg" data-alt="Swiss 3x3 mathematical grid contrasted against psychedelic melting typography" data-caption="<strong>Master Design Diagram:</strong> The 1960s Polarity: Swiss mathematical modular grid clarity contrasted directly with San Francisco psychedelic optical distortion.">
+                  <span>Master Dual Polarity Diagram (SVG)</span>
+                </button>
+            </nav>
+            <div class="media-frame" data-zoom="assets/1960s_swiss_muller_brockmann.jpg">
+              <img src="assets/1960s_swiss_muller_brockmann.jpg" alt="1960s Graphic Design: Psychedelic & Swiss Style Graphic Design" class="slide-img">
+              <div class="image-overlay-hint">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <span>Click image to inspect full screen</span>
+              </div>
+            </div>
+            <figcaption class="media-caption">
+              <strong>Swiss Style Masterpiece (JPG):</strong> Josef Müller-Brockmann's iconic 'Der Film' poster (1960), demonstrating the power of mathematical proportion and Akzidenz-Grotesk hierarchy.
+            </figcaption>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           SLIDE 7: 1970s Graphic Design: Punk, Moody & Groovy Graphic Design
+           =================================================================== -->
+      <section class="slide " data-index="7" data-title="7. 1970s Graphic Design: Punk, Moody & Groovy Graphic Design">
+        <div class="slide-grid">
+          
+          <!-- Left Content Pane -->
+          <div class="slide-content-pane">
+            <div class="module-tag">DECADE 06 / 11 &bull; 1970s</div>
+            <h1 class="slide-title">Punk Rebellion & <span class="gradient-text">Groovy Funk</span></h1>
+            
+            <div class="info-card">
+              <div class="card-icon-title">
+                <span class="badge-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span>
+                <h3>Historical Context: Oil Crises, Stagflation & Disco</h3>
+              </div>
+              <p>The 1970s opened in economic malaise: global oil embargoes, inflation, and political disillusionment (Watergate). Mainstream culture embraced comforting, escapist warmth through disco dance clubs, funk grooves, and earth-toned interior decor. Simultaneously in London and New York, alienated working-class youths unleashed <strong>Punk Rock</strong>—a furious anti-establishment explosion that democratized graphic design forever.</p>
+            </div>
+            <div class="info-card">
+              <div class="card-icon-title">
+                <span class="badge-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span>
+                <h3>Stylistic Hallmarks & The DIY Xerox Explosion</h3>
+              </div>
+              <ul><li><strong>Jamie Reid's Punk Ransom Notes:</strong> Armed with 5-cent Xerox photocopiers, scissors, and torn newspaper headlines, Jamie Reid created the Sex Pistols' visual identity (<em>God Save the Queen</em>, <em>Never Mind the Bollocks</em>), establishing the DIY punk fanzine subculture.</li><li><strong>Groovy Multi-Line Rainbows:</strong> Mainstream 70s typography featured multi-stroke outlines, soft concentric curves, and plump bulbous letterforms like <strong>Cooper Black</strong> and ITC Benguiat.</li><li><strong>Milton Glaser's &lsquo;I &hearts; NY&rsquo; (1977):</strong> Designed on a torn paper napkin with red crayon in the back of a taxi, creating the most reproduced pop logo in human history.</li><li><strong>The Earthy 70s Palette:</strong> Avocado green, harvest gold, burnt orange, mustard yellow, and chocolate brown, contrasted with punk's stark xerox black, white, and shock neon pink.</li></ul>
+            </div>
+            
+            <div class="interactive-checkpoint">
+              <div class="checkpoint-header">
+                <span class="sparkle-icon">&#10024;</span>
+                <h4>Classroom Checkpoint: The Democratization of the Press</h4>
+              </div>
+              <p class="checkpoint-prompt">Why was the office Xerox photocopier just as revolutionary for 1970s punk designers as desktop software was for 1990s designers?</p>
+              <button class="reveal-btn" data-target="rev7">Reveal Design Insight</button>
+              <div class="reveal-content hidden" id="rev7">
+                <strong>Historical Insight:</strong> Before cheap copy machines, publishing a poster or fanzine required thousands of dollars in commercial plates and printing presses. The Xerox machine allowed teenagers with five dollars to print 100 cut-and-paste zines in 20 minutes, completely bypassing corporate gatekeepers!
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Media Pane (Interactive Multi-Example Showcase) -->
+          <div class="slide-media-pane">
+            
+            <nav class="gallery-nav" aria-label="Visual Example Switcher">
+              
+                <button class="gallery-tab-btn active" data-img="assets/1970s_punk_fanzines.jpg" data-alt="Authentic collection of 1970s UK Punk Fanzines" data-caption="<strong>Authentic Historical Artifact (JPG):</strong> Archival collection of UK Punk Fanzines (1976–1979), displaying raw halftone photocopy grain, torn paper collages, and typewriter fonts.">
+                  <span>UK Punk Fanzines (JPG)</span>
+                </button>
+                <button class="gallery-tab-btn " data-img="assets/1970s_milton_glaser_poster.jpg" data-alt="Milton Glaser Zabriskie Point 1970 movie poster" data-caption="<strong>Milton Glaser 1970 Masterpiece (JPG):</strong> Milton Glaser's 1970 poster for Michelangelo Antonioni's 'Zabriskie Point', combining counterculture typography and atmospheric landscape.">
+                  <span>Milton Glaser 1970 Poster (JPG)</span>
+                </button>
+                <button class="gallery-tab-btn " data-img="assets/1970s_fanzines_diy.jpg" data-alt="Original 1970s DIY cut and paste zine pages" data-caption="<strong>Grassroots Publishing Revolution (JPG):</strong> Authentic 1970s underground DIY fanzine layout, celebrating handmade anti-perfection and visceral visual grit.">
+                  <span>1970s DIY Zines Art (JPG)</span>
+                </button>
+                <button class="gallery-tab-btn " data-img="assets/slide7_1970s_punk_groovy.svg" data-alt="1970s Punk ransom-note lettering contrasted with Groovy Cooper Black funk" data-caption="<strong>Master Design Diagram:</strong> The 1970s Dual Ethos: Jamie Reid cut-and-paste punk ransom typography vs. Groovy multi-line warm earth-toned funk.">
+                  <span>Master Punk & Groovy Diagram (SVG)</span>
+                </button>
+            </nav>
+            <div class="media-frame" data-zoom="assets/1970s_punk_fanzines.jpg">
+              <img src="assets/1970s_punk_fanzines.jpg" alt="1970s Graphic Design: Punk, Moody & Groovy Graphic Design" class="slide-img">
+              <div class="image-overlay-hint">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <span>Click image to inspect full screen</span>
+              </div>
+            </div>
+            <figcaption class="media-caption">
+              <strong>Authentic Historical Artifact (JPG):</strong> Archival collection of UK Punk Fanzines (1976–1979), displaying raw halftone photocopy grain, torn paper collages, and typewriter fonts.
+            </figcaption>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           SLIDE 8: 1980s Graphic Design: Excess, Memphis & Neon Graphic Design
+           =================================================================== -->
+      <section class="slide " data-index="8" data-title="8. 1980s Graphic Design: Excess, Memphis & Neon Graphic Design">
+        <div class="slide-grid">
+          
+          <!-- Left Content Pane -->
+          <div class="slide-content-pane">
+            <div class="module-tag">DECADE 07 / 11 &bull; 1980s</div>
+            <h1 class="slide-title">Excess, Memphis & <span class="gradient-text">Neon Synthwave</span></h1>
+            
+            <div class="info-card">
+              <div class="card-icon-title">
+                <span class="badge-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span>
+                <h3>Historical Context: Wall Street Boom, MTV & The Mac</h3>
+              </div>
+              <p>The 1980s was an era of unabashed consumer extravagance, blockbuster cinema, arcade gaming, synth-pop, and the birth of cable television with <strong>MTV (1981)</strong>. In January 1984, Steve Jobs unveiled the <strong>Apple Macintosh</strong>, kicking off the digital desktop publishing revolution and placing PostScript typography directly onto personal computer desks.</p>
+            </div>
+            <div class="info-card">
+              <div class="card-icon-title">
+                <span class="badge-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span>
+                <h3>Stylistic Hallmarks & The Memphis Group</h3>
+              </div>
+              <ul><li><strong>The Memphis Milano Movement:</strong> Formed in 1981 by Ettore Sottsass, Memphis rejected modernist &ldquo;good taste&rdquo; in favor of playful kitsch, squiggles, zig-zags, confetti dots, zebra patterns, and plastic laminates.</li><li><strong>Neon Cyberpunk &amp; 3D Synthwave Grids:</strong> Receding neon perspective wireframes terminating at chrome sunset horizons, airbrushed metallic bevels, and laser yellow highlights.</li><li><strong>MTV's Kinetic Morphing Identity:</strong> Designed by Manhattan Design, the MTV &ldquo;M&rdquo; was never static—it transformed into clay, spray-paint, glass, and animated wireframes, creating the first truly dynamic motion identity.</li><li><strong>Palette &amp; Fonts:</strong> Electric hot pink, neon cyan, laser yellow, chrome silver, deep violet. Fonts: Mistral, Chicago, Neon Script, bitmapped dot-matrix fonts.</li></ul>
+            </div>
+            
+            <div class="interactive-checkpoint">
+              <div class="checkpoint-header">
+                <span class="sparkle-icon">&#10024;</span>
+                <h4>Classroom Checkpoint: The Anti-Design Manifesto</h4>
+              </div>
+              <p class="checkpoint-prompt">Why did highbrow design critics in 1981 call Memphis Milano design 'a shotgun wedding between Bauhaus and Fisher-Price toys'?</p>
+              <button class="reveal-btn" data-target="rev8">Reveal Design Insight</button>
+              <div class="reveal-content hidden" id="rev8">
+                <strong>Historical Insight:</strong> Because Memphis intentionally broke every rule of polite modernism! Instead of quiet grey leather and chrome steel, Memphis slapped plastic laminate squiggles and garish neon pinks onto expensive furniture, mocking the serious pretension of elite design schools.
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Media Pane (Interactive Multi-Example Showcase) -->
+          <div class="slide-media-pane">
+            
+            <nav class="gallery-nav" aria-label="Visual Example Switcher">
+              
+                <button class="gallery-tab-btn active" data-img="assets/1980s_memphis_milano.jpg" data-alt="Original Memphis Milano design collection pieces by Ettore Sottsass" data-caption="<strong>Authentic Historical Artifact (JPG):</strong> The Memphis-Milano Design Collection, highlighting asymmetrical laminate surfaces, geometric pedestals, and clashing pop hues.">
+                  <span>Memphis-Milano Collection (JPG)</span>
+                </button>
+                <button class="gallery-tab-btn " data-img="assets/1980s_sottsass_casablanca.jpg" data-alt="Ettore Sottsass Casablanca sideboard for Memphis 1981" data-caption="<strong>Radical Postmodern Architecture (JPG):</strong> Ettore Sottsass's iconic 'Casablanca' sideboard (1981), demonstrating the architectural application of 1980s graphic patterns.">
+                  <span>Sottsass 'Casablanca' (JPG)</span>
+                </button>
+                <button class="gallery-tab-btn " data-img="assets/1980s_vaporwave_neon.jpg" data-alt="80s neon synthwave vaporwave aesthetic composition" data-caption="<strong>Synthwave Horizon (JPG):</strong> The quintessential 1980s digital dreamscape: glowing neon cyan wireframe grids receding toward an ultraviolet chrome horizon.">
+                  <span>Neon Synthwave Horizon (JPG)</span>
+                </button>
+                <button class="gallery-tab-btn " data-img="assets/slide8_1980s_memphis_neon.svg" data-alt="1980s Memphis Milano squiggles, neon perspective grid, and synthwave sunset" data-caption="<strong>Master Design Diagram:</strong> The 1980s Visual Language: Memphis Milano squiggles, confetti dots, and glowing wireframe perspective synthwave grids.">
+                  <span>Master Memphis & Neon Diagram (SVG)</span>
+                </button>
+            </nav>
+            <div class="media-frame" data-zoom="assets/1980s_memphis_milano.jpg">
+              <img src="assets/1980s_memphis_milano.jpg" alt="1980s Graphic Design: Excess, Memphis & Neon Graphic Design" class="slide-img">
+              <div class="image-overlay-hint">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <span>Click image to inspect full screen</span>
+              </div>
+            </div>
+            <figcaption class="media-caption">
+              <strong>Authentic Historical Artifact (JPG):</strong> The Memphis-Milano Design Collection, highlighting asymmetrical laminate surfaces, geometric pedestals, and clashing pop hues.
+            </figcaption>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           SLIDE 9: 1990s Graphic Design: Experimental, Tech-Forward, Minimalist Graphic Design
+           =================================================================== -->
+      <section class="slide " data-index="9" data-title="9. 1990s Graphic Design: Experimental, Tech-Forward, Minimalist Graphic Design">
+        <div class="slide-grid">
+          
+          <!-- Left Content Pane -->
+          <div class="slide-content-pane">
+            <div class="module-tag">DECADE 08 / 11 &bull; 1990s</div>
+            <h1 class="slide-title">Grunge, Deconstructivism & <span class="gradient-text">Y2K Tech</span></h1>
+            
+            <div class="info-card">
+              <div class="card-icon-title">
+                <span class="badge-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span>
+                <h3>Historical Context: Digital Desktop Revolution & Web 1.0</h3>
+              </div>
+              <p>The 1990s witnessed the full digitization of graphic design. With the launch of <strong>Adobe Photoshop 1.0 (1990)</strong>, Illustrator, and QuarkXPress, designers gained god-like control over pixel layers, Gaussian blurs, and digital transparency. In 1991, Tim Berners-Lee opened the <strong>World Wide Web</strong> to the public, setting off a scramble to translate print principles to early browser screens.</p>
+            </div>
+            <div class="info-card">
+              <div class="card-icon-title">
+                <span class="badge-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span>
+                <h3>Stylistic Hallmarks & The Carson Rebellion</h3>
+              </div>
+              <ul><li><strong>David Carson &amp; Ray Gun Magazine:</strong> Carson demolished editorial conventions: type was overlapping, upside down, tracks collided, and columns were fragmented into emotional textures. He argued: <em>&ldquo;Don't mistake legibility for communication.&rdquo;</em></li><li><strong>Grunge &amp; Distressed Surfaces:</strong> Barcodes, industrial warning stripes, dirty photocopied halftones, masking tape, and scratched film borders echoing the Seattle grunge music of Nirvana and Pearl Jam.</li><li><strong>The Y2K Aesthetic &amp; Cyber-Optimism:</strong> Translucent bubble gum colored plastics (Apple iMac G3 1998), 3D chrome liquid metal blobs, wireframe globes, and techno rave flyers anticipating the new millennium.</li><li><strong>Calvin Klein Editorial Minimalism:</strong> In parallel, high-fashion editorial embraced stark black-and-white photography, generous negative space, and pristine sans-serif typography.</li></ul>
+            </div>
+            
+            <div class="interactive-checkpoint">
+              <div class="checkpoint-header">
+                <span class="sparkle-icon">&#10024;</span>
+                <h4>Classroom Checkpoint: The Zapf Dingbats Incident</h4>
+              </div>
+              <p class="checkpoint-prompt">In Ray Gun issue #35, David Carson set an entire feature interview with rock star Bryan Ferry in the font Zapf Dingbats (pure unreadable pictograms). Why?</p>
+              <button class="reveal-btn" data-target="rev9">Reveal Design Insight</button>
+              <div class="reveal-content hidden" id="rev9">
+                <strong>Historical Insight:</strong> Carson found the interview extraordinarily boring and bland! Rather than wasting page layout on hollow promotional fluff, he transformed the article into an artistic statement about the absurdity of celebrity press releases. Readers were forced to experience the layout as pure visual sculpture!
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Media Pane (Interactive Multi-Example Showcase) -->
+          <div class="slide-media-pane">
+            
+            <nav class="gallery-nav" aria-label="Visual Example Switcher">
+              
+                <button class="gallery-tab-btn active" data-img="assets/1990s_grunge_nirvana_poster.png" data-alt="1991 Seattle grunge concert poster for Nirvana at OK Hotel" data-caption="<strong>Authentic Historical Artifact (1991):</strong> Original Seattle grunge concert poster for Nirvana at the OK Hotel (April 17, 1991, where 'Smells Like Teen Spirit' debuted live), displaying raw distorted typography and anti-corporate grit.">
+                  <span>1991 Nirvana Grunge Poster (Image)</span>
+                </button>
+                <button class="gallery-tab-btn " data-img="assets/1990s_grunge_texture.jpg" data-alt="High resolution authentic distressed grunge paper texture" data-caption="<strong>The Tactile Grunge Aesthetic (JPG):</strong> High-resolution distressed paper and tactile grit, reflecting the anti-digital raw authenticity championed in 1990s zines and album art.">
+                  <span>Tactile Grunge Paper Texture (JPG)</span>
+                </button>
+                <button class="gallery-tab-btn " data-img="assets/slide9_1990s_grunge_tech.svg" data-alt="1990s David Carson Ray Gun grunge typography and early Web 1.0 wireframe" data-caption="<strong>Master Design Diagram:</strong> 1990s Deconstructivism: Sliced typography, distressed barcode motifs, and early HTML Web 1.0 browser frames.">
+                  <span>Master Grunge & Y2K Diagram (SVG)</span>
+                </button>
+            </nav>
+            <div class="media-frame" data-zoom="assets/1990s_grunge_nirvana_poster.png">
+              <img src="assets/1990s_grunge_nirvana_poster.png" alt="1990s Graphic Design: Experimental, Tech-Forward, Minimalist Graphic Design" class="slide-img">
+              <div class="image-overlay-hint">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <span>Click image to inspect full screen</span>
+              </div>
+            </div>
+            <figcaption class="media-caption">
+              <strong>Authentic Historical Artifact (1991):</strong> Original Seattle grunge concert poster for Nirvana at the OK Hotel (April 17, 1991, where 'Smells Like Teen Spirit' debuted live), displaying raw distorted typography and anti-corporate grit.
+            </figcaption>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           SLIDE 10: 2000s Graphic Design: Simplification & Minimalist Graphic Design
+           =================================================================== -->
+      <section class="slide " data-index="10" data-title="10. 2000s Graphic Design: Simplification & Minimalist Graphic Design">
+        <div class="slide-grid">
+          
+          <!-- Left Content Pane -->
+          <div class="slide-content-pane">
+            <div class="module-tag">DECADE 09 / 11 &bull; 2000s</div>
+            <h1 class="slide-title">Web 2.0 Gloss, iPod & <span class="gradient-text">Skeuomorphism</span></h1>
+            
+            <div class="info-card">
+              <div class="card-icon-title">
+                <span class="badge-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span>
+                <h3>Historical Context: Broadband, The iPod & Touchscreens</h3>
+              </div>
+              <p>Emerging from the 2000 dot-com crash, the new millennium ushered in broadband internet, interactive social communities (MySpace, early Facebook), and Apple's hardware renaissance under Steve Jobs and Jony Ive. The launch of the <strong>iPod (2001)</strong> and the <strong>iPhone (2007)</strong> transitioned millions of humans from desktop monitors to pocket glass touchscreens.</p>
+            </div>
+            <div class="info-card">
+              <div class="card-icon-title">
+                <span class="badge-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span>
+                <h3>Stylistic Hallmarks & Digital Material Metaphors</h3>
+              </div>
+              <ul><li><strong>Web 2.0 Gloss &amp; Aqua Buttons:</strong> Lickable translucent gel buttons with curved reflection highlights, 3D pill badges, wet-floor mirror reflections, and gradient drop shadows.</li><li><strong>Digital Skeuomorphism:</strong> Designing software interfaces to mirror real-world physical objects: stitched leather borders in Notes, brushed aluminum panels in QuickTime, and wooden bookshelves in iBooks.</li><li><strong>Apple's iPod Silhouette Campaign (TBWA\Chiat\Day):</strong> Crisp jet-black dancing silhouettes against blazing solid neon pink, lime, and orange backgrounds with iconic pure-white earbuds and click-wheel devices.</li><li><strong>Corporate Geometric Simplification:</strong> Rebranding legacy corporate identities with rounded friendly typography and cleaner vector geometry. Fonts: Gotham (2000), Proxima Nova (2005), Myriad.</li></ul>
+            </div>
+            
+            <div class="interactive-checkpoint">
+              <div class="checkpoint-header">
+                <span class="sparkle-icon">&#10024;</span>
+                <h4>Classroom Checkpoint: The Skeuomorphic Training Wheels</h4>
+              </div>
+              <p class="checkpoint-prompt">Why was digital skeuomorphism (fake leather, glossy buttons, realistic shadows) a brilliant ergonomic necessity in 2007, but considered obsolete by 2013?</p>
+              <button class="reveal-btn" data-target="rev10">Reveal Design Insight</button>
+              <div class="reveal-content hidden" id="rev10">
+                <strong>Historical Insight:</strong> Skeuomorphism acted as cognitive 'training wheels' for humanity! In 2007, people had never touched a glass screen to interact with software. Showing a raised button with realistic glass glare taught their brains: 'You can press this!' Once humanity mastered touch, the faux textures became visual clutter.
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Media Pane (Interactive Multi-Example Showcase) -->
+          <div class="slide-media-pane">
+            
+            <nav class="gallery-nav" aria-label="Visual Example Switcher">
+              
+                <button class="gallery-tab-btn active" data-img="assets/2000s_apple_ipod_nano_colors.jpg" data-alt="Authentic colorful anodized aluminum Apple iPod nano 2000s design" data-caption="<strong>Authentic Historical Artifact (JPG):</strong> Apple's iconic 2000s iPod color spectrum campaign, showcasing vibrant monochromatic color saturation paired with minimalist hardware design.">
+                  <span>Apple iPod Color Spectrum (JPG)</span>
+                </button>
+                <button class="gallery-tab-btn " data-img="assets/2000s_apple_ipod_evolution.png" data-alt="Vector evolution diagram of Apple iPod classic devices" data-caption="<strong>Hardware & Interface Revolution:</strong> The mechanical click-wheel evolution of the Apple iPod, defining the transition from physical hardware controls to minimalist touch.">
+                  <span>Apple iPod Hardware Evolution (Image)</span>
+                </button>
+                <button class="gallery-tab-btn " data-img="assets/slide10_2000s_web2_skeuomorph.svg" data-alt="2000s Aqua glossy button reflection and Apple iPod silhouette dancing figure" data-caption="<strong>Master Design Diagram:</strong> 2000s UI & Advertising: Web 2.0 Aqua gloss reflections, stitched leather skeuomorphism, and the iPod dancing silhouette campaign.">
+                  <span>Master Web 2.0 & Skeuomorph Diagram (SVG)</span>
+                </button>
+            </nav>
+            <div class="media-frame" data-zoom="assets/2000s_apple_ipod_nano_colors.jpg">
+              <img src="assets/2000s_apple_ipod_nano_colors.jpg" alt="2000s Graphic Design: Simplification & Minimalist Graphic Design" class="slide-img">
+              <div class="image-overlay-hint">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <span>Click image to inspect full screen</span>
+              </div>
+            </div>
+            <figcaption class="media-caption">
+              <strong>Authentic Historical Artifact (JPG):</strong> Apple's iconic 2000s iPod color spectrum campaign, showcasing vibrant monochromatic color saturation paired with minimalist hardware design.
+            </figcaption>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           SLIDE 11: 2010s Graphic Design: Social Media Graphic Design & Flat Revolution
+           =================================================================== -->
+      <section class="slide " data-index="11" data-title="11. 2010s Graphic Design: Social Media Graphic Design & Flat Revolution">
+        <div class="slide-grid">
+          
+          <!-- Left Content Pane -->
+          <div class="slide-content-pane">
+            <div class="module-tag">DECADE 10 / 11 &bull; 2010s</div>
+            <h1 class="slide-title">Flat Design, Material & <span class="gradient-text">Social Media</span></h1>
+            
+            <div class="info-card">
+              <div class="card-icon-title">
+                <span class="badge-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span>
+                <h3>Historical Context: Mobile First & The Social Feed Economy</h3>
+              </div>
+              <p>By 2010, the smartphone had become the primary lens through which humanity consumed information. The launch of <strong>Instagram (2010)</strong>, responsive mobile web grids, and the rise of the creator economy meant graphic design was no longer created for billboard walls or glossy magazine spreads—it was engineered for 5-inch vertical glass rectangles and infinite algorithmic feeds.</p>
+            </div>
+            <div class="info-card">
+              <div class="card-icon-title">
+                <span class="badge-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span>
+                <h3>Stylistic Hallmarks & The Flat Overhaul</h3>
+              </div>
+              <ul><li><strong>The Flat Revolution (iOS 7 &amp; Windows Metro):</strong> Total annihilation of skeuomorphism: zero drop shadows, zero gloss, and zero faux textures. Clean vector color blocks and razor-sharp typographic hierarchy optimized for Retina screens.</li><li><strong>Google Material Design (2014):</strong> Synthesized flat design with tactile realism, introducing &ldquo;digital paper and ink&rdquo; where subtle drop shadows convey physical z-axis elevation and motion physics.</li><li><strong>Social-First 1:1 and 9:16 Formats:</strong> Instagram square cards, bold shareable quote infographics, multi-slide carousels, and millennial pink / violet-to-orange brand gradients.</li><li><strong>Corporate &lsquo;Blanding&rsquo; Homogenization:</strong> Historic fashion houses (Burberry, Balmain, Yves Saint Laurent) and tech giants swapped century-old serif logos for identical geometric grotesques to ensure micro-legibility on smartwatch screens.</li></ul>
+            </div>
+            
+            <div class="interactive-checkpoint">
+              <div class="checkpoint-header">
+                <span class="sparkle-icon">&#10024;</span>
+                <h4>Classroom Checkpoint: The Corporate 'Blanding' Epidemic</h4>
+              </div>
+              <p class="checkpoint-prompt">Why did almost every luxury fashion brand in the 2010s trade their distinctive, ornate heritage logos for virtually identical bold black sans-serif words?</p>
+              <button class="reveal-btn" data-target="rev11">Reveal Design Insight</button>
+              <div class="reveal-content hidden" id="rev11">
+                <strong>Historical Insight:</strong> Digital Multi-Platform Scalability! An ornate 1880s serif crest becomes a blurry illegible smudge when rendered as a 16x16 pixel app icon or Instagram profile circle. Brands sacrificed unique heritage for universal digital legibility across digital ecosystems.
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Media Pane (Interactive Multi-Example Showcase) -->
+          <div class="slide-media-pane">
+            
+            <nav class="gallery-nav" aria-label="Visual Example Switcher">
+              
+                <button class="gallery-tab-btn active" data-img="assets/2010s_material_design_layers.png" data-alt="Official Google Material Design layered elevation vectors" data-caption="<strong>Material Design Physics (Image):</strong> Google's official 2014 paper elevation framework, demonstrating how realistic lighting shadows indicate touch surface priority in mobile interfaces.">
+                  <span>Material Design Elevation (Image)</span>
+                </button>
+                <button class="gallery-tab-btn " data-img="assets/2010s_flat_design_vector.png" data-alt="Pure flat design vector illustration with laptop and coffee" data-caption="<strong>Flat Design 2.0 (Image):</strong> Pure geometric color planes with zero artificial bevels or realistic gloss, engineered for responsive mobile screens.">
+                  <span>Flat Design 2.0 Vector UI (Image)</span>
+                </button>
+                <button class="gallery-tab-btn " data-img="assets/slide11_2010s_flat_social.svg" data-alt="2010s Google Material Design card elevation and Instagram social feed layout" data-caption="<strong>Master Design Diagram:</strong> The 2010s Mobile Ecosystem: Google Material Design paper elevation and Instagram 1:1 social card aesthetics.">
+                  <span>Master Flat & Social Feed Diagram (SVG)</span>
+                </button>
+            </nav>
+            <div class="media-frame" data-zoom="assets/2010s_material_design_layers.png">
+              <img src="assets/2010s_material_design_layers.png" alt="2010s Graphic Design: Social Media Graphic Design & Flat Revolution" class="slide-img">
+              <div class="image-overlay-hint">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <span>Click image to inspect full screen</span>
+              </div>
+            </div>
+            <figcaption class="media-caption">
+              <strong>Material Design Physics (Image):</strong> Google's official 2014 paper elevation framework, demonstrating how realistic lighting shadows indicate touch surface priority in mobile interfaces.
+            </figcaption>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           SLIDE 12: 2020s Graphic Design: Sustainability, Neo-Futurist Graphic Design
+           =================================================================== -->
+      <section class="slide " data-index="12" data-title="12. 2020s Graphic Design: Sustainability, Neo-Futurist Graphic Design">
+        <div class="slide-grid">
+          
+          <!-- Left Content Pane -->
+          <div class="slide-content-pane">
+            <div class="module-tag">DECADE 11 / 11 &bull; 2020s</div>
+            <h1 class="slide-title">Neo-Brutalism, Eco & <span class="gradient-text">Neo-Futurism</span></h1>
+            
+            <div class="info-card">
+              <div class="card-icon-title">
+                <span class="badge-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span>
+                <h3>Historical Context: Climate Urgency, Gen Z & Generative AI</h3>
+              </div>
+              <p>Entering the 2020s, global designers confronted climate crisis realities, pandemic remote transformations, and the sudden emergence of <strong>Generative AI tools (Midjourney, DALL-E, Stable Diffusion)</strong>. Burned out by a decade of sanitized, sterile, identical corporate SaaS templates, young designers revolted with raw, unapologetic, anti-perfection aesthetics.</p>
+            </div>
+            <div class="info-card">
+              <div class="card-icon-title">
+                <span class="badge-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span>
+                <h3>Stylistic Hallmarks & The Post-Template Frontier</h3>
+              </div>
+              <ul><li><strong>Neo-Brutalism in UI:</strong> Heavy 3px to 4px solid black borders, hard offset drop shadows with zero blur, stark acid lime (#ccff00) and electric violet accents, and playful sticker badges (Gumroad, Figma community).</li><li><strong>Sustainability &amp; Eco-Minimalism:</strong> Muted earthy palettes (sage, clay terracotta, stone, raw kraft paper), ink-saving line art, and dark-mode defaults engineered to reduce physical chemical footprints and OLED battery consumption.</li><li><strong>Neo-Futurism &amp; 3D Holographic Chrome:</strong> Iridescent liquid chrome typography, acid graphics, kinetic variable fonts that stretch dynamically along motion axes, and glassmorphic translucent panels.</li><li><strong>Generative AI Co-Creation:</strong> Machine-synthesized surrealist dreamscapes, algorithmic texture generation, and human-in-the-loop creative direction.</li></ul>
+            </div>
+            
+            <div class="interactive-checkpoint">
+              <div class="checkpoint-header">
+                <span class="sparkle-icon">&#10024;</span>
+                <h4>Classroom Checkpoint: The Neo-Brutalist Rejection</h4>
+              </div>
+              <p class="checkpoint-prompt">How does 2020s Neo-Brutalism prove the 'Pendulum of Design' theory introduced in Slide 1?</p>
+              <button class="reveal-btn" data-target="rev12">Reveal Design Insight</button>
+              <div class="reveal-content hidden" id="rev12">
+                <strong>Historical Insight:</strong> By the late 2010s, every corporate website looked identical: friendly rounded pastel buttons, soft 12px blur drop shadows, and polite corporate illustrations. Neo-Brutalism slammed the pendulum back: raw 3px black lines, zero blur, jarring acid lime, and unapologetic layout honesty!
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Media Pane (Interactive Multi-Example Showcase) -->
+          <div class="slide-media-pane">
+            
+            <div class="media-frame" data-zoom="assets/slide12_2020s_neobrutalism_future.svg">
+              <img src="assets/slide12_2020s_neobrutalism_future.svg" alt="2020s Graphic Design: Sustainability, Neo-Futurist Graphic Design" class="slide-img">
+              <div class="image-overlay-hint">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <span>Click image to inspect full screen</span>
+              </div>
+            </div>
+            <figcaption class="media-caption">
+              <strong>Master Design Diagram:</strong> The 2020s Frontier: Neo-Brutalist hard-shadow UI components, eco-minimalist ink conservation, and generative iridescent 3D vectors.
+            </figcaption>
+          </div>
+
+        </div>
+      </section>
+    </main>
+
+    <!-- Bottom Footer Navigation Bar -->
+    <footer class="deck-footer">
+      <div class="footer-left">
+        <button class="footer-btn" id="prevBtn" disabled title="Previous Slide (Left Arrow / PageUp)">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+          <span>Previous</span>
+        </button>
+        <button class="footer-btn btn-primary" id="nextBtn" title="Next Slide (Right Arrow / Spacebar)">
+          <span>Next Slide</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+      </div>
+
+      <div class="footer-center" id="dotPagination">
+        <!-- Dynamically populated dot buttons -->
+      </div>
+
+      <div class="footer-right">
+        <div class="keyboard-hints">
+          <span>Keys:</span>
+          <span class="kbd-key">&larr;</span>
+          <span class="kbd-key">&rarr;</span>
+          <span class="kbd-key">Space</span>
+          <span class="kbd-key">F</span>
+          <span class="kbd-key">T</span>
+          <span class="kbd-key">L</span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Slide Drawer (Jump Menu) -->
+    <div class="drawer-backdrop" id="drawerBackdrop"></div>
+    <aside class="slide-drawer" id="slideDrawer" aria-label="Slide Navigation Drawer">
+      <div class="drawer-header">
+        <h3>All 12 Decade Masterclasses</h3>
+        <button class="close-drawer-btn" id="closeDrawerBtn" aria-label="Close Drawer">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+      <div class="drawer-grid" id="drawerGrid">
+        <!-- Dynamically populated drawer items -->
+      </div>
+    </aside>
+
+    <!-- Lightbox Zoom Modal -->
+    <div class="lightbox-modal" id="lightboxModal" role="dialog" aria-modal="true">
+      <div class="lightbox-backdrop" id="lightboxBackdrop"></div>
+      <div class="lightbox-content">
+        <button class="lightbox-close" id="lightboxClose" aria-label="Close Lightbox">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          <span>Close (Esc)</span>
+        </button>
+        <img src="" alt="Enlarged Visual Inspection" class="lightbox-img" id="lightboxImg">
+        <p class="lightbox-caption" id="lightboxCaption"></p>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="app.js"></script>
+  <script src="lesson-selector.js"></script>
+</body>
+</html>

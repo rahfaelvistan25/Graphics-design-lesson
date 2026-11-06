@@ -71,6 +71,19 @@
   color: #fbbf24;
 }
 
+
+.lesson-picker-btn.lesson-5 .lesson-picker-badge {
+  background: linear-gradient(135deg, rgba(168, 85, 247, 0.22), rgba(236, 72, 153, 0.25));
+  border-color: rgba(168, 85, 247, 0.45);
+  color: #c084fc;
+}
+
+.lesson-picker-btn.lesson-4 .lesson-picker-badge {
+  background: linear-gradient(135deg, rgba(244, 63, 94, 0.22), rgba(236, 72, 153, 0.25));
+  border-color: rgba(244, 63, 94, 0.45);
+  color: #fda4af;
+}
+
 .lesson-picker-name {
   font-size: 0.82rem;
   font-weight: 600;
@@ -213,7 +226,7 @@
 /* Modal Grid of Lessons */
 .lesson-cards-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 1.25rem;
   margin-bottom: 1.5rem;
 }
@@ -277,6 +290,15 @@
   background: linear-gradient(90deg, #f59e0b, #a855f7);
 }
 
+.lesson-card.card-lesson-4:hover,
+.lesson-card.card-lesson-4.is-current {
+  border-color: rgba(244, 63, 94, 0.55);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4), 0 0 25px rgba(244, 63, 94, 0.2);
+}
+.lesson-card.card-lesson-4::before {
+  background: linear-gradient(90deg, #f43f5e, #ec4899, #8b5cf6);
+}
+
 /* Active / Current Marker */
 .lesson-card.is-current {
   background: rgba(20, 30, 50, 0.85);
@@ -313,6 +335,12 @@
   background: rgba(245, 158, 11, 0.15);
   border: 1px solid rgba(245, 158, 11, 0.35);
   color: #fbbf24;
+}
+
+.card-lesson-4 .lesson-current-indicator {
+  background: rgba(244, 63, 94, 0.15);
+  border: 1px solid rgba(244, 63, 94, 0.35);
+  color: #fda4af;
 }
 
 .lesson-current-dot {
@@ -355,6 +383,12 @@
   background: rgba(245, 158, 11, 0.12);
   border: 1px solid rgba(245, 158, 11, 0.25);
   color: #fbbf24;
+}
+
+.card-lesson-4 .lesson-card-icon-wrap {
+  background: rgba(244, 63, 94, 0.12);
+  border: 1px solid rgba(244, 63, 94, 0.25);
+  color: #fda4af;
 }
 
 .lesson-card-module-tag {
@@ -470,6 +504,12 @@
   background: rgba(245, 158, 11, 0.12);
   color: #fbbf24;
   border-color: rgba(245, 158, 11, 0.28);
+}
+
+.card-lesson-4 .lesson-card-btn-quiz {
+  background: rgba(244, 63, 94, 0.12);
+  color: #fda4af;
+  border-color: rgba(244, 63, 94, 0.28);
 }
 
 .lesson-card-btn-quiz:hover {
@@ -1363,3 +1403,39 @@
   }
 }
 
+
+@media (max-width: 1200px) {
+  .lesson-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 680px) {
+  .lesson-cards-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+.lesson-card.card-lesson-5:hover,
+.lesson-card.card-lesson-5.is-current {
+  border-color: rgba(168, 85, 247, 0.55);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4), 0 0 25px rgba(168, 85, 247, 0.2);
+}
+.lesson-card.card-lesson-5::before {
+  background: linear-gradient(90deg, #ec4899, #a855f7, #3b82f6, #10b981);
+}
+.card-lesson-5 .lesson-current-indicator {
+  background: rgba(168, 85, 247, 0.15);
+  border: 1px solid rgba(168, 85, 247, 0.35);
+  color: #c084fc;
+}
+.card-lesson-5 .lesson-card-icon-wrap {
+  background: rgba(168, 85, 247, 0.12);
+  border: 1px solid rgba(168, 85, 247, 0.25);
+  color: #c084fc;
+}
+.card-lesson-5 .lesson-card-btn-quiz {
+  background: rgba(168, 85, 247, 0.12);
+  color: #c084fc;
+  border-color: rgba(168, 85, 247, 0.28);
+}

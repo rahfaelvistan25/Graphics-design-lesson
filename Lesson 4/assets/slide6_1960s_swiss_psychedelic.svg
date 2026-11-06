@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 550" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bg6" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#0a0a0f"/>
+    </radialGradient>
+    <linearGradient id="psychedGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ec4899"/>
+      <stop offset="35%" stop-color="#8b5cf6"/>
+      <stop offset="70%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="550" rx="16" fill="url(#bg6)"/>
+
+  <!-- Top Title -->
+  <g transform="translate(60, 35)">
+    <rect width="280" height="28" rx="14" fill="#8b5cf6" fill-opacity="0.25" stroke="#8b5cf6" stroke-width="1.2"/>
+    <text x="16" y="19" font-family="'Outfit', sans-serif" font-size="12" font-weight="800" fill="#c084fc" letter-spacing="1.5">THE GREAT 1960s POLARITY</text>
+    <text x="310" y="20" font-family="'Inter', sans-serif" font-size="13" fill="#e2e8f0">Swiss Rational Order vs. Counterculture Psychedelia</text>
+  </g>
+
+  <!-- Left Side: Swiss International Typographic Style (Rigid 3x3 Grid) -->
+  <g transform="translate(50, 85)">
+    <rect width="335" height="340" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+    
+    <!-- 3x3 Grid Lines -->
+    <g stroke="#e2e8f0" stroke-width="1">
+      <line x1="111" y1="0" x2="111" y2="340"/>
+      <line x1="222" y1="0" x2="222" y2="340"/>
+      <line x1="0" y1="113" x2="335" y2="113"/>
+      <line x1="0" y1="226" x2="335" y2="226"/>
+    </g>
+
+    <!-- Asymmetrical Bold Typography -->
+    <text x="24" y="45" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="28" font-weight="700" fill="#000000" letter-spacing="-0.5">musica viva</text>
+    <text x="24" y="70" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#dc2626">tonhalle zürich</text>
+    
+    <!-- Josef Müller-Brockmann Concentric Circle Mathematics -->
+    <g transform="translate(167, 210)" fill="none" stroke="#000000" stroke-width="2.5">
+      <circle cx="0" cy="0" r="25"/>
+      <circle cx="0" cy="0" r="50"/>
+      <circle cx="0" cy="0" r="75"/>
+      <circle cx="0" cy="0" r="100" stroke="#dc2626" stroke-width="4"/>
+    </g>
+
+    <!-- Bottom Left Tag -->
+    <rect x="24" y="295" width="130" height="24" fill="#000000"/>
+    <text x="89" y="311" text-anchor="middle" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" font-weight="700" fill="#ffffff">SWISS STYLE (1960)</text>
+    <text x="165" y="311" font-family="'Inter', sans-serif" font-size="10" fill="#64748b">Grid &#8226; Asymmetry &#8226; Flush-Left</text>
+  </g>
+
+  <!-- Right Side: San Francisco Psychedelic Rock Poster (Wes Wilson / Moscoso) -->
+  <g transform="translate(415, 85)">
+    <rect width="335" height="340" rx="10" fill="#180429" stroke="#8b5cf6" stroke-width="1.5"/>
+    
+    <!-- Hypnotic Vibrating Concentric Curves -->
+    <g fill="none" stroke="url(#psychedGrad)" stroke-width="4">
+      <path d="M 20 50 Q 80 140, 167 100 T 315 50"/>
+      <path d="M 20 80 Q 80 170, 167 130 T 315 80"/>
+      <path d="M 20 110 Q 80 200, 167 160 T 315 110"/>
+      <path d="M 20 140 Q 80 230, 167 190 T 315 140"/>
+      <path d="M 20 170 Q 80 260, 167 220 T 315 170"/>
+      <path d="M 20 200 Q 80 290, 167 250 T 315 200"/>
+    </g>
+
+    <!-- Distorted Melting Hand-Lettering Emblem -->
+    <g transform="translate(167, 130)">
+      <ellipse cx="0" cy="0" rx="110" ry="45" fill="#f43f5e" fill-opacity="0.9" stroke="#10b981" stroke-width="3"/>
+      <text x="0" y="8" text-anchor="middle" font-family="'Outfit', cursive, fantasy" font-size="22" font-weight="900" fill="#fef08a" letter-spacing="2">THE FILLMORE</text>
+    </g>
+
+    <g transform="translate(167, 220)">
+      <ellipse cx="0" cy="0" rx="95" ry="38" fill="#10b981" fill-opacity="0.9" stroke="#ec4899" stroke-width="3"/>
+      <text x="0" y="8" text-anchor="middle" font-family="'Outfit', cursive, fantasy" font-size="18" font-weight="900" fill="#ffffff" letter-spacing="3">GRATEFUL DEAD</text>
+    </g>
+
+    <!-- Bottom Right Tag -->
+    <rect x="24" y="295" width="140" height="24" rx="4" fill="#ec4899"/>
+    <text x="94" y="311" text-anchor="middle" font-family="'Outfit', sans-serif" font-size="10" font-weight="800" fill="#ffffff">PSYCHEDELIA (1966)</text>
+    <text x="175" y="311" font-family="'Inter', sans-serif" font-size="10" fill="#c084fc">Vibrating &#8226; Illegible &#8226; Trippy</text>
+  </g>
+
+  <!-- Summary Footer Strip -->
+  <g transform="translate(50, 445)">
+    <rect width="700" height="70" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+    <text x="24" y="26" font-family="'Outfit', sans-serif" font-size="12" font-weight="800" fill="#ffffff">TWO OPPOSING PHILOSOPHIES IN ONE DECADE:</text>
+    <text x="24" y="48" font-family="'Inter', sans-serif" font-size="11" fill="#cbd5e1">
+      <tspan font-weight="700" fill="#38bdf8">Swiss Style:</tspan> Design as objective science, supreme readability, sans-serif grids.
+      <tspan dx="15" font-weight="700" fill="#ec4899">Psychedelic:</tspan> Design as mind-expanding drug trip, hand-lettered emotion, retinal vibration.
+    </text>
+  </g>
+</svg>

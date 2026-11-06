@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 550" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bg9" cx="50%" cy="40%" r="80%">
+      <stop offset="0%" stop-color="#262626"/>
+      <stop offset="70%" stop-color="#171717"/>
+      <stop offset="100%" stop-color="#0a0a0a"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="800" height="550" rx="16" fill="url(#bg9)"/>
+
+  <!-- Distressed Tape & Grunge Layering -->
+  <rect x="40" y="60" width="720" height="420" fill="#1c1917" stroke="#44403c" stroke-width="1"/>
+  
+  <!-- Barcode Motif (Classic 90s Deconstructivism) -->
+  <g transform="translate(600, 90)" fill="#a3a3a3">
+    <rect x="0" y="0" width="4" height="50"/>
+    <rect x="8" y="0" width="2" height="50"/>
+    <rect x="14" y="0" width="6" height="50"/>
+    <rect x="24" y="0" width="3" height="50"/>
+    <rect x="32" y="0" width="8" height="50"/>
+    <rect x="44" y="0" width="2" height="50"/>
+    <rect x="52" y="0" width="5" height="50"/>
+    <rect x="64" y="0" width="3" height="50"/>
+    <rect x="74" y="0" width="7" height="50"/>
+    <rect x="86" y="0" width="4" height="50"/>
+    <text x="45" y="65" text-anchor="middle" font-family="'Courier New', monospace" font-size="9" fill="#737373">0 74470 84792 1</text>
+  </g>
+
+  <!-- David Carson Ray Gun Overlapping Dislocated Type Tribute -->
+  <g transform="translate(80, 110)">
+    <!-- Distressed Header -->
+    <text x="0" y="50" font-family="'Impact', 'Outfit', sans-serif" font-size="58" font-weight="900" fill="#f5f5f5" letter-spacing="-2">RAY GUN</text>
+    <text x="250" y="30" font-family="'Courier New', monospace" font-size="28" font-weight="bold" fill="#ef4444" transform="rotate(12 250 30)">DECONSTRUCT</text>
+    <text x="5" y="90" font-family="'Times New Roman', serif" font-size="34" font-weight="bold" font-style="italic" fill="#737373" transform="rotate(-3 5 90)">THE END OF PRINT</text>
+    <text x="2" y="125" font-family="'Courier New', monospace" font-size="14" fill="#e5e5e5">
+      <tspan x="2" dy="0">"Don't mistake legibility for communication." &#8212; David Carson</tspan>
+      <tspan x="2" dy="18">Type sliced, overlapping, tracking pushed into collisions,</tspan>
+      <tspan x="2" dy="18">rebellion against the sterile Swiss corporate grid.</tspan>
+    </text>
+  </g>
+
+  <!-- Y2K Aesthetic & Early Web 1.0 Wireframe Module -->
+  <g transform="translate(80, 270)">
+    <!-- Early Web Browser / Cyber Card -->
+    <rect width="640" height="180" rx="8" fill="#09090b" stroke="#3b82f6" stroke-width="1.2"/>
+    
+    <!-- Browser Top Bar -->
+    <rect width="640" height="28" rx="8" fill="#18181b"/>
+    <circle cx="16" cy="14" r="5" fill="#ef4444"/>
+    <circle cx="32" cy="14" r="5" fill="#f59e0b"/>
+    <circle cx="48" cy="14" r="5" fill="#10b981"/>
+    <rect x="70" y="6" width="300" height="16" rx="4" fill="#27272a"/>
+    <text x="80" y="18" font-family="'Courier New', monospace" font-size="10" fill="#38bdf8">http://www.cyber-matrix.com/index.html</text>
+
+    <!-- Inside Content: Y2K Chrome Blob & Net Art Grid -->
+    <g transform="translate(30, 45)">
+      <!-- Wireframe Globe / Torus -->
+      <ellipse cx="60" cy="55" rx="50" ry="25" fill="none" stroke="#06b6d4" stroke-width="1.5"/>
+      <ellipse cx="60" cy="55" rx="25" ry="50" fill="none" stroke="#06b6d4" stroke-width="1.5"/>
+      <circle cx="60" cy="55" r="50" fill="none" stroke="#3b82f6" stroke-width="2"/>
+      
+      <!-- Tech Specs -->
+      <g transform="translate(140, 20)">
+        <text x="0" y="16" font-family="'Outfit', sans-serif" font-size="16" font-weight="800" fill="#f8fafc">TECH-FORWARD &amp; Y2K CYBER-OPTIMISM</text>
+        <text x="0" y="40" font-family="'Inter', sans-serif" font-size="11" fill="#94a3b8">
+          <tspan x="0" dy="0">&#8226; Photoshop 1.0 (1990) &amp; Illustrator launched digital layering &amp; blur filters</tspan>
+          <tspan x="0" dy="18">&#8226; World Wide Web HTML 1.0 introduced hyperlinks, table layouts &amp; screen graphics</tspan>
+          <tspan x="0" dy="18">&#8226; Y2K Aesthetic: Translucent plastics (iMac G3), chrome 3D text, techno rave flyers</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Top Stamp Badge -->
+  <g transform="translate(60, 35)">
+    <rect width="260" height="26" rx="4" fill="#dc2626" fill-opacity="0.2" stroke="#dc2626" stroke-width="1"/>
+    <text x="14" y="18" font-family="'Courier New', monospace" font-size="12" font-weight="bold" fill="#f87171">1990s: EXPERIMENTAL &amp; TECH</text>
+    <text x="280" y="18" font-family="'Inter', sans-serif" font-size="12" fill="#a3a3a3">Grunge &#8226; Ray Gun &#8226; Y2K &#8226; Web 1.0</text>
+  </g>
+</svg>

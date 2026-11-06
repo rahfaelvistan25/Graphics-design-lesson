@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 550" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bg5" cx="50%" cy="40%" r="80%">
+      <stop offset="0%" stop-color="#134e4a"/>
+      <stop offset="50%" stop-color="#0f2928"/>
+      <stop offset="100%" stop-color="#021515"/>
+    </radialGradient>
+    <filter id="shadow5">
+      <feDropShadow dx="3" dy="6" stdDeviation="6" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="550" rx="16" fill="url(#bg5)"/>
+
+  <!-- Mid-Century Atomic Starbursts -->
+  <g transform="translate(700, 80)" stroke="#fef08a" stroke-width="2">
+    <line x1="0" y1="-30" x2="0" y2="30"/>
+    <line x1="-30" y1="0" x2="30" y2="0"/>
+    <line x1="-20" y1="-20" x2="20" y2="20"/>
+    <line x1="-20" y1="20" x2="20" y2="-20"/>
+    <circle cx="0" cy="0" r="4" fill="#fef08a"/>
+  </g>
+  <g transform="translate(100, 320)" stroke="#f43f5e" stroke-width="1.5">
+    <line x1="0" y1="-20" x2="0" y2="20"/>
+    <line x1="-20" y1="0" x2="20" y2="0"/>
+    <line x1="-14" y1="-14" x2="14" y2="14"/>
+    <line x1="-14" y1="14" x2="14" y2="-14"/>
+    <circle cx="0" cy="0" r="3" fill="#f43f5e"/>
+  </g>
+
+  <!-- Top Title -->
+  <g transform="translate(60, 40)">
+    <rect width="250" height="28" rx="14" fill="#2dd4bf" fill-opacity="0.2" stroke="#2dd4bf" stroke-width="1.2"/>
+    <text x="16" y="19" font-family="'Outfit', sans-serif" font-size="12" font-weight="800" fill="#2dd4bf" letter-spacing="1.5">MID-CENTURY MODERN (1950s)</text>
+    <text x="280" y="20" font-family="'Inter', sans-serif" font-size="13" fill="#99f6e4">Atomic Age Optimism, Corporate Identity &amp; Cut-Paper Modernism</text>
+  </g>
+
+  <!-- Main Showcase: Midcentury Boomerang & Saul Bass Cutouts -->
+  <g transform="translate(60, 90)" filter="url(#shadow5)">
+    <!-- Main Card -->
+    <rect width="680" height="270" rx="12" fill="#042f2e" stroke="#115e59" stroke-width="1.5"/>
+
+    <!-- Organic Boomerang / Kidney Table Shape -->
+    <path d="M 60 70 C 140 10, 300 20, 420 90 C 500 140, 560 220, 480 230 C 380 240, 260 160, 160 180 C 80 200, 20 120, 60 70 Z" fill="#0d9488" fill-opacity="0.4" stroke="#2dd4bf" stroke-width="2"/>
+
+    <!-- Saul Bass Jagged Silhouette Tribute (Anatomy of a Murder / Vertigo) -->
+    <g transform="translate(240, 50)">
+      <!-- Jagged cutout torso -->
+      <polygon points="50,20 120,15 110,80 135,140 30,130 40,70" fill="#f43f5e"/>
+      <!-- Cutout arm -->
+      <polygon points="15,40 45,35 30,110 5,100" fill="#fbbf24"/>
+      <!-- Cutout leg -->
+      <polygon points="45,140 85,135 75,200 40,200" fill="#38bdf8"/>
+      <!-- Cutout second leg -->
+      <polygon points="95,140 130,135 140,200 105,200" fill="#fbbf24"/>
+    </g>
+
+    <!-- Intersecting Abstract Wire Lines -->
+    <ellipse cx="500" cy="140" rx="110" ry="40" fill="none" stroke="#fef08a" stroke-width="2" transform="rotate(-25 500 140)"/>
+    <ellipse cx="500" cy="140" rx="110" ry="40" fill="none" stroke="#2dd4bf" stroke-width="2" transform="rotate(25 500 140)"/>
+    <circle cx="500" cy="140" r="16" fill="#f43f5e"/>
+
+    <!-- Paul Rand / Modernist Typography Card Overlay -->
+    <g transform="translate(40, 50)">
+      <text x="0" y="30" font-family="'Outfit', sans-serif" font-size="32" font-weight="900" fill="#ffffff" letter-spacing="-1">PAUL RAND</text>
+      <text x="0" y="55" font-family="'Outfit', sans-serif" font-size="28" font-weight="900" fill="#fef08a" letter-spacing="-1">&amp; SAUL BASS</text>
+      <text x="0" y="85" font-family="'Inter', sans-serif" font-size="12" fill="#ccfbf1">"Don't try to be original, just try to be good."</text>
+      <rect x="0" y="105" width="160" height="3" fill="#f43f5e"/>
+      <text x="0" y="130" font-family="'Inter', sans-serif" font-size="11" fill="#99f6e4">IBM &#8226; ABC &#8226; UPS &#8226; Vertigo</text>
+    </g>
+  </g>
+
+  <!-- Bottom 3 Pillars -->
+  <g transform="translate(60, 385)">
+    <rect x="0" y="0" width="210" height="120" rx="8" fill="#042f2e" stroke="#115e59" stroke-width="1"/>
+    <text x="16" y="26" font-family="'Outfit', sans-serif" font-size="13" font-weight="800" fill="#2dd4bf">1. CONSUMER BOOM</text>
+    <text x="16" y="48" font-family="'Inter', sans-serif" font-size="11" fill="#ccfbf1">
+      <tspan x="16" dy="0">Post-war suburban prosperity</tspan>
+      <tspan x="16" dy="16">fueled television commercials,</tspan>
+      <tspan x="16" dy="16">automotive tail-fins &amp; joyful</tspan>
+      <tspan x="16" dy="16">pastel diner advertising.</tspan>
+    </text>
+
+    <rect x="235" y="0" width="210" height="120" rx="8" fill="#042f2e" stroke="#115e59" stroke-width="1"/>
+    <text x="251" y="26" font-family="'Outfit', sans-serif" font-size="13" font-weight="800" fill="#2dd4bf">2. BIRTH OF HELVETICA</text>
+    <text x="251" y="48" font-family="'Inter', sans-serif" font-size="11" fill="#ccfbf1">
+      <tspan x="251" dy="0">Max Miedinger designed Neue</tspan>
+      <tspan x="251" dy="16">Haas Grotesk (1957), later</tspan>
+      <tspan x="251" dy="16">christened Helvetica: the</tspan>
+      <tspan x="251" dy="16">corporate world standard.</tspan>
+    </text>
+
+    <rect x="470" y="0" width="210" height="120" rx="8" fill="#042f2e" stroke="#115e59" stroke-width="1"/>
+    <text x="486" y="26" font-family="'Outfit', sans-serif" font-size="13" font-weight="800" fill="#2dd4bf">3. PALETTE SWATCHES</text>
+    <g transform="translate(486, 42)">
+      <circle cx="12" cy="12" r="11" fill="#2dd4bf" stroke="#ffffff" stroke-width="1"/>
+      <circle cx="42" cy="12" r="11" fill="#f43f5e" stroke="#ffffff" stroke-width="1"/>
+      <circle cx="72" cy="12" r="11" fill="#fbbf24" stroke="#ffffff" stroke-width="1"/>
+      <circle cx="102" cy="12" r="11" fill="#fef08a" stroke="#ffffff" stroke-width="1"/>
+      <circle cx="132" cy="12" r="11" fill="#38bdf8" stroke="#ffffff" stroke-width="1"/>
+      <text x="0" y="45" font-family="'Inter', sans-serif" font-size="11" fill="#ccfbf1">Helvetica (1957) &#8226; Univers</text>
+    </g>
+  </g>
+</svg>

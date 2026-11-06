@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 550" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bg11" cx="50%" cy="40%" r="80%">
+      <stop offset="0%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#090514"/>
+    </radialGradient>
+    <linearGradient id="instaGrad11" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="25%" stop-color="#f43f5e"/>
+      <stop offset="60%" stop-color="#d946ef"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+    <filter id="materialShadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="550" rx="16" fill="url(#bg11)"/>
+
+  <!-- Top Header Title -->
+  <g transform="translate(60, 35)">
+    <rect width="280" height="28" rx="14" fill="#6366f1" fill-opacity="0.25" stroke="#818cf8" stroke-width="1.2"/>
+    <text x="16" y="19" font-family="'Outfit', sans-serif" font-size="12" font-weight="800" fill="#a5b4fc" letter-spacing="1.5">2010s: THE FLAT &amp; SOCIAL ERA</text>
+    <text x="310" y="20" font-family="'Inter', sans-serif" font-size="13" fill="#cbd5e1">Flat Design 2.0, Google Material elevation &amp; Instagram feed culture</text>
+  </g>
+
+  <!-- Left: Google Material Design Elevated Paper Card System -->
+  <g transform="translate(60, 85)">
+    <rect width="320" height="330" rx="12" fill="#0f172a" stroke="#334155" stroke-width="1.2"/>
+    
+    <!-- Elevated Base Surface -->
+    <g transform="translate(25, 25)" filter="url(#materialShadow)">
+      <rect width="270" height="180" rx="8" fill="#1e293b"/>
+      
+      <!-- Top Colored Hero Area -->
+      <path d="M 0 8 A 8 8 0 0 1 8 0 L 262 0 A 8 8 0 0 1 270 8 L 270 70 L 0 70 Z" fill="#3b82f6"/>
+      <text x="20" y="42" font-family="'Roboto', sans-serif" font-size="18" font-weight="500" fill="#ffffff">Material Design (2014)</text>
+      
+      <!-- Floating Action Button (FAB) -->
+      <circle cx="230" cy="70" r="22" fill="#ec4899" filter="url(#materialShadow)"/>
+      <text x="230" y="76" text-anchor="middle" font-family="sans-serif" font-size="22" fill="#ffffff">+</text>
+
+      <!-- Card Body Text -->
+      <text x="20" y="105" font-family="'Roboto', sans-serif" font-size="12" font-weight="700" fill="#f8fafc">Digital Paper &amp; Ink Metaphor</text>
+      <text x="20" y="125" font-family="'Roboto', sans-serif" font-size="10" fill="#94a3b8">
+        <tspan x="20" dy="0">Shadows indicate z-axis physical elevation.</tspan>
+        <tspan x="20" dy="16">Strict 8dp grid spacing &amp; bold flat color blocks.</tspan>
+      </text>
+
+      <!-- Flat Accent Action Link -->
+      <text x="20" y="165" font-family="'Roboto', sans-serif" font-size="11" font-weight="700" fill="#38bdf8">LEARN GUIDELINES</text>
+    </g>
+
+    <!-- Flat Design Principles Tag -->
+    <g transform="translate(25, 230)">
+      <rect width="270" height="75" rx="6" fill="#1e1b4b" stroke="#4338ca" stroke-width="1"/>
+      <text x="14" y="22" font-family="'Outfit', sans-serif" font-size="11" font-weight="700" fill="#a5b4fc">FLAT REVOLUTION (iOS 7 &amp; Windows Metro):</text>
+      <text x="14" y="42" font-family="'Inter', sans-serif" font-size="10" fill="#c7d2fe">
+        <tspan x="14" dy="0">Complete removal of bevels, leather, and faux textures.</tspan>
+        <tspan x="14" dy="15">Pure vector clarity optimized for responsive mobile screens.</tspan>
+      </text>
+    </g>
+  </g>
+
+  <!-- Right: Social Media First / Instagram Square Aesthetics -->
+  <g transform="translate(415, 85)">
+    <rect width="325" height="330" rx="12" fill="#0f172a" stroke="#334155" stroke-width="1.2"/>
+    
+    <!-- Instagram Frame Simulation -->
+    <g transform="translate(30, 25)">
+      <!-- 1:1 Square Card Frame -->
+      <rect width="265" height="265" rx="12" fill="#18181b" stroke="#27272a" stroke-width="1"/>
+      
+      <!-- Top Account Bar -->
+      <circle cx="22" cy="22" r="12" fill="url(#instaGrad11)"/>
+      <text x="42" y="26" font-family="'Inter', sans-serif" font-size="11" font-weight="700" fill="#ffffff">visual_masterclass</text>
+      
+      <!-- Center Image: Millennial Pink & Vibrant Sunset Gradient -->
+      <rect x="15" y="45" width="235" height="150" rx="8" fill="url(#instaGrad11)"/>
+      <text x="132" y="125" text-anchor="middle" font-family="'Outfit', sans-serif" font-size="22" font-weight="900" fill="#ffffff" letter-spacing="-0.5">SHAREABLE CONTENT</text>
+
+      <!-- Bottom Engagement Icons -->
+      <g transform="translate(20, 215)">
+        <text x="0" y="15" font-size="16" fill="#f43f5e">❤️</text>
+        <text x="30" y="15" font-size="16" fill="#ffffff">💬</text>
+        <text x="60" y="15" font-size="16" fill="#ffffff">↗️</text>
+        <text x="0" y="36" font-family="'Inter', sans-serif" font-size="10" font-weight="600" fill="#ffffff">14,289 likes</text>
+      </g>
+    </g>
+
+    <text x="162" y="312" text-anchor="middle" font-family="'Inter', sans-serif" font-size="11" fill="#cbd5e1">1:1 Square &amp; 9:16 Vertical &#8226; Creator Economy First</text>
+  </g>
+
+  <!-- Bottom Synthesis Strip -->
+  <g transform="translate(60, 435)">
+    <rect width="680" height="75" rx="8" fill="#1e1b4b" stroke="#4338ca" stroke-width="1"/>
+    <text x="24" y="26" font-family="'Outfit', sans-serif" font-size="13" font-weight="800" fill="#a5b4fc">THE CORPORATE "BLANDING" PHENOMENON:</text>
+    <text x="24" y="48" font-family="'Inter', sans-serif" font-size="11" fill="#e0e7ff">
+      Every major luxury fashion house (Burberry, Saint Laurent, Balmain) and tech giant traded distinctive serif logos for identical geometric sans-serif grotesque wordmarks to maximize micro-screen readability on Apple Watches and smartphone screens.
+    </text>
+  </g>
+</svg>

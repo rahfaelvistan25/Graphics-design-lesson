@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 550" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bg10" cx="50%" cy="30%" r="80%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </radialGradient>
+    <!-- Web 2.0 Aqua Gloss Gradient -->
+    <linearGradient id="aquaButton" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="45%" stop-color="#0284c7"/>
+      <stop offset="50%" stop-color="#0369a1"/>
+      <stop offset="100%" stop-color="#075985"/>
+    </linearGradient>
+    <linearGradient id="glossReflection" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.05"/>
+    </linearGradient>
+    <linearGradient id="brushedMetal" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#e2e8f0"/>
+      <stop offset="25%" stop-color="#cbd5e1"/>
+      <stop offset="50%" stop-color="#94a3b8"/>
+      <stop offset="75%" stop-color="#cbd5e1"/>
+      <stop offset="100%" stop-color="#e2e8f0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="550" rx="16" fill="url(#bg10)"/>
+
+  <!-- Top Title -->
+  <g transform="translate(60, 35)">
+    <rect width="280" height="28" rx="14" fill="#0284c7" fill-opacity="0.25" stroke="#38bdf8" stroke-width="1.2"/>
+    <text x="16" y="19" font-family="'Outfit', sans-serif" font-size="12" font-weight="800" fill="#38bdf8" letter-spacing="1.5">2000s: WEB 2.0 &amp; SKEUOMORPHISM</text>
+    <text x="310" y="20" font-family="'Inter', sans-serif" font-size="13" fill="#cbd5e1">Aqua Gloss, Digital Realism &amp; The Apple iPod Minimalist Revolution</text>
+  </g>
+
+  <!-- Left Side: Web 2.0 Gloss Button & Stitched Skeuomorphic Leather -->
+  <g transform="translate(60, 85)">
+    <!-- Container Card -->
+    <rect width="320" height="330" rx="12" fill="#0f172a" stroke="#334155" stroke-width="1.2"/>
+    
+    <!-- Skeuomorphic Stitched Leather Header -->
+    <rect x="20" y="20" width="280" height="70" rx="8" fill="#78350f" stroke="#451a03" stroke-width="2"/>
+    <!-- Stitches -->
+    <rect x="25" y="25" width="270" height="60" rx="6" fill="none" stroke="#fef3c7" stroke-width="1.2" stroke-dasharray="6 4"/>
+    <text x="160" y="60" text-anchor="middle" font-family="'Georgia', serif" font-size="16" font-weight="bold" fill="#fef3c7">Skeuomorphic Texture</text>
+
+    <!-- Web 2.0 Glass / Aqua Pill Button -->
+    <g transform="translate(45, 115)">
+      <!-- Drop Shadow Pill -->
+      <rect x="0" y="0" width="230" height="56" rx="28" fill="url(#aquaButton)" stroke="#38bdf8" stroke-width="1.5"/>
+      <!-- Top Gloss Glare Half-Pill -->
+      <path d="M 10 2 A 26 26 0 0 1 220 2 C 220 18, 190 26, 115 26 C 40 26, 10 18, 10 2 Z" fill="url(#glossReflection)"/>
+      <text x="115" y="35" text-anchor="middle" font-family="'Outfit', sans-serif" font-size="16" font-weight="800" fill="#ffffff">Web 2.0 Button &#8594;</text>
+    </g>
+
+    <!-- Wet Floor Glass Reflection Effect -->
+    <g transform="translate(45, 175)" opacity="0.3">
+      <rect x="0" y="0" width="230" height="28" rx="14" fill="url(#aquaButton)" transform="scale(1, -1) translate(0, -28)"/>
+    </g>
+
+    <text x="160" y="220" text-anchor="middle" font-family="'Outfit', sans-serif" font-size="13" font-weight="700" fill="#38bdf8">APPLE AQUA &amp; OS X INTERFACE</text>
+    <text x="160" y="245" text-anchor="middle" font-family="'Inter', sans-serif" font-size="11" fill="#94a3b8">Drop shadows &#8226; 3D beveled badges &#8226; Glass reflections</text>
+    
+    <!-- Brushed Aluminum Panel -->
+    <rect x="20" y="265" width="280" height="45" rx="6" fill="url(#brushedMetal)" stroke="#64748b" stroke-width="1"/>
+    <text x="160" y="293" text-anchor="middle" font-family="'Inter', sans-serif" font-size="12" font-weight="bold" fill="#1e293b">Brushed Aluminum (QuickTime)</text>
+  </g>
+
+  <!-- Right Side: The iPod Silhouette Campaign (TBWA\Chiat\Day Tribute) -->
+  <g transform="translate(415, 85)">
+    <!-- Vibrant Solid Background -->
+    <rect width="325" height="330" rx="12" fill="#ec4899" stroke="#ffffff" stroke-width="1.5"/>
+    
+    <!-- Dancing Silhouette Figure -->
+    <g transform="translate(162, 50)" fill="#000000">
+      <!-- Head -->
+      <circle cx="0" cy="20" r="18"/>
+      <!-- Dynamic dancing body -->
+      <path d="M -15 40 Q 0 35, 15 40 L 25 100 L -25 100 Z"/>
+      <!-- Arms outstretched -->
+      <path d="M -15 50 Q -50 70, -60 40 L -70 45 Q -55 85, -20 65 Z"/>
+      <path d="M 15 50 Q 50 30, 70 60 L 60 65 Q 45 40, 20 65 Z"/>
+      <!-- Legs dancing -->
+      <path d="M -20 100 L -45 180 L -30 185 L -10 115 Z"/>
+      <path d="M 15 100 L 40 180 L 55 175 L 25 115 Z"/>
+    </g>
+
+    <!-- White iPod & Earbud Wires Glowing in Silhouette Hand -->
+    <g transform="translate(162, 50)" stroke="#ffffff" stroke-width="2.5" fill="none">
+      <!-- Earbud wire from ears to device -->
+      <path d="M -6 20 Q -25 40, -60 40"/>
+      <path d="M 6 20 Q 30 50, -60 40"/>
+      <!-- White iPod Unit -->
+      <rect x="-72" y="32" width="18" height="28" rx="3" fill="#ffffff" stroke="none"/>
+      <circle cx="-63" cy="48" r="5" fill="#e2e8f0" stroke="none"/>
+    </g>
+
+    <!-- Campaign Tagline -->
+    <text x="162" y="270" text-anchor="middle" font-family="'Helvetica Neue', Helvetica, sans-serif" font-size="28" font-weight="900" fill="#ffffff" letter-spacing="-1">iPod</text>
+    <text x="162" y="295" text-anchor="middle" font-family="'Helvetica Neue', Helvetica, sans-serif" font-size="12" font-weight="700" fill="#ffffff">1,000 SONGS IN YOUR POCKET</text>
+  </g>
+
+  <!-- Bottom Strip -->
+  <g transform="translate(60, 435)">
+    <rect width="680" height="75" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+    <text x="24" y="26" font-family="'Outfit', sans-serif" font-size="13" font-weight="800" fill="#38bdf8">2000s DESIGN SIGNIFICANCE:</text>
+    <text x="24" y="48" font-family="'Inter', sans-serif" font-size="11" fill="#cbd5e1">
+      Early touchscreen interfaces needed digital skeuomorphism to teach first-time smartphone users that digital rectangles behaved like physical buttons, while branding underwent radical simplification spearheaded by Jonathan Ive and Steve Jobs.
+    </text>
+  </g>
+</svg>

@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 550" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bg12" cx="50%" cy="30%" r="80%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="60%" stop-color="#090d16"/>
+      <stop offset="100%" stop-color="#020408"/>
+    </radialGradient>
+    <linearGradient id="iridescent12" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ccff00"/>
+      <stop offset="35%" stop-color="#06b6d4"/>
+      <stop offset="70%" stop-color="#ec4899"/>
+      <stop offset="100%" stop-color="#a855f7"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="550" rx="16" fill="url(#bg12)"/>
+
+  <!-- Top Title -->
+  <g transform="translate(60, 35)">
+    <rect width="320" height="28" rx="14" fill="#ccff00" fill-opacity="0.2" stroke="#ccff00" stroke-width="1.2"/>
+    <text x="16" y="19" font-family="'Outfit', sans-serif" font-size="12" font-weight="800" fill="#ccff00" letter-spacing="1.5">2020s: NEO-BRUTALISM &amp; SUSTAINABILITY</text>
+    <text x="350" y="20" font-family="'Inter', sans-serif" font-size="13" fill="#cbd5e1">Raw Black Borders, Eco-Minimalism &amp; Generative AI Frontiers</text>
+  </g>
+
+  <!-- Left: Neo-Brutalist UI Card (Heavy Stroke & Hard Shadow) -->
+  <g transform="translate(60, 85)">
+    <!-- Hard Neo-Brutalist Shadow (No blur, 6px offset) -->
+    <rect x="6" y="6" width="310" height="330" rx="8" fill="#000000"/>
+    <!-- Foreground Card with Thick 3px Black Border -->
+    <rect x="0" y="0" width="310" height="330" rx="8" fill="#ccff00" stroke="#000000" stroke-width="3"/>
+
+    <!-- Neo-Brutalist Header Badge -->
+    <g transform="translate(20, 20)">
+      <rect x="0" y="0" width="130" height="28" rx="4" fill="#000000"/>
+      <text x="65" y="19" text-anchor="middle" font-family="'Outfit', sans-serif" font-size="12" font-weight="900" fill="#ffffff">NEO-BRUTALISM</text>
+    </g>
+
+    <!-- Star Sticker Badge -->
+    <g transform="translate(250, 35)">
+      <polygon points="0,-15 4,-4 15,-4 7,3 10,14 0,7 -10,14 -7,3 -15,-4 -4,-4" fill="#ec4899" stroke="#000000" stroke-width="2"/>
+    </g>
+
+    <!-- Big Stark Typography -->
+    <text x="20" y="95" font-family="'Outfit', sans-serif" font-size="28" font-weight="900" fill="#000000" letter-spacing="-1">RAW &amp; BOLD</text>
+    <text x="20" y="125" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#000000">
+      <tspan x="20" dy="0">&#8226; Heavy 3-4px stark black borders</tspan>
+      <tspan x="20" dy="18">&#8226; Zero-blur hard drop shadows</tspan>
+      <tspan x="20" dy="18">&#8226; High-octane acid lime &amp; violet</tspan>
+      <tspan x="20" dy="18">&#8226; Rejection of sterile corporate templates</tspan>
+    </text>
+
+    <!-- Interactive Button Simulation -->
+    <g transform="translate(20, 220)">
+      <rect x="4" y="4" width="260" height="42" rx="6" fill="#000000"/>
+      <rect x="0" y="0" width="260" height="42" rx="6" fill="#ffffff" stroke="#000000" stroke-width="2.5"/>
+      <text x="130" y="26" text-anchor="middle" font-family="'Outfit', sans-serif" font-size="14" font-weight="900" fill="#000000">DISCOVER NOW &#8594;</text>
+    </g>
+
+    <text x="155" y="300" text-anchor="middle" font-family="'Inter', sans-serif" font-size="10" font-weight="700" fill="#000000">Gumroad &#8226; Figma Community &#8226; Gen Z Aesthetics</text>
+  </g>
+
+  <!-- Right: Sustainability / Eco-Minimalism & Generative AI Frontiers -->
+  <g transform="translate(415, 85)">
+    <rect width="325" height="330" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1.2"/>
+    
+    <!-- Eco-Minimalist Card Module -->
+    <g transform="translate(25, 20)">
+      <rect width="275" height="135" rx="8" fill="#14532d" fill-opacity="0.25" stroke="#22c55e" stroke-width="1"/>
+      <text x="16" y="26" font-family="'Outfit', sans-serif" font-size="13" font-weight="800" fill="#4ade80">1. SUSTAINABILITY &amp; ECO-DESIGN</text>
+      <text x="16" y="50" font-family="'Inter', sans-serif" font-size="10" fill="#bbf7d0">
+        <tspan x="16" dy="0">&#8226; Earth tones (sage, terracotta, charcoal, clay)</tspan>
+        <tspan x="16" dy="16">&#8226; Low-ink packaging designs reducing chemical footprint</tspan>
+        <tspan x="16" dy="16">&#8226; Tactile recycled paper textures &amp; biodegradable seals</tspan>
+        <tspan x="16" dy="16">&#8226; Dark-mode by default to lower digital OLED energy usage</tspan>
+      </text>
+    </g>
+
+    <!-- Generative AI & Iridescent Neo-Futurism Module -->
+    <g transform="translate(25, 175)">
+      <rect width="275" height="135" rx="8" fill="#581c87" fill-opacity="0.3" stroke="#c084fc" stroke-width="1"/>
+      
+      <!-- Fluid Holographic Gradient Orb -->
+      <circle cx="45" cy="55" r="28" fill="url(#iridescent12)"/>
+      <circle cx="45" cy="55" r="28" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-opacity="0.6"/>
+
+      <text x="85" y="32" font-family="'Outfit', sans-serif" font-size="13" font-weight="800" fill="#e9d5ff">2. GENERATIVE AI &amp; 3D</text>
+      <text x="85" y="52" font-family="'Inter', sans-serif" font-size="10" fill="#f3e8ff">
+        <tspan x="85" dy="0">Midjourney &amp; Stable Diffusion</tspan>
+        <tspan x="85" dy="15">enable prompt-engineered</tspan>
+        <tspan x="85" dy="15">surrealism, fluid chrome 3D &amp;</tspan>
+        <tspan x="85" dy="15">variable kinetic typography.</tspan>
+      </text>
+    </g>
+  </g>
+
+  <!-- Bottom Strip -->
+  <g transform="translate(60, 435)">
+    <rect width="680" height="75" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+    <text x="24" y="26" font-family="'Outfit', sans-serif" font-size="13" font-weight="800" fill="#ccff00">THE 2020s PARADIGM:</text>
+    <text x="24" y="48" font-family="'Inter', sans-serif" font-size="11" fill="#cbd5e1">
+      Visual design has reached a post-template frontier: balancing conscious environmental responsibility on physical substrates while pushing radical visual freedom, neo-brutalist honesty, and artificial intelligence exploration in the digital universe.
+    </text>
+  </g>
+</svg>
