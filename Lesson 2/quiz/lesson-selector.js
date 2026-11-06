@@ -65,6 +65,42 @@
         <line x1="3" y1="9" x2="21" y2="9"/>
         <line x1="9" y1="21" x2="9" y2="9"/>
       </svg>`
+    },
+    {
+      id: 4,
+      num: '04',
+      title: 'Design Styles Across the Decades',
+      shortTitle: 'Styles & Decades',
+      subtitle: '100 years of visual history: from 1920s Art Deco to 2020s Neo-Futurism & Sustainability.',
+      topics: ['Art Deco', 'WPA Depression', 'WWII Agitprop', 'Mid-Century Modern', 'Swiss & Psychedelic', 'Punk & Groovy', '80s Memphis Neon', '90s Grunge', 'Web 2.0 Skeuomorph', 'Flat & Social', 'Neo-Brutalism'],
+      deckFile: 'Lesson 4/index.html',
+      quizFile: 'Lesson 4/quiz/index.html',
+      slidesCount: 12,
+      quizCount: 15,
+      accentClass: 'card-lesson-4',
+      badgeClass: 'lesson-4',
+      iconSvg: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="10"/>
+        <polyline points="12 6 12 12 16 14"/>
+      </svg>`
+    },
+    {
+      id: 5,
+      num: '05',
+      title: 'Color Theory',
+      shortTitle: 'Color Theory',
+      subtitle: 'The science of chromatic light, the 12-part wheel, harmonies, RGB vs CMYK, and brand psychology.',
+      topics: ['Color Wheel', 'Hue, Saturation, Value', 'Tints, Shades, Tones', 'Warm & Cool', 'Harmonies', 'RGB & CMYK', 'Color Psychology', '60-30-10 Rule', 'WCAG Contrast'],
+      deckFile: 'Lesson 5/index.html',
+      quizFile: 'Lesson 5/quiz/index.html',
+      slidesCount: 13,
+      quizCount: 15,
+      accentClass: 'card-lesson-5',
+      badgeClass: 'lesson-5',
+      iconSvg: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="10"/>
+        <path d="M12 2a10 10 0 0 1 10 10c0 5.52-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2z"/>
+      </svg>`
     }
   ];
 
@@ -88,6 +124,10 @@
         currentLesson = 2;
       } else if (path.includes('Lesson 3') || path.includes('Lesson%203')) {
         currentLesson = 3;
+      } else if (path.includes('Lesson 4') || path.includes('Lesson%204')) {
+        currentLesson = 4;
+      } else if (path.includes('Lesson 5') || path.includes('Lesson%205')) {
+        currentLesson = 5;
       } else {
         currentLesson = 1;
       }
@@ -202,7 +242,7 @@
             <span><kbd class="lesson-kbd">L</kbd> Switch Lesson</span>
             <span><kbd class="lesson-kbd">Esc</kbd> Close</span>
           </div>
-          <span style="font-size: 0.8rem; color: #64748b;">3 Complete Modules with 45+ Practice Questions</span>
+          <span style="font-size: 0.8rem; color: #64748b;">4 Complete Modules with 60 Practice Questions</span>
         </footer>
       </div>
     `;
